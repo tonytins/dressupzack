@@ -3,7 +3,7 @@
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
 [ext_resource path="res://assets/sixam.png" type="Texture" id=2]
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -35,6 +35,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="SixamBtn" type="TextureButton" parent="ReferenceRect" index="0"]
 
@@ -79,7 +82,7 @@ size_flags_vertical = 1
 alignment = 0
 _sections_unfolded = [ "Rect" ]
 
-[node name="ScreenshotBtn" type="Button" parent="ReferenceRect/HozContainer" index="0"]
+[node name="AboutBtn" type="Button" parent="ReferenceRect/HozContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -98,8 +101,36 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "About"
+flat = false
+align = 1
+
+[node name="ScreenshotBtn" type="Button" parent="ReferenceRect/HozContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 135.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
 text = "Screenshot"
 flat = false
 align = 1
+
+[connection signal="pressed" from="ReferenceRect/HozContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+
+[connection signal="pressed" from="ReferenceRect/HozContainer/ScreenshotBtn" to="." method="_on_ScreenshotBtn_pressed"]
 
 

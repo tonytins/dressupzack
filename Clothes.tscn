@@ -1,19 +1,21 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://assets/jeans.png" type="Texture" id=1]
+[ext_resource path="res://assets/briefs.png" type="Texture" id=1]
 [ext_resource path="res://src/drag.gd" type="Script" id=2]
-[ext_resource path="res://assets/dj shorts.png" type="Texture" id=3]
-[ext_resource path="res://assets/sweat pants.png" type="Texture" id=4]
-[ext_resource path="res://assets/briefs.png" type="Texture" id=5]
-[ext_resource path="res://assets/undies.png" type="Texture" id=6]
+[ext_resource path="res://assets/undies.png" type="Texture" id=3]
+[ext_resource path="res://assets/jeans.png" type="Texture" id=4]
+[ext_resource path="res://assets/dj shorts.png" type="Texture" id=5]
+[ext_resource path="res://assets/sweat pants.png" type="Texture" id=6]
 [ext_resource path="res://assets/ts2nl shirt1.png" type="Texture" id=7]
-[ext_resource path="res://assets/biker jacket.png" type="Texture" id=8]
-[ext_resource path="res://assets/snowboard coat.png" type="Texture" id=9]
-[ext_resource path="res://assets/trench coat.png" type="Texture" id=10]
-[ext_resource path="res://assets/wendys.png" type="Texture" id=11]
-[ext_resource path="res://assets/jp school girl.png" type="Texture" id=12]
+[ext_resource path="res://assets/korm shirt.png" type="Texture" id=8]
+[ext_resource path="res://assets/raw shirt.png" type="Texture" id=9]
+[ext_resource path="res://assets/biker jacket.png" type="Texture" id=10]
+[ext_resource path="res://assets/snowboard coat.png" type="Texture" id=11]
+[ext_resource path="res://assets/trench coat.png" type="Texture" id=12]
+[ext_resource path="res://assets/wendys.png" type="Texture" id=13]
+[ext_resource path="res://assets/jp school girl.png" type="Texture" id=14]
 
-[node name="Clothes" type="Node2D"]
+[node name="Clothes" type="Node2D" index="0"]
 
 [node name="Wordrobe" type="ReferenceRect" parent="." index="0"]
 
@@ -31,8 +33,63 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Bottoms" type="Node" parent="Wordrobe" index="0"]
+[node name="Underwear" type="Node" parent="Wordrobe" index="0"]
+
+[node name="Briefs" type="TextureButton" parent="Wordrobe/Underwear" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 534.0
+margin_top = 293.0
+margin_right = 600.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="ZBriefs" type="TextureButton" parent="Wordrobe/Underwear" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 535.0
+margin_top = 341.0
+margin_right = 601.0
+margin_bottom = 384.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 3 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Bottoms" type="Node" parent="Wordrobe" index="1"]
 
 [node name="Jeans" type="TextureButton" parent="Wordrobe/Bottoms" index="0"]
 
@@ -55,7 +112,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 1 )
+texture_normal = ExtResource( 4 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
@@ -66,9 +123,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 635.0
-margin_top = 269.0
+margin_top = 288.0
 margin_right = 731.0
-margin_bottom = 362.0
+margin_bottom = 381.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -80,7 +137,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 5 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Anchor", "Textures" ]
 
@@ -105,72 +162,22 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 4 )
-script = ExtResource( 2 )
-_sections_unfolded = [ "Textures" ]
-
-[node name="Briefs" type="TextureButton" parent="Wordrobe/Bottoms" index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 534.0
-margin_top = 279.0
-margin_right = 600.0
-margin_bottom = 322.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 5 )
-script = ExtResource( 2 )
-_sections_unfolded = [ "Textures" ]
-
-[node name="ZBriefs" type="TextureButton" parent="Wordrobe/Bottoms" index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 535.0
-margin_top = 334.0
-margin_right = 601.0
-margin_bottom = 377.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
 texture_normal = ExtResource( 6 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Tops" type="Node" parent="Wordrobe" index="1"]
+[node name="Tops" type="Node" parent="Wordrobe" index="2"]
 
-[node name="UniShirt" type="TextureButton" parent="Wordrobe/Tops" index="0"]
+[node name="SimsUni" type="TextureButton" parent="Wordrobe/Tops" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 666.0
-margin_top = 37.0
-margin_right = 747.0
-margin_bottom = 147.0
+margin_left = 649.0
+margin_top = 34.0
+margin_right = 730.0
+margin_bottom = 144.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -186,16 +193,16 @@ texture_normal = ExtResource( 7 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Biker" type="TextureButton" parent="Wordrobe/Tops" index="1"]
+[node name="Korm" type="TextureButton" parent="Wordrobe/Tops" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 553.0
-margin_top = 35.0
-margin_right = 634.0
-margin_bottom = 150.0
+margin_left = 647.0
+margin_top = 161.0
+margin_right = 728.0
+margin_bottom = 274.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -211,18 +218,16 @@ texture_normal = ExtResource( 8 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Outfits" type="Node" parent="Wordrobe" index="2"]
-
-[node name="Snowboard" type="TextureButton" parent="Wordrobe/Outfits" index="0"]
+[node name="Raw" type="TextureButton" parent="Wordrobe/Tops" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 214.0
-margin_top = 306.0
-margin_right = 320.0
-margin_bottom = 518.0
+margin_left = 524.0
+margin_top = 162.0
+margin_right = 605.0
+margin_bottom = 275.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -238,16 +243,16 @@ texture_normal = ExtResource( 9 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Trench Coat" type="TextureButton" parent="Wordrobe/Outfits" index="1"]
+[node name="Biker" type="TextureButton" parent="Wordrobe/Tops" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 366.0
-margin_top = 303.0
-margin_right = 472.0
-margin_bottom = 515.0
+margin_left = 527.0
+margin_top = 39.0
+margin_right = 608.0
+margin_bottom = 154.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -263,16 +268,18 @@ texture_normal = ExtResource( 10 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Wendy's" type="TextureButton" parent="Wordrobe/Outfits" index="2"]
+[node name="Outfits" type="Node" parent="Wordrobe" index="3"]
+
+[node name="Snowboard" type="TextureButton" parent="Wordrobe/Outfits" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 352.0
-margin_top = 42.0
-margin_right = 458.0
-margin_bottom = 254.0
+margin_left = 217.0
+margin_top = 262.0
+margin_right = 323.0
+margin_bottom = 474.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -288,16 +295,16 @@ texture_normal = ExtResource( 11 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="School Girl" type="TextureButton" parent="Wordrobe/Outfits" index="3"]
+[node name="Trench Coat" type="TextureButton" parent="Wordrobe/Outfits" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 221.0
-margin_top = 48.0
-margin_right = 327.0
-margin_bottom = 260.0
+margin_left = 362.0
+margin_top = 280.0
+margin_right = 468.0
+margin_bottom = 471.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -313,17 +320,71 @@ texture_normal = ExtResource( 12 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
+[node name="Wendy's" type="TextureButton" parent="Wordrobe/Outfits" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 364.0
+margin_top = 77.0
+margin_right = 456.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 13 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="School Girl" type="TextureButton" parent="Wordrobe/Outfits" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 233.0
+margin_top = 83.0
+margin_right = 322.0
+margin_bottom = 233.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 14 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Textures" ]
+
+[connection signal="gui_input" from="Wordrobe/Underwear/Briefs" to="Wordrobe/Underwear/Briefs" method="_on_outfit_gui_input"]
+
+[connection signal="gui_input" from="Wordrobe/Underwear/ZBriefs" to="Wordrobe/Underwear/ZBriefs" method="_on_outfit_gui_input"]
+
 [connection signal="gui_input" from="Wordrobe/Bottoms/Jeans" to="Wordrobe/Bottoms/Jeans" method="_on_outfit_gui_input"]
 
 [connection signal="gui_input" from="Wordrobe/Bottoms/DJ Shorts" to="Wordrobe/Bottoms/DJ Shorts" method="_on_outfit_gui_input"]
 
 [connection signal="gui_input" from="Wordrobe/Bottoms/Sweats" to="Wordrobe/Bottoms/Sweats" method="_on_outfit_gui_input"]
 
-[connection signal="gui_input" from="Wordrobe/Bottoms/Briefs" to="Wordrobe/Bottoms/Briefs" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Wordrobe/Tops/SimsUni" to="Wordrobe/Tops/SimsUni" method="_on_outfit_gui_input"]
 
-[connection signal="gui_input" from="Wordrobe/Bottoms/ZBriefs" to="Wordrobe/Bottoms/ZBriefs" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Wordrobe/Tops/Korm" to="Wordrobe/Tops/Korm" method="_on_outfit_gui_input"]
 
-[connection signal="gui_input" from="Wordrobe/Tops/UniShirt" to="Wordrobe/Tops/UniShirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Wordrobe/Tops/Raw" to="Wordrobe/Tops/Raw" method="_on_outfit_gui_input"]
 
 [connection signal="gui_input" from="Wordrobe/Tops/Biker" to="Wordrobe/Tops/Biker" method="_on_outfit_gui_input"]
 

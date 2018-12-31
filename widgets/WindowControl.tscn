@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/WindowControl.gd" type="Script" id=1]
 
-[node name="WindowControl" type="Control" index="0"]
+[node name="WindowControl" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0

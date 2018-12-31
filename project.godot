@@ -12,6 +12,7 @@ config_version=3
 
 config/name="Zack's Dress Up 1½"
 run/main_scene="res://Splash.tscn"
+boot_splash/image="res://assets/game splash.png"
 config/icon="res://icon.png"
 
 [display]

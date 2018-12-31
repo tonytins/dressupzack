@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ts2nl shirt1.png-baea7a233917722e8613ed04a1d4ecb4.stex"
+path="res://.import/game splash.png-e86e0cec6e75a90aba695b23cd9d7cf2.stex"
 
 [deps]
 
-source_file="res://assets/ts2nl shirt1.png"
-dest_files=[ "res://.import/ts2nl shirt1.png-baea7a233917722e8613ed04a1d4ecb4.stex" ]
+source_file="res://assets/game splash.png"
+dest_files=[ "res://.import/game splash.png-e86e0cec6e75a90aba695b23cd9d7cf2.stex" ]
 
 [params]
 

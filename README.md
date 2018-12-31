@@ -4,7 +4,7 @@ Zack's Dress Up is a basic drag and drop-based dress up game written and designe
 
 I have high confidence that I'll be able to get around to developing a proper sequel with newer graphics and better game play mechenics sometime Q1 2019.
 
-You can download or download and donate at [Itch.io](https://antonwilc0x.itch.io/zdressup).
+Play, download or download and donate at [Itch.io](https://antonwilc0x.itch.io/zdressup).
 
 ## Screenshot
 

@@ -17,7 +17,7 @@
 [ext_resource path="res://assets/camera.png" type="Texture" id=15]
 [ext_resource path="res://assets/owo censor.png" type="Texture" id=16]
 
-[node name="Clothes" type="Node2D"]
+[node name="Clothes" type="Node2D" index="0"]
 
 [node name="Wordrobe" type="ReferenceRect" parent="." index="0"]
 
@@ -25,9 +25,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 205.0
-margin_top = 33.0
-margin_right = 771.0
+margin_left = 193.0
+margin_top = 17.0
+margin_right = 775.0
 margin_bottom = 527.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -274,10 +274,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 231.0
-margin_top = 304.0
-margin_right = 337.0
-margin_bottom = 516.0
+margin_left = 224.0
+margin_top = 303.0
+margin_right = 330.0
+margin_bottom = 515.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -299,10 +299,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 359.0
-margin_top = 328.0
-margin_right = 465.0
-margin_bottom = 519.0
+margin_left = 355.0
+margin_top = 332.0
+margin_right = 461.0
+margin_bottom = 523.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -324,9 +324,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 209.0
+margin_left = 205.0
 margin_top = 52.0
-margin_right = 376.0
+margin_right = 372.0
 margin_bottom = 276.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -376,10 +376,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 419.0
-margin_top = 97.0
-margin_right = 468.0
-margin_bottom = 159.0
+margin_left = 409.0
+margin_top = 96.0
+margin_right = 458.0
+margin_bottom = 158.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2

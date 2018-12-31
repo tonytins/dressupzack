@@ -1,5 +1,6 @@
 # Anthony Wilcox licenses this file to you under the GPL license.
 # See the LICENSE file in the project root for more information.
+tool 
 extends Control
 
 const DEFUALT_CONTENT_HEIGHT = 216
@@ -21,7 +22,7 @@ func _ready():
 		$WindowFrame.rect_size = Vector2(351, 33 + content_height)
 	else:
 		$WindowFrame/ContentFrame/ContentPanel.rect_size = DEFUALT_PANEL_SIZE
-		
+	
 	update()
 
 

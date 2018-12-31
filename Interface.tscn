@@ -25,9 +25,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 7.0
-margin_right = 799.0
-margin_bottom = 35.0
+margin_left = 11.0
+margin_top = 27.0
+margin_right = 165.0
+margin_bottom = 161.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -35,7 +36,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="HozContainer" type="HBoxContainer" parent="ReferenceRect" index="0"]
+[node name="VertContainer" type="VBoxContainer" parent="ReferenceRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -53,38 +54,14 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="AboutBtn" type="Button" parent="ReferenceRect/HozContainer" index="0"]
+[node name="ScreenshotBtn" type="Button" parent="ReferenceRect/VertContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 50.0
-margin_bottom = 22.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "About"
-flat = false
-align = 1
-
-[node name="ScreenshotBtn" type="Button" parent="ReferenceRect/HozContainer" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 54.0
-margin_right = 137.0
-margin_bottom = 22.0
+margin_right = 147.0
+margin_bottom = 20.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -100,15 +77,39 @@ text = "Screenshot"
 flat = false
 align = 1
 
-[node name="CreditsBtn" type="Button" parent="ReferenceRect/HozContainer" index="2"]
+[node name="AboutBtn" type="Button" parent="ReferenceRect/VertContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 141.0
-margin_right = 198.0
-margin_bottom = 22.0
+margin_top = 24.0
+margin_right = 147.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "About"
+flat = false
+align = 1
+
+[node name="CreditsBtn" type="Button" parent="ReferenceRect/VertContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 48.0
+margin_right = 147.0
+margin_bottom = 68.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -124,10 +125,10 @@ text = "Credits"
 flat = false
 align = 1
 
-[connection signal="pressed" from="ReferenceRect/HozContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[connection signal="pressed" from="ReferenceRect/VertContainer/ScreenshotBtn" to="." method="_on_ScreenshotBtn_pressed"]
 
-[connection signal="pressed" from="ReferenceRect/HozContainer/ScreenshotBtn" to="." method="_on_ScreenshotBtn_pressed"]
+[connection signal="pressed" from="ReferenceRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
-[connection signal="pressed" from="ReferenceRect/HozContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+[connection signal="pressed" from="ReferenceRect/VertContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 
 

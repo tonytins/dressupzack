@@ -2,7 +2,7 @@
 
 [ext_resource path="res://widgets/WindowControl.tscn" type="PackedScene" id=1]
 
-[node name="Credits" type="Node" index="0"]
+[node name="Credits" type="Node"]
 
 [node name="WindowControl" parent="." index="0" instance=ExtResource( 1 )]
 

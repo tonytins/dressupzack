@@ -8,6 +8,6 @@
 
 toolbar_title = "Coming Soon"
 content_text = "This feature has not been implemented yet."
-panel_height = 30
+content_height = 30
 
 

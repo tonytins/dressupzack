@@ -1,20 +1,27 @@
 extends Control
 
-export var toolbar_title = "New Window"
+const DEFUALT_CONTENT_HEIGHT = 216
+const DEFUALT_PANEL_SIZE = Vector2(351, 216)
+
+export var toolbar_title = ""
 export var content_text = ""
-export var panel_height = 216
+export var content_height = DEFUALT_CONTENT_HEIGHT
 
 var drag_pos = null
 
 func _ready():
-	$WindowFrame/TitleBarFrame/TitleBar/TitleLbl.text = toolbar_title
-	$WindowFrame/ContentFrame/ContentTxt.text = content_text
-	$WindowFrame/ContentFrame/ContentPanel.rect_size = Vector2(350, panel_height)
-	$WindowFrame.rect_size = Vector2(351, 31 + panel_height)
-	update()
+	if toolbar_title and content_text != "":
+		$WindowFrame/TitleBarFrame/TitleBar/TitleLbl.text = toolbar_title
+		$WindowFrame/ContentFrame/ContentTxt.bbcode_text = content_text
 	
-func _process(delta):
-	pass
+	if $WindowFrame/ContentFrame/ContentPanel.rect_size <= DEFUALT_PANEL_SIZE:
+		$WindowFrame/ContentFrame/ContentPanel.rect_size = Vector2(351, content_height)
+		$WindowFrame.rect_size = Vector2(351, 33 + content_height)
+	else:
+		$WindowFrame/ContentFrame/ContentPanel.rect_size = DEFUALT_PANEL_SIZE
+		
+	update()
+
 
 func _on_TitleBar_gui_input(ev):
 	if ev is InputEventMouseButton:

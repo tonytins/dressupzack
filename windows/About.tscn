@@ -2,12 +2,17 @@
 
 [ext_resource path="res://widgets/WindowControl.tscn" type="PackedScene" id=1]
 
-[node name="ComingSoon" type="Node" index="0"]
+[node name="About" type="Node"]
 
 [node name="WindowControl" parent="." index="0" instance=ExtResource( 1 )]
 
 toolbar_title = "About"
-content_text = "Zack's Dress Up is a port and remake of ZC's Dress Up. Both created by Anthony Wilcox."
-panel_height = 50
+content_text = "Zack's Dress Up is a port and remake of ZC's Dress Up. Both created by Anthony Wilcox.
+
+This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/"
 
 

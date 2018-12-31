@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://widgets/WindowControl.tscn" type="PackedScene" id=1]
+
+[node name="Credits" type="Node"]
+
+[node name="WindowControl" parent="." index="0" instance=ExtResource( 1 )]
+
+toolbar_title = "Credits"
+content_text = "[center]Created by Anthony Wilcox
+
+Clothing inspired by
+Megawolf77
+Canon Rhode
+
+SixAM is a organization founded by Anthony Wilcox.
+[/center]"
+content_height = 217
+
+

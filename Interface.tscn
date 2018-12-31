@@ -100,8 +100,34 @@ text = "Screenshot"
 flat = false
 align = 1
 
+[node name="CreditsBtn" type="Button" parent="ReferenceRect/HozContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 141.0
+margin_right = 198.0
+margin_bottom = 22.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Credits"
+flat = false
+align = 1
+
 [connection signal="pressed" from="ReferenceRect/HozContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 [connection signal="pressed" from="ReferenceRect/HozContainer/ScreenshotBtn" to="." method="_on_ScreenshotBtn_pressed"]
+
+[connection signal="pressed" from="ReferenceRect/HozContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 
 

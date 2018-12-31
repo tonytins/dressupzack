@@ -3,10 +3,10 @@
 [ext_resource path="res://assets/dress up bg.png" type="Texture" id=1]
 [ext_resource path="res://assets/zack.png" type="Texture" id=2]
 [ext_resource path="res://Clothes.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Interface.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/lights.png" type="Texture" id=5]
+[ext_resource path="res://assets/lights.png" type="Texture" id=4]
+[ext_resource path="res://Interface.tscn" type="PackedScene" id=5]
 
-[node name="Window" type="Node2D"]
+[node name="Window" type="Node2D" index="0"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
@@ -23,12 +23,12 @@ __meta__ = {
 
 [node name="Clothes" parent="." index="2" instance=ExtResource( 3 )]
 
-[node name="Interface" parent="." index="3" instance=ExtResource( 4 )]
-
-[node name="Lights" type="Sprite" parent="." index="4"]
+[node name="Lights" type="Sprite" parent="." index="3"]
 
 position = Vector2( 477.823, 100.811 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Z Index" ]
+
+[node name="Interface" parent="." index="4" instance=ExtResource( 5 )]
 
 

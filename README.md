@@ -8,4 +8,4 @@ Play, download or download and donate at [Itch.io](https://antonwilc0x.itch.io/z
 
 ## Screenshot
 
-![](https://i.imgur.com/a2qcLxc.png)
+![](screenshot.png)

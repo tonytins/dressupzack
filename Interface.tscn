@@ -3,7 +3,7 @@
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
 [ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0

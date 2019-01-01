@@ -30,7 +30,7 @@ func _on_TitleBar_gui_input(ev):
 	if ev is InputEventMouseButton:
 		if ev.button_index == BUTTON_LEFT:
 			if ev.pressed:
-				drag_pos = get_global_mouse_position() - rect_position
+				drag_pos = get_global_mouse_position() - rect_global_position
 			else:
 				drag_pos = null
 		

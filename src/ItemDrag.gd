@@ -13,4 +13,4 @@ func _on_outfit_gui_input(ev):
 				item_pos = null
 				
 	if ev is InputEventMouseMotion and item_pos != null:
-		rect_position = get_global_mouse_position() - item_pos
+		rect_global_position = get_global_mouse_position() - item_pos

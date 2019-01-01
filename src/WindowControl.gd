@@ -36,7 +36,7 @@ func _on_TitleBar_gui_input(ev):
 		
 			
 	if ev is InputEventMouseMotion and drag_pos != null:
-		rect_position = get_global_mouse_position() - drag_pos
+		rect_global_position = get_global_mouse_position() - drag_pos
 
 func _on_CloseBtn_pressed():
 	hide()

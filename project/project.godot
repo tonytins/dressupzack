@@ -11,15 +11,21 @@ config_version=3
 [application]
 
 config/name="Zack's Dress Up 1½"
-run/main_scene="res://MainScreen.tscn"
+run/main_scene="res://GameScreen.tscn"
 boot_splash/image="res://assets/game splash.png"
 config/icon="res://icon.png"
+name_sv="Zacks klä upp 1½"
 
 [display]
 
 window/size/width=800
 window/size/height=554
 window/size/resizable=false
+
+[input]
+
+ui_test=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":true,"meta":false,"command":true,"pressed":false,"scancode":16777255,"unicode":0,"echo":false,"script":null)
+ ]
 
 [locale]
 

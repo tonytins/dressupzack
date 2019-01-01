@@ -3,8 +3,8 @@
 tool 
 extends Control
 
-const DEFUALT_CONTENT_HEIGHT = 216
-const DEFUALT_PANEL_SIZE = Vector2(351, 216)
+const DEFUALT_CONTENT_HEIGHT = 217
+const DEFUALT_PANEL_SIZE = Vector2(351, 217)
 
 export var toolbar_title = ""
 export var content_text = ""

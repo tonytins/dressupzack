@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
+[ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
 
 [node name="Interface" type="Control" index="0"]
 
@@ -54,14 +55,14 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="AboutBtn" type="Button" parent="ReferenceRect/VertContainer" index="0"]
+[node name="MusicBtn" type="CheckBox" parent="ReferenceRect/VertContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 147.0
-margin_bottom = 20.0
+margin_bottom = 24.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -69,13 +70,18 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-toggle_mode = false
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = true
+pressed = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "About"
+text = "Music"
 flat = false
-align = 1
+align = 0
+_sections_unfolded = [ "custom_colors" ]
 
 [node name="CreditsBtn" type="Button" parent="ReferenceRect/VertContainer" index="1"]
 
@@ -83,9 +89,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 24.0
+margin_top = 28.0
 margin_right = 147.0
-margin_bottom = 44.0
+margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -101,8 +107,44 @@ text = "Credits"
 flat = false
 align = 1
 
-[connection signal="pressed" from="ReferenceRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[node name="AboutBtn" type="Button" parent="ReferenceRect/VertContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 52.0
+margin_right = 147.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "About"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Music" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = ExtResource( 2 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[connection signal="toggled" from="ReferenceRect/VertContainer/MusicBtn" to="." method="_on_MusicBtn_toggled"]
 
 [connection signal="pressed" from="ReferenceRect/VertContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+
+[connection signal="pressed" from="ReferenceRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 

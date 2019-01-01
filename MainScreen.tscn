@@ -6,7 +6,7 @@
 [ext_resource path="res://Clothes.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Interface.tscn" type="PackedScene" id=5]
 
-[node name="MainScreen" type="Node2D" index="0"]
+[node name="MainScreen" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 

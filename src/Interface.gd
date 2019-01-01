@@ -14,3 +14,9 @@ func _on_AboutBtn_pressed():
 func _on_CreditsBtn_pressed():
 	var win_instance = credits_win.instance()
 	add_child(win_instance)
+
+func _on_MusicBtn_toggled(button_pressed):
+	if button_pressed == true:
+		$Music.play()
+	else:
+		$Music.stop()

@@ -6,7 +6,7 @@
 
 [node name="WindowControl" parent="." index="0" instance=ExtResource( 1 )]
 
-toolbar_title = "Credits"
+toolbar_title = "KCRE"
 content_text = "[center]Created by
 Anthony Wilcox
 

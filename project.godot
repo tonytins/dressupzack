@@ -21,6 +21,11 @@ window/size/width=800
 window/size/height=554
 window/size/resizable=false
 
+[locale]
+
+locale_filter=[ 1, [ "en", "sv" ] ]
+translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/local.sv.translation" )
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

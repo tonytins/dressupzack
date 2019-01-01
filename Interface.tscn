@@ -78,9 +78,9 @@ pressed = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Music"
+text = "KMUS"
 flat = false
-align = 0
+align = 1
 _sections_unfolded = [ "custom_colors" ]
 
 [node name="CreditsBtn" type="Button" parent="ReferenceRect/VertContainer" index="1"]
@@ -103,7 +103,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Credits"
+text = "KCRE"
 flat = false
 align = 1
 
@@ -127,7 +127,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "About"
+text = "KABO"
 flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]

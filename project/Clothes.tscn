@@ -17,7 +17,7 @@
 [ext_resource path="res://assets/camera.png" type="Texture" id=15]
 [ext_resource path="res://assets/owo censor.png" type="Texture" id=16]
 
-[node name="Clothes" type="Node2D" index="0"]
+[node name="Clothes" type="Node"]
 
 [node name="Wordrobe" type="ReferenceRect" parent="." index="0"]
 

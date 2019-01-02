@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
 [ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
+
+[sub_resource type="ButtonGroup" id=1]
+
+resource_local_to_scene = true
 
 [node name="Interface" type="Control"]
 
@@ -29,16 +33,16 @@ autoplay = true
 mix_target = 0
 bus = "Master"
 
-[node name="ReferenceRect" type="ReferenceRect" parent="." index="1"]
+[node name="RefRect" type="ReferenceRect" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 11.0
-margin_top = 27.0
+margin_top = 16.0
 margin_right = 165.0
-margin_bottom = 161.0
+margin_bottom = 178.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -46,7 +50,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="VertContainer" type="VBoxContainer" parent="ReferenceRect" index="0"]
+[node name="VertContainer" type="VBoxContainer" parent="RefRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -64,7 +68,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="MusicBtn" type="CheckBox" parent="ReferenceRect/VertContainer" index="0"]
+[node name="MusicBtn" type="CheckBox" parent="RefRect/VertContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -92,7 +96,32 @@ flat = false
 align = 1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="CreditsBtn" type="Button" parent="ReferenceRect/VertContainer" index="1"]
+[node name="SettingsBtn" type="Button" parent="RefRect/VertContainer" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 28.0
+margin_right = 147.0
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KSET"
+flat = false
+align = 1
+
+[node name="CreditsBtn" type="Button" parent="RefRect/VertContainer" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -116,7 +145,7 @@ text = "KCRE"
 flat = false
 align = 1
 
-[node name="AboutBtn" type="Button" parent="ReferenceRect/VertContainer" index="2"]
+[node name="AboutBtn" type="Button" parent="RefRect/VertContainer" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -270,10 +299,61 @@ selection_enabled = true
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
 
-[connection signal="toggled" from="ReferenceRect/VertContainer/MusicBtn" to="." method="_on_MusicBtn_toggled"]
+[node name="SettingsWin" type="AcceptDialog" parent="." index="4"]
 
-[connection signal="pressed" from="ReferenceRect/VertContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 242.0
+margin_top = 69.0
+margin_right = 379.0
+margin_bottom = 140.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+window_title = "KSET"
+resizable = false
+dialog_hide_on_ok = true
+_sections_unfolded = [ "Dialog" ]
 
-[connection signal="pressed" from="ReferenceRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[node name="Languages" type="MenuButton" parent="SettingsWin" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 129.0
+margin_bottom = 35.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = null
+group = SubResource( 1 )
+text = "Languages"
+flat = true
+align = 1
+items = [  ]
+
+[connection signal="toggled" from="RefRect/VertContainer/MusicBtn" to="." method="_on_MusicBtn_toggled"]
+
+[connection signal="pressed" from="RefRect/VertContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+
+[connection signal="pressed" from="RefRect/VertContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+
+[connection signal="pressed" from="RefRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 

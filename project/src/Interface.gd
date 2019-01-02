@@ -4,12 +4,16 @@ extends Control
  
 onready var about_win = $AboutWin
 onready var credits_win = $CreditsWin
+onready var settings_win = $SettingsWin
 
 func _on_AboutBtn_pressed():
 	about_win.show()
 	
 func _on_CreditsBtn_pressed():
 	credits_win.show()
+	
+func _on_SettingsBtn_pressed():
+	settings_win.show()
 
 func _on_MusicBtn_toggled(button_pressed):
 	if button_pressed == true:

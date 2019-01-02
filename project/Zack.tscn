@@ -1,0 +1,45 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/zack_base.png" type="Texture" id=1]
+[ext_resource path="res://assets/eyes/eyes1.png" type="Texture" id=2]
+[ext_resource path="res://assets/eyes/eyes2.png" type="Texture" id=3]
+[ext_resource path="res://assets/eyes/eyes3.png" type="Texture" id=4]
+[ext_resource path="res://assets/eyes/eyes4.png" type="Texture" id=5]
+[ext_resource path="res://assets/eyes/eyes5.png" type="Texture" id=6]
+[ext_resource path="res://assets/eyes/eyes6.png" type="Texture" id=7]
+[ext_resource path="res://assets/eyes/eyes7.png" type="Texture" id=8]
+[ext_resource path="res://assets/mouth/mouth.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Zack" type="Node2D" index="0"]
+
+[node name="Base" type="Sprite" parent="." index="0"]
+
+position = Vector2( 92.6446, 354.064 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Eyes" type="AnimatedSprite" parent="." index="1"]
+
+position = Vector2( 109.519, 255.9 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 3
+playing = true
+
+[node name="Mouth" type="Sprite" parent="." index="2"]
+
+position = Vector2( 98.4389, 276.779 )
+texture = ExtResource( 9 )
+
+

@@ -2,13 +2,13 @@
 
 [ext_resource path="res://src/GameScreen.gd" type="Script" id=1]
 [ext_resource path="res://assets/dress up bg.png" type="Texture" id=2]
-[ext_resource path="res://assets/zack.png" type="Texture" id=3]
-[ext_resource path="res://assets/lights.png" type="Texture" id=4]
+[ext_resource path="res://assets/lights.png" type="Texture" id=3]
+[ext_resource path="res://Zack.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Clothes.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Shell.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Interface.tscn" type="PackedScene" id=7]
 
-[node name="GameScreen" type="Node2D"]
+[node name="GameScreen" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -20,22 +20,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Zack" type="Sprite" parent="." index="1"]
-
-position = Vector2( 85, 352 )
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Lights" type="Sprite" parent="." index="2"]
+[node name="Lights" type="Sprite" parent="." index="1"]
 
 position = Vector2( 477.823, 100.811 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Z Index" ]
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Zack" parent="." index="2" instance=ExtResource( 4 )]
 
 [node name="Clothes" parent="." index="3" instance=ExtResource( 5 )]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zack.png-74318faf97fac49ca9782014f761fb29.stex"
+path="res://.import/korm_shirt.png-3d26ee9fe93558323bae3b6acd03f1ef.stex"
 
 [deps]
 
-source_file="res://assets/zack.png"
-dest_files=[ "res://.import/zack.png-74318faf97fac49ca9782014f761fb29.stex" ]
+source_file="res://assets/korm_shirt.png"
+dest_files=[ "res://.import/korm_shirt.png-3d26ee9fe93558323bae3b6acd03f1ef.stex" ]
 
 [params]
 

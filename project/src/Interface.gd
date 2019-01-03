@@ -7,7 +7,6 @@ onready var credits_win = $CreditsWin
 onready var settings_win = $SettingsWin
 
 func _on_AboutBtn_pressed():
-	
 	about_win.show()
 	
 func _on_CreditsBtn_pressed():

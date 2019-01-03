@@ -1,4 +1,10 @@
 ,en,sv
+KENG,English,Engelsk
+KSWD,Swedish,Svenska
+KBOT,Pants,Byxor
+KTOP,Shirts,Skjorta
+KUND,Underwear,Underkläder
+KCLR,Clear,Klar
 KMUS,Music,Musik
 KCRE,Credits,Eftertexter
 KABO,About,Handla om
@@ -6,5 +12,3 @@ KSOO,Coming Soon,Kommer snart
 KHELP,Help,Hjälp
 KSET,Settings,Inställningar
 KLANG,Languages,Språk
-KENG,English,Engelsk
-KSWD,Swedish,Svenska

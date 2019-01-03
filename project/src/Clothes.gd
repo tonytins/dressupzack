@@ -3,7 +3,7 @@
 extends Node
 
 onready var bottoms = load("res://assets/bottoms_placeholder.png")
-onready var undies = load("res://assets/zbriefs.png")
+onready var undies = load("res://assets/briefs.png")
 onready var tops = load("res://assets/tops_placeholder.png")
 
 func change_bottoms(new_bottom):
@@ -19,10 +19,6 @@ func change_bottoms(new_bottom):
 	
 func change_undies(new_undies):
 	undies = new_undies
-	
-	if new_undies == null:
-		$Body/Undies.texture = undies
-
 	$Body/Undies.texture = undies
 
 func change_tops(new_top):
@@ -63,6 +59,9 @@ func _on_Raw_pressed():
 
 func _on_Atomic_pressed():
 	change_tops(load("res://assets/atomic_shirt.png"))
+	
+func _on_Korm_Shirt_pressed():
+	change_tops(load("res://assets/korm_shirt.png"))
 
 func _on_Z_Shirt_pressed():
 	change_tops(load("res://assets/z_shirt.png"))
@@ -78,5 +77,5 @@ func _on_NL_Jacket_pressed():
 
 func _on_ClearBtn_pressed():
 	change_bottoms(null)
-	change_undies(null)
+	change_undies(load("res://assets/briefs.png"))
 	change_tops(null)

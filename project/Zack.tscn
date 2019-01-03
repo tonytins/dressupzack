@@ -54,25 +54,23 @@ animations = [ {
 
 [node name="Tail" type="AnimatedSprite" parent="." index="0"]
 
-position = Vector2( 50.6951, 374.417 )
+position = Vector2( 49.6951, 374.417 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 6
+frame = 3
 playing = true
 
 [node name="Base" type="Sprite" parent="." index="1"]
 
-position = Vector2( 92.6446, 354.064 )
+position = Vector2( 91.6446, 354.064 )
 texture = ExtResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Eyes" type="AnimatedSprite" parent="." index="2"]
 
 position = Vector2( 109.519, 255.9 )
 frames = SubResource( 2 )
 animation = "default"
+frame = 2
 playing = true
 
 [node name="Mouth" type="AnimatedSprite" parent="." index="3"]
@@ -80,7 +78,7 @@ playing = true
 position = Vector2( 126.316, 257.474 )
 frames = SubResource( 3 )
 animation = "default"
-frame = 15
+frame = 18
 playing = true
 
 

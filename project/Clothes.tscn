@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/Clothes.gd" type="Script" id=1]
 [ext_resource path="res://assets/DressUp.theme" type="Theme" id=2]
@@ -13,13 +13,14 @@
 [ext_resource path="res://assets/z_shirt.png" type="Texture" id=11]
 [ext_resource path="res://assets/biker_jacket.png" type="Texture" id=12]
 [ext_resource path="res://assets/nl_jacket.png" type="Texture" id=13]
-[ext_resource path="res://assets/briefs.png" type="Texture" id=14]
-[ext_resource path="res://assets/zbriefs.png" type="Texture" id=15]
-[ext_resource path="res://assets/owo_censor.png" type="Texture" id=16]
-[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=17]
-[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=18]
+[ext_resource path="res://assets/korm_shirt.png" type="Texture" id=14]
+[ext_resource path="res://assets/briefs.png" type="Texture" id=15]
+[ext_resource path="res://assets/zbriefs.png" type="Texture" id=16]
+[ext_resource path="res://assets/owo_censor.png" type="Texture" id=17]
+[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=18]
+[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=19]
 
-[node name="Clothes" type="Node" index="0"]
+[node name="Clothes" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -30,9 +31,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 211.0
-margin_top = 9.0
+margin_top = 30.0
 margin_right = 794.0
-margin_bottom = 447.0
+margin_bottom = 460.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -49,9 +50,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 13.0
-margin_top = 4.0
+margin_top = 12.0
 margin_right = 575.0
-margin_bottom = 431.0
+margin_bottom = 417.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -64,6 +65,7 @@ _sections_unfolded = [ "Theme" ]
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe" index="0"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -78,10 +80,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-theme = ExtResource( 2 )
 tab_align = 1
 scrolling_enabled = true
-_sections_unfolded = [ "Theme" ]
+_sections_unfolded = [ "Theme", "custom_icons" ]
 
 [node name="PantsGrid" type="GridContainer" parent="RefRect/Wordrobe/Pants" index="0"]
 
@@ -89,8 +90,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 551.0
-margin_bottom = 112.0
+margin_left = 2.0
+margin_right = 559.0
+margin_bottom = 330.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -192,7 +194,6 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="Shirts" type="Tabs" parent="RefRect/Wordrobe" index="1"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -374,7 +375,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 119.0
 margin_right = 85.0
-margin_bottom = 229.0
+margin_bottom = 234.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -387,6 +388,30 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 13 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Korm Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 89.0
+margin_top = 119.0
+margin_right = 174.0
+margin_bottom = 234.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 14 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Underwear" type="Tabs" parent="RefRect/Wordrobe" index="2"]
@@ -444,7 +469,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 15 )
 
 [node name="ZBriefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="1"]
 
@@ -466,7 +491,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="OwO Censor" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="2"]
@@ -489,7 +514,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 16 )
+texture_normal = ExtResource( 17 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="ClearBtn" type="Button" parent="RefRect" index="1"]
@@ -498,10 +523,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 514.0
-margin_top = 4.0
+margin_left = 504.0
+margin_top = 9.0
 margin_right = 575.0
-margin_bottom = 24.0
+margin_bottom = 29.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -513,7 +538,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Clear"
+text = "KCLR"
 flat = false
 align = 1
 
@@ -524,7 +549,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 26.0
-margin_top = 282.0
+margin_top = 285.0
 margin_right = 144.0
 margin_bottom = 519.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -537,17 +562,17 @@ size_flags_vertical = 1
 [node name="Undies" type="Sprite" parent="Body" index="0"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="Bottom" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
 [node name="Top" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 65.0597, 65.3242 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [connection signal="pressed" from="RefRect/Wordrobe/Pants/PantsGrid/Jeans" to="." method="_on_Jeans_pressed"]
 
@@ -570,6 +595,8 @@ texture = ExtResource( 18 )
 [connection signal="pressed" from="RefRect/Wordrobe/Shirts/ShirtsGrid/Biker Jacket" to="." method="_on_Biker_Jacket_pressed"]
 
 [connection signal="pressed" from="RefRect/Wordrobe/Shirts/ShirtsGrid/NL Jacket" to="." method="_on_NL_Jacket_pressed"]
+
+[connection signal="pressed" from="RefRect/Wordrobe/Shirts/ShirtsGrid/Korm Shirt" to="." method="_on_Korm_Shirt_pressed"]
 
 [connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/Briefs" to="." method="_on_Briefs_pressed"]
 

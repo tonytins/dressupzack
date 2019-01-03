@@ -3,13 +3,13 @@
 [ext_resource path="res://src/Clothes.gd" type="Script" id=1]
 [ext_resource path="res://assets/DressUp.theme" type="Theme" id=2]
 [ext_resource path="res://assets/jeans.png" type="Texture" id=3]
-[ext_resource path="res://assets/dj shorts.png" type="Texture" id=4]
-[ext_resource path="res://assets/sweat pants.png" type="Texture" id=5]
+[ext_resource path="res://assets/dj_shorts.png" type="Texture" id=4]
+[ext_resource path="res://assets/sweat_pants.png" type="Texture" id=5]
 [ext_resource path="res://assets/beat_up_jeans.png" type="Texture" id=6]
 [ext_resource path="res://assets/old_sweatshirt.png" type="Texture" id=7]
-[ext_resource path="res://assets/dj shirt.png" type="Texture" id=8]
-[ext_resource path="res://assets/raw shirt.png" type="Texture" id=9]
-[ext_resource path="res://assets/atomic shirt.png" type="Texture" id=10]
+[ext_resource path="res://assets/dj_shirt.png" type="Texture" id=8]
+[ext_resource path="res://assets/raw_shirt.png" type="Texture" id=9]
+[ext_resource path="res://assets/atomic_shirt.png" type="Texture" id=10]
 [ext_resource path="res://assets/z_shirt.png" type="Texture" id=11]
 [ext_resource path="res://assets/biker_jacket.png" type="Texture" id=12]
 [ext_resource path="res://assets/nl_jacket.png" type="Texture" id=13]
@@ -65,7 +65,6 @@ _sections_unfolded = [ "Theme" ]
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe" index="0"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -194,6 +193,7 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="Shirts" type="Tabs" parent="RefRect/Wordrobe" index="1"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0

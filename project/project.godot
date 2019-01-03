@@ -13,7 +13,7 @@ config_version=3
 config/name="Zack's Dress Up"
 run/main_scene="res://GameScreen.tscn"
 config/use_custom_user_dir=true
-boot_splash/image="res://assets/game splash.png"
+boot_splash/image="res://assets/game_splash.png"
 config/icon="res://icon.png"
 name_sv="Zacks klä upp"
 
@@ -36,5 +36,6 @@ translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/loc
 [rendering]
 
 quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/undies.png-d1e15c3ac249edf85b31519207ed7c5b.stex"
+path="res://.import/dj_shirt.png-d121fed1a5108f3c2405dd43dfded055.stex"
 
 [deps]
 
-source_file="res://assets/undies.png"
-dest_files=[ "res://.import/undies.png-d1e15c3ac249edf85b31519207ed7c5b.stex" ]
+source_file="res://assets/dj_shirt.png"
+dest_files=[ "res://.import/dj_shirt.png-d121fed1a5108f3c2405dd43dfded055.stex" ]
 
 [params]
 

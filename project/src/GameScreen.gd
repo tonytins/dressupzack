@@ -16,7 +16,7 @@ func shell_interface():
 			cmdl.text = ""
 		shell.show()
 	
-	if cmdl.text == "help"and Input.is_key_pressed(KEY_ENTER):
+	if cmdl.text == "help" and Input.is_key_pressed(KEY_ENTER):
 		cmdl_help.show()
 	elif cmdl.text == "settings" and  Input.is_key_pressed(KEY_ENTER):
 		settingsWin.show()

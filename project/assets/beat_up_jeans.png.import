@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trench_coat.png-49504ebabbed78ee7882c0bd629e8f63.stex"
+path="res://.import/beat_up_jeans.png-838d665419522e21a8b4693229d0a65e.stex"
 
 [deps]
 
-source_file="res://assets/trench_coat.png"
-dest_files=[ "res://.import/trench_coat.png-49504ebabbed78ee7882c0bd629e8f63.stex" ]
+source_file="res://assets/beat_up_jeans.png"
+dest_files=[ "res://.import/beat_up_jeans.png-838d665419522e21a8b4693229d0a65e.stex" ]
 
 [params]
 

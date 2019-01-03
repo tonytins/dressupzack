@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snowboard_coat.png-ac37e5f55d9897ed3299c3aca9f97ada.stex"
+path="res://.import/15_dress_up_bg.png-539edf16398b672e4b3f5a1602dc2b98.stex"
 
 [deps]
 
-source_file="res://assets/snowboard_coat.png"
-dest_files=[ "res://.import/snowboard_coat.png-ac37e5f55d9897ed3299c3aca9f97ada.stex" ]
+source_file="res://assets/15_dress_up_bg.png"
+dest_files=[ "res://.import/15_dress_up_bg.png-539edf16398b672e4b3f5a1602dc2b98.stex" ]
 
 [params]
 

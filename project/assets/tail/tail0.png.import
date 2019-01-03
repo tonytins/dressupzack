@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sixam.png-86f028bb567165a6240e42442182172e.stex"
+path="res://.import/tail0.png-8e0ab14f54b7c6d3ffdcde1f27b47bc2.stex"
 
 [deps]
 
-source_file="res://assets/sixam.png"
-dest_files=[ "res://.import/sixam.png-86f028bb567165a6240e42442182172e.stex" ]
+source_file="res://assets/tail/tail0.png"
+dest_files=[ "res://.import/tail0.png-8e0ab14f54b7c6d3ffdcde1f27b47bc2.stex" ]
 
 [params]
 

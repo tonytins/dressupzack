@@ -3,7 +3,7 @@
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
 [ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -35,10 +35,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 11.0
+margin_left = 16.0
 margin_top = 16.0
-margin_right = 165.0
-margin_bottom = 178.0
+margin_right = 179.0
+margin_bottom = 95.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -55,7 +55,7 @@ anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 3.0
 margin_right = -3.0
-margin_bottom = -3.0
+margin_bottom = -85.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -70,7 +70,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 147.0
+margin_right = 156.0
 margin_bottom = 20.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -94,7 +94,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 24.0
-margin_right = 147.0
+margin_right = 156.0
 margin_bottom = 44.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -118,7 +118,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 48.0
-margin_right = 147.0
+margin_right = 156.0
 margin_bottom = 68.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -175,13 +175,19 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-bbcode_enabled = false
-bbcode_text = ""
+bbcode_enabled = true
+bbcode_text = "Zack's Dress Up is a dress up game created by Anthony Wilcox.
+
+This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/"
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "Zack's Dress Up is a port of ZC's Dress Up, both created by Anthony Wilcox.
+text = "Zack's Dress Up is a dress up game created by Anthony Wilcox.
 
 This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
@@ -270,6 +276,7 @@ _sections_unfolded = [ "BBCode" ]
 
 [node name="SettingsWin" type="AcceptDialog" parent="." index="4"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0

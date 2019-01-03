@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/camera.png-817ece2b3822eb2be7786670b43f8a42.stex"
+path="res://.import/nl_jacket.png-fccc2e9afa0a716db647bed3f1c5ddf7.stex"
 
 [deps]
 
-source_file="res://assets/camera.png"
-dest_files=[ "res://.import/camera.png-817ece2b3822eb2be7786670b43f8a42.stex" ]
+source_file="res://assets/nl_jacket.png"
+dest_files=[ "res://.import/nl_jacket.png-fccc2e9afa0a716db647bed3f1c5ddf7.stex" ]
 
 [params]
 

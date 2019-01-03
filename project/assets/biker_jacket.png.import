@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jp_school_girl.png-3327135d27f4173adc771bbdc1467cbf.stex"
+path="res://.import/biker_jacket.png-37525402abc6d2f5c512c374bb0d74cd.stex"
 
 [deps]
 
-source_file="res://assets/jp_school_girl.png"
-dest_files=[ "res://.import/jp_school_girl.png-3327135d27f4173adc771bbdc1467cbf.stex" ]
+source_file="res://assets/biker_jacket.png"
+dest_files=[ "res://.import/biker_jacket.png-37525402abc6d2f5c512c374bb0d74cd.stex" ]
 
 [params]
 

@@ -74,8 +74,20 @@ func _on_Beat_Up_Jeans_pressed():
 
 func _on_NL_Jacket_pressed():
 	change_tops(load("res://assets/nl_jacket.png"))
+	
+func _on_Blue_Camo_Jeans_pressed():
+	change_bottoms(load("res://assets/blue_camo_jeans.png"))
 
 func _on_ClearBtn_pressed():
 	change_bottoms(null)
 	change_undies(load("res://assets/briefs.png"))
 	change_tops(null)
+
+func _on_Whats_New_Shirt_pressed():
+	change_tops(load("res://assets/whatsnew_shirt.png"))
+
+func _on_Remove_Shirt_pressed():
+	change_tops(null)
+
+func _on_Remove_Pants_pressed():
+	change_bottoms(null)

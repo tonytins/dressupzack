@@ -2,21 +2,23 @@
 # See the LICENSE file in the project root for more information.
 extends Control
  
-onready var about_win = $AboutWin
-onready var credits_win = $CreditsWin
-onready var settings_win = $SettingsWin
-
 func _on_AboutBtn_pressed():
-	about_win.show()
+	$AboutWin.show()
 	
 func _on_CreditsBtn_pressed():
-	credits_win.show()
+	$CreditsWin.show()
 	
 func _on_SettingsBtn_pressed():
-	settings_win.show()
+	$SettingsWin.show()
+	
+func _on_LicenseBtn_pressed():
+	$LicenseWin.show()
+
+func _on_CloseAbtBtn_pressed():
+	$AboutWin.hide()
 
 func _on_MusicBtn_toggled(button_pressed):
 	if button_pressed == true:
-		$Music.play()
+		$Music.playing = true
 	else:
-		$Music.stop()
+		$Music.playing = false

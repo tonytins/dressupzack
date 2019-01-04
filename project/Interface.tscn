@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
-[ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
+[ext_resource path="res://music/song.ogg" type="AudioStream" id=2]
 
 [node name="Interface" type="Control"]
 
@@ -25,11 +25,11 @@ script = ExtResource( 1 )
 stream = ExtResource( 2 )
 volume_db = 0.0
 pitch_scale = 1.0
-autoplay = false
+autoplay = true
 mix_target = 0
 bus = "Master"
 
-[node name="RefRect" type="ReferenceRect" parent="." index="1"]
+[node name="GMRefRect" type="ReferenceRect" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -47,7 +47,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
-[node name="GPanel" type="Panel" parent="RefRect" index="0"]
+[node name="GPanel" type="Panel" parent="GMRefRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -60,7 +60,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="RefRect/GPanel" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="GMRefRect/GPanel" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -74,7 +74,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="SettingsBtn" type="Button" parent="RefRect/GPanel/HBoxContainer" index="0"]
+[node name="SettingsBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -97,7 +97,7 @@ text = "KSET"
 flat = true
 align = 1
 
-[node name="CreditsBtn" type="Button" parent="RefRect/GPanel/HBoxContainer" index="1"]
+[node name="CreditsBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -121,7 +121,7 @@ text = "KCRE"
 flat = true
 align = 1
 
-[node name="AboutBtn" type="Button" parent="RefRect/GPanel/HBoxContainer" index="2"]
+[node name="AboutBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -146,17 +146,18 @@ flat = true
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="AboutWin" type="AcceptDialog" parent="." index="2"]
+[node name="AboutWin" type="WindowDialog" parent="." index="2"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 260.0
-margin_top = 132.0
-margin_right = 608.0
-margin_bottom = 400.0
+margin_left = 199.0
+margin_top = 229.0
+margin_right = 620.0
+margin_bottom = 301.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -166,49 +167,114 @@ size_flags_vertical = 1
 popup_exclusive = false
 window_title = "KABO"
 resizable = false
-dialog_hide_on_ok = true
+_sections_unfolded = [ "Dialog", "Rect" ]
 
-[node name="AboutTxt" type="RichTextLabel" parent="AboutWin" index="3"]
+[node name="AboutRefRect" type="ReferenceRect" parent="AboutWin" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 8.0
-margin_top = 8.0
-margin_right = -8.0
-margin_bottom = -36.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="AboutTxt" type="RichTextLabel" parent="AboutWin/AboutRefRect" index="0"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -415.0
+margin_top = -68.0
+margin_right = -5.0
+margin_bottom = -34.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Zack's Dress Up is a dress up game created by Anthony Wilcox."
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+
+[node name="AboutBtnHBox" type="HBoxContainer" parent="AboutWin/AboutRefRect" index="1"]
+
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -28.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+_sections_unfolded = [ "Margin", "Rect" ]
+
+[node name="LicenseBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 173.0
+margin_right = 213.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-bbcode_enabled = true
-bbcode_text = "Zack's Dress Up is a dress up game created by Anthony Wilcox.
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KLIC"
+flat = false
+align = 1
 
-This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+[node name="CloseAbtBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="1"]
 
-Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/"
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = "Zack's Dress Up is a dress up game created by Anthony Wilcox.
-
-This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
-Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/"
-scroll_active = true
-scroll_following = false
-selection_enabled = true
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode" ]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 217.0
+margin_right = 247.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Ok"
+flat = false
+align = 1
 
 [node name="CreditsWin" type="AcceptDialog" parent="." index="3"]
 
@@ -253,6 +319,9 @@ bbcode_enabled = true
 bbcode_text = "[center]Created by
 Anthony Wilcox
 
+Music by
+Augmentality
+
 Clothing inspired by
 Megawolf77
 Canon Rhode
@@ -268,6 +337,9 @@ meta_underlined = true
 tab_size = 4
 text = "Created by
 Anthony Wilcox
+
+Music by
+Augmentality
 
 Clothing inspired by
 Megawolf77
@@ -286,15 +358,16 @@ _sections_unfolded = [ "BBCode" ]
 
 [node name="SettingsWin" type="AcceptDialog" parent="." index="4"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 241.0
-margin_top = 186.0
-margin_right = 382.0
-margin_bottom = 254.0
+margin_left = 320.0
+margin_top = 211.0
+margin_right = 472.0
+margin_bottom = 279.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -313,9 +386,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -62.5
+margin_left = -68.0
 margin_top = -26.0
-margin_right = 62.5
+margin_right = 68.0
 margin_bottom = -2.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -323,7 +396,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-columns = 2
+columns = 3
 
 [node name="Languages" type="MenuButton" parent="SettingsWin/Grid" index="0"]
 
@@ -358,8 +431,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 60.0
-margin_right = 125.0
+margin_right = 65.0
 margin_bottom = 24.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -369,6 +441,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = true
+pressed = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
@@ -376,11 +449,96 @@ text = "KMUS"
 flat = false
 align = 1
 
-[connection signal="pressed" from="RefRect/GPanel/HBoxContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+[node name="LicenseWin" type="AcceptDialog" parent="." index="5"]
 
-[connection signal="pressed" from="RefRect/GPanel/HBoxContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 209.0
+margin_top = 129.0
+margin_right = 613.0
+margin_bottom = 404.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+window_title = "KLIC"
+resizable = false
+dialog_hide_on_ok = true
+_sections_unfolded = [ "Dialog" ]
 
-[connection signal="pressed" from="RefRect/GPanel/HBoxContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[node name="LicenseTxt" type="RichTextLabel" parent="LicenseWin" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 396.0
+margin_bottom = 239.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = true
+bbcode_text = "Zack's Dress Up is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/
+
+[center]##########################[/center]
+
+Zack's Dress Up (c) by Anthony Wilcox
+
+Zack's Dress Up is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this work. 
+If not, see <http://creativecommons.org/licenses/by-sa/4.0/>."
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Zack's Dress Up is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/
+
+##########################
+
+Zack's Dress Up (c) by Anthony Wilcox
+
+Zack's Dress Up is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this work. 
+If not, see <http://creativecommons.org/licenses/by-sa/4.0/>."
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode" ]
+
+[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+
+[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+
+[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+
+[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]
+
+[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/CloseAbtBtn" to="." method="_on_CloseAbtBtn_pressed"]
 
 [connection signal="toggled" from="SettingsWin/Grid/MusicBtn" to="." method="_on_MusicBtn_toggled"]
 

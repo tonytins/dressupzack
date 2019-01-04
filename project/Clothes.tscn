@@ -1,38 +1,38 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/Clothes.gd" type="Script" id=1]
 [ext_resource path="res://assets/dressup_wardrobe.png" type="Texture" id=2]
-[ext_resource path="res://assets/DressUp.theme" type="Theme" id=3]
-[ext_resource path="res://assets/jeans.png" type="Texture" id=4]
-[ext_resource path="res://assets/dj_shorts.png" type="Texture" id=5]
-[ext_resource path="res://assets/sweat_pants.png" type="Texture" id=6]
-[ext_resource path="res://assets/blue_camo_jeans.png" type="Texture" id=7]
-[ext_resource path="res://assets/beat_up_jeans.png" type="Texture" id=8]
-[ext_resource path="res://assets/old_sweatshirt.png" type="Texture" id=9]
-[ext_resource path="res://assets/dj_shirt.png" type="Texture" id=10]
-[ext_resource path="res://assets/raw_shirt.png" type="Texture" id=11]
-[ext_resource path="res://assets/atomic_shirt.png" type="Texture" id=12]
-[ext_resource path="res://assets/z_shirt.png" type="Texture" id=13]
-[ext_resource path="res://assets/biker_jacket.png" type="Texture" id=14]
-[ext_resource path="res://assets/nl_jacket.png" type="Texture" id=15]
-[ext_resource path="res://assets/train_hoodie.png" type="Texture" id=16]
-[ext_resource path="res://assets/korm_shirt.png" type="Texture" id=17]
-[ext_resource path="res://assets/whatsnew_shirt.png" type="Texture" id=18]
-[ext_resource path="res://assets/briefs.png" type="Texture" id=19]
-[ext_resource path="res://assets/zbriefs.png" type="Texture" id=20]
-[ext_resource path="res://assets/owo_censor.png" type="Texture" id=21]
-[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=22]
-[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=23]
+[ext_resource path="res://assets/lights.png" type="Texture" id=3]
+[ext_resource path="res://assets/DressUp.theme" type="Theme" id=4]
+[ext_resource path="res://assets/jeans.png" type="Texture" id=5]
+[ext_resource path="res://assets/dj_shorts.png" type="Texture" id=6]
+[ext_resource path="res://assets/sweat_pants.png" type="Texture" id=7]
+[ext_resource path="res://assets/blue_camo_jeans.png" type="Texture" id=8]
+[ext_resource path="res://assets/beat_up_jeans.png" type="Texture" id=9]
+[ext_resource path="res://assets/old_sweatshirt.png" type="Texture" id=10]
+[ext_resource path="res://assets/dj_shirt.png" type="Texture" id=11]
+[ext_resource path="res://assets/raw_shirt.png" type="Texture" id=12]
+[ext_resource path="res://assets/atomic_shirt.png" type="Texture" id=13]
+[ext_resource path="res://assets/z_shirt.png" type="Texture" id=14]
+[ext_resource path="res://assets/biker_jacket.png" type="Texture" id=15]
+[ext_resource path="res://assets/nl_jacket.png" type="Texture" id=16]
+[ext_resource path="res://assets/train_hoodie.png" type="Texture" id=17]
+[ext_resource path="res://assets/korm_shirt.png" type="Texture" id=18]
+[ext_resource path="res://assets/whatsnew_shirt.png" type="Texture" id=19]
+[ext_resource path="res://assets/briefs.png" type="Texture" id=20]
+[ext_resource path="res://assets/zbriefs.png" type="Texture" id=21]
+[ext_resource path="res://assets/owo_censor.png" type="Texture" id=22]
+[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=23]
+[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=24]
 
 [sub_resource type="StyleBoxEmpty" id=3]
 
-content_margin_left = 5.0
-content_margin_right = 5.0
-content_margin_top = 5.0
-content_margin_bottom = 10.0
-_sections_unfolded = [ "Content Margin" ]
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 
-[sub_resource type="StyleBoxEmpty" id=1]
+[sub_resource type="StyleBoxEmpty" id=4]
 
 resource_local_to_scene = true
 content_margin_left = 5.0
@@ -41,7 +41,7 @@ content_margin_top = 5.0
 content_margin_bottom = 10.0
 _sections_unfolded = [ "Content Margin", "Resource" ]
 
-[sub_resource type="StyleBoxEmpty" id=2]
+[sub_resource type="StyleBoxEmpty" id=5]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -56,8 +56,19 @@ script = ExtResource( 1 )
 
 position = Vector2( 492.609, 279.27 )
 texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="RefRect" type="ReferenceRect" parent="." index="1"]
+[node name="Lights" type="Sprite" parent="." index="1"]
+
+position = Vector2( 485.001, 133 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RefRect" type="ReferenceRect" parent="." index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -73,7 +84,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 _sections_unfolded = [ "Theme" ]
 
 [node name="Wordrobe" type="TabContainer" parent="RefRect" index="0"]
@@ -93,8 +104,8 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_styles/tab_fg = SubResource( 3 )
-custom_styles/tab_bg = SubResource( 1 )
-custom_styles/panel = SubResource( 2 )
+custom_styles/tab_bg = SubResource( 4 )
+custom_styles/panel = SubResource( 5 )
 custom_colors/font_color_bg = Color( 1, 1, 1, 1 )
 custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
 tab_align = 0
@@ -157,7 +168,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 4 )
+texture_normal = ExtResource( 5 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="DJ Shorts" type="TextureButton" parent="RefRect/Wordrobe/Pants/PantsGrid" index="1"]
@@ -180,7 +191,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Textures" ]
 
 [node name="Sweats" type="TextureButton" parent="RefRect/Wordrobe/Pants/PantsGrid" index="2"]
@@ -203,7 +214,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 6 )
+texture_normal = ExtResource( 7 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Blue Camo Jeans" type="TextureButton" parent="RefRect/Wordrobe/Pants/PantsGrid" index="3"]
@@ -226,7 +237,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 7 )
+texture_normal = ExtResource( 8 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Beat Up Jeans" type="TextureButton" parent="RefRect/Wordrobe/Pants/PantsGrid" index="4"]
@@ -249,7 +260,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 8 )
+texture_normal = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Remove Pants" type="Button" parent="RefRect/Wordrobe/Pants/PantsGrid" index="5"]
@@ -289,7 +300,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 10.0
+margin_top = 29.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -338,7 +349,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 10 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="DJ Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="1"]
@@ -361,7 +372,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
+texture_normal = ExtResource( 11 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Raw" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="2"]
@@ -384,7 +395,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 12 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Atomic" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="3"]
@@ -407,7 +418,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 12 )
+texture_normal = ExtResource( 13 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Z Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="4"]
@@ -430,7 +441,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 13 )
+texture_normal = ExtResource( 14 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Biker Jacket" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="5"]
@@ -453,7 +464,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 15 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="NL Jacket" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="6"]
@@ -476,7 +487,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Train Hoodie" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="7"]
@@ -500,7 +511,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 16 )
+texture_normal = ExtResource( 17 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Korm Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="8"]
@@ -524,7 +535,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 17 )
+texture_normal = ExtResource( 18 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="What's New Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="9"]
@@ -548,7 +559,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 18 )
+texture_normal = ExtResource( 19 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Remove Shirt" type="Button" parent="RefRect/Wordrobe/Shirts/ShirtsGrid" index="10"]
@@ -589,7 +600,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 18.0
+margin_top = 29.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -637,7 +648,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 19 )
+texture_normal = ExtResource( 20 )
 
 [node name="ZBriefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="1"]
 
@@ -659,7 +670,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 20 )
+texture_normal = ExtResource( 21 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="OwO Censor" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="2"]
@@ -682,7 +693,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 21 )
+texture_normal = ExtResource( 22 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="ClearBtn" type="Button" parent="RefRect" index="1"]
@@ -710,8 +721,9 @@ text = "KCLR"
 flat = true
 align = 1
 
-[node name="Body" type="ReferenceRect" parent="." index="2"]
+[node name="Body" type="ReferenceRect" parent="." index="3"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -733,7 +745,7 @@ __meta__ = {
 [node name="Undies" type="Sprite" parent="Body" index="0"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -741,7 +753,7 @@ __meta__ = {
 [node name="Bottom" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -749,7 +761,7 @@ __meta__ = {
 [node name="Top" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 65.0597, 65.3242 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 __meta__ = {
 "_edit_lock_": true
 }

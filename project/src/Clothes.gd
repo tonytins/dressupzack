@@ -68,6 +68,9 @@ func _on_Z_Shirt_pressed():
 
 func _on_Biker_Jacket_pressed():
 	change_tops(load("res://assets/biker_jacket.png"))
+	
+func _on_Train_Hoodie_pressed():
+	change_tops(load("res://assets/train_hoodie.png"))
 
 func _on_Beat_Up_Jeans_pressed():
 	change_bottoms(load("res://assets/beat_up_jeans.png"))

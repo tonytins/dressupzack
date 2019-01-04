@@ -31,13 +31,14 @@ bus = "Master"
 
 [node name="GMRefRect" type="ReferenceRect" parent="." index="1"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 7.0
+margin_top = 8.0
 margin_right = 800.0
-margin_bottom = 31.0
+margin_bottom = 36.0
 rect_min_size = Vector2( 800, 0 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -47,25 +48,15 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
-[node name="GPanel" type="Panel" parent="GMRefRect" index="0"]
+[node name="GMenuHbox" type="HBoxContainer" parent="GMRefRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="GMRefRect/GPanel" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 6.0
+margin_right = -10.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -73,15 +64,16 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
+_sections_unfolded = [ "Margin" ]
 
-[node name="SettingsBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="0"]
+[node name="SettingsBtn" type="Button" parent="GMRefRect/GMenuHbox" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 41.0
-margin_bottom = 24.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -89,6 +81,10 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -96,16 +92,17 @@ group = null
 text = "KSET"
 flat = true
 align = 1
+_sections_unfolded = [ "custom_colors" ]
 
-[node name="CreditsBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="1"]
+[node name="AboutBtn" type="Button" parent="GMRefRect/GMenuHbox" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 45.0
-margin_right = 88.0
-margin_bottom = 24.0
+margin_right = 94.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -113,30 +110,10 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "KCRE"
-flat = true
-align = 1
-
-[node name="AboutBtn" type="Button" parent="GMRefRect/GPanel/HBoxContainer" index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 92.0
-margin_right = 141.0
-margin_bottom = 24.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -144,7 +121,7 @@ group = null
 text = "KABO"
 flat = true
 align = 1
-_sections_unfolded = [ "Margin" ]
+_sections_unfolded = [ "Margin", "custom_colors" ]
 
 [node name="AboutWin" type="WindowDialog" parent="." index="2"]
 
@@ -205,7 +182,7 @@ percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
 text = "Zack's Dress Up is a dress up game created by Anthony Wilcox."
-scroll_active = true
+scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
@@ -234,8 +211,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 173.0
-margin_right = 213.0
+margin_left = 150.0
+margin_right = 190.0
 margin_bottom = 20.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -252,14 +229,38 @@ text = "KLIC"
 flat = false
 align = 1
 
-[node name="CloseAbtBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="1"]
+[node name="CreditsBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 217.0
-margin_right = 247.0
+margin_left = 194.0
+margin_right = 237.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KCRE"
+flat = false
+align = 1
+
+[node name="CloseAbtBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 241.0
+margin_right = 271.0
 margin_bottom = 20.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -278,6 +279,7 @@ align = 1
 
 [node name="CreditsWin" type="AcceptDialog" parent="." index="3"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -326,8 +328,6 @@ Clothing inspired by
 Megawolf77
 Canon Rhode
 
-##########################
-
 [img]assets/sixam_logo_200px.png[/img]
 SixAM is a brand by Anthony Wilcox.
 [/center]"
@@ -344,8 +344,6 @@ Augmentality
 Clothing inspired by
 Megawolf77
 Canon Rhode
-
-##########################
 
 
 SixAM is a brand by Anthony Wilcox.
@@ -530,13 +528,13 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
 
-[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+[connection signal="pressed" from="GMRefRect/GMenuHbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 
-[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
-
-[connection signal="pressed" from="GMRefRect/GPanel/HBoxContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[connection signal="pressed" from="GMRefRect/GMenuHbox/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 [connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]
+
+[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 
 [connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/CloseAbtBtn" to="." method="_on_CloseAbtBtn_pressed"]
 

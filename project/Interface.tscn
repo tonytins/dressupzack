@@ -25,7 +25,7 @@ script = ExtResource( 1 )
 stream = ExtResource( 2 )
 volume_db = 0.0
 pitch_scale = 1.0
-autoplay = true
+autoplay = false
 mix_target = 0
 bus = "Master"
 
@@ -356,7 +356,6 @@ _sections_unfolded = [ "BBCode" ]
 
 [node name="SettingsWin" type="AcceptDialog" parent="." index="4"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -439,7 +438,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = true
-pressed = true
 enabled_focus_mode = 2
 shortcut = null
 group = null

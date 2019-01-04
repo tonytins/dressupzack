@@ -54,11 +54,8 @@ script = ExtResource( 1 )
 
 [node name="Wordrobe BG" type="Sprite" parent="." index="0"]
 
-position = Vector2( 492.609, 279.27 )
+position = Vector2( 492.609, 280.27 )
 texture = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Lights" type="Sprite" parent="." index="1"]
 

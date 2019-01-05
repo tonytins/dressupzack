@@ -3,7 +3,7 @@
 [ext_resource path="res://src/WinDialogs.gd" type="Script" id=1]
 [ext_resource path="res://music/song.ogg" type="AudioStream" id=2]
 
-[node name="WinDialogs" type="Control"]
+[node name="WinDialogs" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -26,163 +26,8 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[node name="AboutWin" type="WindowDialog" parent="." index="1"]
+[node name="CreditsWin" type="AcceptDialog" parent="." index="1"]
 
-editor/display_folded = true
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 199.0
-margin_top = 229.0
-margin_right = 620.0
-margin_bottom = 301.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-popup_exclusive = false
-window_title = "KABO"
-resizable = false
-_sections_unfolded = [ "Dialog", "Rect" ]
-
-[node name="AboutRefRect" type="ReferenceRect" parent="AboutWin" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="AboutTxt" type="RichTextLabel" parent="AboutWin/AboutRefRect" index="0"]
-
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -415.0
-margin_top = -68.0
-margin_right = -5.0
-margin_bottom = -34.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-bbcode_enabled = false
-bbcode_text = ""
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = "Zack's Dress Up is a dress up game created by Anthony Wilcox."
-scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
-
-[node name="AboutBtnHBox" type="HBoxContainer" parent="AboutWin/AboutRefRect" index="1"]
-
-anchor_left = 0.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -28.0
-margin_bottom = -8.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-alignment = 1
-_sections_unfolded = [ "Margin", "Rect" ]
-
-[node name="LicenseBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 150.0
-margin_right = 190.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "KLIC"
-flat = false
-align = 1
-
-[node name="CreditsBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 194.0
-margin_right = 237.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "KCRE"
-flat = false
-align = 1
-
-[node name="CloseAbtBtn" type="Button" parent="AboutWin/AboutRefRect/AboutBtnHBox" index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 241.0
-margin_right = 271.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Ok"
-flat = false
-align = 1
-
-[node name="CreditsWin" type="AcceptDialog" parent="." index="2"]
-
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -257,7 +102,7 @@ selection_enabled = true
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
 
-[node name="SettingsWin" type="AcceptDialog" parent="." index="3"]
+[node name="SettingsWin" type="AcceptDialog" parent="." index="2"]
 
 editor/display_folded = true
 visible = false
@@ -349,7 +194,7 @@ text = "KMUS"
 flat = false
 align = 1
 
-[node name="LicenseWin" type="AcceptDialog" parent="." index="4"]
+[node name="LicenseWin" type="AcceptDialog" parent="." index="3"]
 
 editor/display_folded = true
 visible = false
@@ -429,12 +274,6 @@ scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
-
-[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]
-
-[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
-
-[connection signal="pressed" from="AboutWin/AboutRefRect/AboutBtnHBox/CloseAbtBtn" to="." method="_on_CloseAbtBtn_pressed"]
 
 [connection signal="toggled" from="SettingsWin/Grid/MusicBtn" to="." method="_on_MusicBtn_toggled"]
 

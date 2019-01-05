@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/GameScreen.gd" type="Script" id=1]
-[ext_resource path="res://assets/dress_up_bg.png" type="Texture" id=2]
-[ext_resource path="res://assets/lights.png" type="Texture" id=3]
+[ext_resource path="res://assets/modern_dress_up_bg.png" type="Texture" id=2]
+[ext_resource path="res://assets/icrazy_frame.png" type="Texture" id=3]
 [ext_resource path="res://Zack.tscn" type="PackedScene" id=4]
-[ext_resource path="res://ClassicClothes.tscn" type="PackedScene" id=5]
-[ext_resource path="res://ClassicInterface.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Clothes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=6]
 
 [node name="GameScreen" type="Node"]
 
@@ -19,11 +19,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Lights" type="Sprite" parent="." index="1"]
+[node name="PicFrame" type="Sprite" parent="." index="1"]
 
-position = Vector2( 477.823, 100.811 )
+position = Vector2( 93.9417, 121.396 )
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Z Index" ]
 __meta__ = {
 "_edit_lock_": true
 }

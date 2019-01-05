@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/15_dress_up_bg.png-539edf16398b672e4b3f5a1602dc2b98.stex"
+path="res://.import/dressup_title.svg-8d2a8b65ef9e6151959385637bef7960.stex"
 
 [deps]
 
-source_file="res://assets/15_dress_up_bg.png"
-dest_files=[ "res://.import/15_dress_up_bg.png-539edf16398b672e4b3f5a1602dc2b98.stex" ]
+source_file="res://assets/dressup_title.svg"
+dest_files=[ "res://.import/dressup_title.svg-8d2a8b65ef9e6151959385637bef7960.stex" ]
 
 [params]
 

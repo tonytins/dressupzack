@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Zack's Dress Up"
-run/main_scene="res://GameScreen.tscn"
+run/main_scene="res://StartScn.tscn"
 config/use_custom_user_dir=true
 boot_splash/image="res://assets/game_splash.png"
 config/icon="res://icon.png"

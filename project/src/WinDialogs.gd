@@ -6,7 +6,7 @@ func _on_CreditsBtn_pressed():
 	$CreditsWin.show()
 
 func _on_LicenseBtn_pressed():
-	$SettingsWin.show()
+	$LicenseWin.show()
 
 func _on_CloseAbtBtn_pressed():
 	$AboutWin.hide()

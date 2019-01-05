@@ -3,7 +3,7 @@
 [ext_resource path="res://src/WinDialogs.gd" type="Script" id=1]
 [ext_resource path="res://music/song.ogg" type="AudioStream" id=2]
 
-[node name="WinDialogs" type="Control"]
+[node name="WinDialogs" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -26,7 +26,139 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[node name="CreditsWin" type="AcceptDialog" parent="." index="1"]
+[node name="PauseWin" type="PopupDialog" parent="." index="1"]
+
+pause_mode = 2
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 318.0
+margin_top = 227.0
+margin_right = 494.0
+margin_bottom = 341.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+_sections_unfolded = [ "Pause" ]
+
+[node name="PauseVbox" type="VBoxContainer" parent="PauseWin" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Margin" ]
+
+[node name="PauseLbl" type="Label" parent="PauseWin/PauseVbox" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 156.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "KPUS"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SettingsBtn" type="Button" parent="PauseWin/PauseVbox" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 18.0
+margin_right = 156.0
+margin_bottom = 38.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KSET"
+flat = false
+align = 1
+
+[node name="ResumeBtn" type="Button" parent="PauseWin/PauseVbox" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 42.0
+margin_right = 156.0
+margin_bottom = 62.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KRUS"
+flat = false
+align = 1
+
+[node name="ExitBtn" type="Button" parent="PauseWin/PauseVbox" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 66.0
+margin_right = 156.0
+margin_bottom = 86.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KEXT"
+flat = false
+align = 1
+
+[node name="CreditsWin" type="AcceptDialog" parent="." index="2"]
 
 visible = false
 anchor_left = 0.0
@@ -47,6 +179,7 @@ popup_exclusive = false
 window_title = "KCRE"
 resizable = false
 dialog_hide_on_ok = true
+_sections_unfolded = [ "Pause" ]
 
 [node name="CreditsTxt" type="RichTextLabel" parent="CreditsWin" index="3"]
 
@@ -102,8 +235,9 @@ selection_enabled = true
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
 
-[node name="SettingsWin" type="AcceptDialog" parent="." index="2"]
+[node name="SettingsWin" type="AcceptDialog" parent="." index="3"]
 
+pause_mode = 2
 editor/display_folded = true
 visible = false
 anchor_left = 0.0
@@ -124,7 +258,7 @@ popup_exclusive = false
 window_title = "KSET"
 resizable = false
 dialog_hide_on_ok = true
-_sections_unfolded = [ "Dialog" ]
+_sections_unfolded = [ "Dialog", "Pause" ]
 
 [node name="Grid" type="GridContainer" parent="SettingsWin" index="3"]
 
@@ -194,7 +328,7 @@ text = "KMUS"
 flat = false
 align = 1
 
-[node name="LicenseWin" type="AcceptDialog" parent="." index="3"]
+[node name="LicenseWin" type="AcceptDialog" parent="." index="4"]
 
 editor/display_folded = true
 visible = false
@@ -216,7 +350,7 @@ popup_exclusive = false
 window_title = "KLIC"
 resizable = false
 dialog_hide_on_ok = true
-_sections_unfolded = [ "Dialog" ]
+_sections_unfolded = [ "Dialog", "Pause" ]
 
 [node name="LicenseTxt" type="RichTextLabel" parent="LicenseWin" index="3"]
 
@@ -274,6 +408,12 @@ scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode" ]
+
+[connection signal="pressed" from="PauseWin/PauseVbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+
+[connection signal="pressed" from="PauseWin/PauseVbox/ResumeBtn" to="." method="_on_ResumeBtn_pressed"]
+
+[connection signal="pressed" from="PauseWin/PauseVbox/ExitBtn" to="." method="_on_ExitBtn_pressed"]
 
 [connection signal="toggled" from="SettingsWin/Grid/MusicBtn" to="." method="_on_MusicBtn_toggled"]
 

@@ -6,17 +6,15 @@ func _on_ClassicBtn_pressed():
 	get_tree().change_scene("res://ClassicScn.tscn")
 
 func _on_ModernBtn_pressed():
-	get_tree().change_scene("res://GameScn.tscn")
+	get_tree().change_scene("res://ModernScn.tscn")
 
 func _on_ClassicBtn_mouse_entered():
-	$ModernBG.hide()
-	$WordrobeBG.hide()
+	$Modern.hide()
 	$ClassicBG.show()
 
 func _on_ClassicBtn_mouse_exited():
 	$ClassicBG.hide()
-	$WordrobeBG.show()
-	$ModernBG.show()
+	$Modern.show()
 
 func _on_CreditsBtn_pressed():
 	$WinDialogs/CreditsWin.show()

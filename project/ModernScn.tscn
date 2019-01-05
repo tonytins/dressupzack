@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://src/GameScreen.gd" type="Script" id=1]
+[ext_resource path="res://src/GameScn.gd" type="Script" id=1]
 [ext_resource path="res://assets/modern_dress_up_bg.png" type="Texture" id=2]
 [ext_resource path="res://assets/icrazy_frame.png" type="Texture" id=3]
 [ext_resource path="res://Zack.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Clothes.tscn" type="PackedScene" id=5]
-[ext_resource path="res://GUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=6]
 
-[node name="GameScreen" type="Node" index="0"]
+[node name="GameScreen" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -31,6 +31,6 @@ __meta__ = {
 
 [node name="Clothes" parent="." index="3" instance=ExtResource( 5 )]
 
-[node name="Interface" parent="." index="4" instance=ExtResource( 6 )]
+[node name="WinDialogs" parent="." index="4" instance=ExtResource( 6 )]
 
 

@@ -23,6 +23,12 @@ window/size/width=800
 window/size/height=554
 window/size/resizable=false
 
+[input]
+
+ui_pause=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+ ]
+
 [locale]
 
 locale_filter=[ 1, [ "en", "sv" ] ]

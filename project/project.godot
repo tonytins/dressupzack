@@ -10,22 +10,18 @@ config_version=3
 
 [application]
 
-config/name="Zack's Dress Up 1½"
+config/name="Zack's Dress Up"
 run/main_scene="res://GameScreen.tscn"
-boot_splash/image="res://assets/game splash.png"
+config/use_custom_user_dir=true
+boot_splash/image="res://assets/game_splash.png"
 config/icon="res://icon.png"
-name_sv="Zacks klä upp 1½"
+name_sv="Zacks klä upp"
 
 [display]
 
 window/size/width=800
 window/size/height=554
 window/size/resizable=false
-
-[input]
-
-ui_shell=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":true,"meta":false,"command":true,"pressed":false,"scancode":16777255,"unicode":0,"echo":false,"script":null)
- ]
 
 [locale]
 
@@ -34,4 +30,7 @@ translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/loc
 
 [rendering]
 
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

@@ -2,21 +2,14 @@
 # See the LICENSE file in the project root for more information.
 extends Control
  
-onready var about_win = $AboutWin
-onready var credits_win = $CreditsWin
-onready var settings_win = $SettingsWin
-
 func _on_AboutBtn_pressed():
-	about_win.show()
-	
-func _on_CreditsBtn_pressed():
-	credits_win.show()
+	$WinDialogs/AboutWin.show()
 	
 func _on_SettingsBtn_pressed():
-	settings_win.show()
+	$WinDialogs/SettingsWin.show()
 
-func _on_MusicBtn_toggled(button_pressed):
-	if button_pressed == true:
-		$Music.play()
-	else:
-		$Music.stop()
+func _on_ClassicBtn_pressed():
+	get_tree().change_scene("res://ClassicScreen.tscn")
+
+func _on_ModernBtn_pressed():
+	get_tree().change_scene("res://GameScreen.tscn")

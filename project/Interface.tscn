@@ -1,13 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
-[ext_resource path="res://music/piano.ogg" type="AudioStream" id=2]
+[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=2]
 
-[sub_resource type="ButtonGroup" id=1]
-
-resource_local_to_scene = true
-
-[node name="Interface" type="Control"]
+[node name="Interface" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -24,42 +20,32 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
 
-[node name="Music" type="AudioStreamPlayer" parent="." index="0"]
-
-stream = ExtResource( 2 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = true
-mix_target = 0
-bus = "Master"
-
-[node name="RefRect" type="ReferenceRect" parent="." index="1"]
+[node name="GMRefRect" type="ReferenceRect" parent="." index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 11.0
-margin_top = 16.0
-margin_right = 165.0
-margin_bottom = 178.0
+margin_top = 8.0
+margin_right = 800.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 800, 0 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
-[node name="VertContainer" type="VBoxContainer" parent="RefRect" index="0"]
+[node name="GMenuHbox" type="HBoxContainer" parent="GMRefRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 3.0
-margin_right = -3.0
-margin_bottom = -3.0
+margin_right = -20.0
+margin_bottom = -6.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -67,15 +53,16 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
+_sections_unfolded = [ "Margin" ]
 
-[node name="MusicBtn" type="CheckBox" parent="RefRect/VertContainer" index="0"]
+[node name="ClassicBtn" type="Button" parent="GMRefRect/GMenuHbox" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 147.0
-margin_bottom = 24.0
+margin_right = 42.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -83,29 +70,28 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-toggle_mode = true
-pressed = true
+toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "KMUS"
-flat = false
+text = "KCLS"
+flat = true
 align = 1
-_sections_unfolded = [ "custom_colors" ]
+_sections_unfolded = [ "custom_colors", "custom_constants" ]
 
-[node name="SettingsBtn" type="Button" parent="RefRect/VertContainer" index="1"]
+[node name="SettingsBtn" type="Button" parent="GMRefRect/GMenuHbox" index="1"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 28.0
-margin_right = 147.0
-margin_bottom = 48.0
+margin_left = 46.0
+margin_right = 87.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -113,23 +99,28 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
 text = "KSET"
-flat = false
+flat = true
 align = 1
+_sections_unfolded = [ "custom_colors" ]
 
-[node name="CreditsBtn" type="Button" parent="RefRect/VertContainer" index="2"]
+[node name="AboutBtn" type="Button" parent="GMRefRect/GMenuHbox" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 28.0
-margin_right = 147.0
-margin_bottom = 48.0
+margin_left = 91.0
+margin_right = 140.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -137,226 +128,25 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "KCRE"
-flat = false
-align = 1
-
-[node name="AboutBtn" type="Button" parent="RefRect/VertContainer" index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 147.0
-margin_bottom = 72.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
 text = "KABO"
-flat = false
-align = 1
-_sections_unfolded = [ "Margin" ]
-
-[node name="AboutWin" type="AcceptDialog" parent="." index="2"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 260.0
-margin_top = 132.0
-margin_right = 608.0
-margin_bottom = 400.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-popup_exclusive = false
-window_title = "KABO"
-resizable = false
-dialog_hide_on_ok = true
-
-[node name="AboutTxt" type="RichTextLabel" parent="AboutWin" index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 8.0
-margin_top = 8.0
-margin_right = -8.0
-margin_bottom = -36.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-bbcode_enabled = false
-bbcode_text = ""
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = "Zack's Dress Up is a port of ZC's Dress Up, both created by Anthony Wilcox.
-
-This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
-Zack's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Zack's Dress Up. If not, see: https://www.gnu.org/licenses/"
-scroll_active = true
-scroll_following = false
-selection_enabled = true
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode" ]
-
-[node name="CreditsWin" type="AcceptDialog" parent="." index="3"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 260.0
-margin_top = 132.0
-margin_right = 608.0
-margin_bottom = 399.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-popup_exclusive = false
-window_title = "KCRE"
-resizable = false
-dialog_hide_on_ok = true
-
-[node name="CreditsTxt" type="RichTextLabel" parent="CreditsWin" index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 340.0
-margin_bottom = 231.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-bbcode_enabled = true
-bbcode_text = "[center]Created by
-Anthony Wilcox
-
-Clothing inspired by
-Megawolf77
-Canon Rhode
-
-##########################
-
-[img]assets/sixam_logo_200px.png[/img]
-SixAM is a brand by Anthony Wilcox.
-[/center]"
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = "Created by
-Anthony Wilcox
-
-Clothing inspired by
-Megawolf77
-Canon Rhode
-
-##########################
-
-
-SixAM is a brand by Anthony Wilcox.
-"
-scroll_active = true
-scroll_following = false
-selection_enabled = true
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode" ]
-
-[node name="SettingsWin" type="AcceptDialog" parent="." index="4"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 242.0
-margin_top = 69.0
-margin_right = 379.0
-margin_bottom = 140.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-popup_exclusive = false
-window_title = "KSET"
-resizable = false
-dialog_hide_on_ok = true
-_sections_unfolded = [ "Dialog" ]
-
-[node name="Languages" type="MenuButton" parent="SettingsWin" index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 129.0
-margin_bottom = 35.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-action_mode = 0
-enabled_focus_mode = 0
-shortcut = null
-group = SubResource( 1 )
-text = "Languages"
 flat = true
 align = 1
-items = [  ]
+_sections_unfolded = [ "Margin", "custom_colors" ]
 
-[connection signal="toggled" from="RefRect/VertContainer/MusicBtn" to="." method="_on_MusicBtn_toggled"]
+[node name="WinDialogs" parent="." index="1" instance=ExtResource( 2 )]
 
-[connection signal="pressed" from="RefRect/VertContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+[connection signal="pressed" from="GMRefRect/GMenuHbox/ClassicBtn" to="." method="_on_ClassicBtn_pressed"]
 
-[connection signal="pressed" from="RefRect/VertContainer/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
+[connection signal="pressed" from="GMRefRect/GMenuHbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 
-[connection signal="pressed" from="RefRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[connection signal="pressed" from="GMRefRect/GMenuHbox/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 

@@ -4,7 +4,7 @@
 [ext_resource path="res://music/song.ogg" type="AudioStream" id=2]
 [ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=3]
 
-[node name="Interface" type="Control" index="0"]
+[node name="Interface" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -30,32 +30,33 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[node name="GMRefRect" type="ReferenceRect" parent="." index="1"]
+[node name="RefRect" type="ReferenceRect" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 8.0
-margin_right = 800.0
-margin_bottom = 36.0
-rect_min_size = Vector2( 800, 0 )
+margin_left = 11.0
+margin_top = 16.0
+margin_right = 165.0
+margin_bottom = 128.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
-[node name="GMenuHbox" type="HBoxContainer" parent="GMRefRect" index="0"]
+[node name="VertContainer" type="VBoxContainer" parent="RefRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -20.0
-margin_bottom = -6.0
+margin_left = 4.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -111.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -63,16 +64,15 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
-_sections_unfolded = [ "Margin" ]
 
-[node name="SettingsBtn" type="Button" parent="GMRefRect/GMenuHbox" index="0"]
+[node name="MusicBtn" type="CheckBox" parent="RefRect/VertContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 41.0
-margin_bottom = 22.0
+margin_right = 147.0
+margin_bottom = 24.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -80,28 +80,27 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-toggle_mode = false
+toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "KSET"
-flat = true
+text = "KMUS"
+flat = false
 align = 1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="ClassicBtn" type="Button" parent="GMRefRect/GMenuHbox" index="1"]
+[node name="ModernBtn" type="Button" parent="RefRect/VertContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 45.0
-margin_right = 87.0
-margin_bottom = 22.0
+margin_top = 28.0
+margin_right = 147.0
+margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -109,28 +108,23 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "KCLS"
-flat = true
+text = "Modern"
+flat = false
 align = 1
-_sections_unfolded = [ "custom_colors", "custom_constants" ]
 
-[node name="AboutBtn" type="Button" parent="GMRefRect/GMenuHbox" index="2"]
+[node name="AboutBtn" type="Button" parent="RefRect/VertContainer" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 91.0
-margin_right = 140.0
-margin_bottom = 22.0
+margin_top = 52.0
+margin_right = 147.0
+margin_bottom = 72.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -138,25 +132,21 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
 text = "KABO"
-flat = true
+flat = false
 align = 1
-_sections_unfolded = [ "Margin", "custom_colors" ]
+_sections_unfolded = [ "Margin" ]
 
 [node name="WinDialogs" parent="." index="2" instance=ExtResource( 3 )]
 
-[connection signal="pressed" from="GMRefRect/GMenuHbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+[connection signal="toggled" from="RefRect/VertContainer/MusicBtn" to="." method="_on_MusicBtn_toggled"]
 
-[connection signal="pressed" from="GMRefRect/GMenuHbox/ClassicBtn" to="." method="_on_ClassicBtn_pressed"]
+[connection signal="pressed" from="RefRect/VertContainer/ModernBtn" to="." method="_on_ModernBtn_pressed"]
 
-[connection signal="pressed" from="GMRefRect/GMenuHbox/AboutBtn" to="." method="_on_AboutBtn_pressed"]
+[connection signal="pressed" from="RefRect/VertContainer/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 
 

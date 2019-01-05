@@ -3,22 +3,26 @@
 extends Control
  
 func _on_AboutBtn_pressed():
-	$AboutWin.show()
-	
-func _on_CreditsBtn_pressed():
-	$CreditsWin.show()
+	$WinDialogs/AboutWin.show()
 	
 func _on_SettingsBtn_pressed():
-	$SettingsWin.show()
-	
-func _on_LicenseBtn_pressed():
-	$LicenseWin.show()
-
-func _on_CloseAbtBtn_pressed():
-	$AboutWin.hide()
+	$WinDialogs/SettingsWin.show()
 
 func _on_MusicBtn_toggled(button_pressed):
 	if button_pressed == true:
 		$Music.playing = true
 	else:
 		$Music.playing = false
+
+func _on_ClassicBtn_pressed():
+	if $Music.playing == true:
+		$Music.playing = false
+		
+	get_tree().change_scene("res://ClassicScreen.tscn")
+
+
+func _on_ModernBtn_pressed():
+	if $Music.playing == true:
+		$Music.playing = false
+		
+	get_tree().change_scene("res://GameScreen.tscn")

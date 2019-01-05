@@ -10,3 +10,9 @@ func _on_LicenseBtn_pressed():
 
 func _on_CloseAbtBtn_pressed():
 	$AboutWin.hide()
+	
+func _on_MusicBtn_toggled(button_pressed):
+	if button_pressed == true:
+		$Music.playing = true
+	else:
+		$Music.playing = false

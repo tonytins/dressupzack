@@ -25,14 +25,14 @@
 [ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=23]
 [ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=24]
 
-[sub_resource type="StyleBoxEmpty" id=3]
+[sub_resource type="StyleBoxEmpty" id=1]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxEmpty" id=2]
 
 resource_local_to_scene = true
 content_margin_left = 5.0
@@ -41,14 +41,14 @@ content_margin_top = 5.0
 content_margin_bottom = 10.0
 _sections_unfolded = [ "Content Margin", "Resource" ]
 
-[sub_resource type="StyleBoxEmpty" id=5]
+[sub_resource type="StyleBoxEmpty" id=3]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 
-[node name="Clothes" type="Node" index="0"]
+[node name="Clothes" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -59,11 +59,8 @@ texture = ExtResource( 2 )
 
 [node name="Lights" type="Sprite" parent="." index="1"]
 
-position = Vector2( 485.001, 133 )
+position = Vector2( 485.001, 160 )
 texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="RefRect" type="ReferenceRect" parent="." index="2"]
 
@@ -100,9 +97,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_styles/tab_fg = SubResource( 3 )
-custom_styles/tab_bg = SubResource( 4 )
-custom_styles/panel = SubResource( 5 )
+custom_styles/tab_fg = SubResource( 1 )
+custom_styles/tab_bg = SubResource( 2 )
+custom_styles/panel = SubResource( 3 )
 custom_colors/font_color_bg = Color( 1, 1, 1, 1 )
 custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
 tab_align = 0

@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/Interface.gd" type="Script" id=1]
-[ext_resource path="res://music/song.ogg" type="AudioStream" id=2]
-[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=2]
 
 [node name="Interface" type="Control" index="0"]
 
@@ -21,16 +20,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
 
-[node name="Music" type="AudioStreamPlayer" parent="." index="0"]
-
-stream = ExtResource( 2 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="GMRefRect" type="ReferenceRect" parent="." index="1"]
+[node name="GMRefRect" type="ReferenceRect" parent="." index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -65,42 +55,13 @@ size_flags_vertical = 1
 alignment = 0
 _sections_unfolded = [ "Margin" ]
 
-[node name="SettingsBtn" type="Button" parent="GMRefRect/GMenuHbox" index="0"]
+[node name="ClassicBtn" type="Button" parent="GMRefRect/GMenuHbox" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 41.0
-margin_bottom = 22.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "KSET"
-flat = true
-align = 1
-_sections_unfolded = [ "custom_colors" ]
-
-[node name="ClassicBtn" type="Button" parent="GMRefRect/GMenuHbox" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 45.0
-margin_right = 87.0
+margin_right = 42.0
 margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -121,6 +82,35 @@ text = "KCLS"
 flat = true
 align = 1
 _sections_unfolded = [ "custom_colors", "custom_constants" ]
+
+[node name="SettingsBtn" type="Button" parent="GMRefRect/GMenuHbox" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 46.0
+margin_right = 87.0
+margin_bottom = 22.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "KSET"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_colors" ]
 
 [node name="AboutBtn" type="Button" parent="GMRefRect/GMenuHbox" index="2"]
 
@@ -151,11 +141,11 @@ flat = true
 align = 1
 _sections_unfolded = [ "Margin", "custom_colors" ]
 
-[node name="WinDialogs" parent="." index="2" instance=ExtResource( 3 )]
-
-[connection signal="pressed" from="GMRefRect/GMenuHbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
+[node name="WinDialogs" parent="." index="1" instance=ExtResource( 2 )]
 
 [connection signal="pressed" from="GMRefRect/GMenuHbox/ClassicBtn" to="." method="_on_ClassicBtn_pressed"]
+
+[connection signal="pressed" from="GMRefRect/GMenuHbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 
 [connection signal="pressed" from="GMRefRect/GMenuHbox/AboutBtn" to="." method="_on_AboutBtn_pressed"]
 

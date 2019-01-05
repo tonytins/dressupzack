@@ -7,7 +7,7 @@
 [ext_resource path="res://Clothes.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Interface.tscn" type="PackedScene" id=6]
 
-[node name="GameScreen" type="Node"]
+[node name="GameScreen" type="Node" index="0"]
 
 script = ExtResource( 1 )
 

@@ -1,12 +1,12 @@
 # Anthony Wilcox licenses this file to you under the GPL license.
 # See the LICENSE file in the project root for more information.
-extends Node
+extends "res://src/GameKit.gd"
 
 func _on_ClassicBtn_pressed():
-	get_tree().change_scene("res://ClassicScn.tscn")
+	switch_scenes("classic")
 
 func _on_ModernBtn_pressed():
-	get_tree().change_scene("res://ModernScn.tscn")
+	switch_scenes("modern")
 
 func _on_ClassicBtn_mouse_entered():
 	$Modern.hide()

@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/dressup_title.svg" type="Texture" id=5]
 [ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=6]
 
-[node name="Start" type="Node"]
+[node name="Start" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -48,7 +48,6 @@ __meta__ = {
 
 [node name="MenuRf" type="ReferenceRect" parent="." index="3"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -239,6 +238,7 @@ group = null
 text = "Modern"
 flat = false
 align = 1
+_sections_unfolded = [ "Pause" ]
 __meta__ = {
 "_edit_lock_": true
 }

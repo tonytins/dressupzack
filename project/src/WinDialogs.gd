@@ -1,16 +1,10 @@
 # Anthony Wilcox licenses this file to you under the GPL license.
 # See the LICENSE file in the project root for more information.
-extends Control
-
-func pause_zdressup(is_paused):
-	if is_paused == true:
-		get_tree().paused = true
-	else:
-		get_tree().paused = false
+extends "res://src/GameKit.gd"
 
 func _on_ExitBtn_pressed():
-	pause_zdressup(false)
-	get_tree().change_scene("res://StartScn.tscn")
+	is_game_paused(false)
+	switch_scenes("start")
 		
 func _on_SettingsBtn_pressed():
 	$SettingsWin.show()
@@ -32,4 +26,4 @@ func _on_MusicBtn_toggled(button_pressed):
 
 func _on_ResumeBtn_pressed():
 	$PauseWin.hide()
-	pause_zdressup(false)
+	is_game_paused(false)

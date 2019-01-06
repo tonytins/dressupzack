@@ -32,5 +32,3 @@ __meta__ = {
 [node name="Clothes" parent="." index="3" instance=ExtResource( 5 )]
 
 [node name="WinDialogs" parent="." index="4" instance=ExtResource( 6 )]
-
-

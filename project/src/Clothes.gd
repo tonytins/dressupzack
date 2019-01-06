@@ -41,6 +41,15 @@ func change_accessoires(new_accessory):
 	
 	$Body/Accessory.texture = accessory
 
+func _on_Remove_Shirt_pressed():
+	change_tops(null)
+
+func _on_Remove_Pants_pressed():
+	change_bottoms(null)
+
+func _on_Remove_Accessory_pressed():
+	change_accessoires(null)
+
 func _on_DJ_Shorts_pressed():
 	change_bottoms(load("res://assets/dj_shorts.png"))
 
@@ -96,17 +105,8 @@ func _on_Blue_Camo_Jeans_pressed():
 func _on_Whats_New_Shirt_pressed():
 	change_tops(load("res://assets/whatsnew_shirt.png"))
 
-func _on_Remove_Shirt_pressed():
-	change_tops(null)
-
-func _on_Remove_Pants_pressed():
-	change_bottoms(null)
-
 func _on_Fundosi_pressed():
 	change_undies(load("res://assets/fundosi.png"))
 
 func _on_Camera_pressed():
 	change_accessoires(load("res://assets/camera.png"))
-
-func _on_RemoveAccessoryBtn_pressed():
-	change_accessoires(null)

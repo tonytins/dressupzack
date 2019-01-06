@@ -50,7 +50,7 @@ content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 
-[node name="Clothes" type="Node"]
+[node name="Clothes" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -110,7 +110,6 @@ _sections_unfolded = [ "custom_colors", "custom_styles" ]
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe" index="0"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -719,6 +718,7 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="Accessoires" type="Tabs" parent="RefRect/Wordrobe" index="3"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -773,7 +773,7 @@ group = null
 texture_normal = ExtResource( 24 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="RemoveAccessoryBtn" type="Button" parent="RefRect/Wordrobe/Accessoires/AccessoiresGrid" index="1"]
+[node name="Remove Accessory" type="Button" parent="RefRect/Wordrobe/Accessoires/AccessoiresGrid" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -899,6 +899,6 @@ __meta__ = {
 
 [connection signal="pressed" from="RefRect/Wordrobe/Accessoires/AccessoiresGrid/Camera" to="." method="_on_Camera_pressed"]
 
-[connection signal="pressed" from="RefRect/Wordrobe/Accessoires/AccessoiresGrid/RemoveAccessoryBtn" to="." method="_on_RemoveAccessoryBtn_pressed"]
+[connection signal="pressed" from="RefRect/Wordrobe/Accessoires/AccessoiresGrid/Remove Accessory" to="." method="_on_Remove_Accessory_pressed"]
 
 

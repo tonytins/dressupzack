@@ -13,5 +13,5 @@ func switch_scenes(new_mode):
 		get_tree().change_scene("res://ClassicScn.tscn")
 	elif new_mode == "modern":
 		get_tree().change_scene("res://ModernScn.tscn")
-	elif new_mode == "start":
-		get_tree().change_scene("res://StartScn.tscn")
+	elif new_mode == "title":
+		get_tree().change_scene("res://TitleScn.tscn")

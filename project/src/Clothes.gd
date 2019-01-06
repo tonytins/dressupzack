@@ -2,9 +2,13 @@
 # See the LICENSE file in the project root for more information.
 extends Node
 
+# Default clothing
 onready var bottoms = load("res://assets/bottoms_placeholder.png")
-onready var undies = load("res://assets/briefs.png")
 onready var tops = load("res://assets/tops_placeholder.png")
+onready var accessory = load("res://assets/tops_placeholder.png")
+# ZC's Dress Up was stylized to be cute, not adult.
+# Underwear cam be suggestive but never lewd. 
+onready var undies = load("res://assets/briefs.png")
 
 func change_bottoms(new_bottom):
 	bottoms = new_bottom
@@ -28,6 +32,14 @@ func change_tops(new_top):
 		$Body/Top.texture = tops
 	
 	$Body/Top.texture = tops
+	
+func change_accessoires(new_accessory):
+	accessory = new_accessory
+	
+	if new_accessory == null:
+		$Body/Top.texture = accessory
+	
+	$Body/Accessory.texture = accessory
 
 func _on_DJ_Shorts_pressed():
 	change_bottoms(load("res://assets/dj_shorts.png"))
@@ -81,11 +93,6 @@ func _on_NL_Jacket_pressed():
 func _on_Blue_Camo_Jeans_pressed():
 	change_bottoms(load("res://assets/blue_camo_jeans.png"))
 
-func _on_ClearBtn_pressed():
-	change_bottoms(null)
-	change_undies(load("res://assets/briefs.png"))
-	change_tops(null)
-
 func _on_Whats_New_Shirt_pressed():
 	change_tops(load("res://assets/whatsnew_shirt.png"))
 
@@ -94,3 +101,12 @@ func _on_Remove_Shirt_pressed():
 
 func _on_Remove_Pants_pressed():
 	change_bottoms(null)
+
+func _on_Fundosi_pressed():
+	change_undies(load("res://assets/fundosi.png"))
+
+func _on_Camera_pressed():
+	change_accessoires(load("res://assets/camera.png"))
+
+func _on_RemoveAccessoryBtn_pressed():
+	change_accessoires(null)

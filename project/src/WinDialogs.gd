@@ -4,7 +4,7 @@ extends "res://src/GameKit.gd"
 
 func _on_ExitBtn_pressed():
 	is_game_paused(false)
-	switch_scenes("start")
+	switch_scenes("title")
 		
 func _on_SettingsBtn_pressed():
 	$SettingsWin.show()

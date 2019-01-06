@@ -11,11 +11,17 @@ config_version=3
 [application]
 
 config/name="Zack's Dress Up"
-run/main_scene="res://StartScn.tscn"
+run/main_scene="res://TitleScn.tscn"
 config/use_custom_user_dir=true
-boot_splash/image="res://assets/game_splash.png"
+boot_splash/image="res://boot_splash.png"
+boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
 config/icon="res://icon.png"
 name_sv="Zacks klä upp"
+
+[autoload]
+
+GameKit="*res://src/GameKit.gd"
+WinDialogs="*res://WinDialogs.tscn"
 
 [display]
 

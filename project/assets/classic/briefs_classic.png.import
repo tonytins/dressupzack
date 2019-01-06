@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zbriefs_classic.png-b65972aac07d113b8851bf9970c417fe.stex"
+path="res://.import/briefs_classic.png-5487ab623b54f94967d6ff5b328427f3.stex"
 
 [deps]
 
-source_file="res://assets/zbriefs_classic.png"
-dest_files=[ "res://.import/zbriefs_classic.png-b65972aac07d113b8851bf9970c417fe.stex" ]
+source_file="res://assets/classic/briefs_classic.png"
+dest_files=[ "res://.import/briefs_classic.png-5487ab623b54f94967d6ff5b328427f3.stex" ]
 
 [params]
 

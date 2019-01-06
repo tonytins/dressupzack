@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/game_splash.png-e50a14b18c17eee1a97a55d939054e18.stex"
+path="res://.import/owo_censor_classic.png-c35dd5945ab9c4d0b13859d9afa1c636.stex"
 
 [deps]
 
-source_file="res://assets/game_splash.png"
-dest_files=[ "res://.import/game_splash.png-e50a14b18c17eee1a97a55d939054e18.stex" ]
+source_file="res://assets/classic/owo_censor_classic.png"
+dest_files=[ "res://.import/owo_censor_classic.png-c35dd5945ab9c4d0b13859d9afa1c636.stex" ]
 
 [params]
 

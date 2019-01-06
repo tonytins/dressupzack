@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/owo_censor_classic.png-accfb640096736f1f4fdb643b79a5ab6.stex"
+path="res://.import/fundosi.png-6ff98faa2a1236de2edfe494a858560c.stex"
 
 [deps]
 
-source_file="res://assets/owo_censor_classic.png"
-dest_files=[ "res://.import/owo_censor_classic.png-accfb640096736f1f4fdb643b79a5ab6.stex" ]
+source_file="res://assets/fundosi.png"
+dest_files=[ "res://.import/fundosi.png-6ff98faa2a1236de2edfe494a858560c.stex" ]
 
 [params]
 

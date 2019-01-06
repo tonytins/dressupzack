@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/Clothes.gd" type="Script" id=1]
 [ext_resource path="res://assets/dressup_wardrobe.png" type="Texture" id=2]
@@ -19,11 +19,13 @@
 [ext_resource path="res://assets/train_hoodie.png" type="Texture" id=17]
 [ext_resource path="res://assets/korm_shirt.png" type="Texture" id=18]
 [ext_resource path="res://assets/whatsnew_shirt.png" type="Texture" id=19]
-[ext_resource path="res://assets/briefs.png" type="Texture" id=20]
-[ext_resource path="res://assets/zbriefs.png" type="Texture" id=21]
-[ext_resource path="res://assets/owo_censor.png" type="Texture" id=22]
-[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=23]
-[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=24]
+[ext_resource path="res://assets/owo_censor.png" type="Texture" id=20]
+[ext_resource path="res://assets/briefs.png" type="Texture" id=21]
+[ext_resource path="res://assets/zbriefs.png" type="Texture" id=22]
+[ext_resource path="res://assets/fundosi.png" type="Texture" id=23]
+[ext_resource path="res://assets/camera.png" type="Texture" id=24]
+[ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=25]
+[ext_resource path="res://assets/tops_placeholder.png" type="Texture" id=26]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -108,6 +110,7 @@ _sections_unfolded = [ "custom_colors", "custom_styles" ]
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe" index="0"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -611,9 +614,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = -20.0
 margin_top = 10.0
-margin_right = 558.0
-margin_bottom = 112.0
+margin_right = 538.0
+margin_bottom = 122.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -623,51 +627,7 @@ size_flags_vertical = 1
 columns = 6
 _sections_unfolded = [ "Margin" ]
 
-[node name="Briefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 106.0
-margin_bottom = 112.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 20 )
-
-[node name="ZBriefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 110.0
-margin_right = 216.0
-margin_bottom = 112.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 21 )
-_sections_unfolded = [ "Textures" ]
-
-[node name="OwO Censor" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="2"]
+[node name="OwO Censor" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -687,19 +647,17 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 22 )
+texture_normal = ExtResource( 20 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="ClearBtn" type="Button" parent="RefRect" index="1"]
+[node name="Briefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 245.0
-margin_top = 16.0
-margin_right = 316.0
-margin_bottom = 36.0
+margin_right = 106.0
+margin_bottom = 112.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -711,13 +669,142 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "KCLR"
+texture_normal = ExtResource( 21 )
+
+[node name="ZBriefs" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_right = 216.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 22 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Fundosi" type="TextureButton" parent="RefRect/Wordrobe/Underwear/UndiesGrid" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 330.0
+margin_right = 436.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 23 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Accessoires" type="Tabs" parent="RefRect/Wordrobe" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 29.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+tab_align = 1
+scrolling_enabled = true
+
+[node name="AccessoiresGrid" type="GridContainer" parent="RefRect/Wordrobe/Accessoires" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -14.0
+margin_top = 14.0
+margin_right = 536.0
+margin_bottom = 119.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 6
+
+[node name="Camera" type="TextureButton" parent="RefRect/Wordrobe/Accessoires/AccessoiresGrid" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 85.0
+margin_bottom = 105.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 24 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="RemoveAccessoryBtn" type="Button" parent="RefRect/Wordrobe/Accessoires/AccessoiresGrid" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 89.0
+margin_right = 222.0
+margin_bottom = 105.0
+rect_min_size = Vector2( 85, 105 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Remove Accessory"
 flat = true
 align = 1
+_sections_unfolded = [ "custom_colors" ]
 
 [node name="Body" type="ReferenceRect" parent="." index="3"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -739,7 +826,7 @@ __meta__ = {
 [node name="Undies" type="Sprite" parent="Body" index="0"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -747,7 +834,7 @@ __meta__ = {
 [node name="Bottom" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 23 )
+texture = ExtResource( 25 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -755,7 +842,15 @@ __meta__ = {
 [node name="Top" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 65.0597, 65.3242 )
-texture = ExtResource( 24 )
+texture = ExtResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Accessory" type="Sprite" parent="Body" index="3"]
+
+position = Vector2( 65.0597, 65.3242 )
+texture = ExtResource( 26 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -794,12 +889,16 @@ __meta__ = {
 
 [connection signal="pressed" from="RefRect/Wordrobe/Shirts/ShirtsGrid/Remove Shirt" to="." method="_on_Remove_Shirt_pressed"]
 
+[connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/OwO Censor" to="." method="_on_OwO_Censor_pressed"]
+
 [connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/Briefs" to="." method="_on_Briefs_pressed"]
 
 [connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/ZBriefs" to="." method="_on_ZBriefs_pressed"]
 
-[connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/OwO Censor" to="." method="_on_OwO_Censor_pressed"]
+[connection signal="pressed" from="RefRect/Wordrobe/Underwear/UndiesGrid/Fundosi" to="." method="_on_Fundosi_pressed"]
 
-[connection signal="pressed" from="RefRect/ClearBtn" to="." method="_on_ClearBtn_pressed"]
+[connection signal="pressed" from="RefRect/Wordrobe/Accessoires/AccessoiresGrid/Camera" to="." method="_on_Camera_pressed"]
+
+[connection signal="pressed" from="RefRect/Wordrobe/Accessoires/AccessoiresGrid/RemoveAccessoryBtn" to="." method="_on_RemoveAccessoryBtn_pressed"]
 
 

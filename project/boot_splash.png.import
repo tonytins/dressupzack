@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/briefs_classic.png-24bd0b0972f2d8988c31dd608024e714.stex"
+path="res://.import/boot_splash.png-939509db304f9fb6a281cb6f13babf6e.stex"
 
 [deps]
 
-source_file="res://assets/briefs_classic.png"
-dest_files=[ "res://.import/briefs_classic.png-24bd0b0972f2d8988c31dd608024e714.stex" ]
+source_file="res://boot_splash.png"
+dest_files=[ "res://.import/boot_splash.png-939509db304f9fb6a281cb6f13babf6e.stex" ]
 
 [params]
 

@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/TitleScn.gd" type="Script" id=1]
 [ext_resource path="res://assets/modern_dress_up_blurred_bg.png" type="Texture" id=2]
 [ext_resource path="res://assets/dressup_blurred_wardrobe.png" type="Texture" id=3]
 [ext_resource path="res://assets/classic_dress_up_blurred_bg.png" type="Texture" id=4]
-[ext_resource path="res://assets/dressup_title.svg" type="Texture" id=5]
-[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=6]
+[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=5]
 
 [node name="Start" type="Node"]
 
@@ -38,24 +37,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GameTitle" type="Sprite" parent="." index="2"]
-
-position = Vector2( 489.565, 100.74 )
-texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="MenuRf" type="ReferenceRect" parent="." index="3"]
+[node name="MenuRf" type="ReferenceRect" parent="." index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 221.0
-margin_top = 147.0
+margin_top = 80.0
 margin_right = 762.0
-margin_bottom = 462.0
+margin_bottom = 395.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -270,7 +261,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="WinDialogs" parent="." index="4" instance=ExtResource( 6 )]
+[node name="WinDialogs" parent="." index="3" instance=ExtResource( 5 )]
 
 [connection signal="toggled" from="MenuRf/StartVbox/PlayBtn" to="." method="_on_PlayBtn_toggled"]
 

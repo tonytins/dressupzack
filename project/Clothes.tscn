@@ -21,7 +21,7 @@
 [ext_resource path="res://assets/whatsnew_shirt.png" type="Texture" id=19]
 [ext_resource path="res://assets/owo_censor.png" type="Texture" id=20]
 [ext_resource path="res://assets/briefs.png" type="Texture" id=21]
-[ext_resource path="res://assets/zbriefs.png" type="Texture" id=22]
+[ext_resource path="res://assets/z_briefs.png" type="Texture" id=22]
 [ext_resource path="res://assets/fundosi.png" type="Texture" id=23]
 [ext_resource path="res://assets/camera.png" type="Texture" id=24]
 [ext_resource path="res://assets/bottoms_placeholder.png" type="Texture" id=25]
@@ -50,7 +50,7 @@ content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 
-[node name="Clothes" type="Node" index="0"]
+[node name="Clothes" type="Node"]
 
 script = ExtResource( 1 )
 

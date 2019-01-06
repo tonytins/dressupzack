@@ -54,7 +54,7 @@ func _on_DJ_Shorts_pressed():
 	change_bottoms(load("res://assets/dj_shorts.png"))
 
 func _on_ZBriefs_pressed():
-	change_undies(load("res://assets/zbriefs.png"))
+	change_undies(load("res://assets/z_briefs.png"))
 
 func _on_Briefs_pressed():
 	change_undies(load("res://assets/briefs.png"))

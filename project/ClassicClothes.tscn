@@ -20,11 +20,22 @@
 [ext_resource path="res://assets/classic/camera_classic.png" type="Texture" id=18]
 [ext_resource path="res://assets/classic/owo_censor_classic.png" type="Texture" id=19]
 
+[node name="Clothes" type="Control"]
 
-[node name="Clothes" type="Node" index="0"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Wordrobe" type="ReferenceRect" parent="." index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -39,8 +50,26 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Underwear" type="Node" parent="Wordrobe" index="0"]
+[node name="Underwear" type="Control" parent="Wordrobe" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -197.0
+margin_top = -8.0
+margin_right = -197.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Briefs" type="TextureButton" parent="Wordrobe/Underwear" index="0"]
 
@@ -48,10 +77,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 64.0
-margin_top = 397.0
-margin_right = 132.0
-margin_bottom = 431.0
+margin_left = 68.0
+margin_top = 391.0
+margin_right = 136.0
+margin_bottom = 425.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -72,10 +101,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 371.0
-margin_top = 460.0
-margin_right = 439.0
-margin_bottom = 494.0
+margin_left = 375.0
+margin_top = 454.0
+margin_right = 443.0
+margin_bottom = 488.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -97,10 +126,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 508.0
-margin_top = 459.0
-margin_right = 576.0
-margin_bottom = 499.0
+margin_left = 512.0
+margin_top = 453.0
+margin_right = 580.0
+margin_bottom = 493.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -116,7 +145,22 @@ texture_normal = ExtResource( 4 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Bottoms" type="Node" parent="Wordrobe" index="1"]
+[node name="Bottoms" type="Control" parent="Wordrobe" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -197.0
+margin_top = -8.0
+margin_right = -197.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Jeans" type="TextureButton" parent="Wordrobe/Bottoms" index="0"]
 
@@ -124,10 +168,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 610.0
-margin_top = 298.0
-margin_right = 716.0
-margin_bottom = 410.0
+margin_left = 614.0
+margin_top = 292.0
+margin_right = 720.0
+margin_bottom = 404.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -149,10 +193,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 624.0
-margin_top = 421.0
-margin_right = 720.0
-margin_bottom = 514.0
+margin_left = 628.0
+margin_top = 415.0
+margin_right = 734.0
+margin_bottom = 527.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -174,10 +218,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 480.0
-margin_top = 324.0
-margin_right = 586.0
-margin_bottom = 436.0
+margin_left = 484.0
+margin_top = 318.0
+margin_right = 590.0
+margin_bottom = 430.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -199,10 +243,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 230.0
-margin_top = 406.0
-margin_right = 336.0
-margin_bottom = 518.0
+margin_left = 234.0
+margin_top = 400.0
+margin_right = 340.0
+margin_bottom = 512.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -224,10 +268,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 362.0
-margin_top = 322.0
-margin_right = 468.0
-margin_bottom = 434.0
+margin_left = 366.0
+margin_top = 316.0
+margin_right = 472.0
+margin_bottom = 428.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -243,7 +287,22 @@ texture_normal = ExtResource( 9 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Tops" type="Node" parent="Wordrobe" index="2"]
+[node name="Tops" type="Control" parent="Wordrobe" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -197.0
+margin_top = -8.0
+margin_right = -197.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Sweatshirt" type="TextureButton" parent="Wordrobe/Tops" index="0"]
 
@@ -251,10 +310,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 639.0
-margin_top = 40.0
-margin_right = 724.0
-margin_bottom = 150.0
+margin_left = 643.0
+margin_top = 34.0
+margin_right = 728.0
+margin_bottom = 144.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -276,10 +335,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 640.0
-margin_top = 162.0
-margin_right = 725.0
-margin_bottom = 272.0
+margin_left = 644.0
+margin_top = 156.0
+margin_right = 729.0
+margin_bottom = 271.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -301,10 +360,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 243.0
-margin_top = 31.0
-margin_right = 324.0
-margin_bottom = 144.0
+margin_left = 247.0
+margin_top = 25.0
+margin_right = 332.0
+margin_bottom = 138.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -326,10 +385,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 514.0
-margin_top = 39.0
-margin_right = 595.0
-margin_bottom = 154.0
+margin_left = 518.0
+margin_top = 33.0
+margin_right = 603.0
+margin_bottom = 148.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -351,10 +410,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 381.0
-margin_top = 184.0
-margin_right = 462.0
-margin_bottom = 299.0
+margin_left = 385.0
+margin_top = 178.0
+margin_right = 466.0
+margin_bottom = 293.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -376,10 +435,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 249.0
-margin_top = 281.0
-margin_right = 334.0
-margin_bottom = 396.0
+margin_left = 253.0
+margin_top = 275.0
+margin_right = 338.0
+margin_bottom = 390.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -401,10 +460,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 245.0
-margin_top = 156.0
-margin_right = 330.0
-margin_bottom = 271.0
+margin_left = 249.0
+margin_top = 150.0
+margin_right = 334.0
+margin_bottom = 265.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -426,10 +485,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 508.0
-margin_top = 182.0
-margin_right = 593.0
-margin_bottom = 297.0
+margin_left = 512.0
+margin_top = 176.0
+margin_right = 597.0
+margin_bottom = 291.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -445,7 +504,22 @@ texture_normal = ExtResource( 17 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Accessories" type="Node" parent="Wordrobe" index="3"]
+[node name="Accessories" type="Control" parent="Wordrobe" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -197.0
+margin_top = -8.0
+margin_right = -197.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Camera" type="TextureButton" parent="Wordrobe/Accessories" index="0"]
 
@@ -453,10 +527,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 394.0
-margin_top = 100.0
-margin_right = 443.0
-margin_bottom = 162.0
+margin_left = 398.0
+margin_top = 94.0
+margin_right = 447.0
+margin_bottom = 156.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -478,10 +552,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 367.0
-margin_top = 43.0
-margin_right = 472.0
-margin_bottom = 83.0
+margin_left = 371.0
+margin_top = 37.0
+margin_right = 476.0
+margin_bottom = 77.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2

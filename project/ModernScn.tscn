@@ -23,6 +23,9 @@ __meta__ = {
 
 position = Vector2( 93.9417, 98.396 )
 texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Nathan" parent="." index="2" instance=ExtResource( 4 )]
 

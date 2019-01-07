@@ -4,4 +4,4 @@
 
 ## Screenshot
 
-![](screenshot.png)
+![](screenshot.gif)

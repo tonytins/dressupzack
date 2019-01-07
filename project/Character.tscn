@@ -50,14 +50,14 @@ animations = [ {
 "speed": 4.0
 } ]
 
-[node name="Nathane" type="Node2D" index="0"]
+[node name="Nathane" type="Node2D"]
 
 [node name="Tail" type="AnimatedSprite" parent="." index="0"]
 
 position = Vector2( 49.6951, 374.417 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 5
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -76,7 +76,7 @@ __meta__ = {
 position = Vector2( 109.519, 253.9 )
 frames = SubResource( 2 )
 animation = "default"
-frame = 18
+frame = 5
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -87,7 +87,7 @@ __meta__ = {
 position = Vector2( 126.316, 257.474 )
 frames = SubResource( 3 )
 animation = "default"
-frame = 13
+frame = 23
 playing = true
 __meta__ = {
 "_edit_lock_": true

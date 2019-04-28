@@ -19,6 +19,7 @@ __meta__ = {
 }
 
 [node name="WordrobeBG" type="Sprite" parent="Modern"]
+visible = false
 position = Vector2( 492.609, 280.27 )
 texture = ExtResource( 3 )
 __meta__ = {
@@ -34,10 +35,10 @@ __meta__ = {
 }
 
 [node name="MenuRf" type="ReferenceRect" parent="."]
-margin_left = 221.0
-margin_top = 80.0
+margin_left = 202.0
+margin_top = 67.0
 margin_right = 762.0
-margin_bottom = 395.0
+margin_bottom = 518.0
 
 [node name="StartVbox" type="VBoxContainer" parent="MenuRf"]
 anchor_left = 0.5

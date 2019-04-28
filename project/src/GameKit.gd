@@ -10,8 +10,8 @@ func is_game_paused(is_paused):
 		
 func switch_scenes(new_mode):
 	if new_mode == "classic":
-		get_tree().change_scene("res://ClassicScn.tscn")
+		get_tree().change_scene("res://scn/ClassicScn.tscn")
 	elif new_mode == "modern":
-		get_tree().change_scene("res://ModernScn.tscn")
+		get_tree().change_scene("res://scn/ModernScn.tscn")
 	elif new_mode == "title":
-		get_tree().change_scene("res://TitleScn.tscn")
+		get_tree().change_scene("res://scn/TitleScn.tscn")

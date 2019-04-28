@@ -3,9 +3,10 @@
 [ext_resource path="res://src/GameScn.gd" type="Script" id=1]
 [ext_resource path="res://assets/classic_dress_up_bg.png" type="Texture" id=2]
 [ext_resource path="res://assets/lights.png" type="Texture" id=3]
-[ext_resource path="res://Character.tscn" type="PackedScene" id=4]
-[ext_resource path="res://ClassicClothes.tscn" type="PackedScene" id=5]
-[ext_resource path="res://WinDialogs.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scn/Character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scn/ClassicClothes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=6]
+
 
 [node name="GameScreen" type="Node" index="0"]
 

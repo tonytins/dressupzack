@@ -24,7 +24,6 @@
 [ext_resource path="res://assets/mouth/mouth12.png" type="Texture" id=22]
 
 [sub_resource type="SpriteFrames" id=1]
-
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
 "loop": true,
@@ -33,7 +32,6 @@ animations = [ {
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
-
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 11 ) ],
 "loop": true,
@@ -42,7 +40,6 @@ animations = [ {
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
-
 animations = [ {
 "frames": [ ExtResource( 12 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 22 ) ],
 "loop": true,
@@ -52,45 +49,37 @@ animations = [ {
 
 [node name="Nathane" type="Node2D"]
 
-[node name="Tail" type="AnimatedSprite" parent="." index="0"]
-
+[node name="Tail" type="AnimatedSprite" parent="."]
 position = Vector2( 49.6951, 374.417 )
 frames = SubResource( 1 )
-animation = "default"
-frame = 1
+frame = 7
 playing = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Base" type="Sprite" parent="." index="1"]
-
+[node name="Base" type="Sprite" parent="."]
 position = Vector2( 91.6446, 354.064 )
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Eyes" type="AnimatedSprite" parent="." index="2"]
-
+[node name="Eyes" type="AnimatedSprite" parent="."]
 position = Vector2( 109.519, 253.9 )
 frames = SubResource( 2 )
-animation = "default"
-frame = 5
+frame = 7
 playing = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Mouth" type="AnimatedSprite" parent="." index="3"]
-
+[node name="Mouth" type="AnimatedSprite" parent="."]
 position = Vector2( 126.316, 257.474 )
 frames = SubResource( 3 )
-animation = "default"
-frame = 23
+frame = 26
 playing = true
 __meta__ = {
 "_edit_lock_": true
 }
-
 

@@ -52,7 +52,7 @@ animations = [ {
 [node name="Tail" type="AnimatedSprite" parent="."]
 position = Vector2( 49.6951, 374.417 )
 frames = SubResource( 1 )
-frame = 6
+frame = 8
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -68,7 +68,7 @@ __meta__ = {
 [node name="Eyes" type="AnimatedSprite" parent="."]
 position = Vector2( 109.519, 253.9 )
 frames = SubResource( 2 )
-frame = 18
+frame = 16
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -77,7 +77,7 @@ __meta__ = {
 [node name="Mouth" type="AnimatedSprite" parent="."]
 position = Vector2( 126.316, 257.474 )
 frames = SubResource( 3 )
-frame = 6
+frame = 10
 playing = true
 __meta__ = {
 "_edit_lock_": true

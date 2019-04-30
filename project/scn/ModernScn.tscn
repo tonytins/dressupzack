@@ -7,7 +7,6 @@
 [ext_resource path="res://scn/Clothes.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=6]
 
-
 [node name="GameScreen" type="Node"]
 script = ExtResource( 1 )
 

@@ -60,14 +60,14 @@ func _on_Briefs_pressed():
 	change_undies(load("res://sprites/briefs.png"))
 
 func _on_Jeans_pressed():
-	change_bottoms(load("res://sprites/jeans.png"))
+	change_bottoms(load("res://sprites/jeans.svg"))
 	
 func _on_OwO_Censor_pressed():
 	change_bottoms(null)
 	change_undies(load("res://sprites/owo_censor.png"))
 
 func _on_Sweats_pressed():
-	change_bottoms(load("res://sprites/sweat_pants.png"))
+	change_bottoms(load("res://sprites/sweat_pants.svg"))
 
 func _on_Sweatshirt_pressed():
 	change_tops(load("res://sprites/old_sweatshirt.png"))
@@ -100,7 +100,7 @@ func _on_NL_Jacket_pressed():
 	change_tops(load("res://sprites/nl_jacket.png"))
 	
 func _on_Blue_Camo_Jeans_pressed():
-	change_bottoms(load("res://sprites/blue_camo_jeans.png"))
+	change_bottoms(load("res://sprites/blue_camo_jeans.svg"))
 
 func _on_Whats_New_Shirt_pressed():
 	change_tops(load("res://sprites/whatsnew_shirt.png"))

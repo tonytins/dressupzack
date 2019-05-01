@@ -10,8 +10,8 @@
 [ext_resource path="res://sprites/beat_up_jeans.png" type="Texture" id=8]
 [ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=9]
 [ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=10]
-[ext_resource path="res://sprites/raw_shirt.png" type="Texture" id=11]
-[ext_resource path="res://sprites/atomic_shirt.png" type="Texture" id=12]
+[ext_resource path="res://sprites/raw_shirt.svg" type="Texture" id=11]
+[ext_resource path="res://sprites/atomic_shirt.svg" type="Texture" id=12]
 [ext_resource path="res://sprites/z_shirt.png" type="Texture" id=13]
 [ext_resource path="res://sprites/biker_jacket.png" type="Texture" id=14]
 [ext_resource path="res://sprites/nl_jacket.png" type="Texture" id=15]
@@ -49,7 +49,6 @@ position = Vector2( 485.001, 160 )
 texture = ExtResource( 3 )
 
 [node name="RefRect" type="ReferenceRect" parent="."]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 209.0
@@ -73,6 +72,7 @@ custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
 tab_align = 0
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
@@ -127,7 +127,6 @@ text = "KRBT"
 flat = true
 
 [node name="Shirts" type="Tabs" parent="RefRect/Wordrobe"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
@@ -136,7 +135,7 @@ margin_top = 29.0
 margin_left = 33.0
 margin_top = 14.0
 margin_right = 474.0
-margin_bottom = 457.0
+margin_bottom = 364.0
 columns = 5
 
 [node name="Sweatshirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
@@ -318,7 +317,6 @@ texture = ExtResource( 25 )
 __meta__ = {
 "_edit_lock_": true
 }
-
 [connection signal="pressed" from="RefRect/Wordrobe/Pants/PantsGrid/Jeans" to="." method="_on_Jeans_pressed"]
 [connection signal="pressed" from="RefRect/Wordrobe/Pants/PantsGrid/DJ Shorts" to="." method="_on_DJ_Shorts_pressed"]
 [connection signal="pressed" from="RefRect/Wordrobe/Pants/PantsGrid/Sweats" to="." method="_on_Sweats_pressed"]

@@ -76,10 +76,10 @@ func _on_DJ_Shirt_pressed():
 	change_tops(load("res://sprites/dj_shirt.png"))
 
 func _on_Raw_pressed():
-	change_tops(load("res://sprites/raw_shirt.png"))
+	change_tops(load("res://sprites/raw_shirt.svg"))
 
 func _on_Atomic_pressed():
-	change_tops(load("res://sprites/atomic_shirt.png"))
+	change_tops(load("res://sprites/atomic_shirt.svg"))
 	
 func _on_Korm_Shirt_pressed():
 	change_tops(load("res://sprites/korm_shirt.png"))

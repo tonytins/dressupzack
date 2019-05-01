@@ -68,7 +68,7 @@ __meta__ = {
 [node name="Eyes" type="AnimatedSprite" parent="."]
 position = Vector2( 109.519, 253.9 )
 frames = SubResource( 2 )
-frame = 16
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -77,7 +77,7 @@ __meta__ = {
 [node name="Mouth" type="AnimatedSprite" parent="."]
 position = Vector2( 126.316, 257.474 )
 frames = SubResource( 3 )
-frame = 10
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true

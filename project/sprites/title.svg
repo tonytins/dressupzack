@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="102.53982mm"
-   height="12.457465mm"
-   viewBox="0 0 102.53982 12.457465"
+   width="103.24624mm"
+   height="36.245796mm"
+   viewBox="0 0 103.24624 36.245796"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="177.04774"
-     inkscape:cy="-43.325592"
+     inkscape:cx="426.57668"
+     inkscape:cy="19.131602"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,17 +57,88 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(54.296804,-86.706353)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="-54.87558"
-       y="97.861572"
-       id="text823"><tspan
-         sodipodi:role="line"
-         id="tspan821"
-         x="-54.87558"
-         y="97.861572"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:0.26458332">Nathan's Dress Up</tspan></text>
+     transform="translate(54.41838,-81.046773)">
+    <g
+       id="g879">
+      <path
+         d="m -46.41738,82.189773 4.826,0.431799 0.635,15.1892 -5.4864,0.127 -2.8956,-7.366 0.2032,7.2898 -5.1054,-0.0762 0.8636,-15.747999 4.572,0.406399 2.5908,6.5278 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path816"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -39.961414,97.531372 3.9116,-15.316199 6.9088,-0.1016 3.7084,15.443199 -4.8514,0.4572 -0.6096,-3.048 h -3.556 l -0.5842,3.048 z m 8.1788,-6.5786 -0.9906,-4.7498 -0.8382,4.826 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path818"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -14.112945,85.136172 -2.1082,0.127 0.0762,12.5222 h -5.6134 l 0.762,-12.2428 -3.3528,0.1778 0.127,-3.708399 10.0076,-0.508 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path820"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -4.2906847,82.189773 4.82599994,0.431799 0.63499996,15.1892 -5.4863999,0.127 0.1016,-6.1722 h -2.5146 l -0.2793999,6.096 -5.1054004,-0.0762 0.8636,-15.747999 4.5720003,0.406399 -0.0508,5.6642 2.413,0.0254 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path822"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 2.1569444,97.531372 3.9115999,-15.316199 6.9087997,-0.1016 3.7084,15.443199 -4.8514,0.4572 -0.6096,-3.048 H 7.6687443 l -0.5842,3.048 z m 8.1787996,-6.5786 -0.9905997,-4.7498 -0.8382,4.826 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path824"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 25.516214,82.189773 4.826,0.431799 0.635,15.1892 -5.4864,0.127 -2.8956,-7.366 0.2032,7.2898 -5.1054,-0.0762 0.8636,-15.747999 4.572,0.406399 2.5908,6.5278 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path826"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 36.467979,87.447572 -3.327399,0.0762 -0.635,-5.918199 4.267199,-0.5588 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path828"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 38.871058,88.920772 q 0,0.0508 -0.0762,-0.2032 -0.0762,-0.254 -0.127,-0.6858 -0.0508,-0.4572 -0.0254,-1.0414 0.0508,-0.6096 0.254,-1.2192 0.2032,-0.635 0.6604,-1.2446 0.4572,-0.635 1.2446,-1.1176 0.889,-0.5588 2.0828,-0.8128 1.2192,-0.254 2.286,-0.3048 1.2446,-0.0762 2.54,0.0254 l -0.2794,5.3848 q 0.1524,-0.0762 -0.1016,-0.254 -0.254,-0.1778 -0.7112,-0.3302 -0.4318,-0.1778 -0.9906,-0.3048 -0.5588,-0.127 -1.0668,-0.0762 -0.4826,0.0508 -0.8128,0.3302 -0.3048,0.254 -0.2794,0.8382 -0.0508,0.3302 0.3048,0.6096 0.381,0.2794 0.9652,0.5842 0.6096,0.2794 1.2954,0.635 0.6858,0.3302 1.2954,0.7874 0.635,0.4572 1.0414,1.0668 0.431799,0.6096 0.457199,1.4478 0,0.7366 -0.2032,1.397 -0.177799,0.5842 -0.558799,1.2192 -0.3556,0.6096 -1.016,1.0668 -0.9144,0.6604 -1.9304,0.9652 -1.016,0.2794 -2.032,0.3302 -0.9906,0.0762 -1.8796,-0.0254 -0.889,-0.1016 -1.5748,-0.2794 -0.6604,-0.1778 -1.016,-0.3556 -0.3556,-0.1778 -0.2794,-0.2286 l 0.2794,-3.429 q 0.6604,0.1778 1.3208,0.2286 0.5842,0.0508 1.2192,0 0.6604,-0.0762 1.1938,-0.381 0.4064,-0.2794 0.3556,-0.508 -0.0508,-0.2286 -0.4064,-0.4826 -0.3302,-0.2794 -0.8636,-0.5842 -0.5334,-0.3048 -1.0668,-0.7366 -0.5334,-0.4318 -0.9652,-0.9906 -0.4064,-0.5588 -0.5334,-1.3208 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path830"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g869"
+       transform="translate(3.1750001,-12.700002)">
+      <path
+         d="m -54.01198,113.40637 7.239,0.1778 q 1.778,0.1524 2.8448,0.9398 1.0668,0.7874 1.6256,1.9812 0.5588,1.1938 0.7112,2.6924 0.1524,1.4986 0.1016,3.048 -0.3048,2.2352 -0.7874,3.6322 -0.4826,1.397 -1.2446,2.1844 -0.762,0.7874 -1.8796,1.0668 -1.0922,0.2794 -2.6416,0.254 l -3.2004,-0.0508 q -0.6096,0 -1.1938,0 -0.5588,-0.0254 -1.016,-0.0254 -0.4318,0 -0.7112,0 -0.254,-0.0254 -0.254,-0.0254 z m 5.2832,10.8966 q 0.381,-0.0508 0.8128,-0.1016 0.4318,-0.0508 0.8382,-0.2794 0.4318,-0.2286 0.762,-0.7112 0.3302,-0.4826 0.508,-1.397 -0.0254,-0.5588 -0.0254,-1.1176 0.0254,-0.5842 -0.127,-1.1176 -0.127,-0.5334 -0.508,-0.9906 -0.3556,-0.4572 -1.143,-0.8128 -0.0254,0 -0.381,0 -0.3556,-0.0254 -0.7874,-0.0508 -0.508,-0.0254 -1.143,-0.0508 l -0.2794,6.5532 q 0.4318,0 0.7366,0.0254 0.2794,0.0254 0.4826,0.0508 0.2286,0 0.254,0 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path832"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -28.639364,126.48737 -2.8702,3.5052 -3.5306,-2.9464 -0.0254,2.4638 -5.0292,-0.2032 0.381,-15.4432 3.7592,-0.1778 q 1.4224,-0.0762 2.4638,0.1016 1.0414,0.1524 1.778,0.508 0.7366,0.3302 1.2446,0.8382 0.508,0.4826 0.889,1.0668 0.2794,0.4572 0.4826,1.524 0.2032,1.0414 0.1524,2.3114 -0.0508,1.2446 -0.508,2.4892 -0.4318,1.2192 -1.4478,2.0066 z m -5.9436,-5.0038 q 0.8382,-0.2794 1.1176,-0.9144 0.3048,-0.635 0.2032,-1.6764 -0.2794,-0.635 -0.7874,-0.889 -0.508,-0.254 -1.0414,-0.2794 l 0.0254,3.8608 q 0.127,-0.0254 0.2286,-0.0508 0.127,-0.0254 0.254,-0.0508 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path834"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -16.970048,129.40837 -11.4808,0.1016 0.5842,-15.4686 10.668,-0.0762 q -0.0762,1.2446 -0.127,2.2352 -0.0254,0.4318 -0.0508,0.8382 0,0.381 -0.0254,0.7112 0,0.3048 0,0.4826 0,0.1778 0,0.1778 l -5.2832,0.0254 v 1.397 l 3.937,-0.0508 -0.3556,3.81 -3.7592,0.127 -0.0762,1.2192 q 1.6256,-0.0254 2.921,-0.0508 0.5588,0 1.0668,0 0.5334,-0.0254 0.9398,-0.0254 0.4318,-0.0254 0.6858,-0.0254 0.2794,0 0.2794,0 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path836"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -14.806288,120.67077 q 0,0.0508 -0.0762,-0.2032 -0.0762,-0.254 -0.127,-0.6858 -0.0508,-0.4572 -0.0254,-1.0414 0.0508,-0.6096 0.254,-1.2192 0.2032,-0.635 0.6604,-1.2446 0.4572,-0.635 1.2446,-1.1176 0.889,-0.5588 2.0828,-0.8128 1.2192003,-0.254 2.2860003,-0.3048 1.2446,-0.0762 2.5399999,0.0254 l -0.2794,5.3848 q 0.1524,-0.0762 -0.1016,-0.254 -0.254,-0.1778 -0.7111999,-0.3302 -0.4318,-0.1778 -0.9906,-0.3048 -0.5588,-0.127 -1.0668,-0.0762 -0.4826,0.0508 -0.8128,0.3302 -0.3048003,0.254 -0.2794003,0.8382 -0.0508,0.3302 0.3048003,0.6096 0.381,0.2794 0.9652,0.5842 0.6096,0.2794 1.2954,0.635 0.6858,0.3302 1.2953999,0.7874 0.635,0.4572 1.0414,1.0668 0.4318,0.6096 0.4572,1.4478 0,0.7366 -0.2032,1.397 -0.1778,0.5842 -0.5588,1.2192 -0.3556,0.6096 -1.016,1.0668 -0.9143999,0.6604 -1.9303999,0.9652 -1.016,0.2794 -2.0320003,0.3302 -0.9906,0.0762 -1.8796,-0.0254 -0.889,-0.1016 -1.5748,-0.2794 -0.6604,-0.1778 -1.016,-0.3556 -0.3556,-0.1778 -0.2794,-0.2286 l 0.2794,-3.429 q 0.6604,0.1778 1.3208,0.2286 0.5842,0.0508 1.2192,0 0.6604,-0.0762 1.1938,-0.381 0.4064,-0.2794 0.3556,-0.508 -0.0508,-0.2286 -0.4064,-0.4826 -0.3302,-0.2794 -0.8636,-0.5842 -0.5334,-0.3048 -1.0668,-0.7366 -0.5334,-0.4318 -0.9652,-0.9906 -0.4064,-0.5588 -0.5334,-1.3208 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path838"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -2.5527705,120.67077 q 0,0.0508 -0.0762,-0.2032 -0.0762,-0.254 -0.127,-0.6858 -0.0508,-0.4572 -0.0254,-1.0414 0.0508,-0.6096 0.254,-1.2192 0.2032,-0.635 0.6604,-1.2446 0.4572,-0.635 1.24459999,-1.1176 0.88899999,-0.5588 2.08280001,-0.8128 1.2191999,-0.254 2.2859999,-0.3048 1.2446,-0.0762 2.54,0.0254 l -0.2794,5.3848 q 0.1524,-0.0762 -0.1016,-0.254 -0.254,-0.1778 -0.7112,-0.3302 -0.4318,-0.1778 -0.9906,-0.3048 -0.5588,-0.127 -1.0668,-0.0762 -0.4826,0.0508 -0.8128,0.3302 -0.3047999,0.254 -0.2794,0.8382 -0.0508,0.3302 0.3048,0.6096 0.381,0.2794 0.9652,0.5842 0.6096,0.2794 1.2954,0.635 0.6858,0.3302 1.2954,0.7874 0.635,0.4572 1.0414,1.0668 0.4318,0.6096 0.4572,1.4478 0,0.7366 -0.2032,1.397 -0.1778,0.5842 -0.5588,1.2192 -0.3556,0.6096 -1.016,1.0668 -0.9144,0.6604 -1.9304,0.9652 -1.016,0.2794 -2.0319999,0.3302 -0.99060003,0.0762 -1.87960002,-0.0254 -0.88899998,-0.1016 -1.57479998,-0.2794 -0.6604,-0.1778 -1.016,-0.3556 -0.3556,-0.1778 -0.2794,-0.2286 l 0.2794,-3.429 q 0.6604,0.1778 1.3208,0.2286 0.58419999,0.0508 1.21919998,0 0.66039999,-0.0762 1.19379999,-0.381 0.40640003,-0.2794 0.35560003,-0.508 -0.0508,-0.2286 -0.40640003,-0.4826 -0.3302,-0.2794 -0.86359999,-0.5842 -0.53339999,-0.3048 -1.06679998,-0.7366 -0.5334,-0.4318 -0.9652,-0.9906 -0.4064,-0.5588 -0.5334,-1.3208 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path840"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 26.464344,124.40457 q 0,0.4064 -0.127,0.9652 -0.127,0.5588 -0.4064,1.1684 -0.254,0.5842 -0.7112,1.1684 -0.4318,0.5588 -1.0922,0.9906 -0.635,0.4318 -1.4986,0.6604 -0.8382,0.2286 -1.9558,0.127 -1.1176,-0.1016 -1.9558,-0.3556 -0.8382,-0.2794 -1.4732,-0.6604 -0.6096,-0.381 -1.0414,-0.8382 -0.4318,-0.4572 -0.7112,-0.9144 -0.6604,-1.0668 -0.7874,-2.3876 l -0.7112,-10.2108 5.2578,-0.2794 0.508,9.4488 q 0.127,0.7112 0.4826,1.016 0.381,0.3048 0.762,0.2794 0.381,-0.0508 0.6604,-0.4064 0.3048,-0.3556 0.3048,-1.016 v -9.3726 l 4.826,0.2286 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path842"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 37.228389,125.36977 q -0.4064,0.1524 -0.7874,0.3302 -0.3556,0.1524 -0.762,0.3048 -0.381,0.127 -0.8636,0.2286 -0.4572,0.0762 -1.0668,0.0762 l -0.0254,3.2004 -5.5626,0.0254 0.7874,-16.1036 3.8862,0.254 q 1.4224,0.1016 2.413,0.3556 1.016,0.254 1.7018,0.635 0.7112,0.381 1.1684,0.889 0.4572,0.508 0.8382,1.0922 0.3556,0.762 0.508,1.7272 0.127,0.8128 0.1016,1.9558 0,1.1176 -0.381,2.4892 -0.2286,0.7874 -0.5842,1.2954 -0.3302,0.4826 -0.635,0.762 -0.3048,0.2794 -0.5334,0.381 -0.2032,0.1016 -0.2032,0.1016 z m -2.921,-3.1496 q 1.016,-0.3048 1.3462,-1.0668 0.3556,-0.7874 0.2286,-2.032 -0.3556,-0.7366 -0.9652,-1.0414 -0.5842,-0.3302 -1.2192,-0.3556 l 0.0254,4.6228 q 0.1524,-0.0254 0.2794,-0.0508 0.1524,-0.0254 0.3048,-0.0762 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:'Soup of Justice';-inkscape-font-specification:'Soup of Justice';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="path844"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>

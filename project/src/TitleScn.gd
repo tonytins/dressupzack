@@ -15,4 +15,4 @@ func _on_LicenseBtn_pressed():
 	$WinDialogs/LicenseWin.show()
 
 func _on_PlayBtn_pressed():
-	$MenuRf/ModePanel.show()
+	switch_scenes("modern")

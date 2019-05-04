@@ -38,8 +38,6 @@ gdscript/warnings/unsafe_call_argument=true
 
 [display]
 
-window/size/width=800
-window/size/height=554
 window/size/resizable=false
 
 [input]

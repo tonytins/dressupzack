@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/GameScn.gd" type="Script" id=1]
 [ext_resource path="res://sprites/icrazy_frame.png" type="Texture" id=2]
 [ext_resource path="res://scn/Clothes.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Soundtrack.gd" type="Script" id=5]
 
 [node name="GameScreen" type="Node"]
 script = ExtResource( 1 )
@@ -15,3 +16,6 @@ texture = ExtResource( 2 )
 [node name="Clothes" parent="." instance=ExtResource( 3 )]
 
 [node name="WinDialogs" parent="." instance=ExtResource( 4 )]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 5 )

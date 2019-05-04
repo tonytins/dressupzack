@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/at_the_lake.ogg-3c70c4f6fe0d2145ba5ad822bf6ed2f5.oggstr"
+
+[deps]
+
+source_file="res://music/at_the_lake.ogg"
+dest_files=[ "res://.import/at_the_lake.ogg-3c70c4f6fe0d2145ba5ad822bf6ed2f5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

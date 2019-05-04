@@ -7,7 +7,7 @@
 [ext_resource path="res://sprites/dj_shorts.png" type="Texture" id=5]
 [ext_resource path="res://sprites/sweat_pants.svg" type="Texture" id=6]
 [ext_resource path="res://sprites/blue_camo_jeans.svg" type="Texture" id=7]
-[ext_resource path="res://sprites/beat_up_jeans.png" type="Texture" id=8]
+[ext_resource path="res://sprites/beat_up_jeans.svg" type="Texture" id=8]
 [ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=9]
 [ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=10]
 [ext_resource path="res://sprites/raw_shirt.svg" type="Texture" id=11]
@@ -18,10 +18,10 @@
 [ext_resource path="res://sprites/train_hoodie.png" type="Texture" id=16]
 [ext_resource path="res://sprites/korm_shirt.png" type="Texture" id=17]
 [ext_resource path="res://sprites/whatsnew_shirt.png" type="Texture" id=18]
-[ext_resource path="res://sprites/owo_censor.png" type="Texture" id=19]
-[ext_resource path="res://sprites/briefs.png" type="Texture" id=20]
-[ext_resource path="res://sprites/z_briefs.png" type="Texture" id=21]
-[ext_resource path="res://sprites/fundosi.png" type="Texture" id=22]
+[ext_resource path="res://sprites/owo_censor.svg" type="Texture" id=19]
+[ext_resource path="res://sprites/briefs.svg" type="Texture" id=20]
+[ext_resource path="res://sprites/z_briefs.svg" type="Texture" id=21]
+[ext_resource path="res://sprites/fundosi.svg" type="Texture" id=22]
 [ext_resource path="res://sprites/camera.png" type="Texture" id=23]
 [ext_resource path="res://sprites/bottoms_placeholder.png" type="Texture" id=24]
 [ext_resource path="res://sprites/tops_placeholder.png" type="Texture" id=25]
@@ -72,7 +72,6 @@ custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
 tab_align = 0
 
 [node name="Pants" type="Tabs" parent="RefRect/Wordrobe"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
@@ -127,6 +126,7 @@ text = "KRBT"
 flat = true
 
 [node name="Shirts" type="Tabs" parent="RefRect/Wordrobe"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0

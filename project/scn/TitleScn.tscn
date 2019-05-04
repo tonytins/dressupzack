@@ -16,11 +16,10 @@ __meta__ = {
 }
 
 [node name="Title" type="Sprite" parent="."]
-position = Vector2( 399.047, 113.148 )
+position = Vector2( 408.047, 113.148 )
 texture = ExtResource( 3 )
 
 [node name="MenuRf" type="ReferenceRect" parent="."]
-editor/display_folded = true
 margin_left = 130.323
 margin_top = 34.4196
 margin_right = 690.323

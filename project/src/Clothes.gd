@@ -8,7 +8,7 @@ onready var tops = load("res://sprites/tops_placeholder.png")
 onready var accessory = load("res://sprites/tops_placeholder.png")
 # ZC's Dress Up was stylized to be cute, not adult.
 # Underwear cam be suggestive but never lewd. 
-onready var undies = load("res://sprites/briefs.png")
+onready var undies = load("res://sprites/briefs.svg")
 
 func change_bottoms(new_bottom):
 	bottoms = new_bottom
@@ -16,7 +16,7 @@ func change_bottoms(new_bottom):
 	if new_bottom == null:
 		$Body/Bottom.texture = bottoms
 		
-	if undies == load("res://sprites/owo_censor.png"):
+	if undies == load("res://sprites/owo_censor.svg"):
 		change_undies(null)
 		
 	$Body/Bottom.texture = bottoms
@@ -57,14 +57,14 @@ func _on_ZBriefs_pressed():
 	change_undies(load("res://sprites/z_briefs.png"))
 
 func _on_Briefs_pressed():
-	change_undies(load("res://sprites/briefs.png"))
+	change_undies(load("res://sprites/briefs.svg"))
 
 func _on_Jeans_pressed():
 	change_bottoms(load("res://sprites/jeans.svg"))
 	
 func _on_OwO_Censor_pressed():
 	change_bottoms(null)
-	change_undies(load("res://sprites/owo_censor.png"))
+	change_undies(load("res://sprites/owo_censor.svg"))
 
 func _on_Sweats_pressed():
 	change_bottoms(load("res://sprites/sweat_pants.svg"))
@@ -94,7 +94,7 @@ func _on_Train_Hoodie_pressed():
 	change_tops(load("res://sprites/train_hoodie.png"))
 
 func _on_Beat_Up_Jeans_pressed():
-	change_bottoms(load("res://sprites/beat_up_jeans.png"))
+	change_bottoms(load("res://sprites/beat_up_jeans.svg"))
 
 func _on_NL_Jacket_pressed():
 	change_tops(load("res://sprites/nl_jacket.png"))
@@ -106,7 +106,7 @@ func _on_Whats_New_Shirt_pressed():
 	change_tops(load("res://sprites/whatsnew_shirt.png"))
 
 func _on_Fundosi_pressed():
-	change_undies(load("res://sprites/fundosi.png"))
+	change_undies(load("res://sprites/fundosi.svg"))
 
 func _on_Camera_pressed():
 	change_accessoires(load("res://sprites/camera.png"))

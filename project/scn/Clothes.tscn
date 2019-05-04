@@ -72,15 +72,13 @@ custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -22.0
 margin_top = 29.0
-margin_right = -22.0
 custom_constants/hseparation = 0
 
 [node name="PantsGrid" type="GridContainer" parent="RefRect/Wordrobe/Pants"]
-margin_left = 35.0
+margin_left = 42.0
 margin_top = 13.0
-margin_right = 657.0
+margin_right = 600.0
 margin_bottom = 425.0
 columns = 5
 
@@ -132,79 +130,79 @@ anchor_bottom = 1.0
 margin_top = 29.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="RefRect/Wordrobe/Shirts"]
-margin_left = 13.0
-margin_top = 14.0
-margin_right = 632.0
-margin_bottom = 447.0
-columns = 6
+margin_left = 82.0
+margin_top = 8.0
+margin_right = 556.0
+margin_bottom = 441.0
+columns = 5
 
 [node name="Sweatshirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_right = 85.0
+margin_right = 118.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 10 )
 
 [node name="DJ Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 89.0
-margin_right = 174.0
+margin_left = 122.0
+margin_right = 207.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 11 )
 
 [node name="Raw" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 178.0
-margin_right = 263.0
+margin_left = 211.0
+margin_right = 296.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 12 )
 
 [node name="Atomic" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 267.0
-margin_right = 352.0
+margin_left = 300.0
+margin_right = 385.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 13 )
 
 [node name="Z Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 356.0
+margin_left = 389.0
 margin_right = 474.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 14 )
 
 [node name="Biker Jacket" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 478.0
-margin_right = 563.0
-margin_bottom = 115.0
+margin_top = 119.0
+margin_right = 118.0
+margin_bottom = 234.0
 texture_normal = ExtResource( 15 )
 
 [node name="NL Jacket" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 122.0
 margin_top = 119.0
-margin_right = 85.0
-margin_bottom = 237.0
+margin_right = 207.0
+margin_bottom = 234.0
 texture_normal = ExtResource( 16 )
 
 [node name="Train Hoodie" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 89.0
+margin_left = 211.0
 margin_top = 119.0
-margin_right = 174.0
-margin_bottom = 237.0
+margin_right = 296.0
+margin_bottom = 234.0
 texture_normal = ExtResource( 17 )
 
 [node name="Korm Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 178.0
+margin_left = 300.0
 margin_top = 119.0
-margin_right = 263.0
-margin_bottom = 237.0
+margin_right = 385.0
+margin_bottom = 234.0
 texture_normal = ExtResource( 18 )
 
 [node name="What's New Shirt" type="TextureButton" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 267.0
+margin_left = 389.0
 margin_top = 119.0
-margin_right = 352.0
-margin_bottom = 237.0
+margin_right = 474.0
+margin_bottom = 234.0
 texture_normal = ExtResource( 19 )
 
 [node name="Remove Shirt" type="Button" parent="RefRect/Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 356.0
-margin_top = 119.0
-margin_right = 474.0
-margin_bottom = 237.0
+margin_top = 238.0
+margin_right = 118.0
+margin_bottom = 356.0
 rect_min_size = Vector2( 0, 112 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -220,9 +218,9 @@ anchor_bottom = 1.0
 margin_top = 29.0
 
 [node name="UndiesGrid" type="GridContainer" parent="RefRect/Wordrobe/Underwear"]
-margin_left = 13.0
+margin_left = 68.0
 margin_top = 10.0
-margin_right = 635.0
+margin_right = 585.0
 margin_bottom = 451.0
 columns = 5
 
@@ -255,11 +253,11 @@ anchor_bottom = 1.0
 margin_top = 29.0
 
 [node name="AccessoiresGrid" type="GridContainer" parent="RefRect/Wordrobe/Accessoires"]
-margin_left = 7.0
+margin_left = 85.0
 margin_top = 14.0
-margin_right = 631.0
+margin_right = 556.0
 margin_bottom = 458.0
-columns = 6
+columns = 5
 
 [node name="Camera" type="TextureButton" parent="RefRect/Wordrobe/Accessoires/AccessoiresGrid"]
 margin_right = 85.0

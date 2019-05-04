@@ -1,29 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/TitleScn.gd" type="Script" id=1]
-[ext_resource path="res://sprites/modern_dress_up_blurred_bg.png" type="Texture" id=2]
-[ext_resource path="res://sprites/title.svg" type="Texture" id=3]
-[ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/title.svg" type="Texture" id=2]
+[ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=3]
 
 [node name="Start" type="Node"]
 script = ExtResource( 1 )
 
-[node name="ModernBG" type="Sprite" parent="."]
-position = Vector2( 400, 277 )
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="Title" type="Sprite" parent="."]
-position = Vector2( 408.047, 113.148 )
-texture = ExtResource( 3 )
+position = Vector2( 526.047, 150.148 )
+texture = ExtResource( 2 )
 
 [node name="MenuRf" type="ReferenceRect" parent="."]
-margin_left = 130.323
-margin_top = 34.4196
-margin_right = 690.323
-margin_bottom = 485.42
+margin_left = 315.292
+margin_top = 72.2924
+margin_right = 734.292
+margin_bottom = 523.292
 
 [node name="StartVbox" type="VBoxContainer" parent="MenuRf"]
 anchor_left = 0.5
@@ -70,38 +62,30 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ModeLbl" type="Label" parent="MenuRf/ModePanel/PlayVbox"]
 margin_right = 136.0
 margin_bottom = 14.0
 text = "KGMO"
 align = 1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ModernBtn" type="Button" parent="MenuRf/ModePanel/PlayVbox"]
 margin_top = 18.0
 margin_right = 136.0
 margin_bottom = 38.0
 text = "Modern"
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ClassicBtn" type="Button" parent="MenuRf/ModePanel/PlayVbox"]
 margin_top = 42.0
 margin_right = 136.0
 margin_bottom = 62.0
 text = "KCLS"
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="WinDialogs" parent="." instance=ExtResource( 4 )]
+[node name="WinDialogs" parent="." instance=ExtResource( 3 )]
+margin_left = 113.0
+margin_top = 37.0
+margin_right = 113.0
+margin_bottom = 37.0
 [connection signal="pressed" from="MenuRf/StartVbox/PlayBtn" to="." method="_on_PlayBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]

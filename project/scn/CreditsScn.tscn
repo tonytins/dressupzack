@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scn/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scn/GlobalMenu.tscn" type="PackedScene" id=2]
+
+[node name="Credits" type="Node"]
+
+[node name="Credits" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -173.0
+margin_top = -262.0
+margin_right = 146.0
+margin_bottom = 280.0
+bbcode_enabled = true
+bbcode_text = "[center]Created by
+Anthony Wilcox
+
+Music by
+Michael Carey
+
+Fonts by
+Google
+
+Clothing inspired by
+Megawolf77
+Canon Rhode
+Raier
+
+[img]sprites/sixam_wordmark.png[/img]
+sixam.xyz
+[/center]"
+text = "Created by
+Anthony Wilcox
+
+Music by
+Michael Carey
+
+Fonts by
+Google
+
+Clothing inspired by
+Megawolf77
+Canon Rhode
+Raier
+
+
+sixam.xyz
+"
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48.4215, 256.845 )
+
+[node name="GlobalMenu" parent="." instance=ExtResource( 2 )]

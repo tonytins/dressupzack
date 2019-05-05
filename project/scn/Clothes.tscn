@@ -1,65 +1,52 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://src/Clothes.gd" type="Script" id=1]
-[ext_resource path="res://sprites/dressup_wardrobe.svg" type="Texture" id=2]
-[ext_resource path="res://sprites/lights.png" type="Texture" id=3]
-[ext_resource path="res://sprites/jeans.svg" type="Texture" id=4]
-[ext_resource path="res://sprites/dj_shorts.svg" type="Texture" id=5]
-[ext_resource path="res://sprites/sweat_pants.svg" type="Texture" id=6]
-[ext_resource path="res://sprites/blue_camo_jeans.svg" type="Texture" id=7]
-[ext_resource path="res://sprites/beat_up_jeans.svg" type="Texture" id=8]
-[ext_resource path="res://sprites/x_button.svg" type="Texture" id=9]
-[ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=10]
-[ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=11]
-[ext_resource path="res://sprites/raw_shirt.svg" type="Texture" id=12]
-[ext_resource path="res://sprites/atomic_shirt.svg" type="Texture" id=13]
-[ext_resource path="res://sprites/z_shirt.png" type="Texture" id=14]
-[ext_resource path="res://sprites/biker_jacket.png" type="Texture" id=15]
-[ext_resource path="res://sprites/nl_jacket.png" type="Texture" id=16]
-[ext_resource path="res://sprites/train_hoodie.png" type="Texture" id=17]
-[ext_resource path="res://sprites/korm_shirt.png" type="Texture" id=18]
-[ext_resource path="res://sprites/whatsnew_shirt.png" type="Texture" id=19]
-[ext_resource path="res://sprites/owo_censor.svg" type="Texture" id=20]
-[ext_resource path="res://sprites/briefs.svg" type="Texture" id=21]
-[ext_resource path="res://sprites/z_briefs.svg" type="Texture" id=22]
-[ext_resource path="res://sprites/fundosi.svg" type="Texture" id=23]
-[ext_resource path="res://sprites/camera.png" type="Texture" id=24]
-[ext_resource path="res://scn/Character.tscn" type="PackedScene" id=25]
-[ext_resource path="res://sprites/bottoms_placeholder.png" type="Texture" id=26]
-[ext_resource path="res://sprites/tops_placeholder.png" type="Texture" id=27]
-
-[sub_resource type="StyleBoxEmpty" id=1]
-
-[sub_resource type="StyleBoxEmpty" id=2]
-resource_local_to_scene = true
-content_margin_left = 5.0
-content_margin_right = 5.0
-content_margin_top = 5.0
-content_margin_bottom = 10.0
-
-[sub_resource type="StyleBoxEmpty" id=3]
+[ext_resource path="res://styles/DressUpTheme.res" type="Theme" id=1]
+[ext_resource path="res://styles/tab.stylebox" type="StyleBox" id=2]
+[ext_resource path="res://styles/tabbg.stylebox" type="StyleBox" id=3]
+[ext_resource path="res://styles/wordrobe_panel.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://sprites/lights.png" type="Texture" id=5]
+[ext_resource path="res://sprites/jeans.svg" type="Texture" id=6]
+[ext_resource path="res://sprites/sweat_pants.svg" type="Texture" id=7]
+[ext_resource path="res://sprites/blue_camo_jeans.svg" type="Texture" id=8]
+[ext_resource path="res://sprites/beat_up_jeans.svg" type="Texture" id=9]
+[ext_resource path="res://sprites/x_button.svg" type="Texture" id=10]
+[ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=11]
+[ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=12]
+[ext_resource path="res://sprites/raw_shirt.svg" type="Texture" id=13]
+[ext_resource path="res://sprites/atomic_shirt.svg" type="Texture" id=14]
+[ext_resource path="res://sprites/z_shirt.png" type="Texture" id=15]
+[ext_resource path="res://sprites/biker_jacket.png" type="Texture" id=16]
+[ext_resource path="res://sprites/nl_jacket.png" type="Texture" id=17]
+[ext_resource path="res://sprites/train_hoodie.png" type="Texture" id=18]
+[ext_resource path="res://sprites/korm_shirt.png" type="Texture" id=19]
+[ext_resource path="res://sprites/whatsnew_shirt.png" type="Texture" id=20]
+[ext_resource path="res://sprites/owo_censor.svg" type="Texture" id=21]
+[ext_resource path="res://sprites/briefs.svg" type="Texture" id=22]
+[ext_resource path="res://sprites/z_briefs.svg" type="Texture" id=23]
+[ext_resource path="res://sprites/fundosi.svg" type="Texture" id=24]
+[ext_resource path="res://sprites/camera.png" type="Texture" id=25]
 
 [node name="Clothes" type="Node"]
-script = ExtResource( 1 )
-
-[node name="Wordrobe BG" type="Sprite" parent="."]
-position = Vector2( 635.979, 306.788 )
-texture = ExtResource( 2 )
-
-[node name="Lights" type="Sprite" parent="."]
-position = Vector2( 646.371, 187.333 )
-texture = ExtResource( 3 )
 
 [node name="Wordrobe" type="TabContainer" parent="."]
-margin_left = 323.421
-margin_top = 63.0
-margin_right = 956.421
-margin_bottom = 555.0
-custom_styles/tab_fg = SubResource( 1 )
-custom_styles/tab_bg = SubResource( 2 )
-custom_styles/panel = SubResource( 3 )
-custom_colors/font_color_bg = Color( 1, 1, 1, 1 )
-custom_colors/font_color_fg = Color( 0.980392, 0.992157, 0.768627, 1 )
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -721.0
+margin_top = 32.0
+margin_right = -25.0
+margin_bottom = -6.0
+theme = ExtResource( 1 )
+custom_styles/tab_fg = ExtResource( 2 )
+custom_styles/tab_bg = ExtResource( 3 )
+custom_styles/panel = ExtResource( 4 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_bg = Color( 0.921569, 0.921569, 0.921569, 1 )
+custom_colors/font_color_fg = Color( 1, 1, 1, 1 )
+
+[node name="Lights" type="Sprite" parent="Wordrobe"]
+position = Vector2( 346.41, 165.623 )
+texture = ExtResource( 5 )
 
 [node name="Pants" type="Tabs" parent="Wordrobe"]
 anchor_right = 1.0
@@ -68,196 +55,192 @@ margin_top = 29.0
 custom_constants/hseparation = 0
 
 [node name="PantsGrid" type="GridContainer" parent="Wordrobe/Pants"]
-margin_left = 42.0
-margin_top = 13.0
-margin_right = 600.0
-margin_bottom = 425.0
+margin_left = 25.0
+margin_top = 24.0
+margin_right = 679.0
+margin_bottom = 505.0
 columns = 5
 
 [node name="Jeans" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
-margin_right = 118.0
-margin_bottom = 112.0
-texture_normal = ExtResource( 4 )
-
-[node name="DJShorts" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
-margin_left = 122.0
-margin_right = 228.0
-margin_bottom = 112.0
-texture_normal = ExtResource( 5 )
-
-[node name="Sweats" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
-margin_left = 232.0
-margin_right = 338.0
-margin_bottom = 112.0
+margin_right = 106.0
+margin_bottom = 118.0
 texture_normal = ExtResource( 6 )
 
-[node name="BlueCamo Jeans" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
-margin_left = 342.0
-margin_right = 448.0
-margin_bottom = 112.0
+[node name="Sweats" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
+margin_left = 110.0
+margin_right = 216.0
+margin_bottom = 118.0
 texture_normal = ExtResource( 7 )
 
-[node name="BeatUpJeans" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
-margin_left = 452.0
-margin_right = 558.0
-margin_bottom = 112.0
+[node name="BlueCamoJeans" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
+margin_left = 220.0
+margin_right = 326.0
+margin_bottom = 118.0
 texture_normal = ExtResource( 8 )
 
+[node name="BeatUpJeans" type="TextureButton" parent="Wordrobe/Pants/PantsGrid"]
+margin_left = 330.0
+margin_right = 436.0
+margin_bottom = 118.0
+texture_normal = ExtResource( 9 )
+
 [node name="RemovePants" type="Button" parent="Wordrobe/Pants/PantsGrid"]
-margin_top = 116.0
-margin_right = 118.0
-margin_bottom = 234.0
+margin_left = 440.0
+margin_right = 558.0
+margin_bottom = 118.0
 rect_min_size = Vector2( 0, 112 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
+icon = ExtResource( 10 )
 flat = true
 
 [node name="Shirts" type="Tabs" parent="Wordrobe"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Wordrobe/Shirts"]
-margin_left = 82.0
-margin_top = 8.0
-margin_right = 556.0
-margin_bottom = 441.0
-columns = 5
+margin_left = 18.0
+margin_top = 29.0
+margin_right = 666.0
+margin_bottom = 502.0
+columns = 7
 
 [node name="Sweatshirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_right = 118.0
-margin_bottom = 115.0
-texture_normal = ExtResource( 10 )
-
-[node name="DJShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 122.0
-margin_right = 207.0
+margin_right = 85.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 11 )
 
-[node name="Raw" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 211.0
-margin_right = 296.0
+[node name="DJShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 89.0
+margin_right = 174.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 12 )
 
-[node name="Atomic" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 300.0
-margin_right = 385.0
+[node name="Raw" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 178.0
+margin_right = 263.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 13 )
 
-[node name="ZShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 389.0
-margin_right = 474.0
+[node name="Atomic" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 267.0
+margin_right = 385.0
 margin_bottom = 115.0
 texture_normal = ExtResource( 14 )
 
-[node name="BikerJacket" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_top = 119.0
-margin_right = 118.0
-margin_bottom = 234.0
+[node name="ZShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 389.0
+margin_right = 470.0
+margin_bottom = 115.0
 texture_normal = ExtResource( 15 )
 
-[node name="NLJacket" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 122.0
-margin_top = 119.0
-margin_right = 207.0
-margin_bottom = 234.0
+[node name="BikerJacket" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 474.0
+margin_right = 559.0
+margin_bottom = 115.0
 texture_normal = ExtResource( 16 )
 
-[node name="TrainHoodie" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 211.0
-margin_top = 119.0
-margin_right = 296.0
-margin_bottom = 234.0
+[node name="NLJacket" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 563.0
+margin_right = 648.0
+margin_bottom = 115.0
 texture_normal = ExtResource( 17 )
 
-[node name="KormShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 300.0
+[node name="TrainHoodie" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
 margin_top = 119.0
-margin_right = 385.0
-margin_bottom = 234.0
+margin_right = 85.0
+margin_bottom = 237.0
 texture_normal = ExtResource( 18 )
 
-[node name="WhatsNewShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_left = 389.0
+[node name="KormShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 89.0
 margin_top = 119.0
-margin_right = 474.0
-margin_bottom = 234.0
+margin_right = 174.0
+margin_bottom = 237.0
 texture_normal = ExtResource( 19 )
 
+[node name="WhatsNewShirt" type="TextureButton" parent="Wordrobe/Shirts/ShirtsGrid"]
+margin_left = 178.0
+margin_top = 119.0
+margin_right = 263.0
+margin_bottom = 237.0
+texture_normal = ExtResource( 20 )
+
 [node name="RemoveShirt" type="Button" parent="Wordrobe/Shirts/ShirtsGrid"]
-margin_top = 238.0
-margin_right = 118.0
-margin_bottom = 356.0
+margin_left = 267.0
+margin_top = 119.0
+margin_right = 385.0
+margin_bottom = 237.0
 rect_min_size = Vector2( 0, 112 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
+icon = ExtResource( 10 )
 flat = true
 
 [node name="Underwear" type="Tabs" parent="Wordrobe"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
 
 [node name="UndiesGrid" type="GridContainer" parent="Wordrobe/Underwear"]
-margin_left = 68.0
-margin_top = 10.0
-margin_right = 585.0
-margin_bottom = 451.0
-columns = 5
+margin_left = 21.0
+margin_top = 31.0
+margin_right = 672.0
+margin_bottom = 498.0
+columns = 6
 
 [node name="OwOCensor" type="TextureButton" parent="Wordrobe/Underwear/UndiesGrid"]
 margin_right = 106.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 20 )
+texture_normal = ExtResource( 21 )
 
 [node name="Briefs" type="TextureButton" parent="Wordrobe/Underwear/UndiesGrid"]
 margin_left = 110.0
 margin_right = 216.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 21 )
+texture_normal = ExtResource( 22 )
 
 [node name="ZBriefs" type="TextureButton" parent="Wordrobe/Underwear/UndiesGrid"]
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 22 )
+texture_normal = ExtResource( 23 )
 
 [node name="Fundosi" type="TextureButton" parent="Wordrobe/Underwear/UndiesGrid"]
 margin_left = 330.0
 margin_right = 436.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 23 )
+texture_normal = ExtResource( 24 )
 
 [node name="Accessoires" type="Tabs" parent="Wordrobe"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 29.0
 
-[node name="AccessoiresGrid" type="GridContainer" parent="Wordrobe/Accessoires"]
-margin_left = 85.0
-margin_top = 14.0
-margin_right = 556.0
-margin_bottom = 458.0
-columns = 5
+[node name="AccsGrid" type="GridContainer" parent="Wordrobe/Accessoires"]
+margin_left = 20.0
+margin_top = 35.0
+margin_right = 668.0
+margin_bottom = 503.0
+columns = 6
 
-[node name="CanonCam" type="TextureButton" parent="Wordrobe/Accessoires/AccessoiresGrid"]
+[node name="CanonCam" type="TextureButton" parent="Wordrobe/Accessoires/AccsGrid"]
 margin_right = 85.0
 margin_bottom = 118.0
-texture_normal = ExtResource( 24 )
+texture_normal = ExtResource( 25 )
 
-[node name="RemoveAccessory" type="Button" parent="Wordrobe/Accessoires/AccessoiresGrid"]
+[node name="RemoveAccessory" type="Button" parent="Wordrobe/Accessoires/AccsGrid"]
 margin_left = 89.0
 margin_right = 207.0
 margin_bottom = 118.0
@@ -266,53 +249,5 @@ custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
+icon = ExtResource( 10 )
 flat = true
-
-[node name="Nathane" parent="." instance=ExtResource( 25 )]
-position = Vector2( 57.2474, 52.0605 )
-
-[node name="Body" type="ReferenceRect" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -428.753
-margin_top = -264.94
-margin_right = -310.753
-margin_bottom = -30.9396
-
-[node name="Undies" type="Sprite" parent="Body"]
-position = Vector2( 56.9419, 154.296 )
-texture = ExtResource( 21 )
-
-[node name="Bottom" type="Sprite" parent="Body"]
-position = Vector2( 57.9419, 159.296 )
-texture = ExtResource( 26 )
-
-[node name="Top" type="Sprite" parent="Body"]
-position = Vector2( 65.0597, 65.3242 )
-texture = ExtResource( 27 )
-
-[node name="Accessory" type="Sprite" parent="Body"]
-position = Vector2( 65.0597, 65.3242 )
-texture = ExtResource( 27 )
-[connection signal="pressed" from="Wordrobe/Pants/PantsGrid/BlueCamo Jeans" to="." method="_on_Blue_Camo_Jeans_pressed"]
-[connection signal="pressed" from="Wordrobe/Pants/PantsGrid/BeatUpJeans" to="." method="_on_Beat_Up_Jeans_pressed"]
-[connection signal="pressed" from="Wordrobe/Pants/PantsGrid/RemovePants" to="." method="_on_Remove_Pants_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/Sweatshirt" to="." method="_on_Sweatshirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/DJShirt" to="." method="_on_DJ_Shirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/Raw" to="." method="_on_Raw_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/Atomic" to="." method="_on_Atomic_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/ZShirt" to="." method="_on_Z_Shirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/BikerJacket" to="." method="_on_Biker_Jacket_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/NLJacket" to="." method="_on_NL_Jacket_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/TrainHoodie" to="." method="_on_Train_Hoodie_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/KormShirt" to="." method="_on_Korm_Shirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/WhatsNewShirt" to="." method="_on_Whats_New_Shirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Shirts/ShirtsGrid/RemoveShirt" to="." method="_on_Remove_Shirt_pressed"]
-[connection signal="pressed" from="Wordrobe/Underwear/UndiesGrid/OwOCensor" to="." method="_on_OwO_Censor_pressed"]
-[connection signal="pressed" from="Wordrobe/Underwear/UndiesGrid/Briefs" to="." method="_on_Briefs_pressed"]
-[connection signal="pressed" from="Wordrobe/Underwear/UndiesGrid/ZBriefs" to="." method="_on_ZBriefs_pressed"]
-[connection signal="pressed" from="Wordrobe/Underwear/UndiesGrid/Fundosi" to="." method="_on_Fundosi_pressed"]
-[connection signal="pressed" from="Wordrobe/Accessoires/AccessoiresGrid/RemoveAccessory" to="." method="_on_Remove_Accessory_pressed"]

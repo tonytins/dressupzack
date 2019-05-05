@@ -9,7 +9,7 @@ func _on_ModernBtn_pressed():
 	switch_scenes("modern")
 
 func _on_CreditsBtn_pressed():
-	$WinDialogs/CreditsWin.show()
+	switch_scenes("credits")
 
 func _on_LicenseBtn_pressed():
 	$WinDialogs/LicenseWin.show()

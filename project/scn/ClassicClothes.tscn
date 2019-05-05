@@ -1,219 +1,256 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=45 format=2]
 
-[ext_resource path="res://sprites/classic/briefs_classic.png" type="Texture" id=1]
-[ext_resource path="res://src/ItemDrag.gd" type="Script" id=2]
-[ext_resource path="res://sprites/classic/z_briefs_classic.png" type="Texture" id=3]
-[ext_resource path="res://sprites/classic/fundosi_classic.png" type="Texture" id=4]
-[ext_resource path="res://sprites/jeans.svg" type="Texture" id=5]
-[ext_resource path="res://sprites/dj_shorts.png" type="Texture" id=6]
-[ext_resource path="res://sprites/sweat_pants.svg" type="Texture" id=7]
-[ext_resource path="res://sprites/blue_camo_jeans.svg" type="Texture" id=8]
-[ext_resource path="res://sprites/beat_up_jeans.png" type="Texture" id=9]
-[ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=10]
-[ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=11]
-[ext_resource path="res://sprites/raw_shirt.png" type="Texture" id=12]
-[ext_resource path="res://sprites/atomic_shirt.png" type="Texture" id=13]
-[ext_resource path="res://sprites/z_shirt.png" type="Texture" id=14]
-[ext_resource path="res://sprites/biker_jacket.png" type="Texture" id=15]
-[ext_resource path="res://sprites/whatsnew_shirt.png" type="Texture" id=16]
-[ext_resource path="res://sprites/train_hoodie.png" type="Texture" id=17]
-[ext_resource path="res://sprites/classic/camera_classic.png" type="Texture" id=18]
-[ext_resource path="res://sprites/classic/owo_censor_classic.png" type="Texture" id=19]
+[ext_resource path="res://sprites/tail/tail0.png" type="Texture" id=1]
+[ext_resource path="res://sprites/tail/tail1.png" type="Texture" id=2]
+[ext_resource path="res://sprites/tail/tail2.png" type="Texture" id=3]
+[ext_resource path="res://sprites/character_base.svg" type="Texture" id=4]
+[ext_resource path="res://sprites/eyes/eyes1.png" type="Texture" id=5]
+[ext_resource path="res://sprites/eyes/eyes2.png" type="Texture" id=6]
+[ext_resource path="res://sprites/eyes/eyes3.png" type="Texture" id=7]
+[ext_resource path="res://sprites/eyes/eyes4.png" type="Texture" id=8]
+[ext_resource path="res://sprites/eyes/eyes5.png" type="Texture" id=9]
+[ext_resource path="res://sprites/eyes/eyes6.png" type="Texture" id=10]
+[ext_resource path="res://sprites/eyes/eyes7.png" type="Texture" id=11]
+[ext_resource path="res://sprites/mouth/mouth.png" type="Texture" id=12]
+[ext_resource path="res://sprites/mouth/mouth2.png" type="Texture" id=13]
+[ext_resource path="res://sprites/mouth/mouth3.png" type="Texture" id=14]
+[ext_resource path="res://sprites/mouth/mouth4.png" type="Texture" id=15]
+[ext_resource path="res://sprites/mouth/mouth5.png" type="Texture" id=16]
+[ext_resource path="res://sprites/mouth/mouth6.png" type="Texture" id=17]
+[ext_resource path="res://sprites/mouth/mouth7.png" type="Texture" id=18]
+[ext_resource path="res://sprites/mouth/mouth8.png" type="Texture" id=19]
+[ext_resource path="res://sprites/mouth/mouth9.png" type="Texture" id=20]
+[ext_resource path="res://sprites/mouth/mouth10.png" type="Texture" id=21]
+[ext_resource path="res://sprites/mouth/mouth12.png" type="Texture" id=22]
+[ext_resource path="res://sprites/classic/briefs_classic.png" type="Texture" id=23]
+[ext_resource path="res://src/ItemDrag.gd" type="Script" id=24]
+[ext_resource path="res://sprites/classic/z_briefs_classic.png" type="Texture" id=25]
+[ext_resource path="res://sprites/classic/fundosi_classic.png" type="Texture" id=26]
+[ext_resource path="res://sprites/jeans.svg" type="Texture" id=27]
+[ext_resource path="res://sprites/dj_shorts.svg" type="Texture" id=28]
+[ext_resource path="res://sprites/sweat_pants.svg" type="Texture" id=29]
+[ext_resource path="res://sprites/blue_camo_jeans.svg" type="Texture" id=30]
+[ext_resource path="res://sprites/beat_up_jeans.svg" type="Texture" id=31]
+[ext_resource path="res://sprites/old_sweatshirt.png" type="Texture" id=32]
+[ext_resource path="res://sprites/dj_shirt.png" type="Texture" id=33]
+[ext_resource path="res://sprites/raw_shirt.svg" type="Texture" id=34]
+[ext_resource path="res://sprites/atomic_shirt.svg" type="Texture" id=35]
+[ext_resource path="res://sprites/z_shirt.png" type="Texture" id=36]
+[ext_resource path="res://sprites/biker_jacket.png" type="Texture" id=37]
+[ext_resource path="res://sprites/whatsnew_shirt.png" type="Texture" id=38]
+[ext_resource path="res://sprites/train_hoodie.png" type="Texture" id=39]
+[ext_resource path="res://sprites/classic/camera_classic.png" type="Texture" id=40]
+[ext_resource path="res://sprites/classic/owo_censor_classic.png" type="Texture" id=41]
 
-[node name="Clothes" type="Control"]
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
 
-[node name="Wordrobe" type="ReferenceRect" parent="."]
-margin_left = 193.0
-margin_top = 17.0
-margin_right = 775.0
-margin_bottom = 527.0
-__meta__ = {
-"_edit_lock_": true
-}
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
-[node name="Underwear" type="Control" parent="Wordrobe"]
-margin_left = -197.0
-margin_top = -8.0
-margin_right = -197.0
-margin_bottom = -8.0
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
 
-[node name="Briefs" type="TextureButton" parent="Wordrobe/Underwear"]
-margin_left = 68.0
-margin_top = 391.0
-margin_right = 136.0
-margin_bottom = 425.0
-texture_normal = ExtResource( 1 )
-script = ExtResource( 2 )
+[node name="Clothes" type="Node"]
 
-[node name="ZBriefs" type="TextureButton" parent="Wordrobe/Underwear"]
-margin_left = 375.0
-margin_top = 454.0
-margin_right = 443.0
-margin_bottom = 488.0
-texture_normal = ExtResource( 3 )
-script = ExtResource( 2 )
+[node name="Character" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 129.236, 38.0905 )
 
-[node name="Fundosi" type="TextureButton" parent="Wordrobe/Underwear"]
-margin_left = 512.0
-margin_top = 453.0
-margin_right = 580.0
-margin_bottom = 493.0
-texture_normal = ExtResource( 4 )
-script = ExtResource( 2 )
+[node name="Tail" type="AnimatedSprite" parent="Character"]
+position = Vector2( -36.5244, 390.553 )
+frames = SubResource( 1 )
+playing = true
 
-[node name="Bottoms" type="Control" parent="Wordrobe"]
-margin_left = -197.0
-margin_top = -8.0
-margin_right = -197.0
-margin_bottom = -8.0
+[node name="Nathan" type="Sprite" parent="Character"]
+position = Vector2( 5.42515, 370.2 )
+texture = ExtResource( 4 )
 
-[node name="Jeans" type="TextureButton" parent="Wordrobe/Bottoms"]
-margin_left = 614.0
-margin_top = 292.0
-margin_right = 720.0
-margin_bottom = 404.0
-texture_normal = ExtResource( 5 )
-script = ExtResource( 2 )
+[node name="Eyes" type="AnimatedSprite" parent="Character"]
+position = Vector2( 23.2995, 270.036 )
+frames = SubResource( 2 )
+frame = 15
+playing = true
 
-[node name="DJ Shorts" type="TextureButton" parent="Wordrobe/Bottoms"]
-margin_left = 628.0
-margin_top = 415.0
-margin_right = 734.0
-margin_bottom = 527.0
-texture_normal = ExtResource( 6 )
-script = ExtResource( 2 )
+[node name="Mouth" type="AnimatedSprite" parent="Character"]
+position = Vector2( 40.0965, 273.61 )
+frames = SubResource( 3 )
+frame = 14
+playing = true
 
-[node name="Sweats" type="TextureButton" parent="Wordrobe/Bottoms"]
-margin_left = 484.0
-margin_top = 318.0
-margin_right = 590.0
-margin_bottom = 430.0
-texture_normal = ExtResource( 7 )
-script = ExtResource( 2 )
+[node name="Briefs" type="TextureButton" parent="."]
+margin_left = 108.103
+margin_top = 449.068
+margin_right = 176.103
+margin_bottom = 483.068
+texture_normal = ExtResource( 23 )
+script = ExtResource( 24 )
 
-[node name="Blue Camo Jeans" type="TextureButton" parent="Wordrobe/Bottoms"]
-margin_left = 234.0
-margin_top = 400.0
-margin_right = 340.0
-margin_bottom = 512.0
-texture_normal = ExtResource( 8 )
-script = ExtResource( 2 )
+[node name="ZBriefs" type="TextureButton" parent="."]
+margin_left = 904.613
+margin_top = 137.606
+margin_right = 972.613
+margin_bottom = 171.606
+texture_normal = ExtResource( 25 )
+script = ExtResource( 24 )
 
-[node name="Beat Up Jeans" type="TextureButton" parent="Wordrobe/Bottoms"]
-margin_left = 366.0
-margin_top = 316.0
-margin_right = 472.0
-margin_bottom = 428.0
-texture_normal = ExtResource( 9 )
-script = ExtResource( 2 )
+[node name="Fundosi" type="TextureButton" parent="."]
+margin_left = 904.429
+margin_top = 46.3994
+margin_right = 972.429
+margin_bottom = 86.3994
+texture_normal = ExtResource( 26 )
+script = ExtResource( 24 )
 
-[node name="Tops" type="Control" parent="Wordrobe"]
-margin_left = -197.0
-margin_top = -8.0
-margin_right = -197.0
-margin_bottom = -8.0
+[node name="Jeans" type="TextureButton" parent="."]
+margin_left = 877.209
+margin_top = 330.098
+margin_right = 983.209
+margin_bottom = 442.098
+texture_normal = ExtResource( 27 )
+script = ExtResource( 24 )
 
-[node name="Sweatshirt" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 643.0
-margin_top = 34.0
-margin_right = 728.0
-margin_bottom = 144.0
-texture_normal = ExtResource( 10 )
-script = ExtResource( 2 )
+[node name="DJ Shorts" type="TextureButton" parent="."]
+margin_left = 882.788
+margin_top = 452.045
+margin_right = 988.788
+margin_bottom = 564.045
+texture_normal = ExtResource( 28 )
+script = ExtResource( 24 )
 
-[node name="DJ Shirt" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 644.0
-margin_top = 156.0
-margin_right = 729.0
-margin_bottom = 271.0
-texture_normal = ExtResource( 11 )
-script = ExtResource( 2 )
+[node name="Sweats" type="TextureButton" parent="."]
+margin_left = 744.929
+margin_top = 441.685
+margin_right = 850.929
+margin_bottom = 553.685
+texture_normal = ExtResource( 29 )
+script = ExtResource( 24 )
 
-[node name="Raw" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 247.0
-margin_top = 25.0
-margin_right = 332.0
-margin_bottom = 138.0
-texture_normal = ExtResource( 12 )
-script = ExtResource( 2 )
+[node name="Blue Camo Jeans" type="TextureButton" parent="."]
+margin_left = 495.104
+margin_top = 434.94
+margin_right = 601.104
+margin_bottom = 546.94
+texture_normal = ExtResource( 30 )
+script = ExtResource( 24 )
 
-[node name="Atomic Shirt" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 518.0
-margin_top = 33.0
-margin_right = 603.0
-margin_bottom = 148.0
-texture_normal = ExtResource( 13 )
-script = ExtResource( 2 )
+[node name="Beat Up Jeans" type="TextureButton" parent="."]
+margin_left = 623.246
+margin_top = 439.685
+margin_right = 729.246
+margin_bottom = 551.685
+texture_normal = ExtResource( 31 )
+script = ExtResource( 24 )
 
-[node name="Z Shirt" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 385.0
-margin_top = 178.0
-margin_right = 466.0
-margin_bottom = 293.0
-texture_normal = ExtResource( 14 )
-script = ExtResource( 2 )
+[node name="Sweatshirt" type="TextureButton" parent="."]
+margin_left = 388.813
+margin_top = 432.874
+margin_right = 473.813
+margin_bottom = 542.874
+texture_normal = ExtResource( 32 )
+script = ExtResource( 24 )
 
-[node name="Biker Jacket" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 253.0
-margin_top = 275.0
-margin_right = 338.0
-margin_bottom = 390.0
-texture_normal = ExtResource( 15 )
-script = ExtResource( 2 )
+[node name="DJ Shirt" type="TextureButton" parent="."]
+margin_left = 898.788
+margin_top = 219.361
+margin_right = 983.788
+margin_bottom = 334.361
+texture_normal = ExtResource( 33 )
+script = ExtResource( 24 )
 
-[node name="What's New" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 249.0
-margin_top = 150.0
-margin_right = 334.0
-margin_bottom = 265.0
-texture_normal = ExtResource( 16 )
-script = ExtResource( 2 )
+[node name="Raw" type="TextureButton" parent="."]
+margin_left = 647.703
+margin_top = 160.841
+margin_right = 732.703
+margin_bottom = 275.841
+texture_normal = ExtResource( 34 )
+script = ExtResource( 24 )
 
-[node name="Train Shirt" type="TextureButton" parent="Wordrobe/Tops"]
-margin_left = 512.0
-margin_top = 176.0
-margin_right = 597.0
-margin_bottom = 291.0
-texture_normal = ExtResource( 17 )
-script = ExtResource( 2 )
+[node name="Atomic Shirt" type="TextureButton" parent="."]
+margin_left = 392.345
+margin_top = 282.289
+margin_right = 477.345
+margin_bottom = 397.289
+texture_normal = ExtResource( 35 )
+script = ExtResource( 24 )
 
-[node name="Accessories" type="Control" parent="Wordrobe"]
-margin_left = -197.0
-margin_top = -8.0
-margin_right = -197.0
-margin_bottom = -8.0
+[node name="Z Shirt" type="TextureButton" parent="."]
+margin_left = 642.246
+margin_top = 301.685
+margin_right = 723.246
+margin_bottom = 416.685
+texture_normal = ExtResource( 36 )
+script = ExtResource( 24 )
 
-[node name="Camera" type="TextureButton" parent="Wordrobe/Accessories"]
-margin_left = 398.0
-margin_top = 94.0
-margin_right = 447.0
-margin_bottom = 156.0
-texture_normal = ExtResource( 18 )
-script = ExtResource( 2 )
+[node name="Biker Jacket" type="TextureButton" parent="."]
+margin_left = 515.157
+margin_top = 300.466
+margin_right = 600.157
+margin_bottom = 415.466
+texture_normal = ExtResource( 37 )
+script = ExtResource( 24 )
 
-[node name="OwO Censor" type="TextureButton" parent="Wordrobe/Accessories"]
-margin_left = 369.0
-margin_top = 16.0
-margin_right = 475.0
-margin_bottom = 56.0
-texture_normal = ExtResource( 19 )
-script = ExtResource( 2 )
+[node name="What's New" type="TextureButton" parent="."]
+margin_left = 767.044
+margin_top = 170.297
+margin_right = 852.044
+margin_bottom = 285.297
+texture_normal = ExtResource( 38 )
+script = ExtResource( 24 )
 
-[connection signal="gui_input" from="Wordrobe/Underwear/Briefs" to="Wordrobe/Underwear/Briefs" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Underwear/ZBriefs" to="Wordrobe/Underwear/ZBriefs" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Underwear/Fundosi" to="Wordrobe/Underwear/Fundosi" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Bottoms/Jeans" to="Wordrobe/Bottoms/Jeans" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Bottoms/DJ Shorts" to="Wordrobe/Bottoms/DJ Shorts" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Bottoms/Sweats" to="Wordrobe/Bottoms/Sweats" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Bottoms/Blue Camo Jeans" to="Wordrobe/Bottoms/Blue Camo Jeans" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Bottoms/Beat Up Jeans" to="Wordrobe/Bottoms/Beat Up Jeans" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Sweatshirt" to="Wordrobe/Tops/Sweatshirt" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/DJ Shirt" to="Wordrobe/Tops/DJ Shirt" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Raw" to="Wordrobe/Tops/Raw" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Atomic Shirt" to="Wordrobe/Tops/Atomic Shirt" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Z Shirt" to="Wordrobe/Tops/Z Shirt" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Biker Jacket" to="Wordrobe/Tops/Biker Jacket" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/What's New" to="Wordrobe/Tops/What's New" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Tops/Train Shirt" to="Wordrobe/Tops/Train Shirt" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Accessories/Camera" to="Wordrobe/Accessories/Camera" method="_on_outfit_gui_input"]
-[connection signal="gui_input" from="Wordrobe/Accessories/OwO Censor" to="Wordrobe/Accessories/OwO Censor" method="_on_outfit_gui_input"]
+[node name="Train Shirt" type="TextureButton" parent="."]
+margin_left = 769.246
+margin_top = 299.685
+margin_right = 854.246
+margin_bottom = 414.685
+texture_normal = ExtResource( 39 )
+script = ExtResource( 24 )
+
+[node name="Camera" type="TextureButton" parent="."]
+margin_left = 406.979
+margin_top = 188.547
+margin_right = 455.979
+margin_bottom = 250.547
+texture_normal = ExtResource( 40 )
+script = ExtResource( 24 )
+
+[node name="OwO Censor" type="TextureButton" parent="."]
+margin_left = 489.905
+margin_top = 185.841
+margin_right = 595.905
+margin_bottom = 225.841
+texture_normal = ExtResource( 41 )
+script = ExtResource( 24 )
+[connection signal="gui_input" from="Briefs" to="Briefs" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="ZBriefs" to="ZBriefs" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Fundosi" to="Fundosi" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Jeans" to="Jeans" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="DJ Shorts" to="DJ Shorts" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Sweats" to="Sweats" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Blue Camo Jeans" to="Blue Camo Jeans" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Beat Up Jeans" to="Beat Up Jeans" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Sweatshirt" to="Sweatshirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="DJ Shirt" to="DJ Shirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Raw" to="Raw" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Atomic Shirt" to="Atomic Shirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Z Shirt" to="Z Shirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Biker Jacket" to="Biker Jacket" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="What's New" to="What's New" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Train Shirt" to="Train Shirt" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="Camera" to="Camera" method="_on_outfit_gui_input"]
+[connection signal="gui_input" from="OwO Censor" to="OwO Censor" method="_on_outfit_gui_input"]

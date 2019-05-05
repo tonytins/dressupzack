@@ -57,7 +57,6 @@ animations = [ {
 [node name="Tail" type="AnimatedSprite" parent="Base"]
 position = Vector2( 54.4027, 184.439 )
 frames = SubResource( 1 )
-frame = 6
 playing = true
 
 [node name="Nathan" type="Sprite" parent="Base"]
@@ -67,13 +66,12 @@ texture = ExtResource( 4 )
 [node name="Eyes" type="AnimatedSprite" parent="Base"]
 position = Vector2( 114.227, 63.9224 )
 frames = SubResource( 2 )
-frame = 11
 playing = true
 
 [node name="Mouth" type="AnimatedSprite" parent="Base"]
 position = Vector2( 131.024, 67.4964 )
 frames = SubResource( 3 )
-frame = 16
+frame = 22
 playing = true
 
 [node name="Undies" type="Sprite" parent="."]

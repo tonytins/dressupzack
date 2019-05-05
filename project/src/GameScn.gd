@@ -78,6 +78,12 @@ func _process(delta):
 	if $Clothes/Wordrobe/Pants/PantsGrid/BlueCamoJeans.is_pressed():
 		change_bottoms(load("res://sprites/blue_camo_jeans.svg"))
 		
+	if $Clothes/Wordrobe/Shirts/ShirtsGrid/TrainHoodie.is_pressed():
+		change_tops(load("res://sprites/train_hoodie.svg"))
+		
+	if $Clothes/Wordrobe/Shirts/ShirtsGrid/WhatsNewShirt.is_pressed():
+		change_tops(load("res://sprites/whatsnew_shirt.svg"))
+		
 	# Remove clothes
 	# ===========================================================
 	

@@ -1,44 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/TitleScn.gd" type="Script" id=1]
-[ext_resource path="res://sprites/modern_dress_up_blurred_bg.png" type="Texture" id=2]
-[ext_resource path="res://sprites/dressup_blurred_wardrobe.png" type="Texture" id=3]
-[ext_resource path="res://sprites/classic_dress_up_blurred_bg.png" type="Texture" id=4]
-[ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/title.svg" type="Texture" id=2]
+[ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=3]
 
 [node name="Start" type="Node"]
 script = ExtResource( 1 )
 
-[node name="Modern" type="Node2D" parent="."]
-
-[node name="ModernBG" type="Sprite" parent="Modern"]
-position = Vector2( 400, 277 )
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 522.047, 150.148 )
 texture = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="WordrobeBG" type="Sprite" parent="Modern"]
-visible = false
-position = Vector2( 492.609, 280.27 )
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="ClassicBG" type="Sprite" parent="."]
-visible = false
-position = Vector2( 400, 277 )
-texture = ExtResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="MenuRf" type="ReferenceRect" parent="."]
-margin_left = 202.0
-margin_top = 67.0
-margin_right = 762.0
-margin_bottom = 518.0
+margin_left = 311.292
+margin_top = 72.2924
+margin_right = 730.292
+margin_bottom = 523.292
 
 [node name="StartVbox" type="VBoxContainer" parent="MenuRf"]
 anchor_left = 0.5
@@ -68,15 +45,14 @@ margin_right = 136.0
 margin_bottom = 68.0
 text = "KLIC"
 
-[node name="ModePanel" type="Panel" parent="MenuRf"]
-visible = false
+[node name="ModePanel" type="WindowDialog" parent="MenuRf"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 80.0
+margin_left = -73.0
 margin_top = -46.0
-margin_right = 226.0
+margin_right = 73.0
 margin_bottom = 46.0
 
 [node name="PlayVbox" type="VBoxContainer" parent="MenuRf/ModePanel"]
@@ -86,43 +62,32 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = -5.0
 margin_bottom = -5.0
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ModeLbl" type="Label" parent="MenuRf/ModePanel/PlayVbox"]
 margin_right = 136.0
 margin_bottom = 14.0
 text = "KGMO"
 align = 1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ModernBtn" type="Button" parent="MenuRf/ModePanel/PlayVbox"]
 margin_top = 18.0
 margin_right = 136.0
 margin_bottom = 38.0
 text = "Modern"
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ClassicBtn" type="Button" parent="MenuRf/ModePanel/PlayVbox"]
 margin_top = 42.0
 margin_right = 136.0
 margin_bottom = 62.0
 text = "KCLS"
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="WinDialogs" parent="." instance=ExtResource( 5 )]
-
-[connection signal="toggled" from="MenuRf/StartVbox/PlayBtn" to="." method="_on_PlayBtn_toggled"]
+[node name="WinDialogs" parent="." instance=ExtResource( 3 )]
+margin_left = 97.0
+margin_top = 37.0
+margin_right = 97.0
+margin_bottom = 37.0
+[connection signal="pressed" from="MenuRf/StartVbox/PlayBtn" to="." method="_on_PlayBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]
 [connection signal="pressed" from="MenuRf/ModePanel/PlayVbox/ModernBtn" to="." method="_on_ModernBtn_pressed"]
-[connection signal="mouse_entered" from="MenuRf/ModePanel/PlayVbox/ClassicBtn" to="." method="_on_ClassicBtn_mouse_entered"]
-[connection signal="mouse_exited" from="MenuRf/ModePanel/PlayVbox/ClassicBtn" to="." method="_on_ClassicBtn_mouse_exited"]
 [connection signal="pressed" from="MenuRf/ModePanel/PlayVbox/ClassicBtn" to="." method="_on_ClassicBtn_pressed"]

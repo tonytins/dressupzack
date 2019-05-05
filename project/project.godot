@@ -28,10 +28,16 @@ name_sv="Nathans klä upp"
 GameKit="*res://src/GameKit.gd"
 WinDialogs="*res://scn/WinDialogs.tscn"
 
+[debug]
+
+gdscript/completion/autocomplete_setters_and_getters=true
+gdscript/warnings/unsafe_property_access=true
+gdscript/warnings/unsafe_method_access=true
+gdscript/warnings/unsafe_cast=true
+gdscript/warnings/unsafe_call_argument=true
+
 [display]
 
-window/size/width=800
-window/size/height=554
 window/size/resizable=false
 
 [input]
@@ -54,4 +60,5 @@ quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
+vram_compression/import_etc=true
 environment/default_environment="res://default_env.tres"

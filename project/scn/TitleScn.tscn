@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/TitleScn.gd" type="Script" id=1]
 [ext_resource path="res://sprites/title.svg" type="Texture" id=2]
 [ext_resource path="res://scn/WinDialogs.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/Soundtrack.gd" type="Script" id=4]
 
 [node name="Start" type="Node"]
 script = ExtResource( 1 )
@@ -87,9 +86,6 @@ margin_left = 97.0
 margin_top = 37.0
 margin_right = 97.0
 margin_bottom = 37.0
-
-[node name="Music" type="AudioStreamPlayer" parent="."]
-script = ExtResource( 4 )
 [connection signal="pressed" from="MenuRf/StartVbox/PlayBtn" to="." method="_on_PlayBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/CreditsBtn" to="." method="_on_CreditsBtn_pressed"]
 [connection signal="pressed" from="MenuRf/StartVbox/LicenseBtn" to="." method="_on_LicenseBtn_pressed"]

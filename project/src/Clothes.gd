@@ -10,6 +10,20 @@ onready var accessory = load("res://sprites/tops_placeholder.png")
 # Underwear cam be suggestive but never lewd. 
 onready var undies = load("res://sprites/briefs.svg")
 
+func _process(delta):
+	
+	if $Wordrobe/Accessoires/AccessoiresGrid/CanonCam.is_pressed() == true:
+		change_accessoires(load("res://sprites/camera.png"))
+		
+	if $Wordrobe/Pants/PantsGrid/Jeans.is_pressed() == true:
+		change_bottoms(load("res://sprites/jeans.svg"))
+		
+	if $Wordrobe/Pants/PantsGrid/Sweats.is_pressed() == true:
+		change_bottoms(load("res://sprites/sweat_pants.svg"))
+	
+	if $Wordrobe/Pants/PantsGrid/DJShorts.is_pressed() == true:
+		change_bottoms(load("res://sprites/dj_shorts.svg"))
+
 func change_bottoms(new_bottom):
 	bottoms = new_bottom
 	
@@ -51,10 +65,10 @@ func _on_Remove_Accessory_pressed():
 	change_accessoires(null)
 
 func _on_DJ_Shorts_pressed():
-	change_bottoms(load("res://sprites/dj_shorts.png"))
+	change_bottoms(load("res://sprites/dj_shorts.svg"))
 
 func _on_ZBriefs_pressed():
-	change_undies(load("res://sprites/z_briefs.png"))
+	change_undies(load("res://sprites/z_briefs.svg"))
 
 func _on_Briefs_pressed():
 	change_undies(load("res://sprites/briefs.svg"))

@@ -76,7 +76,7 @@
        height="519.91699"
        x="-52.601696"
        y="3.9362619"
-       ry="41.281254" />
+       ry="31.017717" />
     <rect
        style="opacity:1;fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:3.15624547;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1403"
@@ -84,14 +84,14 @@
        height="482.91278"
        x="-44.312817"
        y="27.699308"
-       ry="32.713448" />
+       ry="24.818422" />
     <rect
-       style="opacity:1;fill:#1e3656;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#1e3656;fill-opacity:1;stroke:#000000;stroke-width:4.14822292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1401"
-       width="315.5405"
-       height="33.731777"
-       x="126.87943"
-       y="15.797715"
-       ry="8.2050285" />
+       width="612.74677"
+       height="33.212002"
+       x="-20.5812"
+       y="16.057602"
+       ry="9.6562872" />
   </g>
 </svg>

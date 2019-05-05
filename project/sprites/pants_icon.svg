@@ -1,60 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg815"
-   width="39"
-   height="33"
-   viewBox="0 0 39 33"
-   sodipodi:docname="pants_icon.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <metadata
-     id="metadata821">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs819" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     id="namedview817"
-     showgrid="false"
-     inkscape:pagecheckerboard="true"
-     inkscape:zoom="6.1212121"
-     inkscape:cx="19.5"
-     inkscape:cy="-9.6386138"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg815" />
-  <path
-     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.95784992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 6.7807842,28.813088 C 11.813842,20.992324 14.832232,3.8938042 15.52896,3.7756987 18.419201,3.2857617 25.626539,3.4616814 29.908997,2.036699 c 1.688171,-0.5617374 1.488754,15.799088 1.655879,24.486997 0.06138,3.190086 -9.314144,4.364655 -8.802321,1.221999 0.644048,-3.954547 0.348605,-12.407998 0.348605,-12.407998 0,0 -5.477233,7.547529 -6.667106,13.583 -0.302555,1.534666 -11.5352913,2.801285 -9.6632698,-0.107604 z"
-     id="path2567"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ssssscss" />
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="672.000000pt" height="1280.000000pt" viewBox="0 0 672.000000 1280.000000"
+ preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1180 12794 c0 -60 -91 -1511 -130 -2084 -235 -3415 -538 -6344
+-1032 -9967 -12 -90 -19 -165 -16 -169 4 -3 120 -26 260 -50 139 -24 509 -89
+823 -144 314 -55 802 -140 1085 -190 685 -120 709 -124 716 -118 2 3 9 273 14
+599 30 1885 143 3931 405 7379 30 393 68 900 85 1125 17 226 35 419 40 430 7
+17 9 16 9 -10 1 -16 8 -116 16 -220 37 -493 77 -1386 145 -3295 20 -544 26
+-715 70 -1905 63 -1692 122 -2939 180 -3810 11 -165 20 -315 20 -332 0 -29 3
+-33 26 -33 14 0 193 31 397 70 442 82 1117 208 1717 320 772 144 710 130 710
+154 0 12 -29 181 -65 376 -688 3786 -1094 7463 -1261 11425 -8 209 -16 381
+-17 381 -2 2 -841 17 -2982 54 -313 5 -715 13 -892 16 -184 4 -323 3 -323 -2z"/>
+</g>
 </svg>

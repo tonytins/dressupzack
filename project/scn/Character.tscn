@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://sprites/tail/tail0.png" type="Texture" id=1]
 [ext_resource path="res://sprites/tail/tail1.png" type="Texture" id=2]
@@ -22,6 +22,9 @@
 [ext_resource path="res://sprites/mouth/mouth9.png" type="Texture" id=20]
 [ext_resource path="res://sprites/mouth/mouth10.png" type="Texture" id=21]
 [ext_resource path="res://sprites/mouth/mouth12.png" type="Texture" id=22]
+[ext_resource path="res://sprites/briefs.svg" type="Texture" id=23]
+[ext_resource path="res://sprites/bottoms_placeholder.png" type="Texture" id=24]
+[ext_resource path="res://sprites/tops_placeholder.png" type="Texture" id=25]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -47,39 +50,44 @@ animations = [ {
 "speed": 4.0
 } ]
 
-[node name="Nathane" type="Node2D"]
+[node name="Character" type="Node2D"]
 
-[node name="Tail" type="AnimatedSprite" parent="."]
-position = Vector2( 49.6951, 374.417 )
+[node name="Base" type="Node2D" parent="."]
+
+[node name="Tail" type="AnimatedSprite" parent="Base"]
+position = Vector2( 54.4027, 184.439 )
 frames = SubResource( 1 )
-frame = 8
+frame = 6
 playing = true
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="Base" type="Sprite" parent="."]
-position = Vector2( 91.6446, 354.064 )
+[node name="Nathan" type="Sprite" parent="Base"]
+position = Vector2( 96.3522, 164.086 )
 texture = ExtResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="Eyes" type="AnimatedSprite" parent="."]
-position = Vector2( 109.519, 253.9 )
+[node name="Eyes" type="AnimatedSprite" parent="Base"]
+position = Vector2( 114.227, 63.9224 )
 frames = SubResource( 2 )
-frame = 2
+frame = 11
 playing = true
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="Mouth" type="AnimatedSprite" parent="."]
-position = Vector2( 126.316, 257.474 )
+[node name="Mouth" type="AnimatedSprite" parent="Base"]
+position = Vector2( 131.024, 67.4964 )
 frames = SubResource( 3 )
-frame = 2
+frame = 16
 playing = true
-__meta__ = {
-"_edit_lock_": true
-}
 
+[node name="Undies" type="Sprite" parent="."]
+position = Vector2( 86.5077, 256.295 )
+texture = ExtResource( 23 )
+
+[node name="Bottom" type="Sprite" parent="."]
+position = Vector2( 88.1872, 251.328 )
+texture = ExtResource( 24 )
+
+[node name="Top" type="Sprite" parent="."]
+position = Vector2( 96.3619, 160.432 )
+texture = ExtResource( 25 )
+
+[node name="Accessory" type="Sprite" parent="."]
+position = Vector2( 93.2243, 155.139 )
+texture = ExtResource( 25 )

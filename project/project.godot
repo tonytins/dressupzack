@@ -18,7 +18,7 @@ _global_script_class_icons={
 config/name="Nathan's Dress Up"
 run/main_scene="res://scn/TitleScn.tscn"
 config/use_custom_user_dir=true
-boot_splash/image="res://boot_splash.png"
+boot_splash/image="res://icon.png"
 boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
 config/icon="res://icon.png"
 name_sv="Nathans klä upp"
@@ -26,7 +26,6 @@ name_sv="Nathans klä upp"
 [autoload]
 
 GameKit="*res://src/GameKit.gd"
-WinDialogs="*res://scn/WinDialogs.tscn"
 
 [debug]
 
@@ -54,7 +53,6 @@ translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/loc
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true

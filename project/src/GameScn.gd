@@ -37,10 +37,11 @@ func change_accessoires(new_accessory):
 	accessory = new_accessory
 	
 	if new_accessory == null:
-		$Nathan/Top.texture = accessory
+		$Nathan/Accessory.texture = accessory
 	
 	$Nathan/Accessory.texture = accessory
 
+# warning-ignore:unused_argument
 func _process(delta):
 	
 	# Change clothes
@@ -83,6 +84,7 @@ func _process(delta):
 		
 	if $Clothes/Wordrobe/Shirts/ShirtsGrid/WhatsNewShirt.is_pressed():
 		change_tops(load("res://sprites/whatsnew_shirt.svg"))
+		
 		
 	# Remove clothes
 	# ===========================================================

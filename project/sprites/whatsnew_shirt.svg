@@ -49,12 +49,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="5.6568543"
-     inkscape:cx="61.06424"
-     inkscape:cy="59.691654"
+     inkscape:cx="57.175153"
+     inkscape:cy="57.852419"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="layer2" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
@@ -88,8 +88,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Re-Ink"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        style="opacity:1;fill:#003f00;fill-opacity:1;stroke:#000000;stroke-width:3.77952766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 20.92203,15.22896 c 0,0 -4.320995,-7.0225477 0.89194,-9.0880412 4.013907,-1.5904089 18.973672,3.1143052 22.320898,3.7467605 4.35966,0.8237537 -3.429422,5.9105877 -3.429422,5.9105877"

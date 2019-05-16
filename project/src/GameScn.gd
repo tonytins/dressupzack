@@ -52,15 +52,16 @@ func _process(delta):
 		
 	if $Clothes/Wordrobe/Pants/PantsGrid/Jeans.is_pressed():
 		change_bottoms(load("res://sprites/jeans.svg"))
+	
+	if $Clothes/Wordrobe/Pants/PantsGrid/BeyondPants.is_pressed():
+		change_bottoms(load("res://sprites/beyond_jeans.svg"))	
+	
 		
 	if $Clothes/Wordrobe/Pants/PantsGrid/Sweats.is_pressed():
 		change_bottoms(load("res://sprites/sweat_pants.svg"))
 	
 	if $Clothes/Wordrobe/Pants/PantsGrid/BeatUpJeans.is_pressed():
 		change_bottoms(load("res://sprites/beat_up_jeans.svg"))
-	
-	# if $Clothes/Wordrobe/Pants/PantsGrid/DJShorts.is_pressed():
-	#	change_bottoms(load("res://sprites/dj_shorts.svg"))
 	
 	if $Clothes/Wordrobe/Underwear/UndiesGrid/Briefs.is_pressed():
 		change_undies(load("res://sprites/briefs.svg"))
@@ -85,6 +86,8 @@ func _process(delta):
 	if $Clothes/Wordrobe/Shirts/ShirtsGrid/WhatsNewShirt.is_pressed():
 		change_tops(load("res://sprites/whatsnew_shirt.svg"))
 		
+	if $Clothes/Wordrobe/Shirts/ShirtsGrid/BeyondJacket.is_pressed():
+		change_tops(load("res://sprites/beyond_jacket.svg"))
 		
 	# Remove clothes
 	# ===========================================================

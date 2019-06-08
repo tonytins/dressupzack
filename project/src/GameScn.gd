@@ -37,10 +37,11 @@ func change_accessoires(new_accessory):
 	accessory = new_accessory
 	
 	if new_accessory == null:
-		$Nathan/Top.texture = accessory
+		$Nathan/Accessory.texture = accessory
 	
 	$Nathan/Accessory.texture = accessory
 
+# warning-ignore:unused_argument
 func _process(delta):
 	
 	# Change clothes
@@ -51,15 +52,12 @@ func _process(delta):
 		
 	if $Clothes/Wordrobe/Pants/PantsGrid/Jeans.is_pressed():
 		change_bottoms(load("res://sprites/jeans.svg"))
-		
+	
 	if $Clothes/Wordrobe/Pants/PantsGrid/Sweats.is_pressed():
 		change_bottoms(load("res://sprites/sweat_pants.svg"))
 	
 	if $Clothes/Wordrobe/Pants/PantsGrid/BeatUpJeans.is_pressed():
 		change_bottoms(load("res://sprites/beat_up_jeans.svg"))
-	
-	# if $Clothes/Wordrobe/Pants/PantsGrid/DJShorts.is_pressed():
-	#	change_bottoms(load("res://sprites/dj_shorts.svg"))
 	
 	if $Clothes/Wordrobe/Underwear/UndiesGrid/Briefs.is_pressed():
 		change_undies(load("res://sprites/briefs.svg"))
@@ -77,6 +75,12 @@ func _process(delta):
 		
 	if $Clothes/Wordrobe/Pants/PantsGrid/BlueCamoJeans.is_pressed():
 		change_bottoms(load("res://sprites/blue_camo_jeans.svg"))
+		
+	if $Clothes/Wordrobe/Shirts/ShirtsGrid/TrainHoodie.is_pressed():
+		change_tops(load("res://sprites/train_hoodie.svg"))
+		
+	if $Clothes/Wordrobe/Shirts/ShirtsGrid/Sweatshirt.is_pressed():
+		change_tops(load("res://sprites/old_sweatshirt.svg"))
 		
 	# Remove clothes
 	# ===========================================================

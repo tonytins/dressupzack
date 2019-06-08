@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boot_splash.png-939509db304f9fb6a281cb6f13babf6e.stex"
+path="res://.import/dressup_panel.svg-32ea153065247fc0395a2e1e29e6c510.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://boot_splash.png"
-dest_files=[ "res://.import/boot_splash.png-939509db304f9fb6a281cb6f13babf6e.stex" ]
+source_file="res://sprites/dressup_panel.svg"
+dest_files=[ "res://.import/dressup_panel.svg-32ea153065247fc0395a2e1e29e6c510.stex" ]
 
 [params]
 

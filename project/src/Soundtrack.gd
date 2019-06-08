@@ -1,9 +1,12 @@
+# Anthony Wilcox licenses this file to you under the GPL license.
+# See the LICENSE file in the project root for more information.
 extends AudioStreamPlayer
 
 const tracks = [
 	'reminiscing',
 	'together_again',
 	'at_the_lake',
+	'mushrooms',
 ]
 
 func _ready():

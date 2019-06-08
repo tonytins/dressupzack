@@ -1,16 +1,21 @@
 # Anthony Wilcox licenses this file to you under the GPL license.
 # See the LICENSE file in the project root for more information.
-extends "res://src/GameKit.gd"
+extends Node
+
+func _process(delta):
+	if Input.is_action_just_pressed("ui_pause"):
+			$PauseWin.show()
+			GameKit.is_game_paused(true)
 
 func _on_ExitBtn_pressed():
-	is_game_paused(false)
-	switch_scenes("title")
+	GameKit.is_game_paused(false)
+	GameKit.switch_scenes("title")
 		
 func _on_SettingsBtn_pressed():
 	$SettingsWin.show()
 
 func _on_CreditsBtn_pressed():
-	$CreditsWin.show()
+	GameKit.switch_scenes("credits")
 
 func _on_LicenseBtn_pressed():
 	$LicenseWin.show()
@@ -26,4 +31,4 @@ func _on_MusicBtn_toggled(button_pressed):
 
 func _on_ResumeBtn_pressed():
 	$PauseWin.hide()
-	is_game_paused(false)
+	GameKit.is_game_paused(false)

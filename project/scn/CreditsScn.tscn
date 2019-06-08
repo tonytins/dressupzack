@@ -9,6 +9,15 @@
 [node name="Credits" type="Node"]
 script = ExtResource( 1 )
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 33.0
+margin_top = 19.0
+margin_right = 320.0
+margin_bottom = 206.0
+theme = ExtResource( 2 )
+bbcode_text = "Nathan's Dress Up is a remake of Zack's Dress Up, a flash game created from 2006 to 2009. The character use to be a  blue fox named Zack but was changed to a blue fennec named Nathan."
+text = "Nathan's Dress Up is a remake of Zack's Dress Up, a flash game created from 2006 to 2009. The character use to be a  blue fox named Zack but was changed to a blue fennec named Nathan."
+
 [node name="Credits" type="RichTextLabel" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
@@ -28,8 +37,8 @@ Megawolf77
 Canon Rhode
 Raier
 
-[img]sprites/sixam_wordmark.svg[/img]
-sixam.xyz
+Made with
+Godot Engine
 [/center]"
 text = "Created by
 Anthony Wilcox
@@ -42,8 +51,8 @@ Megawolf77
 Canon Rhode
 Raier
 
-
-sixam.xyz
+Made with
+Godot Engine
 "
 
 [node name="Character" parent="." instance=ExtResource( 3 )]

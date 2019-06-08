@@ -2,7 +2,7 @@
 # See the LICENSE file in the project root for more information.
 extends Node
 
-var version = "19.xx"
+var version = "2.0"
 
 func is_game_paused(is_paused):
 	if is_paused == true:

@@ -23,14 +23,6 @@ boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
 config/icon="res://icon.png"
 name_sv="Nathans klä upp"
 
-[autoload]
-
-GameKit="*res://src/GameKit.gd"
-
-[debug]
-
-gdscript/completion/autocomplete_setters_and_getters=true
-
 [debug]
 
 gdscript/completion/autocomplete_setters_and_getters=true
@@ -62,3 +54,4 @@ quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
 vram_compression/import_etc=true
 environment/default_environment="res://default_env.tres"
+quality/dynamic_fonts/use_oversampling=false

@@ -3,19 +3,24 @@
 extends Node
 
 func _ready():
- $Version.text = GameKit.version
+ # $Version.text = GameKit.version
+	pass
 
 func _on_ClassicBtn_pressed():
-	GameKit.switch_scenes("classic")
+	# GameKit.switch_scenes("classic")
+	pass
 
 func _on_ModernBtn_pressed():
-	GameKit.switch_scenes("play")
+	# GameKit.switch_scenes("play")
+	pass
 
 func _on_CreditsBtn_pressed():
-	GameKit.switch_scenes("credits")
+	# GameKit.switch_scenes("credits")
+	pass
 
 func _on_LicenseBtn_pressed():
 	$WinDialogs/LicenseWin.show()
 
 func _on_PlayBtn_pressed():
-	GameKit.switch_scenes("play")
+	# GameKit.switch_scenes("play")
+	pass

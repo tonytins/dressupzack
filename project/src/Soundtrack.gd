@@ -15,7 +15,7 @@ func _ready():
 
 func play_random_song():
 	randomize()
-	
+
 	var rand_db = randi() % tracks.size()
 	var audiostream = load('res://music/' + tracks[rand_db] + '.ogg')
 	stream = audiostream

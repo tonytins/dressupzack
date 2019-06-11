@@ -39,7 +39,6 @@ custom_colors/font_color_bg = Color( 0.921569, 0.921569, 0.921569, 1 )
 custom_colors/font_color_fg = Color( 1, 1, 1, 1 )
 
 [node name="Pants" type="Tabs" parent="Wordrobe"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 31.0
@@ -76,9 +75,9 @@ margin_bottom = 112.0
 texture_normal = ExtResource( 6 )
 
 [node name="RemovePants" type="Button" parent="Wordrobe/Pants/PantsGrid"]
-margin_top = 116.0
-margin_right = 106.0
-margin_bottom = 228.0
+margin_left = 440.0
+margin_right = 546.0
+margin_bottom = 112.0
 rect_min_size = Vector2( 0, 112 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -88,6 +87,7 @@ icon = ExtResource( 7 )
 flat = true
 
 [node name="Shirts" type="Tabs" parent="Wordrobe"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 31.0
@@ -204,7 +204,6 @@ margin_bottom = 112.0
 texture_normal = ExtResource( 20 )
 
 [node name="Accessoires" type="Tabs" parent="Wordrobe"]
-editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0

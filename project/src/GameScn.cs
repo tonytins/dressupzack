@@ -12,7 +12,7 @@ public class GameScn : Node
 {
     void ChangeClothes(string path, ClothingType clothingType)
     {
-        var texture = ResourceLoader.Load<Texture>($"res://{path}");
+        var texture = ResourceLoader.Load<Texture>($"res://sprites/{path}");
 
         switch (clothingType)
         {
@@ -35,7 +35,7 @@ public class GameScn : Node
         }
     }
 
-    TextureButton ClothingButton(string path, ClothingType clothingType)
+    TextureButton ClothesButton(string path, ClothingType clothingType)
     {
         switch (clothingType)
         {
@@ -53,8 +53,12 @@ public class GameScn : Node
 
     public override void _Process(float delta)
     {
-        // Change clothes
-        if (ClothingButton("CanonCam", ClothingType.Accessory).IsPressed())
-            ChangeClothes("sprites/camera.png", ClothingType.Accessory);
+        // Accessories
+        if (ClothesButton("CanonCam", ClothingType.Accessory).Pressed)
+            ChangeClothes("camera.png", ClothingType.Accessory);
+
+        // Pants
+        if (ClothesButton("Jeans", ClothingType.Pants).Pressed)
+            ChangeClothes("jeans.svg", ClothingType.Pants);
     }
 }

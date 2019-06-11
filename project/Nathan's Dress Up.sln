@@ -1,19 +1,27 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nathan's Dress Up", "Nathan's Dress Up.csproj", "{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nathan's Dress Up", "Nathan's Dress Up.csproj", "{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-	Debug|Any CPU = Debug|Any CPU
-	Release|Any CPU = Release|Any CPU
-	Tools|Any CPU = Tools|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Tools|Any CPU = Tools|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
-		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Tools|Any CPU.ActiveCfg = Release|Any CPU
+		{A84252BE-A1C7-410D-A602-3EFBEFD17D7D}.Tools|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAC5EB58-11A4-4789-8A8E-FDBB9973675A}
 	EndGlobalSection
 EndGlobal

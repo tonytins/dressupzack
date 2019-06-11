@@ -40,14 +40,14 @@ public class GameScn : Node
         switch (clothingType)
         {
             case ClothingType.Accessory:
-                return GetNode<TextureButton>($"Clothes/Wordrobe/AccsGrid/{path}");
+                return GetNode<TextureButton>($"Clothes/Wordrobe/Accessoires/AccsGrid/{path}");
             case ClothingType.Undies:
-                return GetNode<TextureButton>($"Clothes/Wordrobe/UndiesGrid/{path}");
+                return GetNode<TextureButton>($"Clothes/Wordrobe/Underwear/UndiesGrid/{path}");
             default:
             case ClothingType.Pants:
-                return GetNode<TextureButton>($"Clothes/Wordrobe/PantsGrid/{path}");
+                return GetNode<TextureButton>($"Clothes/Wordrobe/Pants/PantsGrid/{path}");
             case ClothingType.Shirts:
-                return GetNode<TextureButton>($"Clothes/Wordrobe/ShirtsGrid/{path}");
+                return GetNode<TextureButton>($"Clothes/Wordrobe/Shirts/ShirtsGrid/{path}");
         }
     }
 

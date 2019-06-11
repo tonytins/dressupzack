@@ -1,4 +1,5 @@
 extends Node
 
 func _ready():
- $Version.text = GameKit.version
+# $Version.text = GameKit.version
+	pass

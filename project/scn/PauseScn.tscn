@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://styles/DressUpTheme.res" type="Theme" id=1]
-[ext_resource path="res://src/PauseScn.gd" type="Script" id=2]
+[ext_resource path="res://src/PauseScn.cs" type="Script" id=2]
 
 [node name="WinDialogs" type="Control"]
 anchor_left = 0.5
@@ -148,58 +148,6 @@ margin_right = 65.0
 margin_bottom = 24.0
 text = "KMUS"
 align = 1
-
-[node name="LicenseWin" type="AcceptDialog" parent="."]
-editor/display_folded = true
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -202.0
-margin_top = -137.5
-margin_right = 202.0
-margin_bottom = 137.5
-window_title = "KLIC"
-resizable = true
-
-[node name="LicenseTxt" type="RichTextLabel" parent="LicenseWin"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -194.0
-margin_top = 8.0
-margin_right = 194.0
-margin_bottom = 238.0
-bbcode_enabled = true
-bbcode_text = "Nathan's Dress Up is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
-Nathan's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Nathan's Dress Up. If not, see: https://www.gnu.org/licenses/
-
-[center]##########################[/center]
-
-Nathan's Dress Up (c) by Anthony Wilcox
-
-Nathan's Dress Up is licensed under a Creative Commons
-Attribution-ShareAlike 4.0 International License.
-
-You should have received a copy of the license along with this work. 
-If not, see <http://creativecommons.org/licenses/by-sa/4.0/>."
-text = "Nathan's Dress Up is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
-Nathan's Dress Up is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Nathan's Dress Up. If not, see: https://www.gnu.org/licenses/
-
-##########################
-
-Nathan's Dress Up (c) by Anthony Wilcox
-
-Nathan's Dress Up is licensed under a Creative Commons
-Attribution-ShareAlike 4.0 International License.
-
-You should have received a copy of the license along with this work. 
-If not, see <http://creativecommons.org/licenses/by-sa/4.0/>."
 [connection signal="pressed" from="PauseWin/PauseVbox/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 [connection signal="pressed" from="PauseWin/PauseVbox/ResumeBtn" to="." method="_on_ResumeBtn_pressed"]
 [connection signal="pressed" from="PauseWin/PauseVbox/ExitBtn" to="." method="_on_ExitBtn_pressed"]

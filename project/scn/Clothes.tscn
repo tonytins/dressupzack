@@ -39,6 +39,7 @@ custom_colors/font_color_bg = Color( 0.921569, 0.921569, 0.921569, 1 )
 custom_colors/font_color_fg = Color( 1, 1, 1, 1 )
 
 [node name="Pants" type="Tabs" parent="Wordrobe"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 31.0
@@ -87,6 +88,7 @@ icon = ExtResource( 7 )
 flat = true
 
 [node name="Shirts" type="Tabs" parent="Wordrobe"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0

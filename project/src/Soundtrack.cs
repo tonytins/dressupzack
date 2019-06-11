@@ -1,19 +1,16 @@
-using System;
+// Anthony Wilcox licenses this file to you under the GPL license.
+// See the LICENSE file in the project root for more information.
 using Godot;
 
-public class Soundtrack : AudioStreamPlayer {
-    // Declare member variables here. Examples:
-    // private int a = 2;
-    // private string b = "text";
-
-    // Called when the node enters the scene tree for the first time.
+public class Soundtrack : AudioStreamPlayer
+{
     public override void _Ready () {
-        Connect ("finished", this, "PlayRandomSong");
-        PlayRandomSong ();
+        //Connect ("finished", this, "PlayRandomSong");
+        //PlayRandomSong();
     }
 
     void PlayRandomSong () {
-        var rand = new RandomNumberGenerator ();
+        var rand = new RandomNumberGenerator();
         rand.Randomize ();
 
         var tracks = new string[] {
@@ -22,8 +19,9 @@ public class Soundtrack : AudioStreamPlayer {
             "at_the_lake",
             "mushrooms",
         };
-        var randDb = rand.Randi () % tracks.Length;
-        // var audiostream = this.
-        Play ();
+        var index = rand.RandiRange(0, tracks.Length);
+        var audiostream = ResourceLoader.Load<AudioStream>($"res://music/{tracks[index]}.ogg");
+        Stream = audiostream;
+        Play();
     }
 }

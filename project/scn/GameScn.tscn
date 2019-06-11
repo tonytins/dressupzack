@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://src/GameScn.gd" type="Script" id=1]
+[ext_resource path="res://src/GameScn.cs" type="Script" id=1]
 [ext_resource path="res://sprites/icrazy_frame.svg" type="Texture" id=2]
 [ext_resource path="res://sprites/lights.png" type="Texture" id=3]
 [ext_resource path="res://scn/Clothes.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/Soundtrack.gd" type="Script" id=5]
+[ext_resource path="res://src/Soundtrack.cs" type="Script" id=5]
 [ext_resource path="res://scn/PauseScn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scn/Character.tscn" type="PackedScene" id=7]
 

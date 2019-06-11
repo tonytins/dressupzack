@@ -67,7 +67,7 @@ texture = ExtResource( 4 )
 [node name="Eyes" type="AnimatedSprite" parent="Base"]
 position = Vector2( 114.227, 63.9224 )
 frames = SubResource( 2 )
-frame = 4
+frame = 13
 playing = true
 
 [node name="Mouth" type="AnimatedSprite" parent="Base"]

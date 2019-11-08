@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/CreditsScn.gd" type="Script" id=1]
+[ext_resource path="res://styles/DressUpTheme.res" type="Theme" id=2]
+[ext_resource path="res://scn/Character.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scn/PauseScn.tscn" type="PackedScene" id=4]
+
+[node name="Credits" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Credits" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -157.708
+margin_top = 19.2924
+margin_right = 161.292
+margin_bottom = 587.292
+theme = ExtResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Created by
+Anthony Wilcox
+
+Music by
+Michael Carey
+
+Clothing inspired by
+Megawolf77
+Canon Rhode
+The Sims 4
+Raier
+
+Made with
+Godot Engine
+[/center]"
+text = "Created by
+Anthony Wilcox
+
+Music by
+Michael Carey
+
+Clothing inspired by
+Megawolf77
+Canon Rhode
+The Sims 4
+Raier
+
+Made with
+Godot Engine
+"
+
+[node name="Character" parent="." instance=ExtResource( 3 )]
+position = Vector2( 76.1938, 267.895 )
+
+[node name="WinDialogs" parent="." instance=ExtResource( 4 )]
+
+[node name="Version" type="Label" parent="."]
+margin_left = 727.908
+margin_top = 568.64
+margin_right = 775.908
+margin_bottom = 582.64
+text = "Version"

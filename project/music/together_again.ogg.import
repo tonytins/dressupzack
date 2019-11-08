@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/together_again.ogg-c77c286a1667edafef4b34790b5d2995.oggstr"
+
+[deps]
+
+source_file="res://music/together_again.ogg"
+dest_files=[ "res://.import/together_again.ogg-c77c286a1667edafef4b34790b5d2995.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

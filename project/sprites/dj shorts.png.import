@@ -1,0 +1,29 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/dj shorts.png-2620c5746e1ce4d9f2b948f76c51004a.stex"
+
+[deps]
+
+source_file="res://assets/dj shorts.png"
+dest_files=[ "res://.import/dj shorts.png-2620c5746e1ce4d9f2b948f76c51004a.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

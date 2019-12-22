@@ -3,8 +3,8 @@
 *.wav
 *.ogg
 
-# Created by https://www.gitignore.io/api/linux,godot,macos,backup,windows,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=linux,godot,macos,backup,windows,visualstudiocode
+# Created by https://www.gitignore.io/api/linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
 
 ### Backup ###
 *.bak
@@ -12,6 +12,28 @@
 *.ori
 *.orig
 *.tmp
+
+### DotnetCore ###
+# .NET Core build folders
+/bin
+/obj
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
 
 ### Godot ###
 
@@ -66,6 +88,16 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### MonoDevelop ###
+#User Specific
+*.userprefs
+*.usertasks
+
+#Mono Project Files
+*.pidb
+*.resources
+test-results/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -103,4 +135,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/linux,godot,macos,backup,windows,visualstudiocode
+# End of https://www.gitignore.io/api/linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode

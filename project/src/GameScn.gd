@@ -13,7 +13,11 @@ enum ClothingLayer {
 onready var bottoms = load("res://sprites/bottoms_placeholder.png")
 onready var tops = load("res://sprites/tops_placeholder.png")
 onready var accessory = load("res://sprites/tops_placeholder.png")
-onready var undies = load("res://sprites/briefs.svg")
+
+var UndiesBtn = load("res://scn/Clothing.tscn")
+
+func _init():
+	init_underwear()
 
 func change_bottoms(new_bottom):
 	bottoms = new_bottom
@@ -22,16 +26,15 @@ func change_bottoms(new_bottom):
 		$Character/Bottom.texture = bottoms
 		UserSettings.Bottoms = bottoms
 		
-	if undies == load("res://sprites/owo_censor.svg"):
-		change_undies(null)
+#	if undies == load("res://sprites/owo_censor.svg"):
+#		change_undies(null)
 		
 	$Character/Bottom.texture = bottoms
 	UserSettings.Bottoms = bottoms
 	
 func change_undies(new_undies):
-	undies = new_undies
-	$Character/Undies.texture = undies
-	UserSettings.Underwear = undies
+	$Character/Undies.texture = new_undies
+	UserSettings.Underwear = new_undies
 
 func change_tops(new_top):
 	tops = new_top
@@ -53,8 +56,16 @@ func change_accessoires(new_accessory):
 	$Character/Accessory.texture = accessory
 	UserSettings.Accessory = accessory
 	
-func change_clothings(new_clothes, clothing_type):
-	pass
+func init_underwear():
+	var undiesFile = File.new()
+	undiesFile.open("res://undies.json", undiesFile.READ)
+	var undiesJson = parse_json(undiesFile.get_as_text())
+	
+	for object in undiesJson:
+		var underwear = UndiesBtn.instance()
+		
+		underwear.texture = load(object.sprite)
+		
 
 # warning-ignore:unused_argument
 func _process(delta):

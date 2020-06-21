@@ -6,7 +6,7 @@
 [ext_resource path="res://sprites/clothes/blue_camo_jeans.svg" type="Texture" id=6]
 [ext_resource path="res://sprites/clothes/beat_up_jeans.svg" type="Texture" id=7]
 [ext_resource path="res://sprites/clothes/formal_skirt.svg" type="Texture" id=8]
-[ext_resource path="res://sprites/clothes/x_button.svg" type="Texture" id=9]
+[ext_resource path="res://sprites/ui/x_button.svg" type="Texture" id=9]
 [ext_resource path="res://sprites/clothes/old_sweatshirt.svg" type="Texture" id=10]
 [ext_resource path="res://sprites/clothes/raw_shirt.svg" type="Texture" id=11]
 [ext_resource path="res://sprites/clothes/retro_shirt.svg" type="Texture" id=12]
@@ -50,10 +50,9 @@ __meta__ = {
 }
 
 [node name="PantsGrid" type="GridContainer" parent="Pants/PantsScroll"]
-margin_right = 448.0
-margin_bottom = 549.0
-size_flags_horizontal = 0
-size_flags_vertical = 3
+margin_right = 790.0
+margin_bottom = 228.0
+size_flags_horizontal = 3
 columns = 4
 
 [node name="Jeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
@@ -69,41 +68,36 @@ texture_normal = ExtResource( 4 )
 
 [node name="Sweats" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
 margin_left = 220.0
-margin_right = 338.0
+margin_right = 326.0
 margin_bottom = 112.0
 texture_normal = ExtResource( 5 )
 
 [node name="BlueCamoJeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
-margin_left = 342.0
-margin_right = 448.0
+margin_left = 330.0
+margin_right = 436.0
 margin_bottom = 112.0
 texture_normal = ExtResource( 6 )
 
 [node name="BeatUpJeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
 margin_top = 116.0
 margin_right = 106.0
-margin_bottom = 236.0
+margin_bottom = 228.0
 texture_normal = ExtResource( 7 )
 
 [node name="FormalSkirt" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
 margin_left = 110.0
 margin_top = 116.0
 margin_right = 216.0
-margin_bottom = 236.0
+margin_bottom = 228.0
 texture_normal = ExtResource( 8 )
 
-[node name="RemovePants" type="Button" parent="Pants/PantsScroll/PantsGrid"]
+[node name="RemovePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
 margin_left = 220.0
 margin_top = 116.0
-margin_right = 338.0
-margin_bottom = 236.0
+margin_right = 326.0
+margin_bottom = 228.0
 rect_min_size = Vector2( 0, 112 )
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
-flat = true
+texture_normal = ExtResource( 9 )
 
 [node name="Shirts" type="Tabs" parent="."]
 visible = false
@@ -121,8 +115,9 @@ margin_left = 10.0
 margin_top = 10.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
-margin_right = 296.0
-margin_bottom = 477.0
+margin_right = 780.0
+margin_bottom = 365.0
+size_flags_horizontal = 3
 columns = 4
 
 [node name="Sweatshirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
@@ -215,8 +210,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="UndiesGrid" type="GridContainer" parent="Underwear/UndiesScroll"]
-margin_right = 326.0
+margin_right = 790.0
 margin_bottom = 228.0
+size_flags_horizontal = 3
 columns = 3
 
 [node name="OwOCensor" type="TextureButton" parent="Underwear/UndiesScroll/UndiesGrid"]
@@ -258,8 +254,9 @@ margin_right = 369.0
 margin_bottom = 494.0
 
 [node name="AccsGrid" type="GridContainer" parent="Accessoires/AccsScroll"]
-margin_right = 207.0
-margin_bottom = 120.0
+margin_right = 350.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
 columns = 3
 
 [node name="CanonCam" type="TextureButton" parent="Accessoires/AccsScroll/AccsGrid"]

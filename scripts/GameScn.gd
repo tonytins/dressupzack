@@ -18,7 +18,7 @@ onready var bottoms = $Character/Bottom
 onready var tops = $Character/Top
 onready var accessory = $Character/Accessory
 
-var UndiesBtn = load("res://scenes/Clothing.tscenes")
+# var UndiesBtn = load("res://scenes/Clothing.tscenes")
 #
 #func _init():
 #	init_underwear()

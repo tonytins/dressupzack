@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Tony's Dress Up"
-run/main_scene="res://scn/TitleScn.tscn"
+run/main_scene="res://scenes/TitleScn.tscn"
 config/use_custom_user_dir=true
 boot_splash/image="res://icon.png"
 boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
@@ -25,9 +25,9 @@ name_sv="Tonys klä upp"
 
 [autoload]
 
-GameKit="*res://src/GameKit.gd"
-UserSettings="*res://src/UserSettings.gd"
-Soundtrack="*res://src/Soundtrack.gd"
+GameKit="*res://scripts/GameKit.gd"
+UserSettings="*res://scripts/UserSettings.gd"
+Soundtrack="*res://scripts/Soundtrack.gd"
 
 [debug]
 
@@ -37,9 +37,37 @@ gdscript/completion/autocomplete_setters_and_getters=true
 
 window/size/width=800
 window/dpi/allow_hidpi=true
-mouse_cursor/custom_image="res://sprites/cursor.png"
+mouse_cursor/custom_image="res://sprites/clothes/cursor.png"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[gui]
+
+theme/custom="res://styles/Game.theme"
+theme/custom_font="res://fonts/montserrat_extra_bold_16.tres"
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
 
 [input]
 
@@ -54,6 +82,10 @@ ui_pause={
 
 locale_filter=[ 1, [ "en", "sv" ] ]
 translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/local.sv.translation" )
+
+[node]
+
+name_casing=1
 
 [rendering]
 

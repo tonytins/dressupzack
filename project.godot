@@ -21,6 +21,8 @@ config/use_custom_user_dir=true
 boot_splash/image="res://icon.png"
 boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
 config/icon="res://icon.png"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
 name_sv="Tonys klä upp"
 
 [autoload]

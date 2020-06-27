@@ -1,5 +1,7 @@
 # Tony's Dress Up
 
+![](screenshot.png)
+
 ​Tony's Dress Up is a open source dress up game. It's a remake of my original Flash game, ZC's Dress Up. I've included the original flash games in the ``/archive`` directory that can be played at [Ruffle](https://ruffle.rs/)'s demo page.
 ​
 ## ​License

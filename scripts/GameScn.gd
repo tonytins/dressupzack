@@ -16,7 +16,6 @@ onready var accessories_placeholder = load("res://sprites/clothes/tops_placehold
 
 onready var bottoms = $Character/Bottom
 onready var tops = $Character/Top
-onready var accessory = $Character/Accessory
 
 # var UndiesBtn = load("res://scenes/Clothing.tscenes")
 #
@@ -50,15 +49,15 @@ func change_tops(new_top):
 	tops.texture = tops_placeholder
 	UserSettings.Tops = tops_placeholder
 	
-func change_accessoires(new_accessory):
-	accessories_placeholder = new_accessory
-	
-	if new_accessory == null:
-		accessory.texture = accessories_placeholder
-		UserSettings.Accessory = accessories_placeholder
-	
-	accessory.texture = accessories_placeholder
-	UserSettings.Accessory = accessories_placeholder
+#func change_accessoires(new_accessory):
+#	accessories_placeholder = new_accessory
+#
+#	if new_accessory == null:
+#		accessory.texture = accessories_placeholder
+#		UserSettings.Accessory = accessories_placeholder
+#
+#	accessory.texture = accessories_placeholder
+#	UserSettings.Accessory = accessories_placeholder
 	
 #func init_underwear():
 #	var undiesFile = File.new()
@@ -76,8 +75,8 @@ func _process(delta):
 	# Change clothes
 	# ===========================================================
 	
-	if $UI/Base/Wordrobe/Accessoires/AccsScroll/AccsGrid/CanonCam.is_pressed():
-		change_accessoires(load("res://sprites/clothes/camera.png"))
+#	if $UI/Base/Wordrobe/Accessoires/AccsScroll/AccsGrid/CanonCam.is_pressed():
+#		change_accessoires(load("res://sprites/clothes/camera.png"))
 		
 	if $UI/Base/Wordrobe/Pants/PantsScroll/PantsGrid/Jeans.is_pressed():
 		change_bottoms(load("res://sprites/clothes/jeans.svg"))
@@ -144,8 +143,8 @@ func _process(delta):
 	# Remove clothes
 	# ===========================================================
 	
-	if $UI/Base/Wordrobe/Accessoires/AccsScroll/AccsGrid/RemoveAccessory.is_pressed():
-		change_accessoires(null)
+#	if $UI/Base/Wordrobe/Accessoires/AccsScroll/AccsGrid/RemoveAccessory.is_pressed():
+#		change_accessoires(null)
 		
 	if $UI/Base/Wordrobe/Shirts/ShirtsScroll/ShirtsGrid/RemoveShirt.is_pressed():
 		change_tops(null)

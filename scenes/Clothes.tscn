@@ -1,5 +1,6 @@
 [gd_scene load_steps=23 format=2]
 
+[ext_resource path="res://scenes/clothing/camera.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/clothes/jeans.svg" type="Texture" id=3]
 [ext_resource path="res://sprites/clothes/blue_skirt.svg" type="Texture" id=4]
 [ext_resource path="res://sprites/clothes/sweat_pants.svg" type="Texture" id=5]
@@ -21,7 +22,6 @@
 [ext_resource path="res://sprites/clothes/briefs.svg" type="Texture" id=21]
 [ext_resource path="res://sprites/clothes/z_briefs.svg" type="Texture" id=22]
 [ext_resource path="res://sprites/clothes/fundosi.svg" type="Texture" id=23]
-[ext_resource path="res://sprites/clothes/camera.png" type="Texture" id=24]
 
 [node name="Wordrobe" type="TabContainer"]
 anchor_right = 1.0
@@ -36,10 +36,10 @@ __meta__ = {
 [node name="Pants" type="Tabs" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 5.0
-margin_top = 41.0
-margin_right = -5.0
-margin_bottom = -10.0
+margin_left = 4.0
+margin_top = 39.0
+margin_right = -4.0
+margin_bottom = -4.0
 custom_constants/hseparation = 0
 
 [node name="PantsScroll" type="ScrollContainer" parent="Pants"]
@@ -50,7 +50,7 @@ __meta__ = {
 }
 
 [node name="PantsGrid" type="GridContainer" parent="Pants/PantsScroll"]
-margin_right = 790.0
+margin_right = 792.0
 margin_bottom = 228.0
 size_flags_horizontal = 3
 columns = 4
@@ -103,10 +103,10 @@ texture_normal = ExtResource( 9 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 5.0
-margin_top = 41.0
-margin_right = -5.0
-margin_bottom = -10.0
+margin_left = 4.0
+margin_top = 39.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="ShirtsScroll" type="ScrollContainer" parent="Shirts"]
 anchor_right = 1.0
@@ -115,8 +115,8 @@ margin_left = 10.0
 margin_top = 10.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
-margin_right = 780.0
-margin_bottom = 365.0
+margin_right = 782.0
+margin_bottom = 356.0
 size_flags_horizontal = 3
 columns = 4
 
@@ -200,17 +200,17 @@ flat = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 5.0
-margin_top = 41.0
-margin_right = -5.0
-margin_bottom = -10.0
+margin_left = 4.0
+margin_top = 39.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="UndiesScroll" type="ScrollContainer" parent="Underwear"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="UndiesGrid" type="GridContainer" parent="Underwear/UndiesScroll"]
-margin_right = 790.0
+margin_right = 792.0
 margin_bottom = 228.0
 size_flags_horizontal = 3
 columns = 3
@@ -242,10 +242,10 @@ texture_normal = ExtResource( 23 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 5.0
-margin_top = 41.0
-margin_right = -5.0
-margin_bottom = -10.0
+margin_left = 4.0
+margin_top = 39.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="AccsScroll" type="ScrollContainer" parent="Accessoires"]
 margin_left = 19.0
@@ -255,23 +255,7 @@ margin_bottom = 494.0
 
 [node name="AccsGrid" type="GridContainer" parent="Accessoires/AccsScroll"]
 margin_right = 350.0
-margin_bottom = 127.0
 size_flags_horizontal = 3
 columns = 3
 
-[node name="CanonCam" type="TextureButton" parent="Accessoires/AccsScroll/AccsGrid"]
-margin_right = 85.0
-margin_bottom = 112.0
-texture_normal = ExtResource( 24 )
-
-[node name="RemoveAccessory" type="Button" parent="Accessoires/AccsScroll/AccsGrid"]
-margin_left = 89.0
-margin_right = 195.0
-margin_bottom = 112.0
-rect_min_size = Vector2( 85, 105 )
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
-flat = true
+[node name="accessoryBase" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource( 1 )]

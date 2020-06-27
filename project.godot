@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Character",
+"language": "GDScript",
+"path": "res://scripts/character.gd"
+} ]
 _global_script_class_icons={
-
+"Character": ""
 }
 
 [application]
@@ -45,7 +50,7 @@ window/stretch/aspect="keep"
 
 [gui]
 
-theme/custom="res://styles/Game.theme"
+theme/custom="res://resources/Game.theme"
 theme/custom_font="res://fonts/montserrat_extra_bold_16.tres"
 
 [importer_defaults]

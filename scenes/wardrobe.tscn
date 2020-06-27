@@ -1,17 +1,19 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/clothing/camera.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/clothing/zBriefs.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/clothing/beatUpJeans.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/clothing/jeans.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/clothing/skirt.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/clothing/formalSkirt.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/clothing/camoJeans.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/clothing/djShorts.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/clothing/undies/zBriefs.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/clothing/pants/beatUpJeans.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/clothing/pants/jeans.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/clothing/pants/skirt.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/clothing/pants/formalSkirt.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/clothing/pants/camoJeans.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/clothing/pants/djShorts.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sprites/ui/x_button.svg" type="Texture" id=9]
-[ext_resource path="res://scenes/clothing/briefs.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/clothing/undies/briefs.tscn" type="PackedScene" id=20]
 [ext_resource path="res://scripts/wardrobe.gd" type="Script" id=21]
-[ext_resource path="res://scenes/clothing/fundosi.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/clothing/undies/fundosi.tscn" type="PackedScene" id=22]
+
+
 
 [node name="Wordrobe" type="TabContainer"]
 anchor_right = 1.0

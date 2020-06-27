@@ -4,6 +4,8 @@
 [ext_resource path="res://sprites/clothes/camera.png" type="Texture" id=2]
 
 
+
+
 [node name="camera" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0

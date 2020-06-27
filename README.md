@@ -7,3 +7,5 @@
 ## ​License
 
 The source and assets is licensed under the MPL 2.0 License and CC-BY, respectfully - see the [LICENSE](LICENSE) and [ASSET-LICENSE](ASSET-LICENSE) for more details.
+
+The flash games included are abandonware. Feel free to share them on archives.

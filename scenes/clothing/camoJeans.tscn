@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/clothes/blue_camo_jeans.svg" type="Texture" id=1]
+[ext_resource path="res://scenes/clothing/baseClothing.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/clothing/bottomsBase.gd" type="Script" id=3]
+
+[node name="camoJeans" instance=ExtResource( 2 )]
+texture_normal = ExtResource( 1 )
+script = ExtResource( 3 )
+[connection signal="pressed" from="." to="." method="_on_bottoms_pressed"]

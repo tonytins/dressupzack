@@ -1,24 +1,14 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/clothing/camera.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/clothing/zBriefs.tscn" type="PackedScene" id=2]
-[ext_resource path="res://sprites/clothes/jeans.svg" type="Texture" id=3]
-[ext_resource path="res://sprites/clothes/blue_skirt.svg" type="Texture" id=4]
-[ext_resource path="res://sprites/clothes/sweat_pants.svg" type="Texture" id=5]
-[ext_resource path="res://sprites/clothes/blue_camo_jeans.svg" type="Texture" id=6]
-[ext_resource path="res://sprites/clothes/beat_up_jeans.svg" type="Texture" id=7]
-[ext_resource path="res://sprites/clothes/formal_skirt.svg" type="Texture" id=8]
+[ext_resource path="res://scenes/clothing/beatUpJeans.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/clothing/jeans.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/clothing/skirt.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/clothing/formalSkirt.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/clothing/camoJeans.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/clothing/djShorts.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sprites/ui/x_button.svg" type="Texture" id=9]
-[ext_resource path="res://sprites/clothes/old_sweatshirt.svg" type="Texture" id=10]
-[ext_resource path="res://sprites/clothes/raw_shirt.svg" type="Texture" id=11]
-[ext_resource path="res://sprites/clothes/retro_shirt.svg" type="Texture" id=12]
-[ext_resource path="res://sprites/clothes/atomic_shirt.svg" type="Texture" id=13]
-[ext_resource path="res://sprites/clothes/z_shirt.png" type="Texture" id=14]
-[ext_resource path="res://sprites/clothes/biker_jacket.svg" type="Texture" id=15]
-[ext_resource path="res://sprites/clothes/nl_jacket.png" type="Texture" id=16]
-[ext_resource path="res://sprites/clothes/train_hoodie.svg" type="Texture" id=17]
-[ext_resource path="res://sprites/clothes/korm_shirt.png" type="Texture" id=18]
-[ext_resource path="res://sprites/clothes/whatsnew_shirt.svg" type="Texture" id=19]
 [ext_resource path="res://scenes/clothing/briefs.tscn" type="PackedScene" id=20]
 [ext_resource path="res://scripts/wardrobe.gd" type="Script" id=21]
 [ext_resource path="res://scenes/clothing/fundosi.tscn" type="PackedScene" id=22]
@@ -44,7 +34,6 @@ margin_bottom = -4.0
 custom_constants/hseparation = 0
 
 [node name="PantsScroll" type="ScrollContainer" parent="Pants"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -57,43 +46,49 @@ margin_bottom = 228.0
 size_flags_horizontal = 3
 columns = 4
 
-[node name="Jeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="beatUpJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_right = 106.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 3 )
 
-[node name="BlueSkirt" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="jeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 110.0
 margin_right = 216.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 4 )
 
-[node name="Sweats" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="camoJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 5 )
 
-[node name="BlueCamoJeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="camoJeans2" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 330.0
 margin_right = 436.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 6 )
 
-[node name="BeatUpJeans" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="formalSkirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_top = 116.0
 margin_right = 106.0
 margin_bottom = 228.0
-texture_normal = ExtResource( 7 )
 
-[node name="FormalSkirt" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="skirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 110.0
 margin_top = 116.0
 margin_right = 216.0
 margin_bottom = 228.0
-texture_normal = ExtResource( 8 )
 
-[node name="RemovePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="removePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
 margin_left = 220.0
 margin_top = 116.0
 margin_right = 326.0
@@ -118,85 +113,17 @@ margin_top = 10.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
 margin_right = 782.0
-margin_bottom = 356.0
+margin_bottom = 112.0
 size_flags_horizontal = 3
 columns = 4
 
-[node name="Sweatshirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_right = 85.0
-margin_bottom = 115.0
-texture_normal = ExtResource( 10 )
-
-[node name="Raw" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 89.0
-margin_right = 207.0
-margin_bottom = 115.0
-texture_normal = ExtResource( 11 )
-
-[node name="Retro" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 211.0
-margin_right = 296.0
-margin_bottom = 115.0
-texture_normal = ExtResource( 12 )
-
-[node name="Atomic" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_top = 119.0
-margin_right = 85.0
-margin_bottom = 234.0
-texture_normal = ExtResource( 13 )
-
-[node name="ZShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 89.0
-margin_top = 119.0
-margin_right = 207.0
-margin_bottom = 234.0
-texture_normal = ExtResource( 14 )
-
-[node name="BikerJacket" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 211.0
-margin_top = 119.0
-margin_right = 296.0
-margin_bottom = 234.0
-texture_normal = ExtResource( 15 )
-
-[node name="NLJacket" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
+[node name="removeShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
+margin_left = 178.0
 margin_top = 238.0
-margin_right = 85.0
+margin_right = 284.0
 margin_bottom = 353.0
-texture_normal = ExtResource( 16 )
-
-[node name="TrainHoodie" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 89.0
-margin_top = 238.0
-margin_right = 207.0
-margin_bottom = 353.0
-texture_normal = ExtResource( 17 )
-
-[node name="KormShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 211.0
-margin_top = 238.0
-margin_right = 296.0
-margin_bottom = 353.0
-texture_normal = ExtResource( 18 )
-
-[node name="WhatsNewShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_top = 357.0
-margin_right = 85.0
-margin_bottom = 475.0
-texture_normal = ExtResource( 19 )
-
-[node name="RemoveShirt" type="Button" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 89.0
-margin_top = 357.0
-margin_right = 207.0
-margin_bottom = 475.0
 rect_min_size = Vector2( 0, 112 )
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-icon = ExtResource( 9 )
-flat = true
+texture_normal = ExtResource( 9 )
 
 [node name="Underwear" type="Tabs" parent="."]
 visible = false
@@ -261,4 +188,6 @@ margin_left = 89.0
 margin_right = 195.0
 margin_bottom = 112.0
 texture_normal = ExtResource( 9 )
+[connection signal="pressed" from="Pants/PantsScroll/PantsGrid/removePants" to="." method="_on_removePants_pressed"]
+[connection signal="pressed" from="Shirts/ShirtsScroll/ShirtsGrid/removeShirt" to="." method="_on_removeShirt_pressed"]
 [connection signal="pressed" from="Accessoires/AccsScroll/AccsGrid/removeAccessory" to="." method="_on_removeAccessory_pressed"]

@@ -24,8 +24,8 @@
 [ext_resource path="res://sprites/character/mouth/mouth10.png" type="Texture" id=22]
 [ext_resource path="res://sprites/character/mouth/mouth12.png" type="Texture" id=23]
 [ext_resource path="res://sprites/clothes/briefs.svg" type="Texture" id=24]
-[ext_resource path="res://sprites/clothes/bottoms_placeholder.png" type="Texture" id=25]
-[ext_resource path="res://sprites/clothes/tops_placeholder.png" type="Texture" id=26]
+[ext_resource path="res://sprites/clothes/blank_bottom.png" type="Texture" id=25]
+[ext_resource path="res://sprites/clothes/blank_top.png" type="Texture" id=26]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -59,7 +59,7 @@ script = ExtResource( 1 )
 [node name="Tail" type="AnimatedSprite" parent="Base"]
 position = Vector2( 54.4027, 184.439 )
 frames = SubResource( 1 )
-frame = 8
+frame = 6
 playing = true
 
 [node name="Tony" type="Sprite" parent="Base"]
@@ -69,13 +69,13 @@ texture = ExtResource( 5 )
 [node name="Eyes" type="AnimatedSprite" parent="Base"]
 position = Vector2( 114.227, 63.9224 )
 frames = SubResource( 2 )
-frame = 11
+frame = 15
 playing = true
 
 [node name="Mouth" type="AnimatedSprite" parent="Base"]
 position = Vector2( 131.024, 67.4964 )
 frames = SubResource( 3 )
-frame = 3
+frame = 19
 playing = true
 
 [node name="Undies" type="Sprite" parent="."]

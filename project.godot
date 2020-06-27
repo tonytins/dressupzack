@@ -30,12 +30,6 @@ config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
 name_sv="Tonys klä upp"
 
-[autoload]
-
-GameKit="*res://scripts/GameKit.gd"
-UserSettings="*res://scripts/UserSettings.gd"
-Soundtrack="*res://scripts/Soundtrack.gd"
-
 [debug]
 
 gdscript/completion/autocomplete_setters_and_getters=true

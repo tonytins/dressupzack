@@ -5,4 +5,4 @@
 
 [node name="baseClothing" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-[connection signal="pressed" from="clothing" to="." method="_on_undies_pressed"]
+[connection signal="pressed" from="." to="." method="_on_undies_pressed"]

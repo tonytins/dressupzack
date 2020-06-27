@@ -1,6 +1,7 @@
 [gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://scenes/clothing/camera.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/clothing/zBriefs.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/clothes/jeans.svg" type="Texture" id=3]
 [ext_resource path="res://sprites/clothes/blue_skirt.svg" type="Texture" id=4]
 [ext_resource path="res://sprites/clothes/sweat_pants.svg" type="Texture" id=5]
@@ -18,10 +19,9 @@
 [ext_resource path="res://sprites/clothes/train_hoodie.svg" type="Texture" id=17]
 [ext_resource path="res://sprites/clothes/korm_shirt.png" type="Texture" id=18]
 [ext_resource path="res://sprites/clothes/whatsnew_shirt.svg" type="Texture" id=19]
-[ext_resource path="res://sprites/clothes/owo_censor.svg" type="Texture" id=20]
-[ext_resource path="res://sprites/clothes/briefs.svg" type="Texture" id=21]
-[ext_resource path="res://sprites/clothes/z_briefs.svg" type="Texture" id=22]
-[ext_resource path="res://sprites/clothes/fundosi.svg" type="Texture" id=23]
+[ext_resource path="res://scenes/clothing/briefs.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scripts/wardrobe.gd" type="Script" id=21]
+[ext_resource path="res://scenes/clothing/fundosi.tscn" type="PackedScene" id=22]
 
 [node name="Wordrobe" type="TabContainer"]
 anchor_right = 1.0
@@ -29,6 +29,7 @@ anchor_bottom = 1.0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color_bg = Color( 0.921569, 0.921569, 0.921569, 1 )
 custom_colors/font_color_fg = Color( 1, 1, 1, 1 )
+script = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,6 +44,7 @@ margin_bottom = -4.0
 custom_constants/hseparation = 0
 
 [node name="PantsScroll" type="ScrollContainer" parent="Pants"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -211,32 +213,23 @@ anchor_bottom = 1.0
 
 [node name="UndiesGrid" type="GridContainer" parent="Underwear/UndiesScroll"]
 margin_right = 792.0
-margin_bottom = 228.0
+margin_bottom = 112.0
 size_flags_horizontal = 3
 columns = 3
 
-[node name="OwOCensor" type="TextureButton" parent="Underwear/UndiesScroll/UndiesGrid"]
+[node name="fundosi" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 22 )]
 margin_right = 106.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 20 )
 
-[node name="Briefs" type="TextureButton" parent="Underwear/UndiesScroll/UndiesGrid"]
+[node name="zBriefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 2 )]
 margin_left = 110.0
 margin_right = 216.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 21 )
 
-[node name="ZBriefs" type="TextureButton" parent="Underwear/UndiesScroll/UndiesGrid"]
+[node name="briefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 20 )]
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
-texture_normal = ExtResource( 22 )
-
-[node name="Fundosi" type="TextureButton" parent="Underwear/UndiesScroll/UndiesGrid"]
-margin_top = 116.0
-margin_right = 106.0
-margin_bottom = 228.0
-texture_normal = ExtResource( 23 )
 
 [node name="Accessoires" type="Tabs" parent="."]
 visible = false
@@ -255,7 +248,17 @@ margin_bottom = 494.0
 
 [node name="AccsGrid" type="GridContainer" parent="Accessoires/AccsScroll"]
 margin_right = 350.0
+margin_bottom = 112.0
 size_flags_horizontal = 3
 columns = 3
 
 [node name="camera" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource( 1 )]
+margin_right = 85.0
+margin_bottom = 112.0
+
+[node name="removeAccessory" type="TextureButton" parent="Accessoires/AccsScroll/AccsGrid"]
+margin_left = 89.0
+margin_right = 195.0
+margin_bottom = 112.0
+texture_normal = ExtResource( 9 )
+[connection signal="pressed" from="Accessoires/AccsScroll/AccsGrid/removeAccessory" to="." method="_on_removeAccessory_pressed"]

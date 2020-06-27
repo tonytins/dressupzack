@@ -1,2 +1,2 @@
-extends Control
+extends TextureButton
 

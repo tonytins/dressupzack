@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/clothing/camera.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/clothes/jeans.svg" type="Texture" id=3]
@@ -22,6 +22,16 @@
 [ext_resource path="res://sprites/clothes/briefs.svg" type="Texture" id=21]
 [ext_resource path="res://sprites/clothes/z_briefs.svg" type="Texture" id=22]
 [ext_resource path="res://sprites/clothes/fundosi.svg" type="Texture" id=23]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends \"res://scripts/clothing/baseClothing.gd\"
+
+onready var character = preload(\"res://resources/character.tres\")
+onready var clothing = $clothing
+
+func _on_accessory_pressed():
+	character.accessory = clothing.texture_normal
+"
 
 [node name="Wordrobe" type="TabContainer"]
 anchor_right = 1.0
@@ -259,3 +269,4 @@ size_flags_horizontal = 3
 columns = 3
 
 [node name="accessoryBase" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource( 1 )]
+script = SubResource( 1 )

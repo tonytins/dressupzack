@@ -59,7 +59,7 @@ script = ExtResource( 1 )
 [node name="Tail" type="AnimatedSprite" parent="Base"]
 position = Vector2( 54.4027, 184.439 )
 frames = SubResource( 1 )
-frame = 3
+frame = 8
 playing = true
 
 [node name="Tony" type="Sprite" parent="Base"]
@@ -69,13 +69,13 @@ texture = ExtResource( 5 )
 [node name="Eyes" type="AnimatedSprite" parent="Base"]
 position = Vector2( 114.227, 63.9224 )
 frames = SubResource( 2 )
-frame = 18
+frame = 11
 playing = true
 
 [node name="Mouth" type="AnimatedSprite" parent="Base"]
 position = Vector2( 131.024, 67.4964 )
 frames = SubResource( 3 )
-frame = 7
+frame = 3
 playing = true
 
 [node name="Undies" type="Sprite" parent="."]

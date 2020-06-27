@@ -1,4 +1,4 @@
-extends "res://scripts/baseClothing.gd"
+extends "res://scripts/clothing/baseClothing.gd"
 
 onready var character = preload("res://resources/character.tres")
 onready var clothing = $clothing

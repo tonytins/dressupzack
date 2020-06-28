@@ -207,14 +207,20 @@ margin_right = 106.0
 margin_bottom = 112.0
 
 [node name="zBriefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 2 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 110.0
 margin_right = 216.0
 margin_bottom = 112.0
+rect_min_size = Vector2( 106, 112 )
 
 [node name="briefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 20 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
+rect_min_size = Vector2( 106, 112 )
 
 [node name="Accessoires" type="Tabs" parent="."]
 visible = false

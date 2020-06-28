@@ -46,7 +46,7 @@ window/stretch/aspect="keep"
 [gui]
 
 theme/custom="res://resources/Game.theme"
-theme/custom_font="res://fonts/montserrat_extra_bold_16.tres"
+theme/custom_font="res://fonts/kenny_pixel_25.tres"
 
 [importer_defaults]
 
@@ -69,6 +69,10 @@ texture={
 "size_limit": 0,
 "stream": false,
 "svg/scale": 1.0
+}
+ogg_vorbis={
+"loop": false,
+"loop_offset": 0
 }
 
 [input]

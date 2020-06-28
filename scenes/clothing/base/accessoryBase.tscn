@@ -3,9 +3,6 @@
 [ext_resource path="res://scripts/clothing/accessoryBase.gd" type="Script" id=1]
 [ext_resource path="res://scenes/clothing/base/baseClothing.tscn" type="PackedScene" id=2]
 
-
-
-
 [node name="accessoryBase" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
 [connection signal="pressed" from="." to="." method="_on_accessory_pressed"]

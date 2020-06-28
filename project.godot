@@ -8,14 +8,9 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Resource",
-"class": "Character",
-"language": "GDScript",
-"path": "res://scripts/character.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"Character": ""
+
 }
 
 [application]
@@ -38,6 +33,7 @@ gdscript/completion/autocomplete_setters_and_getters=true
 
 window/size/width=800
 window/size/height=500
+window/size/resizable=false
 window/dpi/allow_hidpi=true
 mouse_cursor/custom_image="res://sprites/clothes/cursor.png"
 window/stretch/mode="viewport"

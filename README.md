@@ -13,7 +13,7 @@
 ## Authors
 
 - **Anthony Wilcox** - *Initial work* - [tonytins](https://github.com/tonytins)
-- **Kenney** - *UI* - [kenny.nl](https://www.kenney.nl/)
+- **Kenney** - *UI assets* - [kenny.nl](https://www.kenney.nl/)
 ​
 ## License
 

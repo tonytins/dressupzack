@@ -1,8 +1,3 @@
-### Audio ###
-
-*.wav
-*.ogg
-
 # Created by https://www.gitignore.io/api/linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
 

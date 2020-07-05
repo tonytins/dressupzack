@@ -37,7 +37,7 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
-margin_top = 41.0
+margin_top = 40.0
 margin_right = -5.0
 margin_bottom = -10.0
 custom_constants/hseparation = 0
@@ -51,46 +51,46 @@ __meta__ = {
 
 [node name="PantsGrid" type="GridContainer" parent="Pants/PantsScroll"]
 margin_right = 790.0
-margin_bottom = 449.0
+margin_bottom = 450.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
 
+[node name="removePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+margin_right = 106.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 0, 112 )
+texture_normal = ExtResource( 9 )
+
 [node name="beatUpJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 106.0
+margin_left = 110.0
+margin_right = 216.0
 margin_bottom = 112.0
 
 [node name="jeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 110.0
-margin_right = 216.0
-margin_bottom = 112.0
-
-[node name="camoJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 7 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
 
-[node name="sweatPants" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 17 )]
+[node name="camoJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 7 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 330.0
 margin_right = 436.0
 margin_bottom = 112.0
 
-[node name="camoJeans2" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 8 )]
+[node name="sweatPants" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 17 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 116.0
 margin_right = 106.0
 margin_bottom = 228.0
 
-[node name="formalSkirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 6 )]
+[node name="camoJeans2" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 8 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 110.0
@@ -98,7 +98,7 @@ margin_top = 116.0
 margin_right = 216.0
 margin_bottom = 228.0
 
-[node name="skirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 5 )]
+[node name="formalSkirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 6 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 220.0
@@ -106,20 +106,20 @@ margin_top = 116.0
 margin_right = 326.0
 margin_bottom = 228.0
 
-[node name="removePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
+[node name="skirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 330.0
 margin_top = 116.0
 margin_right = 436.0
 margin_bottom = 228.0
-rect_min_size = Vector2( 0, 112 )
-texture_normal = ExtResource( 9 )
 
 [node name="Shirts" type="Tabs" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
-margin_top = 41.0
+margin_top = 40.0
 margin_right = -5.0
 margin_bottom = -10.0
 
@@ -131,10 +131,18 @@ margin_top = 10.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
 margin_right = 780.0
-margin_bottom = 439.0
+margin_bottom = 440.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
+
+[node name="removeShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
+margin_left = 110.0
+margin_top = 119.0
+margin_right = 216.0
+margin_bottom = 234.0
+rect_min_size = Vector2( 0, 112 )
+texture_normal = ExtResource( 9 )
 
 [node name="djShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource( 14 )]
 anchor_right = 0.0
@@ -174,20 +182,12 @@ margin_top = 119.0
 margin_right = 106.0
 margin_bottom = 234.0
 
-[node name="removeShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-margin_left = 110.0
-margin_top = 119.0
-margin_right = 216.0
-margin_bottom = 234.0
-rect_min_size = Vector2( 0, 112 )
-texture_normal = ExtResource( 9 )
-
 [node name="Underwear" type="Tabs" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
-margin_top = 41.0
+margin_top = 40.0
 margin_right = -5.0
 margin_bottom = -10.0
 
@@ -197,7 +197,7 @@ anchor_bottom = 1.0
 
 [node name="UndiesGrid" type="GridContainer" parent="Underwear/UndiesScroll"]
 margin_right = 790.0
-margin_bottom = 449.0
+margin_bottom = 450.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3
@@ -207,27 +207,21 @@ margin_right = 106.0
 margin_bottom = 112.0
 
 [node name="zBriefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 2 )]
-anchor_right = 1.0
-anchor_bottom = 1.0
 margin_left = 110.0
 margin_right = 216.0
 margin_bottom = 112.0
-rect_min_size = Vector2( 106, 112 )
 
 [node name="briefs" parent="Underwear/UndiesScroll/UndiesGrid" instance=ExtResource( 20 )]
-anchor_right = 1.0
-anchor_bottom = 1.0
 margin_left = 220.0
 margin_right = 326.0
 margin_bottom = 112.0
-rect_min_size = Vector2( 106, 112 )
 
 [node name="Accessoires" type="Tabs" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
-margin_top = 41.0
+margin_top = 40.0
 margin_right = -5.0
 margin_bottom = -10.0
 
@@ -244,15 +238,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3
 
-[node name="camera" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource( 1 )]
-margin_right = 85.0
-margin_bottom = 112.0
-
 [node name="removeAccessory" type="TextureButton" parent="Accessoires/AccsScroll/AccsGrid"]
 margin_left = 89.0
 margin_right = 195.0
 margin_bottom = 112.0
 texture_normal = ExtResource( 9 )
+
+[node name="camera" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource( 1 )]
+margin_right = 85.0
+margin_bottom = 112.0
 [connection signal="pressed" from="Pants/PantsScroll/PantsGrid/removePants" to="." method="_on_removePants_pressed"]
 [connection signal="pressed" from="Shirts/ShirtsScroll/ShirtsGrid/removeShirt" to="." method="_on_removeShirt_pressed"]
 [connection signal="pressed" from="Accessoires/AccsScroll/AccsGrid/removeAccessory" to="." method="_on_removeAccessory_pressed"]

@@ -34,7 +34,6 @@ gdscript/completion/autocomplete_setters_and_getters=true
 window/size/width=800
 window/size/height=500
 window/size/resizable=false
-window/dpi/allow_hidpi=true
 mouse_cursor/custom_image="res://sprites/clothes/cursor.png"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"

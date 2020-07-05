@@ -10,13 +10,19 @@ onready var undies_grid = $Underwear/UndiesScroll/UndiesGrid
 onready var accs_grid = $Accessoires/AccsScroll/AccsGrid
 
 func _ready():
-	var load_pck = ProjectSettings.load_resource_pack("user://dlc/pack.pck")
+	var dir = Directory.new()
 	
-	if load_pck == true:
-		# All the button scenes are consolidated 
-		# in a root scene and and each parent 
-		# is instanced to their respective grid
-		var import_scene = load("res://scenes/dlc/pants.tscn")
+	if dir.open("user://dlc") == OK:
+		dir.list_dir_begin()
+		if "pck" in dir.get_next() == true:
+			var load_pcks = ProjectSettings.load_resource_pack(dir.get_next(), false)
+			if load_pcks == true:
+				if dir.open("res://scenes/dlc") == OK:
+					var file_name = dir.get_next()
+					dir.change_dir("shirts")
+					if dir.current_is_dir() == "shirts":
+						var shirt_dlc = load(dir.get_next())
+						shirts_grid.get_children(shirt_dlc)
 			
 func _on_removeAccessory_pressed():
 	character.accessory = blank_top

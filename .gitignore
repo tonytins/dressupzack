@@ -1,5 +1,5 @@
-# Created by https://www.gitignore.io/api/linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,godot,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode,web
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,godot,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode,web
 
 ### Backup ###
 *.bak
@@ -10,13 +10,12 @@
 
 ### DotnetCore ###
 # .NET Core build folders
-/bin
-/obj
+bin/
+obj/
 
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
-
 
 ### Executable ###
 *.app
@@ -37,8 +36,12 @@
 export.cfg
 export_presets.cfg
 
+# Imported translations (automatically generated from CSV files)
+*.translation
+
 # Mono-specific ignores
 .mono/
+data_*/
 
 ### Linux ###
 *~
@@ -99,10 +102,26 @@ test-results/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+### Web ###
+*.asp
+*.cer
+*.csr
+*.css
+*.htm
+*.html
+*.js
+*.jsp
+*.php
+*.rss
+*.wasm
+*.wat
+*.xhtml
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -130,4 +149,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/linux,godot,macos,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,godot,backup,windows,dotnetcore,executable,monodevelop,visualstudiocode,web

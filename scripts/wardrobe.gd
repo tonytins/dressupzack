@@ -34,12 +34,14 @@ func check_for_dlc(dlc_pack):
 	
 	# Check if the DLC is actually there
 	if load_pck == true:
-		# Load the DLC
+		
+		# Loads the DLC
 		ProjectSettings.load_resource_pack(dlc_path, false)
 		
-		# Locates 
 		var dir = Directory.new()
 		dir.list_dir_begin()
+		
+		# Lists the files in each of their respective directories
 		var shirts_dir = "res://scenes/dlc/shirts/"
 		var pants_dir = "res://scenes/dlc/pants/"
 		var undies_dir = "res://scenes/dlc/undies/"
@@ -47,7 +49,8 @@ func check_for_dlc(dlc_pack):
 		var dlc_pants = list_files_in_directory(pants_dir)
 		var dlc_undies = list_files_in_directory(undies_dir)
 		
-		# Initialize and add nodes from each tab
+		# Make sure each file actually exist, instance them
+		# and add them to their respective tabs
 		for shirt in dlc_shirts:
 			if dir.file_exists(shirts_dir + shirt):
 				var init = load(shirts_dir + shirt).instance()

@@ -1,6 +1,6 @@
 # Tony's Dress Up
 
-![](screenshot.png)
+![](screenshot.gif)
 
 ​Tony's Dress Up is a re-imagining of my first Flash game, ZC's Dress Up, developed back in 2007. I've included the Flash copies in the ``/archive`` directory. They can be played at [Ruffle](https://ruffle.rs/)'s demo page.
 ​

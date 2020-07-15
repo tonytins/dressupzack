@@ -1,0 +1,131 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://sprites/character/shadow.svg" type="Texture" id=1]
+[ext_resource path="res://sprites/character/tail/tail0.svg" type="Texture" id=2]
+[ext_resource path="res://sprites/character/tail/tail1.svg" type="Texture" id=3]
+[ext_resource path="res://sprites/character/tail/tail2.svg" type="Texture" id=4]
+[ext_resource path="res://sprites/character_base_legs.svg" type="Texture" id=5]
+[ext_resource path="res://sprites/character/eyes/eyes1.png" type="Texture" id=6]
+[ext_resource path="res://sprites/character/eyes/eyes2.png" type="Texture" id=7]
+[ext_resource path="res://sprites/character/eyes/eyes3.png" type="Texture" id=8]
+[ext_resource path="res://sprites/character/eyes/eyes4.png" type="Texture" id=9]
+[ext_resource path="res://sprites/character/eyes/eyes5.png" type="Texture" id=10]
+[ext_resource path="res://sprites/character/eyes/eyes6.png" type="Texture" id=11]
+[ext_resource path="res://sprites/character/eyes/eyes7.png" type="Texture" id=12]
+[ext_resource path="res://sprites/character/mouth/mouth.png" type="Texture" id=13]
+[ext_resource path="res://sprites/character/mouth/mouth2.png" type="Texture" id=14]
+[ext_resource path="res://sprites/character/mouth/mouth3.png" type="Texture" id=15]
+[ext_resource path="res://sprites/character/mouth/mouth4.png" type="Texture" id=16]
+[ext_resource path="res://sprites/character/mouth/mouth5.png" type="Texture" id=17]
+[ext_resource path="res://sprites/character/mouth/mouth6.png" type="Texture" id=18]
+[ext_resource path="res://sprites/character/mouth/mouth7.png" type="Texture" id=19]
+[ext_resource path="res://sprites/character/mouth/mouth8.png" type="Texture" id=20]
+[ext_resource path="res://sprites/character/mouth/mouth9.png" type="Texture" id=21]
+[ext_resource path="res://sprites/character/mouth/mouth10.png" type="Texture" id=22]
+[ext_resource path="res://sprites/character/mouth/mouth12.png" type="Texture" id=23]
+[ext_resource path="res://sprites/character_base_top.svg" type="Texture" id=25]
+[ext_resource path="res://sprites/clothes/blank_top.png" type="Texture" id=26]
+[ext_resource path="res://sprites/character_base_head.svg" type="Texture" id=27]
+[ext_resource path="res://sprites/character/mouth/mouth11.png" type="Texture" id=28]
+
+[sub_resource type="GDScript" id=1]
+script/source = "# Anthony Wilcox licenses this file to you under the MPL license.
+# See the LICENSE file in the project root for more information.
+extends Node2D
+
+onready var character = preload(\"res://resources/character.tres\")
+onready var accessory = $body/accessory
+#onready var underwear = $Undies
+onready var bottom = $body/legs
+onready var top = $body/top
+onready var eyes = $body/head/eyes
+onready var mouth = $body/head/mouth
+
+func _process(delta):
+	
+	if character.accessory != null:
+		accessory.texture = character.accessory
+		
+#	if character.underwear != null:
+#		underwear.texture = character.underwear
+	
+	if character.bottom != null:
+		bottom.texture = character.bottom
+		
+	if character.top != null:
+		top.texture = character.top
+"
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 28 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="characterBase" type="Node2D"]
+position = Vector2( -19, -92 )
+script = SubResource( 1 )
+
+[node name="shadow" type="Sprite" parent="."]
+position = Vector2( 4.84271, 244.714 )
+texture = ExtResource( 1 )
+
+[node name="body" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tail" type="AnimatedSprite" parent="body"]
+position = Vector2( -33.7592, 99.4079 )
+scale = Vector2( 0.927713, 1 )
+frames = SubResource( 4 )
+playing = true
+
+[node name="legs" type="Sprite" parent="body"]
+position = Vector2( 1.47027, 192.868 )
+texture = ExtResource( 5 )
+
+[node name="top" type="Sprite" parent="body"]
+position = Vector2( 7, 78 )
+texture = ExtResource( 25 )
+
+[node name="head" type="Sprite" parent="body"]
+position = Vector2( 10.6805, -25.1047 )
+texture = ExtResource( 27 )
+
+[node name="eyes" type="AnimatedSprite" parent="body/head"]
+position = Vector2( 17.6857, 4.22147 )
+frames = SubResource( 2 )
+frame = 3
+playing = true
+
+[node name="mouth" type="AnimatedSprite" parent="body/head"]
+position = Vector2( 38.1195, 8.68453 )
+frames = SubResource( 3 )
+frame = 2
+playing = true
+
+[node name="accessory" type="Sprite" parent="body"]
+position = Vector2( 9.54095, 73.0832 )
+texture = ExtResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}

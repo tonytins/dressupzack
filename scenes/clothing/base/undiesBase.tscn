@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://scripts/clothing/undiesBase.gd" type="Script" id=1]
-[ext_resource path="res://scenes/clothing/base/baseClothing.tscn" type="PackedScene" id=2]
-
-[node name="baseClothing" instance=ExtResource( 2 )]
-script = ExtResource( 1 )
-[connection signal="pressed" from="." to="." method="_on_undies_pressed"]

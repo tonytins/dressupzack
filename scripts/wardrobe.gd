@@ -3,7 +3,7 @@ extends TabContainer
 onready var character = preload("res://resources/character.tres")
 onready var blank_accessory = preload("res://sprites/clothes/blank_top.png")
 onready var base_top = preload("res://sprites/character_base_top.svg")
-onready var base_bottom = preload("res://sprites/character_base_legs.svg")
+onready var base_bottom = preload("res://sprites/clothes/owo_censor.svg")
 
 onready var pants_grid = $Pants/PantsScroll/PantsGrid
 onready var shirts_grid = $Shirts/ShirtsScroll/ShirtsGrid

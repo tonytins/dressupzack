@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/character/tail/tail0.svg" type="Texture" id=2]
 [ext_resource path="res://sprites/character/tail/tail1.svg" type="Texture" id=3]
 [ext_resource path="res://sprites/character/tail/tail2.svg" type="Texture" id=4]
-[ext_resource path="res://sprites/character_base_legs.svg" type="Texture" id=5]
+[ext_resource path="res://sprites/clothes/owo_censor.svg" type="Texture" id=5]
 [ext_resource path="res://sprites/character/eyes/eyes1.png" type="Texture" id=6]
 [ext_resource path="res://sprites/character/eyes/eyes2.png" type="Texture" id=7]
 [ext_resource path="res://sprites/character/eyes/eyes3.png" type="Texture" id=8]
@@ -97,6 +97,7 @@ __meta__ = {
 position = Vector2( -33.7592, 99.4079 )
 scale = Vector2( 0.927713, 1 )
 frames = SubResource( 4 )
+frame = 2
 playing = true
 
 [node name="legs" type="Sprite" parent="body"]
@@ -114,13 +115,13 @@ texture = ExtResource( 27 )
 [node name="eyes" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 17.6857, 4.22147 )
 frames = SubResource( 2 )
-frame = 3
+frame = 1
 playing = true
 
 [node name="mouth" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 38.1195, 8.68453 )
 frames = SubResource( 3 )
-frame = 2
+frame = 4
 playing = true
 
 [node name="accessory" type="Sprite" parent="body"]

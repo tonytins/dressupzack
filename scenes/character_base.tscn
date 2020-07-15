@@ -115,24 +115,18 @@ texture = ExtResource( 27 )
 [node name="eyes" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 17.6857, 4.22147 )
 frames = SubResource( 3 )
-frame = 6
+frame = 2
 playing = true
 
 [node name="mouth" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 38.1195, 8.68453 )
 frames = SubResource( 4 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="accessory" type="Sprite" parent="body"]
 position = Vector2( 9.54095, 73.0832 )
 texture = ExtResource( 26 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="emote" type="Node2D" parent="body"]
-position = Vector2( 51.7305, -20.2165 )
 __meta__ = {
 "_edit_lock_": true
 }

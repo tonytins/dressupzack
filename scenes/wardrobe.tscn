@@ -9,16 +9,21 @@
 [ext_resource path="res://scenes/clothing/pants/camoJeans.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/clothing/pants/djShorts.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sprites/ui/x_button.svg" type="Texture" id=9]
-[ext_resource path="res://scenes/clothing/tops/whatsNewShirt.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/clothing/tops/zShirt.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/clothing/tops/whatsnew_shirt.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/clothing/tops/z_shirt.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/clothing/tops/rawShirt.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/clothing/tops/kormShirt.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/clothing/tops/korm_shirt.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/clothing/tops/djShirt.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/clothing/tops/atomicShirt.tscn" type="PackedScene" id=15]
-[ext_resource path="res://scenes/clothing/tops/nlShirt.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/clothing/tops/atomic_shirt.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/clothing/tops/nl_shirt.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/clothing/pants/sweatPants.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/clothing/tops/retroShirt.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/clothing/tops/retro_shirt.tscn" type="PackedScene" id=18]
 [ext_resource path="res://scripts/wardrobe.gd" type="Script" id=21]
+
+
+
+
+
 
 [node name="Wordrobe" type="TabContainer"]
 anchor_right = 1.0
@@ -33,7 +38,6 @@ __meta__ = {
 }
 
 [node name="Pants" type="Tabs" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
@@ -115,6 +119,7 @@ margin_right = 451.0
 margin_bottom = 270.0
 
 [node name="Shirts" type="Tabs" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0

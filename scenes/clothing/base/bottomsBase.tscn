@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scenes/clothing/base/baseClothing.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scripts/clothing/bottomsBase.gd" type="Script" id=2]
+[ext_resource path="res://scenes/clothing/base/clothing_base.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/clothing/bottoms_base.gd" type="Script" id=2]
+
+
 
 [node name="bottomsBase" instance=ExtResource( 1 )]
 script = ExtResource( 2 )

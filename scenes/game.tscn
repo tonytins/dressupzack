@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://scenes/characterBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/character_base.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/world/background.svg" type="Texture" id=2]
 [ext_resource path="res://sprites/ui/blue_boxCross.png" type="Texture" id=3]
 [ext_resource path="res://scenes/wardrobe.tscn" type="PackedScene" id=4]

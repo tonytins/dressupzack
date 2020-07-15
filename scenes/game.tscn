@@ -40,16 +40,17 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+version = "1.5"
 
 [node name="wardrobe" parent="ui/base" instance=ExtResource( 4 )]
 anchor_left = 0.345
 anchor_top = 0.072
 anchor_right = 0.975
 anchor_bottom = 0.658
-margin_left = -4.69434
-margin_top = -19.9716
-margin_right = 60.3057
-margin_bottom = 75.0284
+margin_left = -5.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 109.0
 
 [node name="clearBtn" type="TextureButton" parent="ui/base"]
 margin_left = 752.0
@@ -67,4 +68,18 @@ __meta__ = {
 
 [node name="clear" type="AudioStreamPlayer" parent="ui/base"]
 stream = ExtResource( 9 )
+
+[node name="versionLbl" type="Label" parent="ui/base"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -81.0
+margin_top = -28.0
+text = "[version]"
+align = 2
+valign = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="ui/base/clearBtn" to="ui/base" method="_on_clearBtn_pressed"]

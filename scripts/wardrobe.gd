@@ -45,10 +45,8 @@ func check_for_dlc(dlc_pack):
 		# Lists the files in each of their respective directories
 		var shirts_dir = "res://scenes/dlc/shirts/"
 		var pants_dir = "res://scenes/dlc/pants/"
-#		var undies_dir = "res://scenes/dlc/undies/"
 		var dlc_shirts = list_files_in_directory(shirts_dir)
 		var dlc_pants = list_files_in_directory(pants_dir)
-#		var dlc_undies = list_files_in_directory(undies_dir)
 		
 		# Make sure each file actually exist, instance them
 		# and add them to their respective tabs
@@ -63,15 +61,9 @@ func check_for_dlc(dlc_pack):
 				var init = load(pants_dir + pants).instance()
 				shirts_grid.add_child(init)
 				print_debug("Initialized: " + pants_dir + pants)
-	
-#		for undies in dlc_undies:
-#			if dir.file_exists(undies_dir + undies):
-#				var init = load(undies_dir + undies).instance()
-#				shirts_grid.add_child(init)
-#				print_debug("Initialized: " + undies_dir + undies)
 
 func _ready():
-#	check_for_dlc("testdlc.pck")
+	check_for_dlc("emojidlc.pck")
 	pass
 			
 func _on_removeAccessory_pressed():

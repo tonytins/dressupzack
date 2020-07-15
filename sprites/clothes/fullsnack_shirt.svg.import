@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/whatsnew_shirt.png-42b2ca70dd4fab6afb076d118bf9155b.stex"
+path="res://.import/fullsnack_shirt.svg-fe727b0ca40952cd32596f7250f1aa9d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/whatsnew_shirt.png"
-dest_files=[ "res://.import/whatsnew_shirt.png-42b2ca70dd4fab6afb076d118bf9155b.stex" ]
+source_file="res://sprites/clothes/fullsnack_shirt.svg"
+dest_files=[ "res://.import/fullsnack_shirt.svg-fe727b0ca40952cd32596f7250f1aa9d.stex" ]
 
 [params]
 

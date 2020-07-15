@@ -100,23 +100,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="top" type="Sprite" parent="body"]
-position = Vector2( 7, 80 )
-texture = ExtResource( 25 )
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="legs" type="Sprite" parent="body"]
-position = Vector2( 3, 189 )
+position = Vector2( 1.47027, 192.868 )
 texture = ExtResource( 5 )
 
+[node name="top" type="Sprite" parent="body"]
+position = Vector2( 7, 78 )
+texture = ExtResource( 25 )
+
 [node name="head" type="Sprite" parent="body"]
-position = Vector2( 14.1214, -26.841 )
+position = Vector2( 14.1214, -28.841 )
 texture = ExtResource( 27 )
-__meta__ = {
-"_edit_lock_": true
-}
+
+[node name="eyes" type="AnimatedSprite" parent="body/head"]
+position = Vector2( 17.6857, 4.22147 )
+frames = SubResource( 3 )
+frame = 6
+playing = true
+
+[node name="mouth" type="AnimatedSprite" parent="body/head"]
+position = Vector2( 38.1195, 8.68453 )
+frames = SubResource( 4 )
+frame = 6
+playing = true
 
 [node name="accessory" type="Sprite" parent="body"]
 position = Vector2( 9.54095, 73.0832 )
@@ -127,24 +133,6 @@ __meta__ = {
 
 [node name="emote" type="Node2D" parent="body"]
 position = Vector2( 51.7305, -20.2165 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="eyes" type="AnimatedSprite" parent="body/emote"]
-position = Vector2( -19.9234, -2.40303 )
-frames = SubResource( 3 )
-frame = 3
-playing = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="mouth" type="AnimatedSprite" parent="body/emote"]
-position = Vector2( 0.510399, 2.06003 )
-frames = SubResource( 4 )
-frame = 6
-playing = true
 __meta__ = {
 "_edit_lock_": true
 }

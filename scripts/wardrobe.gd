@@ -1,12 +1,13 @@
 extends TabContainer
 
 onready var character = preload("res://resources/character.tres")
-onready var blank_top = preload("res://sprites/clothes/blank_top.png")
-onready var blank_bottom = preload("res://sprites/clothes/blank_bottom.png")
+onready var blank_accessory = preload("res://sprites/clothes/blank_top.png")
+onready var base_top = preload("res://sprites/character_base_top.svg")
+onready var base_bottom = preload("res://sprites/character_base_legs.svg")
 
 onready var pants_grid = $Pants/PantsScroll/PantsGrid
 onready var shirts_grid = $Shirts/ShirtsScroll/ShirtsGrid
-onready var undies_grid = $Underwear/UndiesScroll/UndiesGrid
+#onready var undies_grid = $Underwear/UndiesScroll/UndiesGrid
 onready var accs_grid = $Accessoires/AccsScroll/AccsGrid
 
 func list_files_in_directory(path):
@@ -44,10 +45,10 @@ func check_for_dlc(dlc_pack):
 		# Lists the files in each of their respective directories
 		var shirts_dir = "res://scenes/dlc/shirts/"
 		var pants_dir = "res://scenes/dlc/pants/"
-		var undies_dir = "res://scenes/dlc/undies/"
+#		var undies_dir = "res://scenes/dlc/undies/"
 		var dlc_shirts = list_files_in_directory(shirts_dir)
 		var dlc_pants = list_files_in_directory(pants_dir)
-		var dlc_undies = list_files_in_directory(undies_dir)
+#		var dlc_undies = list_files_in_directory(undies_dir)
 		
 		# Make sure each file actually exist, instance them
 		# and add them to their respective tabs
@@ -63,21 +64,21 @@ func check_for_dlc(dlc_pack):
 				shirts_grid.add_child(init)
 				print_debug("Initialized: " + pants_dir + pants)
 	
-		for undies in dlc_undies:
-			if dir.file_exists(undies_dir + undies):
-				var init = load(undies_dir + undies).instance()
-				shirts_grid.add_child(init)
-				print_debug("Initialized: " + undies_dir + undies)
+#		for undies in dlc_undies:
+#			if dir.file_exists(undies_dir + undies):
+#				var init = load(undies_dir + undies).instance()
+#				shirts_grid.add_child(init)
+#				print_debug("Initialized: " + undies_dir + undies)
 
 func _ready():
 #	check_for_dlc("testdlc.pck")
 	pass
 			
 func _on_removeAccessory_pressed():
-	character.accessory = blank_top
+	character.accessory = blank_accessory
 
 func _on_removePants_pressed():
-	character.bottom = blank_bottom
+	character.bottom = base_bottom
 
 func _on_removeShirt_pressed():
-	character.top = blank_top
+	character.top = base_top

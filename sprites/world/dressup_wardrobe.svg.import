@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/modern_dress_up_bg.png-2ec62cdd8ee1c5f60b5faa53f704458f.stex"
+path="res://.import/dressup_wardrobe.svg-50694cf0e1b6e5ed9fafb867a0443a2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/modern_dress_up_bg.png"
-dest_files=[ "res://.import/modern_dress_up_bg.png-2ec62cdd8ee1c5f60b5faa53f704458f.stex" ]
+source_file="res://sprites/world/dressup_wardrobe.svg"
+dest_files=[ "res://.import/dressup_wardrobe.svg-50694cf0e1b6e5ed9fafb867a0443a2e.stex" ]
 
 [params]
 

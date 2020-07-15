@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dressup_wardrobe.png-c4a59bdd169c023e961e92917f5fd969.stex"
+path="res://.import/classic_dress_up_blurred_bg.png-ce6fef332733ba210937c36735d40783.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/dressup_wardrobe.png"
-dest_files=[ "res://.import/dressup_wardrobe.png-c4a59bdd169c023e961e92917f5fd969.stex" ]
+source_file="res://sprites/world/classic_dress_up_blurred_bg.png"
+dest_files=[ "res://.import/classic_dress_up_blurred_bg.png-ce6fef332733ba210937c36735d40783.stex" ]
 
 [params]
 

@@ -97,7 +97,6 @@ __meta__ = {
 position = Vector2( -33.7592, 99.4079 )
 scale = Vector2( 0.927713, 1 )
 frames = SubResource( 4 )
-frame = 2
 playing = true
 
 [node name="legs" type="Sprite" parent="body"]
@@ -115,13 +114,13 @@ texture = ExtResource( 27 )
 [node name="eyes" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 17.6857, 4.22147 )
 frames = SubResource( 2 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="mouth" type="AnimatedSprite" parent="body/head"]
 position = Vector2( 38.1195, 8.68453 )
 frames = SubResource( 3 )
-frame = 4
+frame = 5
 playing = true
 
 [node name="accessory" type="Sprite" parent="body"]

@@ -28,7 +28,7 @@ position = Vector2( 35.118, -14.56 )
 texture = ExtResource( 6 )
 
 [node name="characterBase" parent="." instance=ExtResource( 1 )]
-position = Vector2( 145.146, 205.536 )
+position = Vector2( 133.807, 215.615 )
 
 [node name="ui" type="CanvasLayer" parent="."]
 

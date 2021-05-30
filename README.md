@@ -17,8 +17,9 @@
 ## Authors
 
 * **Tony Bark** - *Initial work* - [tonytins](https://github.com/tonytins)
-* **Kenney** - *UI assets* - [kenny.nl](https://www.kenney.nl/)
+* **Kenney** - *UI* - [kenny.nl](https://www.kenney.nl/)
 * **Twemoji** - *Emojis* - [twemoji.twitter.com](https://twemoji.twitter.com/)
+*  **Font Awesome** - *Icons* - [FortAwesome](https://github.com/FortAwesome)
     ​
   
 ## License

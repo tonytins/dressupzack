@@ -4,7 +4,7 @@ extends TabContainer
 
 onready var character = preload("res://resources/character.tres")
 onready var blank_accessory = preload("res://sprites/clothes/blank_top.png")
-onready var base_top = preload("res://sprites/character_base_top.svg")
+onready var base_top = preload("res://sprites/character/character_base_top.svg")
 onready var base_bottom = preload("res://sprites/clothes/owo_censor.svg")
 
 onready var pants_grid = $Pants/PantsScroll/PantsGrid
@@ -29,7 +29,7 @@ func list_files_in_directory(path):
 
 	return files
 
-func check_for_dlc(dlc_pack):
+func load_dlc(dlc_pack):
 	var usr_dir = "user://dlc/"
 	var dlc_path = usr_dir + dlc_pack
 	var load_pck = ProjectSettings.load_resource_pack(dlc_path, false)
@@ -65,7 +65,7 @@ func check_for_dlc(dlc_pack):
 				print_debug("Initialized: " + pants_dir + pants)
 
 func _ready():
-	check_for_dlc("emojidlc.pck")
+	load_dlc("emojidlc.pck")
 	pass
 			
 func _on_removeAccessory_pressed():

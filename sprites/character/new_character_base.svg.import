@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/new_character_base.svg-e37d5232b11c88359270a1b5f7a925f8.stex"
+path="res://.import/new_character_base.svg-e17bd63473c7566b3b9184366a11923d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/new_character_base.svg"
-dest_files=[ "res://.import/new_character_base.svg-e37d5232b11c88359270a1b5f7a925f8.stex" ]
+source_file="res://sprites/character/new_character_base.svg"
+dest_files=[ "res://.import/new_character_base.svg-e17bd63473c7566b3b9184366a11923d.stex" ]
 
 [params]
 

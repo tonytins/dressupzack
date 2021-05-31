@@ -39,7 +39,7 @@ position = Vector2( 133.807, 230.615 )
 
 [node name="Controls" type="CanvasLayer" parent="."]
 
-[node name="DressUp" type="Control" parent="Controls"]
+[node name="Container" type="Control" parent="Controls"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 8 )
@@ -49,14 +49,14 @@ __meta__ = {
 }
 version = "1.10"
 
-[node name="wardrobe" parent="Controls/DressUp" instance=ExtResource( 4 )]
+[node name="Wardrobe" parent="Controls/Container" instance=ExtResource( 4 )]
 anchor_left = 0.33875
 anchor_top = 0.054
 anchor_right = 1.05
 anchor_bottom = 0.9
 margin_right = 6.10352e-05
 
-[node name="Spinner" type="TextureRect" parent="Controls/DressUp"]
+[node name="Spinner" type="TextureRect" parent="Controls/Container"]
 visible = false
 anchor_left = 0.945785
 anchor_top = 0.153026
@@ -68,10 +68,10 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Timer" type="Timer" parent="Controls/DressUp/Spinner"]
+[node name="Timer" type="Timer" parent="Controls/Container/Spinner"]
 wait_time = 2.0
 
-[node name="CenterBtns" type="CenterContainer" parent="Controls/DressUp"]
+[node name="CenterBtns" type="CenterContainer" parent="Controls/Container"]
 anchor_left = 0.35875
 anchor_top = 0.792
 anchor_right = 0.99625
@@ -80,29 +80,29 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ButtonCtr" type="HBoxContainer" parent="Controls/DressUp/CenterBtns"]
+[node name="ButtonCtr" type="HBoxContainer" parent="Controls/Container/CenterBtns"]
 margin_left = 179.0
 margin_top = 4.0
 margin_right = 330.0
 margin_bottom = 42.0
 custom_constants/separation = 20
 
-[node name="SaveBtn" type="Button" parent="Controls/DressUp/CenterBtns/ButtonCtr"]
+[node name="ExportBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
 margin_right = 37.0
 margin_bottom = 38.0
-hint_tooltip = "Save"
+hint_tooltip = "Export"
 icon = ExtResource( 7 )
 flat = true
 
-[node name="LoadBtn" type="Button" parent="Controls/DressUp/CenterBtns/ButtonCtr"]
+[node name="ImportBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
 margin_left = 57.0
 margin_right = 94.0
 margin_bottom = 38.0
-hint_tooltip = "Load"
+hint_tooltip = "Import"
 icon = ExtResource( 9 )
 flat = true
 
-[node name="clearBtn" type="Button" parent="Controls/DressUp/CenterBtns/ButtonCtr"]
+[node name="ClearBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
 margin_left = 114.0
 margin_right = 151.0
 margin_bottom = 38.0
@@ -110,7 +110,7 @@ hint_tooltip = "Clear"
 icon = ExtResource( 3 )
 flat = true
 
-[node name="versionLbl" type="Label" parent="Controls/DressUp"]
+[node name="versionLbl" type="Label" parent="Controls/Container"]
 anchor_left = 0.88125
 anchor_top = 0.944
 anchor_right = 0.9825
@@ -122,7 +122,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[connection signal="timeout" from="Controls/DressUp/Spinner/Timer" to="Controls/DressUp/Spinner" method="_on_Timer_timeout"]
-[connection signal="pressed" from="Controls/DressUp/CenterBtns/ButtonCtr/SaveBtn" to="characterBase" method="_on_SaveBtn_pressed"]
-[connection signal="pressed" from="Controls/DressUp/CenterBtns/ButtonCtr/LoadBtn" to="characterBase" method="_on_LoadBtn_pressed"]
-[connection signal="pressed" from="Controls/DressUp/CenterBtns/ButtonCtr/clearBtn" to="characterBase" method="_on_clearBtn_pressed"]
+[connection signal="timeout" from="Controls/Container/Spinner/Timer" to="Controls/Container/Spinner" method="_on_Timer_timeout"]
+[connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ExportBtn" to="characterBase" method="_on_SaveBtn_pressed"]
+[connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ImportBtn" to="characterBase" method="_on_LoadBtn_pressed"]
+[connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ClearBtn" to="characterBase" method="_on_clearBtn_pressed"]

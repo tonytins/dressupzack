@@ -12,7 +12,6 @@ onready var base_bottom = preload("res://sprites/character/character_base_legs.s
 
 onready var export_win = $Controls/Container/ExportWin
 onready var import_win = $Controls/Container/ImportWin
-onready var unsupported_win = $Controls/Container/NotSupportedWin
 
 onready var accessory = $Body/Accessory
 #onready var underwear = $Undies

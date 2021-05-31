@@ -2,6 +2,8 @@
 # See the LICENSE file in the project root for more information.
 extends Control
 
+const _NEWS_API = "https://static.tonybark.com/news/dressup.json"
+
 export var version: String = "1.0.0"
 
 onready var character = preload("res://resources/character.tres")
@@ -11,12 +13,23 @@ onready var base_bottom = preload("res://sprites/character/character_base_legs.s
 
 onready var export_btn = $CenterBtns/ButtonCtr/ExportBtn
 onready var import_btn = $CenterBtns/ButtonCtr/ImportBtn
+onready var news_win = $NewsWin
+onready var news_btn = $CenterBtns/ButtonCtr/NewsBtn
+onready var http_request = $NewsWin/NewsBtns/HTTPRequest
 
 func _ready():
 	var verLabel = $versionLbl
 	verLabel.text = "v" + version
 	GameData.version = version
 	
+	var err = http_request.request(_NEWS_API)
+	
+	if err != OK:
+		news_btn.disabled = true
+	
 	if OS.get_name() == "HTML5":
-		export_btn.disabled == true
-		import_btn.disabled == true
+		export_btn.disabled = true
+		import_btn.disabled = true
+
+func _on_NewsBtn_pressed():
+	news_win.show()

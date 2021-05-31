@@ -10,12 +10,16 @@ onready var blank_accessory = preload("res://sprites/clothes/blank_top.png")
 onready var base_top = preload("res://sprites/character/character_base_top.svg")
 onready var base_bottom = preload("res://sprites/character/character_base_legs.svg")
 
-onready var accessory = $body/accessory
+onready var export_win = $Controls/Container/ExportWin
+onready var import_win = $Controls/Container/ImportWin
+onready var unsupported_win = $Controls/Container/NotSupportedWin
+
+onready var accessory = $Body/Accessory
 #onready var underwear = $Undies
-onready var bottom = $body/legs
-onready var top = $body/top
-onready var eyes = $body/head/eyes
-onready var mouth = $body/head/mouth
+onready var bottom = $Body/Legs
+onready var top = $Body/Top
+# onready var eyes = $Body/Head/Eyes
+# onready var mouth = $Body/Head/Mouth
 
 func _process(delta):
 	
@@ -43,13 +47,16 @@ func save_game():
 	data_file["accessory"] = accessory.texture.resource_path
 	data_file["top"] = top.texture.resource_path
 	data_file["bottom"] = bottom.texture.resource_path
+	
 	var file = File.new()
 	if file.open(_SAVE_FILE, File.WRITE) != 0:
 		print("Error opening file")
 		return
 	var json_file = to_json(data_file)
+	
+	GameEvents.emit_signal("indicate")
+	
 	file.store_line(json_file)
-	print_debug(json_file)
 	file.close()
 	
 func load_game():
@@ -62,8 +69,8 @@ func load_game():
 	if file.open(_SAVE_FILE, File.READ) != 0:
 		print("Error opening file")
 		return
-		
-	var data = parse_json(file.get_line())
+	
+	var data = parse_json(file.get_as_text())
 	
 	var top_texture = ImageTexture.new()
 	var accessory_texture = ImageTexture.new()
@@ -71,6 +78,8 @@ func load_game():
 	var top_image = Image.new()
 	var accessory_image = Image.new()
 	var bottom_image = Image.new()
+	
+	GameEvents.emit_signal("indicate")
 	
 	top_image.load(data["top"])
 	top_texture.create_from_image(top_image)
@@ -94,10 +103,8 @@ func _on_clearBtn_pressed():
 
 func _on_SaveBtn_pressed():
 	$Click.play()
-	GameEvents.emit_signal("indicate")
 	save_game()
 
 func _on_LoadBtn_pressed():
 	$Click.play()
-	GameEvents.emit_signal("indicate")
 	load_game()

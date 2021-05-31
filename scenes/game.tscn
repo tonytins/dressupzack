@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/character_base.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/world/background.svg" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://sprites/symbols/file-upload.svg" type="Texture" id=7]
 [ext_resource path="res://scripts/ui.gd" type="Script" id=8]
 [ext_resource path="res://sprites/symbols/file-download.svg" type="Texture" id=9]
+[ext_resource path="res://sprites/symbols/file-upload-disabled.svg" type="Texture" id=10]
+[ext_resource path="res://sprites/symbols/file-download-disabled.svg" type="Texture" id=11]
 [ext_resource path="res://sprites/symbols/spinner.svg" type="Texture" id=12]
 [ext_resource path="res://scripts/spinner.gd" type="Script" id=13]
 [ext_resource path="res://scripts/game.gd" type="Script" id=14]
@@ -35,7 +37,7 @@ position = Vector2( 35.118, -14.56 )
 texture = ExtResource( 6 )
 
 [node name="characterBase" parent="." instance=ExtResource( 1 )]
-position = Vector2( 133.807, 230.615 )
+position = Vector2( 141.307, 225.012 )
 
 [node name="Controls" type="CanvasLayer" parent="."]
 
@@ -81,34 +83,33 @@ __meta__ = {
 }
 
 [node name="ButtonCtr" type="HBoxContainer" parent="Controls/Container/CenterBtns"]
-margin_left = 179.0
-margin_top = 4.0
-margin_right = 330.0
-margin_bottom = 42.0
+margin_left = 197.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 39.0
 custom_constants/separation = 20
 
-[node name="ExportBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_right = 37.0
-margin_bottom = 38.0
+[node name="ExportBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
+margin_right = 25.0
+margin_bottom = 32.0
 hint_tooltip = "Export"
-icon = ExtResource( 7 )
-flat = true
+texture_normal = ExtResource( 7 )
+texture_disabled = ExtResource( 10 )
 
-[node name="ImportBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 57.0
-margin_right = 94.0
-margin_bottom = 38.0
+[node name="ImportBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
+margin_left = 45.0
+margin_right = 70.0
+margin_bottom = 32.0
 hint_tooltip = "Import"
-icon = ExtResource( 9 )
-flat = true
+texture_normal = ExtResource( 9 )
+texture_disabled = ExtResource( 11 )
 
-[node name="ClearBtn" type="Button" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 114.0
-margin_right = 151.0
-margin_bottom = 38.0
+[node name="ClearBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
+margin_left = 90.0
+margin_right = 115.0
+margin_bottom = 32.0
 hint_tooltip = "Clear"
-icon = ExtResource( 3 )
-flat = true
+texture_normal = ExtResource( 3 )
 
 [node name="versionLbl" type="Label" parent="Controls/Container"]
 anchor_left = 0.88125

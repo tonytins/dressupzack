@@ -5,7 +5,6 @@
 [ext_resource path="res://scripts/news_window.gd" type="Script" id=3]
 
 [node name="NewsWin" type="WindowDialog"]
-visible = true
 anchor_left = 0.15375
 anchor_top = 0.144
 anchor_right = 0.84625

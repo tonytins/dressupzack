@@ -1,7 +1,5 @@
 extends WindowDialog
 
-const _NEWS_API = "https://static.tonybark.com/news/dressup.json"
-
 onready var news_list = $News
 onready var http_request = $NewsBtns/HTTPRequest
 
@@ -16,4 +14,4 @@ func _on_HTTPRequest_request_completed(result, response_code, headers, body):
 
 func _on_SyncBtn_pressed():
 	news_list.clear()
-	http_request.request(_NEWS_API)
+	http_request.request(GameData.NEWS_API)

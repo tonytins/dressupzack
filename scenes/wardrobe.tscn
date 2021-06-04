@@ -108,10 +108,10 @@ margin_bottom = 258.0
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 38.0
-margin_right = -4.0
-margin_bottom = -4.0
+margin_left = 5.0
+margin_top = 40.0
+margin_right = -5.0
+margin_bottom = -10.0
 
 [node name="ShirtsScroll" type="ScrollContainer" parent="Shirts"]
 anchor_right = 1.0
@@ -120,8 +120,8 @@ margin_left = 10.0
 margin_top = 10.0
 
 [node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
-margin_right = 782.0
-margin_bottom = 448.0
+margin_right = 780.0
+margin_bottom = 440.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
@@ -181,10 +181,10 @@ texture_normal = ExtResource( 2 )
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 38.0
-margin_right = -4.0
-margin_bottom = -4.0
+margin_left = 5.0
+margin_top = 40.0
+margin_right = -5.0
+margin_bottom = -10.0
 
 [node name="AccsScroll" type="ScrollContainer" parent="Accessoires"]
 anchor_right = 1.0
@@ -194,8 +194,8 @@ __meta__ = {
 }
 
 [node name="AccsGrid" type="GridContainer" parent="Accessoires/AccsScroll"]
-margin_right = 792.0
-margin_bottom = 458.0
+margin_right = 790.0
+margin_bottom = 450.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3

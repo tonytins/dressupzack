@@ -2,8 +2,6 @@
 # See the LICENSE file in the project root for more information.
 extends Control
 
-const _NEWS_API = "https://static.tonybark.com/news/dressup.json"
-
 export var version: String = "1.0.0"
 
 onready var character = preload("res://resources/character.tres")
@@ -18,11 +16,11 @@ onready var news_btn = $CenterBtns/ButtonCtr/NewsBtn
 onready var http_request = $NewsWin/NewsBtns/HTTPRequest
 
 func _ready():
-	var verLabel = $versionLbl
+	var verLabel = $VersionLbl
 	verLabel.text = "v" + version
 	GameData.version = version
 	
-	var err = http_request.request(_NEWS_API)
+	var err = http_request.request(GameData.NEWS_API)
 	
 	if err != OK:
 		news_btn.disabled = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/world/background.svg" type="Texture" id=2]
@@ -13,9 +13,7 @@
 [ext_resource path="res://sprites/symbols/file-download-disabled.svg" type="Texture" id=11]
 [ext_resource path="res://sprites/symbols/spinner.svg" type="Texture" id=12]
 [ext_resource path="res://scripts/spinner.gd" type="Script" id=13]
-[ext_resource path="res://sprites/symbols/newspaper.svg" type="Texture" id=15]
 [ext_resource path="res://scenes/NewsWin.tscn" type="PackedScene" id=16]
-[ext_resource path="res://sprites/symbols/newspaper-disabled.svg" type="Texture" id=17]
 
 [node name="Game" type="Node2D"]
 
@@ -50,7 +48,7 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
-version = "1.10"
+version = "1.11"
 
 [node name="Wardrobe" parent="Controls/Container" instance=ExtResource( 4 )]
 anchor_left = 0.33875
@@ -84,46 +82,30 @@ __meta__ = {
 }
 
 [node name="ButtonCtr" type="HBoxContainer" parent="Controls/Container/CenterBtns"]
-margin_left = 157.0
+margin_left = 199.0
 margin_top = 7.0
-margin_right = 356.0
+margin_right = 314.0
 margin_bottom = 39.0
 custom_constants/separation = 20
 
-[node name="NewsBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_right = 40.0
-margin_bottom = 32.0
-hint_tooltip = "News"
-texture_normal = ExtResource( 15 )
-texture_disabled = ExtResource( 17 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="VSeparator" type="VSeparator" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 60.0
-margin_right = 64.0
-margin_bottom = 32.0
-
 [node name="ExportBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 84.0
-margin_right = 109.0
+margin_right = 25.0
 margin_bottom = 32.0
 hint_tooltip = "Export"
 texture_normal = ExtResource( 7 )
 texture_disabled = ExtResource( 10 )
 
 [node name="ImportBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 129.0
-margin_right = 154.0
+margin_left = 45.0
+margin_right = 70.0
 margin_bottom = 32.0
 hint_tooltip = "Import"
 texture_normal = ExtResource( 9 )
 texture_disabled = ExtResource( 11 )
 
 [node name="ClearBtn" type="TextureButton" parent="Controls/Container/CenterBtns/ButtonCtr"]
-margin_left = 174.0
-margin_right = 199.0
+margin_left = 90.0
+margin_right = 115.0
 margin_bottom = 32.0
 hint_tooltip = "Clear"
 texture_normal = ExtResource( 3 )
@@ -141,10 +123,8 @@ __meta__ = {
 }
 
 [node name="NewsWin" parent="Controls/Container" instance=ExtResource( 16 )]
-visible = false
 
 [connection signal="timeout" from="Controls/Container/Spinner/Timer" to="Controls/Container/Spinner" method="_on_Timer_timeout"]
-[connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/NewsBtn" to="Controls/Container" method="_on_NewsBtn_pressed"]
 [connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ExportBtn" to="Character" method="_on_SaveBtn_pressed"]
 [connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ImportBtn" to="Character" method="_on_LoadBtn_pressed"]
 [connection signal="pressed" from="Controls/Container/CenterBtns/ButtonCtr/ClearBtn" to="Character" method="_on_clearBtn_pressed"]

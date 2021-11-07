@@ -11,8 +11,6 @@ onready var base_bottom = preload("res://sprites/character/character_base_legs.s
 
 onready var export_btn = $CenterBtns/ButtonCtr/ExportBtn
 onready var import_btn = $CenterBtns/ButtonCtr/ImportBtn
-onready var news_win = $NewsWin
-onready var news_btn = $CenterBtns/ButtonCtr/NewsBtn
 onready var http_request = $NewsWin/NewsBtns/HTTPRequest
 
 func _ready():
@@ -20,14 +18,6 @@ func _ready():
 	verLabel.text = "v" + version
 	GameData.version = version
 	
-	var err = http_request.request(GameData.NEWS_API)
-	
-	if err != OK:
-		news_btn.disabled = true
-	
 	if OS.get_name() == "HTML5":
 		export_btn.disabled = true
 		import_btn.disabled = true
-
-func _on_NewsBtn_pressed():
-	news_win.show()

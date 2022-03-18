@@ -14,45 +14,45 @@
     "pixelsRounding": false,
     "projectUuid": "b7fc3645-6bea-4790-9838-821ece392449",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "adaptHeight",
     "useExternalSourceFiles": false,
     "version": "1.0.100",
     "name": "Zack's Dress Up",
-    "description": "",
+    "description": "A open source port dress up game of my original Flash game, ZC's Dress Up, developed back in 2007. This game is still in development.",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 555,
     "latestCompilationDirectory": "/Users/tonytins/Projects/tonysdressup/export",
-    "maxFPS": 60,
+    "maxFPS": 0,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {
-      "android-icon-144": "icons/android-icon-144.png",
-      "android-icon-192": "icons/android-icon-192.png",
-      "android-icon-36": "icons/android-icon-36.png",
-      "android-icon-48": "icons/android-icon-48.png",
-      "android-icon-72": "icons/android-icon-72.png",
-      "android-icon-96": "icons/android-icon-96.png",
-      "desktop-icon-512": "icons/desktop-icon-512.png",
-      "ios-icon-100": "icons/ios-icon-100.png",
-      "ios-icon-1024": "icons/ios-icon-1024.png",
-      "ios-icon-114": "icons/ios-icon-114.png",
-      "ios-icon-120": "icons/ios-icon-120.png",
-      "ios-icon-144": "icons/ios-icon-144.png",
-      "ios-icon-152": "icons/ios-icon-152.png",
-      "ios-icon-167": "icons/ios-icon-167.png",
-      "ios-icon-180": "icons/ios-icon-180.png",
-      "ios-icon-20": "icons/ios-icon-20.png",
-      "ios-icon-29": "icons/ios-icon-29.png",
-      "ios-icon-40": "icons/ios-icon-40.png",
-      "ios-icon-50": "icons/ios-icon-50.png",
-      "ios-icon-57": "icons/ios-icon-57.png",
-      "ios-icon-58": "icons/ios-icon-58.png",
-      "ios-icon-60": "icons/ios-icon-60.png",
-      "ios-icon-72": "icons/ios-icon-72.png",
-      "ios-icon-76": "icons/ios-icon-76.png",
-      "ios-icon-80": "icons/ios-icon-80.png",
-      "ios-icon-87": "icons/ios-icon-87.png"
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "desktop-icon-512": "desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png"
     },
     "loadingScreen": {
       "backgroundColor": 0,
@@ -70,10 +70,10 @@
       "showGDevelopSplash": true,
       "showProgressBar": true
     },
-    "authorIds": [],
+    "authorIds": [
+      "LOJNFNhikJMwJlwZJ38IbrQigay1"
+    ],
     "playableDevices": [
-      "keyboard",
-      "gamepad",
       "mobile"
     ],
     "extensionProperties": [
@@ -652,7 +652,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "ios-icon-20.png",
+        "file": "icons/ios-icon-20.png",
         "kind": "image",
         "metadata": "",
         "name": "ios-icon-20.png",
@@ -665,6 +665,168 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/icrazy.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/blue_camo_jeans.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/blue_camo_jeans.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/beat_up_jeans.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/beat_up_jeans.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/z_briefs.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/z_briefs.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tail/tail1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tail/tail1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tail/tail0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tail/tail0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tail/tail2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tail/tail2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/train_hoodie.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/train_hoodie.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trench coat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/trench coat.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/owo_censor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/owo_censor.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fundosi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/fundosi.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/jeans.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/jeans.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/atomic_shirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/atomic_shirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/briefs.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/briefs.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/whatsnew_shirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/whatsnew_shirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background/modern_dress_up_bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/background/modern_dress_up_bg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background/dressup_wardrobe.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/background/dressup_wardrobe.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/lights.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/lights.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/eds_outfit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/eds_outfit.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -731,7 +893,7 @@
           "width": 0,
           "x": 9,
           "y": 186,
-          "zOrder": 0,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -747,7 +909,7 @@
           "width": 0,
           "x": 77,
           "y": 241,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [
             {
               "name": "animation",
@@ -766,8 +928,8 @@
           "name": "FBDJShorts",
           "persistentUuid": "5bb5456b-082d-4713-8945-862cd440a891",
           "width": 0,
-          "x": 633,
-          "y": 38,
+          "x": 654,
+          "y": 64,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -782,8 +944,8 @@
           "name": "Snowboarding",
           "persistentUuid": "5d0121f8-6e6d-4863-a79b-bfac45cc8b09",
           "width": 0,
-          "x": 626,
-          "y": 164,
+          "x": 637,
+          "y": 282,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -794,13 +956,13 @@
           "customSize": false,
           "height": 0,
           "layer": "Character",
-          "locked": true,
+          "locked": false,
           "name": "Mouth",
           "persistentUuid": "a8acd4d2-8293-4bc8-b583-3a4f0fdc1791",
           "width": 0,
-          "x": 77,
-          "y": 230,
-          "zOrder": 1,
+          "x": 81,
+          "y": 229,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -814,8 +976,8 @@
           "name": "Camera",
           "persistentUuid": "1dfb14aa-e633-468e-87ba-a45b397d5cb0",
           "width": 0,
-          "x": 207,
-          "y": 33,
+          "x": 211,
+          "y": 75,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -830,8 +992,8 @@
           "name": "SchoolGirl",
           "persistentUuid": "c9c23abf-405b-49b5-8908-24740997d516",
           "width": 0,
-          "x": 525,
-          "y": 170,
+          "x": 520,
+          "y": 329,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -846,8 +1008,8 @@
           "name": "ZShirt",
           "persistentUuid": "30024656-8917-4016-a098-eee7ca4244ca",
           "width": 0,
-          "x": 529,
-          "y": 29,
+          "x": 549,
+          "y": 50,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -865,6 +1027,230 @@
           "x": 9,
           "y": 8,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Pants",
+          "locked": false,
+          "name": "CamoJeans",
+          "persistentUuid": "806bca17-a466-481a-b1e9-445e411bc442",
+          "width": 0,
+          "x": 518,
+          "y": 196,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Pants",
+          "locked": false,
+          "name": "BeatUpJeans",
+          "persistentUuid": "3f7a2fec-6b19-4393-926e-c3ac05f774bc",
+          "width": 0,
+          "x": 640,
+          "y": 158,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Underwear",
+          "locked": false,
+          "name": "ZBriefs",
+          "persistentUuid": "264a91d0-3698-4c05-9ac4-e608e96af0c4",
+          "width": 0,
+          "x": 206,
+          "y": 219,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Character",
+          "locked": false,
+          "name": "Tail",
+          "persistentUuid": "d59127d9-e346-4f59-977c-8461f9af4d00",
+          "width": 0,
+          "x": -16,
+          "y": 287,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Shirts",
+          "locked": false,
+          "name": "TrainHoodie",
+          "persistentUuid": "6fb9a026-d595-454c-8031-f0bdd4e00fab",
+          "width": 0,
+          "x": 423,
+          "y": 54,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Outfits",
+          "locked": false,
+          "name": "TrenchCoat",
+          "persistentUuid": "a040551e-63ce-4f2f-8ef8-ae1c9d41e08d",
+          "width": 0,
+          "x": 381,
+          "y": 316,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Censor",
+          "locked": false,
+          "name": "OwOCensor",
+          "persistentUuid": "f569f9b3-2445-46e8-a268-6908bd0b93a5",
+          "width": 0,
+          "x": 52,
+          "y": 391,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Underwear",
+          "locked": false,
+          "name": "Fundoshi",
+          "persistentUuid": "2ae3736f-1fa9-4afb-83a0-0fe0a5f84667",
+          "width": 0,
+          "x": 199,
+          "y": 266,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Pants",
+          "locked": false,
+          "name": "Jeans",
+          "persistentUuid": "d82e2210-51f4-48c9-8693-7ba2c136e1d3",
+          "width": 0,
+          "x": 398,
+          "y": 194,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Shirts",
+          "locked": false,
+          "name": "AtomicShirt",
+          "persistentUuid": "529516cd-0de1-4d02-9f25-db45cb2904f3",
+          "width": 0,
+          "x": 304,
+          "y": 61,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Underwear",
+          "locked": false,
+          "name": "Briefs",
+          "persistentUuid": "532512cb-3ef3-42a4-a2a7-056c2fb3dbcc",
+          "width": 0,
+          "x": 202,
+          "y": 162,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Shirts",
+          "locked": false,
+          "name": "WhatsNewShirt",
+          "persistentUuid": "346bd407-bdbb-46ea-a03a-287bd6ca4457",
+          "width": 0,
+          "x": 298,
+          "y": 190,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": true,
+          "name": "Panel",
+          "persistentUuid": "a71123a1-09d3-42fe-b97e-693f519ceca4",
+          "width": 0,
+          "x": 173,
+          "y": 5,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Outfits",
+          "locked": false,
+          "name": "EdsOutfit",
+          "persistentUuid": "11261e8b-6800-4562-a790-5b56baa8ee1c",
+          "width": 0,
+          "x": 257,
+          "y": 306,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1072,7 +1458,142 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/dress up bg.png",
+                      "image": "assets/background/modern_dress_up_bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jeans",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/jeans.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BeatUpJeans",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/beat_up_jeans.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CamoJeans",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/blue_camo_jeans.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1501,6 +2022,96 @@
           ]
         },
         {
+          "name": "AtomicShirt",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/atomic_shirt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TrainHoodie",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/train_hoodie.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "ZShirt",
           "tags": "",
           "type": "Sprite",
@@ -1584,6 +2195,453 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Fundoshi",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/fundosi.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Briefs",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/briefs.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ZBriefs",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/z_briefs.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tail",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.3799999952316284,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/tail/tail1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/tail/tail0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/tail/tail2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TrenchCoat",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/trench coat.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OwOCensor",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/owo_censor.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WhatsNewShirt",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/whatsnew_shirt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Panel",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/background/dressup_wardrobe.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Title",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Zack's Dress Up",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Arial",
+            "align": "left",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "EdsOutfit",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eds_outfit.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [],
@@ -1622,12 +2680,34 @@
           "effects": []
         },
         {
+          "ambientLightColorB": 167797870,
+          "ambientLightColorG": 6032160,
+          "ambientLightColorR": 7986560,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Underwear",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
           "ambientLightColorB": 7869136,
           "ambientLightColorG": 6032160,
           "ambientLightColorR": 7357760,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "Pants",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 13,
+          "ambientLightColorG": 6032160,
+          "ambientLightColorR": 7986560,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Censor",
           "visibility": true,
           "cameras": [],
           "effects": []

@@ -15,10 +15,11 @@
     "projectUuid": "b7fc3645-6bea-4790-9838-821ece392449",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptHeight",
+    "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.100",
     "name": "Zack's Dress Up",
-    "description": "A open source port dress up game of my original Flash game, ZC's Dress Up, developed back in 2007. This game is still in development.",
+    "description": "A open source remake of my dress up game of ZC's Dress Up.",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 555,
@@ -73,6 +74,7 @@
     "authorIds": [
       "LOJNFNhikJMwJlwZJ38IbrQigay1"
     ],
+    "categories": [],
     "playableDevices": [
       "keyboard",
       "gamepad",
@@ -831,6 +833,15 @@
         "name": "assets/eds_outfit.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mirror.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/mirror.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1256,10 +1267,27 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Mirror",
+          "persistentUuid": "04c410de-f9ad-4f54-84e3-67c36068aa89",
+          "width": 0,
+          "x": 18,
+          "y": 192,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
+          "assetStoreId": "",
           "name": "Zack",
           "tags": "",
           "type": "Sprite",
@@ -1300,6 +1328,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Eyes",
           "tags": "",
           "type": "Sprite",
@@ -1316,6 +1345,57 @@
                   "looping": true,
                   "timeBetweenFrames": 0.550000011920929,
                   "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/eyes/eyes1.png",
@@ -1434,6 +1514,57 @@
                         "y": 0
                       },
                       "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/eyes/eyes7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -1442,6 +1573,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Background",
           "tags": "",
           "type": "Sprite",
@@ -1482,6 +1614,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Jeans",
           "tags": "",
           "type": "Sprite",
@@ -1527,6 +1660,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "BeatUpJeans",
           "tags": "",
           "type": "Sprite",
@@ -1572,6 +1706,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "CamoJeans",
           "tags": "",
           "type": "Sprite",
@@ -1617,6 +1752,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "FBDJShorts",
           "tags": "",
           "type": "Sprite",
@@ -1662,6 +1798,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Snowboarding",
           "tags": "",
           "type": "Sprite",
@@ -1707,6 +1844,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Mouth",
           "tags": "",
           "type": "Sprite",
@@ -1723,6 +1861,57 @@
                   "looping": true,
                   "timeBetweenFrames": 0.3499999940395355,
                   "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/mouth/mouth.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/mouth/mouth.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/mouth/mouth.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/mouth/mouth.png",
@@ -1934,6 +2123,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Camera",
           "tags": "",
           "type": "Sprite",
@@ -1979,6 +2169,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "SchoolGirl",
           "tags": "",
           "type": "Sprite",
@@ -2024,6 +2215,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "AtomicShirt",
           "tags": "",
           "type": "Sprite",
@@ -2069,6 +2261,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "TrainHoodie",
           "tags": "",
           "type": "Sprite",
@@ -2114,6 +2307,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "ZShirt",
           "tags": "",
           "type": "Sprite",
@@ -2159,6 +2353,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "iCrazy",
           "tags": "",
           "type": "Sprite",
@@ -2199,6 +2394,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Fundoshi",
           "tags": "",
           "type": "Sprite",
@@ -2244,6 +2440,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Briefs",
           "tags": "",
           "type": "Sprite",
@@ -2289,6 +2486,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "ZBriefs",
           "tags": "",
           "type": "Sprite",
@@ -2334,6 +2532,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Tail",
           "tags": "",
           "type": "Sprite",
@@ -2408,6 +2607,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "TrenchCoat",
           "tags": "",
           "type": "Sprite",
@@ -2453,6 +2653,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "OwOCensor",
           "tags": "",
           "type": "Sprite",
@@ -2498,6 +2699,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "WhatsNewShirt",
           "tags": "",
           "type": "Sprite",
@@ -2543,6 +2745,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Panel",
           "tags": "",
           "type": "Sprite",
@@ -2583,6 +2786,7 @@
           ]
         },
         {
+          "assetStoreId": "",
           "name": "Title",
           "tags": "",
           "type": "BBText::BBText",
@@ -2601,6 +2805,7 @@
           }
         },
         {
+          "assetStoreId": "",
           "name": "EdsOutfit",
           "tags": "",
           "type": "Sprite",
@@ -2625,6 +2830,47 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets/eds_outfit.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Mirror",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/mirror.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",

@@ -12,4 +12,4 @@ An open source remaster of ZC's Dress Up, an old Flash game that I developed bac
 
 ## License
 
-I license this project under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE).
+This project is dual-licensed under the [BSD-3-Clause](COPYING) or the [UNLICENSE](UNLICENSE).

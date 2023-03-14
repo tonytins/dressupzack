@@ -6,9 +6,9 @@
 [node name="baseClothing" type="TextureButton"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -694.0
-margin_bottom = -488.0
-rect_min_size = Vector2( 106, 112 )
+offset_right = -694.0
+offset_bottom = -488.0
+custom_minimum_size = Vector2( 106, 112 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

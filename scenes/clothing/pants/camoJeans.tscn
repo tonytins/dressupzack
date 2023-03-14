@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://sprites/clothes/blue_camo_jeans.svg" type="Texture" id=1]
+[ext_resource path="res://sprites/clothes/blue_camo_jeans.svg" type="Texture2D" id=1]
 [ext_resource path="res://scenes/clothing/base/clothing_base.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/clothing/bottoms_base.gd" type="Script" id=3]
 

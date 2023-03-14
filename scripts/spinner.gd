@@ -2,10 +2,10 @@
 # See the LICENSE file in the project root for more information.
 extends TextureRect
 
-onready var timer = $Timer
+@onready var timer = $Timer
 
 func _ready():
-	GameEvents.connect("indicate", self, "_on_indicate")
+	GameEvents.connect("indicate",Callable(self,"_on_indicate"))
 	
 func _on_indicate():
 	show()

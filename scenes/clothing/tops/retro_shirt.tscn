@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scenes/clothing/base/clothing_base.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/clothing/tops_base.gd" type="Script" id=2]
-[ext_resource path="res://sprites/clothes/nl_jacket.png" type="Texture" id=3]
+[ext_resource path="res://sprites/clothes/nl_jacket.png" type="Texture2D" id=3]
 
 [node name="nlShirt" instance=ExtResource( 1 )]
 texture_normal = ExtResource( 3 )

@@ -6,19 +6,15 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-}
+config_version=5
 
 [application]
 
-config/name="Tony's Dress Up"
-run/main_scene="res://scenes/game.tscn"
+config/name="Zack's Dress Up"
+run/main_scene="res://scenes/dress_up.tscn"
 config/use_custom_user_dir=true
-boot_splash/image="res://icon.png"
-boot_splash/bg_color=Color( 0.8, 0.8, 0.4, 1 )
+config/features=PackedStringArray("4.0")
+boot_splash/bg_color=Color(0.8, 0.8, 0.4, 1)
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
@@ -35,12 +31,14 @@ gdscript/completion/autocomplete_setters_and_getters=true
 
 [display]
 
-window/size/width=800
-window/size/height=500
+window/size/viewport_width=800
+window/size/viewport_height=500
 window/size/resizable=false
 window/energy_saving/keep_screen_on=false
-window/stretch/mode="2d"
-window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/SpritesheetGenerator/plugin.cfg", "res://addons/fontawesome/plugin.cfg")
 
 [importer_defaults]
 
@@ -73,28 +71,21 @@ ogg_vorbis={
 
 ui_pause={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
- ]
-}
-ui_cheats={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":true,"control":false,"meta":true,"command":true,"pressed":false,"scancode":67,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":true,"command":true,"pressed":false,"scancode":88,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+]
 }
 
 [locale]
 
-locale_filter=[ 1, [ "en", "sv" ] ]
-translations=PoolStringArray( "res://lang/local.en.translation", "res://lang/local.sv.translation" )
+locale_filter=[1, ["en", "sv"]]
+translations=PackedStringArray("res://lang/local.en.translation", "res://lang/local.sv.translation")
 
 [rendering]
 
+environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
-environment/default_environment="res://default_env.tres"
 quality/2d/use_pixel_snap=true

@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cardxswmgbmbv" path="res://sprites/clothes/owo_censor.svg" id="5"]
 [ext_resource type="Texture2D" uid="uid://dnwdyi2d46hsm" path="res://sprites/character/eyes/eyes1.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://cbr37emgh11is" path="res://sprites/character/eyes/eyes2.png" id="7"]
+[ext_resource type="Script" path="res://scripts/clothing/clothing.gd" id="7_58p8d"]
 [ext_resource type="Texture2D" uid="uid://ceifal0sxn0r7" path="res://sprites/character/eyes/eyes3.png" id="8"]
 [ext_resource type="Texture2D" uid="uid://dujbine82hf7h" path="res://sprites/character/eyes/eyes4.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://cbptix4hhenyv" path="res://sprites/character/eyes/eyes5.png" id="10"]
@@ -28,7 +29,6 @@
 [ext_resource type="Texture2D" uid="uid://cp4oe0dv4st1w" path="res://sprites/clothes/blank_top.png" id="26"]
 [ext_resource type="Texture2D" uid="uid://cpf6yh6fqqxy1" path="res://sprites/character/character_base_head.svg" id="27"]
 [ext_resource type="Texture2D" uid="uid://bw7u6fgygd8t" path="res://sprites/character/mouth/mouth11.png" id="28"]
-[ext_resource type="Script" path="res://scripts/character.gd" id="29"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
@@ -122,7 +122,6 @@ animations = [{
 
 [node name="Character" type="Node2D"]
 position = Vector2(-19, -92)
-script = ExtResource("29")
 
 [node name="Click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("24")
@@ -130,6 +129,7 @@ stream = ExtResource("24")
 [node name="Shadow" type="Sprite2D" parent="."]
 position = Vector2(4.84271, 244.714)
 texture = ExtResource("1")
+metadata/_edit_lock_ = true
 
 [node name="Body" type="Node2D" parent="."]
 
@@ -137,47 +137,42 @@ texture = ExtResource("1")
 position = Vector2(-33.7592, 99.4079)
 scale = Vector2(0.927713, 1)
 sprite_frames = SubResource("1")
+frame_progress = 0.642539
+metadata/_edit_lock_ = true
 
-[node name="Legs" type="Sprite2D" parent="Body"]
-position = Vector2(1.47027, 191.868)
+[node name="Bottom" type="TextureRect" parent="Body"]
+offset_left = -54.0
+offset_top = 132.0
+offset_right = 57.0
+offset_bottom = 257.0
 texture = ExtResource("5")
+script = ExtResource("7_58p8d")
+metadata/_edit_lock_ = true
 
-[node name="Top" type="Sprite2D" parent="Body"]
-position = Vector2(7, 78)
+[node name="Top" type="TextureRect" parent="Body"]
+offset_left = -39.0
+offset_top = 25.0
+offset_right = 54.0
+offset_bottom = 135.0
 texture = ExtResource("25")
+metadata/_edit_lock_ = true
 
 [node name="Head" type="Sprite2D" parent="Body"]
 position = Vector2(10.6805, -25.1047)
 texture = ExtResource("27")
+metadata/_edit_lock_ = true
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Body/Head"]
 position = Vector2(17.6857, 4.22147)
 sprite_frames = SubResource("2")
-frame = 4
+frame_progress = 0.55981
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Body/Head"]
 position = Vector2(38.1195, 8.68453)
 sprite_frames = SubResource("3")
-frame = 2
+frame_progress = 0.679866
 
 [node name="Accessory" type="Sprite2D" parent="Body"]
 position = Vector2(9.54095, 73.0832)
 texture = ExtResource("26")
-
-[node name="Controls" type="CanvasLayer" parent="."]
-
-[node name="Container" type="Control" parent="Controls"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -19.0
-offset_top = -92.0
-offset_right = -19.0
-offset_bottom = -92.0
-
-[node name="ExportWin" type="FileDialog" parent="Controls/Container"]
-access = 1
-
-[node name="ImportWin" type="FileDialog" parent="Controls/Container"]
-access = 1
+metadata/_edit_lock_ = true

@@ -1,29 +1,14 @@
-[gd_scene load_steps=18 format=3 uid="uid://crwoe1shep3qn"]
+[gd_scene load_steps=3 format=3 uid="uid://crwoe1shep3qn"]
 
-[ext_resource type="PackedScene" path="res://scenes/clothing/camera.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://bhgvidynd582a" path="res://sprites/clothes/retro_shirt.svg" id="2"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/beat_Jeans.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/skate_shirt.tscn" id="4"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/skirt.tscn" id="5"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/formal_skirt.tscn" id="6"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/camoJeans.tscn" id="7"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/dj_shorts.tscn" id="8"]
-[ext_resource type="Texture2D" uid="uid://d1b07mvhon3gv" path="res://sprites/ui/x_button.svg" id="9"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/whatsnew_shirt.tscn" id="10"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/fullsnack_shirt.tscn" id="11"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/rawShirt.tscn" id="12"]
-[ext_resource type="Theme" path="res://resources/Game.theme" id="13"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/atomic_shirt.tscn" id="15"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/pants/sweatPants.tscn" id="17"]
-[ext_resource type="PackedScene" path="res://scenes/clothing/tops/retro_shirt.tscn" id="18"]
-[ext_resource type="Script" path="res://scripts/wardrobe.gd" id="21"]
+[ext_resource type="Script" path="res://scripts/clothing/clothing.gd" id="2_1si7t"]
+[ext_resource type="Texture2D" uid="uid://405burxtvied" path="res://sprites/clothes/sweat_pants.svg" id="3_h6yd3"]
 
 [node name="Wordrobe" type="TabContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource("13")
-script = ExtResource("21")
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Pants" type="TabBar" parent="."]
 layout_mode = 2
@@ -39,28 +24,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
 
-[node name="removePants" type="TextureButton" parent="Pants/PantsScroll/PantsGrid"]
-custom_minimum_size = Vector2(0, 112)
+[node name="SweatPants" type="TextureRect" parent="Pants/PantsScroll/PantsGrid"]
 layout_mode = 2
-texture_normal = ExtResource("9")
-
-[node name="beatUpJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("3")]
-layout_mode = 2
-
-[node name="camoJeans" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("7")]
-layout_mode = 2
-
-[node name="sweatPants" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("17")]
-layout_mode = 2
-
-[node name="camoJeans2" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("8")]
-layout_mode = 2
-
-[node name="formalSkirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("6")]
-layout_mode = 2
-
-[node name="skirt" parent="Pants/PantsScroll/PantsGrid" instance=ExtResource("5")]
-layout_mode = 2
+texture = ExtResource("3_h6yd3")
+script = ExtResource("2_1si7t")
 
 [node name="Shirts" type="TabBar" parent="."]
 visible = false
@@ -79,30 +46,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
 
-[node name="removeShirt" type="TextureButton" parent="Shirts/ShirtsScroll/ShirtsGrid"]
-custom_minimum_size = Vector2(0, 112)
-layout_mode = 2
-texture_normal = ExtResource("9")
-
-[node name="atomicShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("15")]
-layout_mode = 2
-
-[node name="skateShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("4")]
-layout_mode = 2
-
-[node name="fullsnackShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("11")]
-layout_mode = 2
-
-[node name="rawShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("12")]
-layout_mode = 2
-
-[node name="whatsNewShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("10")]
-layout_mode = 2
-
-[node name="retroShirt" parent="Shirts/ShirtsScroll/ShirtsGrid" instance=ExtResource("18")]
-layout_mode = 2
-texture_normal = ExtResource("2")
-
 [node name="Accessoires" type="TabBar" parent="."]
 visible = false
 layout_mode = 2
@@ -117,14 +60,3 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3
-
-[node name="removeAccessory" type="TextureButton" parent="Accessoires/AccsScroll/AccsGrid"]
-layout_mode = 2
-texture_normal = ExtResource("9")
-
-[node name="camera" parent="Accessoires/AccsScroll/AccsGrid" instance=ExtResource("1")]
-layout_mode = 2
-
-[connection signal="pressed" from="Pants/PantsScroll/PantsGrid/removePants" to="." method="_on_removePants_pressed"]
-[connection signal="pressed" from="Shirts/ShirtsScroll/ShirtsGrid/removeShirt" to="." method="_on_removeShirt_pressed"]
-[connection signal="pressed" from="Accessoires/AccsScroll/AccsGrid/removeAccessory" to="." method="_on_removeAccessory_pressed"]

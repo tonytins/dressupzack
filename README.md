@@ -1,6 +1,6 @@
 # Dress Up Zack
 
-![](screenshot.gif)Tony's Dress Up is a re-imagining of my first (and only) Flash game series, ZC's Dress Up that was developed back in 2007. Both this and the originals are heavily inspired by The Sims 2: Body Shop in their own unique ways.
+Tony's Dress Up is a re-imagining of my first (and only) Flash game series, ZC's Dress Up that was developed back in 2007. Both this and the originals are heavily inspired by The Sims 2: Body Shop in their own unique ways.
 
 ## License
 

@@ -5,20 +5,17 @@ extends Node2D
 var is_draggable = false
 var is_inside_dropable = false
 var body_ref
+var offset: Vector2
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_draggable:
-		if Input.is_action_just_pressed("click"):
-			global_position = get_global_mouse_position()
+		if Input.is_action_just_pressed("click"):		
+			offset = get_global_mouse_position() - global_position
+			Global.is_dragging = true
 		elif Input.is_action_just_released("click"):
-			is_draggable = false
-			var tween = get_tree().create_tween()
-			if is_inside_dropable:
-				tween.tween_property(self,"postion",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
-			else:
-				tween.tween_property(self,"global_postion",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
-
+			Global.is_dragging = false
+			
 func _on_area_2d_body_entered(body):
 	if body.is_in_group('dropable'):
 		is_inside_dropable = true

@@ -1,10 +1,12 @@
-[gd_scene load_steps=32 format=3 uid="uid://detf8uwimqp3v"]
+[gd_scene load_steps=30 format=3 uid="uid://detf8uwimqp3v"]
 
+[ext_resource type="Script" path="res://scripts/character.gd" id="1_k1mtq"]
 [ext_resource type="Texture2D" uid="uid://cddou4chwo8h2" path="res://sprites/character/tail/tail0.svg" id="2"]
+[ext_resource type="Texture2D" uid="uid://dxpvahpmr14ty" path="res://sprites/character/character_base.png" id="2_p4oam"]
 [ext_resource type="Texture2D" uid="uid://cnd3v8cerplqq" path="res://sprites/character/tail/tail1.svg" id="3"]
 [ext_resource type="Texture2D" uid="uid://djv0p7rxujbd4" path="res://sprites/character/tail/tail2.svg" id="4"]
-[ext_resource type="Texture2D" uid="uid://cardxswmgbmbv" path="res://sprites/clothes/owo_censor.svg" id="5"]
 [ext_resource type="Texture2D" uid="uid://dnwdyi2d46hsm" path="res://sprites/character/eyes/eyes1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cardxswmgbmbv" path="res://sprites/clothes/owo_censor.svg" id="6_w0l5s"]
 [ext_resource type="Texture2D" uid="uid://cbr37emgh11is" path="res://sprites/character/eyes/eyes2.png" id="7"]
 [ext_resource type="Script" path="res://scripts/clothing.gd" id="7_58p8d"]
 [ext_resource type="Texture2D" uid="uid://ceifal0sxn0r7" path="res://sprites/character/eyes/eyes3.png" id="8"]
@@ -23,10 +25,6 @@
 [ext_resource type="Texture2D" uid="uid://b8nfuuiqedapi" path="res://sprites/character/mouth/mouth9.png" id="21"]
 [ext_resource type="Texture2D" uid="uid://ce3wk6a1dajrm" path="res://sprites/character/mouth/mouth10.png" id="22"]
 [ext_resource type="Texture2D" uid="uid://2wrx272o3gsa" path="res://sprites/character/mouth/mouth12.png" id="23"]
-[ext_resource type="AudioStream" uid="uid://5jaaocj1kh" path="res://sounds/select_006.ogg" id="24"]
-[ext_resource type="Texture2D" uid="uid://blvwt6d80bq5x" path="res://sprites/character/character_base_top.svg" id="25"]
-[ext_resource type="Texture2D" uid="uid://cp4oe0dv4st1w" path="res://sprites/clothes/blank_top.png" id="26"]
-[ext_resource type="Texture2D" uid="uid://cpf6yh6fqqxy1" path="res://sprites/character/character_base_head.svg" id="27"]
 [ext_resource type="Texture2D" uid="uid://bw7u6fgygd8t" path="res://sprites/character/mouth/mouth11.png" id="28"]
 
 [sub_resource type="SpriteFrames" id="1"]
@@ -121,52 +119,34 @@ animations = [{
 
 [node name="Character" type="Node2D"]
 position = Vector2(-19, -92)
+script = ExtResource("1_k1mtq")
 
-[node name="Click" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24")
-
-[node name="Body" type="Node2D" parent="."]
-
-[node name="Tail" type="AnimatedSprite2D" parent="Body"]
+[node name="Tail" type="AnimatedSprite2D" parent="."]
 position = Vector2(-33.7592, 99.4079)
 scale = Vector2(0.927713, 1)
 sprite_frames = SubResource("1")
 frame_progress = 0.642539
 metadata/_edit_lock_ = true
 
-[node name="Bottom" type="TextureRect" parent="Body"]
-offset_left = -54.0
-offset_top = 132.0
-offset_right = 57.0
-offset_bottom = 257.0
-texture = ExtResource("5")
+[node name="Body" type="Sprite2D" parent="."]
+position = Vector2(12, 81)
+texture = ExtResource("2_p4oam")
+metadata/_edit_lock_ = true
+
+[node name="Bottom" type="TextureRect" parent="."]
+offset_left = -49.0
+offset_top = 116.0
+offset_right = 62.0
+offset_bottom = 241.0
+texture = ExtResource("6_w0l5s")
 script = ExtResource("7_58p8d")
-metadata/_edit_lock_ = true
 
-[node name="Top" type="TextureRect" parent="Body"]
-offset_left = -39.0
-offset_top = 25.0
-offset_right = 54.0
-offset_bottom = 135.0
-texture = ExtResource("25")
-metadata/_edit_lock_ = true
-
-[node name="Head" type="Sprite2D" parent="Body"]
-position = Vector2(10.6805, -25.1047)
-texture = ExtResource("27")
-metadata/_edit_lock_ = true
-
-[node name="Eyes" type="AnimatedSprite2D" parent="Body/Head"]
-position = Vector2(17.6857, 4.22147)
+[node name="Eyes" type="AnimatedSprite2D" parent="."]
+position = Vector2(28.6857, -15.7785)
 sprite_frames = SubResource("2")
 frame_progress = 0.55981
 
-[node name="Mouth" type="AnimatedSprite2D" parent="Body/Head"]
-position = Vector2(38.1195, 8.68453)
+[node name="Mouth" type="AnimatedSprite2D" parent="."]
+position = Vector2(49.1195, -14.3155)
 sprite_frames = SubResource("3")
 frame_progress = 0.679866
-
-[node name="Accessory" type="Sprite2D" parent="Body"]
-position = Vector2(9.54095, 73.0832)
-texture = ExtResource("26")
-metadata/_edit_lock_ = true

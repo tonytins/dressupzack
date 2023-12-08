@@ -1,62 +1,70 @@
-[gd_scene load_steps=3 format=3 uid="uid://crwoe1shep3qn"]
+[gd_scene load_steps=9 format=3 uid="uid://crwoe1shep3qn"]
 
 [ext_resource type="Script" path="res://scripts/clothing.gd" id="2_1si7t"]
+[ext_resource type="Texture2D" uid="uid://yhyxxgdk0o4r" path="res://sprites/clothes/dj_shorts.svg" id="3_8ykbu"]
 [ext_resource type="Texture2D" uid="uid://405burxtvied" path="res://sprites/clothes/sweat_pants.svg" id="3_h6yd3"]
+[ext_resource type="Texture2D" uid="uid://bvh35sf1ahp1k" path="res://sprites/clothes/jeans.svg" id="4_53rvc"]
+[ext_resource type="Texture2D" uid="uid://8vrl1mmcm5is" path="res://sprites/clothes/beat_up_jeans.svg" id="5_magqk"]
+[ext_resource type="Texture2D" uid="uid://venieklgphn5" path="res://sprites/clothes/blue_camo_jeans.svg" id="6_dagdg"]
+[ext_resource type="Texture2D" uid="uid://cf72ydh00dbjc" path="res://sprites/clothes/blue_skirt.svg" id="6_n1njc"]
+[ext_resource type="Texture2D" uid="uid://cardxswmgbmbv" path="res://sprites/clothes/owo_censor.svg" id="8_noljf"]
 
-[node name="Wordrobe" type="TabContainer"]
+[node name="Wordrobe" type="Panel"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Pants" type="TabBar" parent="."]
+[node name="Grid" type="GridContainer" parent="."]
 layout_mode = 2
-
-[node name="PantsScroll" type="ScrollContainer" parent="Pants"]
-layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-
-[node name="PantsGrid" type="GridContainer" parent="Pants/PantsScroll"]
-layout_mode = 2
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 4
+metadata/_edit_use_anchors_ = true
 
-[node name="SweatPants" type="TextureRect" parent="Pants/PantsScroll/PantsGrid"]
+[node name="SweatPants" type="TextureRect" parent="Grid"]
 layout_mode = 2
 texture = ExtResource("3_h6yd3")
+expand_mode = 3
 script = ExtResource("2_1si7t")
 
-[node name="Shirts" type="TabBar" parent="."]
-visible = false
+[node name="DJShorts" type="TextureRect" parent="Grid"]
 layout_mode = 2
+texture = ExtResource("3_8ykbu")
+expand_mode = 3
+script = ExtResource("2_1si7t")
 
-[node name="ShirtsScroll" type="ScrollContainer" parent="Shirts"]
-layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 10.0
-
-[node name="ShirtsGrid" type="GridContainer" parent="Shirts/ShirtsScroll"]
+[node name="Jeans" type="TextureRect" parent="Grid"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-columns = 4
+texture = ExtResource("4_53rvc")
+expand_mode = 3
+script = ExtResource("2_1si7t")
 
-[node name="Accessoires" type="TabBar" parent="."]
-visible = false
+[node name="TornJeans" type="TextureRect" parent="Grid"]
 layout_mode = 2
+texture = ExtResource("5_magqk")
+script = ExtResource("2_1si7t")
 
-[node name="AccsScroll" type="ScrollContainer" parent="Accessoires"]
-layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="AccsGrid" type="GridContainer" parent="Accessoires/AccsScroll"]
+[node name="CamoJeans" type="TextureRect" parent="Grid"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-columns = 3
+texture = ExtResource("6_dagdg")
+stretch_mode = 4
+script = ExtResource("2_1si7t")
+
+[node name="Skirt" type="TextureRect" parent="Grid"]
+layout_mode = 2
+texture = ExtResource("6_n1njc")
+stretch_mode = 4
+script = ExtResource("2_1si7t")
+
+[node name="OwO" type="TextureRect" parent="Grid"]
+layout_mode = 2
+texture = ExtResource("8_noljf")
+stretch_mode = 4
+script = ExtResource("2_1si7t")

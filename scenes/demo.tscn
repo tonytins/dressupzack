@@ -6,10 +6,13 @@
 [node name="Demo" type="Node2D"]
 
 [node name="Platform" parent="." instance=ExtResource("1_31w52")]
-position = Vector2(94, 117)
+position = Vector2(170, 92)
 
 [node name="Platform2" parent="." instance=ExtResource("1_31w52")]
 position = Vector2(419, 84)
 
+[node name="Platform3" parent="." instance=ExtResource("1_31w52")]
+position = Vector2(296, 286)
+
 [node name="Object" parent="." instance=ExtResource("2_cgl4f")]
-position = Vector2(96, 117)
+position = Vector2(301, 146)

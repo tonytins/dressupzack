@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cardxswmgbmbv" path="res://sprites/clothes/owo_censor.svg" id="5"]
 [ext_resource type="Texture2D" uid="uid://dnwdyi2d46hsm" path="res://sprites/character/eyes/eyes1.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://cbr37emgh11is" path="res://sprites/character/eyes/eyes2.png" id="7"]
-[ext_resource type="Script" path="res://scripts/clothing/clothing.gd" id="7_58p8d"]
+[ext_resource type="Script" path="res://scripts/clothing.gd" id="7_58p8d"]
 [ext_resource type="Texture2D" uid="uid://ceifal0sxn0r7" path="res://sprites/character/eyes/eyes3.png" id="8"]
 [ext_resource type="Texture2D" uid="uid://dujbine82hf7h" path="res://sprites/character/eyes/eyes4.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://cbptix4hhenyv" path="res://sprites/character/eyes/eyes5.png" id="10"]

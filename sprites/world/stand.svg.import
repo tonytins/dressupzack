@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://puxix2j7nxuo"
-path="res://.godot/imported/pawprint-logo.svg-01cd6ea8ad71ffb3d0348f6c08c67cda.ctex"
+uid="uid://cmv58t1dfgsov"
+path="res://.godot/imported/stand.svg-0de4e9ed6224f150f86cc1ed49481da1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/pawprint-logo.svg"
-dest_files=["res://.godot/imported/pawprint-logo.svg-01cd6ea8ad71ffb3d0348f6c08c67cda.ctex"]
+source_file="res://sprites/world/stand.svg"
+dest_files=["res://.godot/imported/stand.svg-0de4e9ed6224f150f86cc1ed49481da1.ctex"]
 
 [params]
 

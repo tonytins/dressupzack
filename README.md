@@ -1,5 +1,4 @@
-
-# Tony's Dress Up
+# Dress Up Zack
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
@@ -9,20 +8,11 @@ Tony's Dress Up is a re-imagining of my first (and only) Flash game series, ZC's
 
 I've included the original Flash releases in the ``/archive`` directory. They can be played using [Ruffle](https://ruffle.rs/)'s demo page.
 ​
-
 ## Getting Started
 
 ### Prerequisites
 
-- Godot Engine 3.2 LTS or later
-
-## Authors
-
-* **Tony Bark** - *Initial work* - [tonytins](https://github.com/tonytins)
-* **Kenney** - *UI* - [kenny.nl](https://www.kenney.nl/)
-* **Twemoji** - *Emojis* - [twemoji.twitter.com](https://twemoji.twitter.com/)
-*  **Font Awesome** - *Icons* - [FortAwesome](https://github.com/FortAwesome)
-    ​
+- Godot Engine 4
   
 ## License
 

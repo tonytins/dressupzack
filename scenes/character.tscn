@@ -1,6 +1,5 @@
-[gd_scene load_steps=33 format=3 uid="uid://detf8uwimqp3v"]
+[gd_scene load_steps=32 format=3 uid="uid://detf8uwimqp3v"]
 
-[ext_resource type="Texture2D" uid="uid://dkch263ayirr7" path="res://sprites/character/shadow.svg" id="1"]
 [ext_resource type="Texture2D" uid="uid://cddou4chwo8h2" path="res://sprites/character/tail/tail0.svg" id="2"]
 [ext_resource type="Texture2D" uid="uid://cnd3v8cerplqq" path="res://sprites/character/tail/tail1.svg" id="3"]
 [ext_resource type="Texture2D" uid="uid://djv0p7rxujbd4" path="res://sprites/character/tail/tail2.svg" id="4"]
@@ -125,11 +124,6 @@ position = Vector2(-19, -92)
 
 [node name="Click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("24")
-
-[node name="Shadow" type="Sprite2D" parent="."]
-position = Vector2(4.84271, 244.714)
-texture = ExtResource("1")
-metadata/_edit_lock_ = true
 
 [node name="Body" type="Node2D" parent="."]
 

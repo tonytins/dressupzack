@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Zack's Dress Up"
+config/name="Dress Up Zack"
 config/version="1.3.100a"
 run/main_scene="res://scenes/game.tscn"
 config/use_custom_user_dir=true
@@ -36,6 +36,17 @@ window/energy_saving/keep_screen_on=false
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/SpritesheetGenerator/plugin.cfg", "res://addons/fontawesome/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "blue",
+"res://resources/": "orange",
+"res://scenes/": "purple",
+"res://scripts/": "green",
+"res://sounds/": "pink",
+"res://sprites/": "yellow"
+}
 
 [importer_defaults]
 
@@ -79,6 +90,7 @@ translations=PackedStringArray("res://lang/local.en.translation", "res://lang/lo
 
 [rendering]
 
+renderer/rendering_method="mobile"
 environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0

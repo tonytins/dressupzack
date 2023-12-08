@@ -1,29 +1,35 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=8 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://sprites/world/background.svg" id="1_uee2i"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://sprites/clothes/icrazy_frame.svg" id="2_n1kmf"]
+[ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://sprites/world/stand.svg" id="2_q0w7j"]
 [ext_resource type="Texture2D" uid="uid://dteiup73cqn4o" path="res://sprites/clothes/lights.png" id="3_bbsyl"]
-[ext_resource type="Script" path="res://scripts/interface.gd" id="4_pqv2p"]
+[ext_resource type="Script" path="res://scripts/gui.gd" id="4_pqv2p"]
 [ext_resource type="PackedScene" uid="uid://crwoe1shep3qn" path="res://scenes/wardrobe.tscn" id="5_4le6a"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://scenes/character.tscn" id="6_tdil0"]
 
 [node name="Game" type="Node"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(504.046, 202.426)
+position = Vector2(400, 240)
 texture = ExtResource("1_uee2i")
 metadata/_edit_lock_ = true
 
+[node name="Stand" type="Sprite2D" parent="."]
+position = Vector2(125, 461)
+scale = Vector2(1.28991, 1.3328)
+texture = ExtResource("2_q0w7j")
+
 [node name="PictureFrame" type="Sprite2D" parent="."]
-position = Vector2(127.602, 111.895)
+position = Vector2(107.454, 127.574)
 texture = ExtResource("2_n1kmf")
-metadata/_edit_lock_ = true
 
 [node name="Light3D" type="PointLight2D" parent="PictureFrame"]
 position = Vector2(35.118, -14.56)
 texture = ExtResource("3_bbsyl")
+metadata/_edit_lock_ = true
 
-[node name="Container" type="Control" parent="."]
+[node name="GUI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,24 +39,31 @@ grow_vertical = 2
 script = ExtResource("4_pqv2p")
 metadata/_edit_lock_ = true
 
-[node name="Wardrobe" parent="Container" instance=ExtResource("5_4le6a")]
-layout_mode = 0
-anchors_preset = 0
-anchor_left = 0.33875
-anchor_top = 0.054
-anchor_right = 1.05
-anchor_bottom = 0.9
-offset_right = 6.10352e-05
+[node name="Wardrobe" parent="GUI" instance=ExtResource("5_4le6a")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30125
+anchor_top = 0.086
+anchor_right = 1.0125
+anchor_bottom = 0.932
+offset_right = 3.8147e-05
+offset_bottom = 1.19209e-05
 grow_horizontal = 1
 grow_vertical = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="VersionLbl" type="Label" parent="Container"]
-layout_mode = 0
-anchor_left = 0.88125
-anchor_top = 0.944
-anchor_right = 0.9825
-anchor_bottom = 0.984
+[node name="VersionLbl" type="Label" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.89
+anchor_top = 0.942
+anchor_right = 0.99125
+anchor_bottom = 0.994
+offset_left = -1.90735e-05
+offset_right = -1.33514e-05
+offset_bottom = -3.0
 text = "0.0.0"
+metadata/_edit_use_anchors_ = true
 
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
-position = Vector2(120, 213)
+position = Vector2(127, 218)

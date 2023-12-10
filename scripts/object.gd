@@ -1,13 +1,22 @@
 # This project is licensed under the GPL-3.0 license.
 # See the LICENSE file in the project root for more information.
+@tool
 extends Node2D
 
 @export var group: String = "dropable"
+@export var texture: Texture2D
 
 var is_draggable = false
 var is_inside_dropable = false
 var body_ref
 var offset: Vector2
+
+@onready var sprite = $Sprite2D
+@onready var collsion = $Area2D/CollisionShape2D
+
+func _ready():
+	sprite.texture = texture
+	collsion.position = sprite.position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

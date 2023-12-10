@@ -1,22 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://dn152ouc7l21p"]
+[gd_scene load_steps=3 format=3 uid="uid://dn152ouc7l21p"]
 
-[ext_resource type="Texture2D" uid="uid://d1hpnolu3m1ho" path="res://godot.png" id="1_jjr7w"]
 [ext_resource type="Script" path="res://scripts/object.gd" id="1_tyfcj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_py2o1"]
-size = Vector2(59, 59)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xd2jg"]
+size = Vector2(111, 125.5)
 
 [node name="Object" type="Node2D"]
 script = ExtResource("1_tyfcj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_jjr7w")
+position = Vector2(4.5, 6.5)
+scale = Vector2(1.32143, 1.32292)
 
 [node name="Area2D" type="Area2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.5, -0.5)
-shape = SubResource("RectangleShape2D_py2o1")
+position = Vector2(5, 7)
+shape = SubResource("RectangleShape2D_xd2jg")
+metadata/_edit_lock_ = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

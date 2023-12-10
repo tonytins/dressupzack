@@ -1,24 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=9 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://sprites/world/background.svg" id="1_uee2i"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://sprites/clothes/icrazy_frame.svg" id="2_n1kmf"]
 [ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://sprites/world/stand.svg" id="2_q0w7j"]
 [ext_resource type="Texture2D" uid="uid://dteiup73cqn4o" path="res://sprites/clothes/lights.png" id="3_bbsyl"]
-[ext_resource type="Script" path="res://scripts/gui.gd" id="4_pqv2p"]
-[ext_resource type="PackedScene" uid="uid://crwoe1shep3qn" path="res://scenes/wardrobe.tscn" id="5_4le6a"]
-[ext_resource type="Theme" uid="uid://b4vgui7vtqdtb" path="res://resources/Game.theme" id="5_gf1vk"]
+[ext_resource type="PackedScene" uid="uid://dn152ouc7l21p" path="res://scenes/object.tscn" id="6_6t4pu"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://scenes/character.tscn" id="6_tdil0"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tqrj6"]
-bg_color = Color(0.0313726, 0.321569, 0.321569, 1)
-corner_radius_top_left = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qslg"]
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
+[ext_resource type="PackedScene" uid="uid://bvbelmb6rvy4f" path="res://scenes/platform.tscn" id="7_vqx6c"]
+[ext_resource type="Texture2D" uid="uid://venieklgphn5" path="res://sprites/clothes/blue_camo_jeans.svg" id="8_bqcl8"]
 
 [node name="Game" type="Node"]
 
@@ -41,40 +30,20 @@ position = Vector2(35.118, -14.56)
 texture = ExtResource("3_bbsyl")
 metadata/_edit_lock_ = true
 
-[node name="GUI" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("5_gf1vk")
-script = ExtResource("4_pqv2p")
-metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
-
-[node name="Panel" type="Panel" parent="GUI"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.3975
-anchor_top = 0.02
-anchor_right = 1.015
-anchor_bottom = 0.878
-offset_right = 1.14441e-05
-theme_override_styles/panel = SubResource("StyleBoxFlat_tqrj6")
-metadata/_edit_use_anchors_ = true
-
-[node name="Wardrobe" parent="GUI" instance=ExtResource("5_4le6a")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.42625
-anchor_top = 0.054
-anchor_right = 0.975
-anchor_bottom = 0.822
-offset_bottom = 1.23978e-05
-grow_horizontal = 1
-grow_vertical = 1
-theme_override_styles/panel = SubResource("StyleBoxFlat_3qslg")
-
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
 position = Vector2(117, 234)
+metadata/_edit_lock_ = true
+
+[node name="Bottoms" parent="." groups=["pants"] instance=ExtResource("7_vqx6c")]
+position = Vector2(120, 409)
+
+[node name="Platform" parent="." groups=["pants"] instance=ExtResource("7_vqx6c")]
+position = Vector2(335, 78)
+
+[node name="Object" parent="." instance=ExtResource("6_6t4pu")]
+position = Vector2(335, 79)
+group = "pants"
+texture = ExtResource("8_bqcl8")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2

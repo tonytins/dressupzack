@@ -45,12 +45,17 @@ enabled=PackedStringArray("res://addons/SpritesheetGenerator/plugin.cfg", "res:/
 
 folder_colors={
 "res://addons/": "blue",
+"res://fonts/": "teal",
 "res://resources/": "orange",
 "res://scenes/": "purple",
 "res://scripts/": "green",
 "res://sounds/": "pink",
 "res://sprites/": "yellow"
 }
+
+[filesystem]
+
+import/blender/enabled=false
 
 [importer_defaults]
 
@@ -89,7 +94,6 @@ ui_pause={
 click={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
-, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
 

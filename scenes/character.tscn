@@ -133,7 +133,7 @@ position = Vector2(12, 81)
 texture = ExtResource("2_p4oam")
 metadata/_edit_lock_ = true
 
-[node name="Bottom" type="TextureRect" parent="."]
+[node name="Bottom" type="TextureRect" parent="." groups=["bottoms"]]
 offset_left = -49.0
 offset_top = 116.0
 offset_right = 62.0

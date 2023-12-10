@@ -50,6 +50,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("5_gf1vk")
 script = ExtResource("4_pqv2p")
+metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
 [node name="Panel" type="Panel" parent="GUI"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi7ayrxnn7hex"
-path="res://.godot/imported/icrazy_frame.svg-032c353b0b85ae71d6c5843b8929a60c.ctex"
+uid="uid://ch1y0g1plqys6"
+path="res://.godot/imported/logo.png-68ff395daf2515f85e13ba18ce4a426d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/icrazy_frame.svg"
-dest_files=["res://.godot/imported/icrazy_frame.svg-032c353b0b85ae71d6c5843b8929a60c.ctex"]
+source_file="res://sprites/clothes/logo.png"
+dest_files=["res://.godot/imported/logo.png-68ff395daf2515f85e13ba18ce4a426d.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

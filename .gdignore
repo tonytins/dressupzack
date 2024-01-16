@@ -604,3 +604,4 @@ FodyWeavers.xsd
 
 screenshot.png
 archive/*
+*.cfg

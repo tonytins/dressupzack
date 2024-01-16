@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4g0qprd6i545"
-path="res://.godot/imported/cursor.png-510ed8f4707337aeaa4855fa575b5224.ctex"
+uid="uid://dbf2fv1mxdygt"
+path="res://.godot/imported/atomic_shirt.png-e1562af2eed6677399909eaf790f9e4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/cursor.png"
-dest_files=["res://.godot/imported/cursor.png-510ed8f4707337aeaa4855fa575b5224.ctex"]
+source_file="res://sprites/clothes/atomic_shirt.png"
+dest_files=["res://.godot/imported/atomic_shirt.png-e1562af2eed6677399909eaf790f9e4c.ctex"]
 
 [params]
 

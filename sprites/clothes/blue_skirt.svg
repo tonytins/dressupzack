@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 84 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-    <g id="Re-ink" transform="matrix(1,0,0,1,0.567137,-3.81307)">
-        <path id="path824" d="M29.774,5.524L73.558,5.241C73.558,5.241 76.709,28.726 78.046,50.604C78.241,53.795 71.692,52.542 68.497,52.119C67.424,51.977 66.619,50.813 65.537,50.793C61.997,50.728 59.239,54.92 55.701,54.771C54.023,54.7 52.89,52.597 51.213,52.498C47.624,52.285 45.302,56.617 41.091,56.191C39.914,56.072 39.027,54.799 37.844,54.771C34.299,54.686 31.458,58.422 27.913,58.559C24.794,58.679 22.044,56.216 18.937,55.907C15.757,55.591 8.029,59.628 9.388,56.759C22.784,28.494 29.774,5.524 29.774,5.524Z" style="fill:rgb(71,145,255);fill-rule:nonzero;stroke:black;stroke-width:2.84px;"/>
-        <path id="path826" d="M22.929,51.74C38.839,18.784 35.619,19.826 35.619,19.826" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
-        <path id="path828" d="M35.714,30.337C33.536,42.459 35.051,51.077 35.051,51.077" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
-        <path id="path830" d="M44.521,49.373C50.109,29.864 47.741,19.731 47.741,19.731" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
-        <path id="path828-1" d="M50.075,28.129C51.098,40.402 54.785,48.338 54.785,48.338" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
-        <path id="path828-1-6" d="M65.042,46.945C64.02,34.672 60.333,26.736 60.333,26.736" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
-        <path id="path830-6" d="M69.021,48.559C63.434,29.05 65.802,18.917 65.802,18.917" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
+<svg
+   width="71.674004"
+   height="83.75"
+   viewBox="0 0 71.674004 83.75"
+   version="1.1"
+   xml:space="preserve"
+   style="clip-rule:evenodd;fill-rule:evenodd"
+   id="svg1"
+   sodipodi:docname="blue_skirt.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="8.0952381"
+   inkscape:cx="33.6"
+   inkscape:cy="47.991176"
+   inkscape:window-width="1392"
+   inkscape:window-height="1184"
+   inkscape:window-x="559"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg1" />
+    <g
+   id="Re-ink"
+   transform="translate(-7.7949176,-3.8129483)">
+        <path
+   id="path824"
+   d="M 29.774,5.524 73.558,5.241 c 0,0 3.151,23.485 4.488,45.363 0.195,3.191 -6.354,1.938 -9.549,1.515 -1.073,-0.142 -1.878,-1.306 -2.96,-1.326 -3.54,-0.065 -6.298,4.127 -9.836,3.978 -1.678,-0.071 -2.811,-2.174 -4.488,-2.273 -3.589,-0.213 -5.911,4.119 -10.122,3.693 -1.177,-0.119 -2.064,-1.392 -3.247,-1.42 -3.545,-0.085 -6.386,3.651 -9.931,3.788 -3.119,0.12 -5.869,-2.343 -8.976,-2.652 C 15.757,55.591 8.029,59.628 9.388,56.759 22.784,28.494 29.774,5.524 29.774,5.524 Z"
+   style="fill:#4791ff;fill-rule:nonzero;stroke:#000000;stroke-width:2.84px" />
+        <path
+   id="path826"
+   d="M 22.929,51.74 C 38.839,18.784 35.619,19.826 35.619,19.826"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
+        <path
+   id="path828"
+   d="m 35.714,30.337 c -2.178,12.122 -0.663,20.74 -0.663,20.74"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
+        <path
+   id="path830"
+   d="m 44.521,49.373 c 5.588,-19.509 3.22,-29.642 3.22,-29.642"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
+        <path
+   id="path828-1"
+   d="m 50.075,28.129 c 1.023,12.273 4.71,20.209 4.71,20.209"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
+        <path
+   id="path828-1-6"
+   d="M 65.042,46.945 C 64.02,34.672 60.333,26.736 60.333,26.736"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
+        <path
+   id="path830-6"
+   d="M 69.021,48.559 C 63.434,29.05 65.802,18.917 65.802,18.917"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.75px" />
     </g>
-</svg>
+<metadata
+   id="metadata1"><rdf:RDF><cc:License
+       rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License><cc:Work
+       rdf:about=""><cc:license
+         rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /></cc:Work></rdf:RDF></metadata></svg>

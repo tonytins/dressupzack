@@ -24,7 +24,7 @@ name_sv="Tonys klä upp"
 
 [autoload]
 
-Global="*res://scripts/global.gd"
+Config="*res://scripts/config.gd"
 
 [debug]
 
@@ -32,9 +32,10 @@ gdscript/completion/autocomplete_setters_and_getters=true
 
 [display]
 
+window/size/viewport_width=600
+window/size/viewport_height=400
 window/energy_saving/keep_screen_on=false
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/stretch/mode="viewport"
 
 [dotnet]
 

@@ -1,19 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 84 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-    <g id="Re-ink" transform="matrix(1,0,0,1,-98.8467,-1.35641)">
-        <g id="path2567-7" transform="matrix(0.264583,0,0,0.264583,98.8336,0.906042)">
-            <g id="Color">
-                <path id="path2567-71" serif:id="path2567-7" d="M277.28,6.976C276.985,6.982 276.684,7.031 276.378,7.125C226.632,22.399 142.912,20.515 109.339,25.766C101.245,27.032 66.183,210.31 7.718,294.139C-14.028,325.319 116.454,311.74 119.969,295.29C133.79,230.597 197.412,149.699 197.412,149.699C197.412,149.699 200.846,240.307 193.365,282.695C187.419,316.381 296.324,303.79 295.611,269.596C293.7,177.927 295.916,6.565 277.28,6.976Z" style="fill:rgb(0,102,255);fill-rule:nonzero;"/>
+<svg
+   width="79.618164"
+   height="83.75"
+   viewBox="0 0 79.618164 83.75"
+   version="1.1"
+   xml:space="preserve"
+   style="clip-rule:evenodd;fill-rule:evenodd"
+   id="svg1"
+   sodipodi:docname="jeans.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:serif="http://www.serif.com/"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="8.0952381"
+   inkscape:cx="42"
+   inkscape:cy="48.979412"
+   inkscape:window-width="1392"
+   inkscape:window-height="1184"
+   inkscape:window-x="559"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Re-ink" />
+    <g
+   id="Re-ink"
+   transform="translate(-98.845395,-1.35578)">
+        <g
+   id="path2567-7"
+   transform="matrix(0.264583,0,0,0.264583,98.8336,0.906042)">
+            <g
+   id="Color">
+                <path
+   id="path2567-71"
+   serif:id="path2567-7"
+   d="m 277.28,6.976 c -0.295,0.006 -0.596,0.055 -0.902,0.149 -49.746,15.274 -133.466,13.39 -167.039,18.641 -8.094,1.266 -43.156,184.544 -101.621,268.373 -21.746,31.18 108.736,17.601 112.251,1.151 27.36062,-57.22287 77.443,-145.591 77.443,-145.591 0,0 3.434,90.608 -4.047,132.996 -5.946,33.686 102.959,21.095 102.246,-13.099 C 293.7,177.927 295.916,6.565 277.28,6.976 Z"
+   style="fill:#0066ff;fill-rule:nonzero"
+   sodipodi:nodetypes="ccccccccc" />
             </g>
         </g>
-        <g id="Re-ink1" serif:id="Re-ink" transform="matrix(1,0,0,1,98.8336,0.906042)">
-            <path id="path2567-5" d="M2.041,77.824C17.51,55.644 26.787,7.152 28.929,6.817C37.812,5.428 59.963,5.927 73.125,1.886C78.314,0.293 77.701,46.692 78.214,71.331C78.403,80.378 49.588,83.709 51.161,74.797C53.14,63.582 52.232,39.607 52.232,39.607C52.232,39.607 35.398,61.012 31.741,78.129C30.811,82.481 -3.712,86.074 2.041,77.824Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2.83px;"/>
-            <path id="path2571-1" d="M52.232,39.607C52.232,39.607 56.817,32.825 55.831,27.544C54.845,22.264 53.973,8.126 53.973,8.126" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.42px;"/>
-            <path id="path2573-1" d="M55.831,27.544L58.112,7.723" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.42px;"/>
-            <path id="path2569-1" d="M23.45,24.509C23.45,24.509 31.275,27.326 33.677,24.325C36.078,21.324 36.162,9.455 36.162,9.455L27.267,10.647L23.45,24.509Z" style="fill:rgb(103,103,103);fill-rule:nonzero;stroke:black;stroke-width:1.7px;"/>
-            <path id="path2583-3" d="M27.267,10.647C27.267,10.647 28.272,7.881 29.452,7.86C41.832,7.638 60.139,5.237 73.299,3.125C74.347,2.956 74.626,6.019 73.963,6.209C63.946,9.071 27.267,10.647 27.267,10.647Z" style="fill:rgb(212,212,212);fill-rule:nonzero;"/>
-            <path id="path2579-3" d="M27.267,10.647L53.856,9.307L74.626,6.019" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.42px;"/>
+        <g
+   id="Re-ink1"
+   serif:id="Re-ink"
+   transform="translate(98.8336,0.906042)">
+            <path
+   id="path2567-5"
+   d="M 2.041,77.824 C 17.51,55.644 26.787,7.152 28.929,6.817 37.812,5.428 59.963,5.927 73.125,1.886 c 5.189,-1.593 4.576,44.806 5.089,69.445 0.189,9.047 -28.626,12.378 -27.053,3.466 1.979,-11.215 1.071,-35.19 1.071,-35.19 0,0 -13.745765,23.010882 -20.491,38.522 -0.93,4.352 -35.453,7.945 -29.7,-0.305 z"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:2.83px"
+   sodipodi:nodetypes="cccccccc" />
+            <path
+   id="path2571-1"
+   d="m 52.232,39.607 c 0,0 4.585,-6.782 3.599,-12.063 C 54.845,22.264 53.973,8.126 53.973,8.126"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:1.42px" />
+            <path
+   id="path2573-1"
+   d="M 55.831,27.544 58.112,7.723"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:1.42px" />
+            <path
+   id="path2569-1"
+   d="m 23.45,24.509 c 0,0 7.825,2.817 10.227,-0.184 2.401,-3.001 2.485,-14.87 2.485,-14.87 l -8.895,1.192 z"
+   style="fill:#676767;fill-rule:nonzero;stroke:#000000;stroke-width:1.7px" />
+            <path
+   id="path2583-3"
+   d="m 27.267,10.647 c 0,0 1.005,-2.766 2.185,-2.787 12.38,-0.222 30.687,-2.623 43.847,-4.735 1.048,-0.169 1.327,2.894 0.664,3.084 -10.017,2.862 -46.696,4.438 -46.696,4.438 z"
+   style="fill:#d4d4d4;fill-rule:nonzero" />
+            <path
+   id="path2579-3"
+   d="M 27.267,10.647 53.856,9.307 74.626,6.019"
+   style="fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:1.42px" />
         </g>
     </g>
-</svg>
+<metadata
+   id="metadata1"><rdf:RDF><cc:Work
+       rdf:about=""><cc:license
+         rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>

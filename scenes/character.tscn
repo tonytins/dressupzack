@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_k1mtq"]
 [ext_resource type="Texture2D" uid="uid://cddou4chwo8h2" path="res://sprites/character/tail/tail0.svg" id="2"]
-[ext_resource type="Texture2D" uid="uid://dxpvahpmr14ty" path="res://sprites/character/character_base.png" id="2_p4oam"]
 [ext_resource type="Texture2D" uid="uid://cnd3v8cerplqq" path="res://sprites/character/tail/tail1.svg" id="3"]
 [ext_resource type="Texture2D" uid="uid://djv0p7rxujbd4" path="res://sprites/character/tail/tail2.svg" id="4"]
+[ext_resource type="Texture2D" uid="uid://3rmb0kj376t1" path="res://sprites/character/zack.png" id="5_i8wm6"]
 [ext_resource type="Texture2D" uid="uid://dnwdyi2d46hsm" path="res://sprites/character/eyes/eyes1.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://cbr37emgh11is" path="res://sprites/character/eyes/eyes2.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://ceifal0sxn0r7" path="res://sprites/character/eyes/eyes3.png" id="8"]
@@ -123,20 +123,18 @@ script = ExtResource("1_k1mtq")
 position = Vector2(-33.7592, 99.4079)
 scale = Vector2(0.927713, 1)
 sprite_frames = SubResource("1")
-frame_progress = 0.642539
-metadata/_edit_lock_ = true
+frame_progress = 0.185576
 
 [node name="Body" type="Sprite2D" parent="."]
 position = Vector2(12, 81)
-texture = ExtResource("2_p4oam")
-metadata/_edit_lock_ = true
+texture = ExtResource("5_i8wm6")
 
 [node name="Eyes" type="AnimatedSprite2D" parent="."]
 position = Vector2(28.6857, -15.7785)
 sprite_frames = SubResource("2")
-frame_progress = 0.55981
+frame_progress = 0.102847
 
 [node name="Mouth" type="AnimatedSprite2D" parent="."]
 position = Vector2(49.1195, -14.3155)
 sprite_frames = SubResource("3")
-frame_progress = 0.679866
+frame_progress = 0.222902

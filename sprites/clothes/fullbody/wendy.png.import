@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn2le7r61mcmq"
-path="res://.godot/imported/pants_icon.svg-1b70a1b4db0c8229d68cbbafffd7bf3c.ctex"
+uid="uid://cgxm7h4ukqpyh"
+path="res://.godot/imported/wendy.png-e8ad05b117de48ee6b0cdfc02a6e87d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clothes/pants_icon.svg"
-dest_files=["res://.godot/imported/pants_icon.svg-1b70a1b4db0c8229d68cbbafffd7bf3c.ctex"]
+source_file="res://sprites/clothes/fullbody/wendy.png"
+dest_files=["res://.godot/imported/wendy.png-e8ad05b117de48ee6b0cdfc02a6e87d2.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

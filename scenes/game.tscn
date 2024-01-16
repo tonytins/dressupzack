@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=13 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://sprites/world/background.svg" id="1_uee2i"]
@@ -6,149 +6,143 @@
 [ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://sprites/world/stand.svg" id="2_q0w7j"]
 [ext_resource type="Texture2D" uid="uid://d1u3w61r0uv7p" path="res://sprites/world/boxersOfAmericaFrame.png" id="4_327cy"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://scenes/character.tscn" id="6_tdil0"]
-[ext_resource type="Texture2D" uid="uid://405burxtvied" path="res://sprites/clothes/sweat_pants.svg" id="7_7tx8y"]
-[ext_resource type="Texture2D" uid="uid://venieklgphn5" path="res://sprites/clothes/blue_camo_jeans.svg" id="8_bqcl8"]
-[ext_resource type="Texture2D" uid="uid://8vrl1mmcm5is" path="res://sprites/clothes/beat_up_jeans.svg" id="8_jisbs"]
-[ext_resource type="Texture2D" uid="uid://310b2835i5d8" path="res://sprites/clothes/dj_shirt.png" id="8_r4o7r"]
-[ext_resource type="Texture2D" uid="uid://dt1tsnusorwv8" path="res://sprites/clothes/korm_shirt.png" id="11_6ilrq"]
+[ext_resource type="SpriteFrames" uid="uid://bhyon1s1op8ly" path="res://scenes/items.tres" id="7_3ykci"]
 [ext_resource type="Texture2D" uid="uid://clakkue2mohs4" path="res://sprites/ui/greenBtn.png" id="14_yk2bu"]
 [ext_resource type="Texture2D" uid="uid://cd8mirubbhn10" path="res://sprites/ui/redBtn.png" id="15_g5gd1"]
+[ext_resource type="Texture2D" uid="uid://cl0wwlm6yw0ug" path="res://sprites/ui/fullbodyBtn.png" id="15_rfctk"]
+[ext_resource type="Texture2D" uid="uid://nc0wkek55yhu" path="res://sprites/ui/seperateBtn.png" id="16_px53c"]
 [ext_resource type="Texture2D" uid="uid://wr3ns0ywb75q" path="res://sprites/logo.png" id="16_y58oj"]
-[ext_resource type="Texture2D" uid="uid://b0sf2e2e5jfab" path="res://sprites/clothes/z_shirt.png" id="17_yoe0e"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_jjbgs"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_7tx8y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_jisbs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_bqcl8")
-}],
-"loop": true,
-"name": &"bottoms",
-"speed": 1.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_r4o7r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_6ilrq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_yoe0e")
-}],
-"loop": true,
-"name": &"tops",
-"speed": 5.0
-}]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_qt3fe")
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(577.603, 328.303)
-scale = Vector2(1.14718, 1.13943)
-texture = ExtResource("1_uee2i")
-metadata/_edit_lock_ = true
+[node name="World" type="Node2D" parent="."]
 
-[node name="Stand" type="Sprite2D" parent="."]
-position = Vector2(564.62, 543.689)
-scale = Vector2(1.79062, 1.7736)
+[node name="Background" type="Sprite2D" parent="World"]
+position = Vector2(306.682, 204.039)
+scale = Vector2(0.618038, 0.725217)
+texture = ExtResource("1_uee2i")
+
+[node name="Stand" type="Sprite2D" parent="World"]
+position = Vector2(321.326, 368.764)
 texture = ExtResource("2_q0w7j")
 
-[node name="BoxersOfAmericaFrame" type="Sprite2D" parent="."]
-position = Vector2(942.068, 139.049)
-scale = Vector2(1.7514, 1.86172)
+[node name="BoxersOfAmericaFrame" type="Sprite2D" parent="World"]
+position = Vector2(77.9707, 272.449)
 texture = ExtResource("4_327cy")
 
-[node name="iCrazyFrame" type="Sprite2D" parent="."]
-position = Vector2(183.37, 149.267)
-scale = Vector2(1.25573, 1.3008)
+[node name="iCrazyFrame" type="Sprite2D" parent="World"]
+position = Vector2(74.389, 113.776)
+scale = Vector2(0.700948, 0.7129)
 texture = ExtResource("2_n1kmf")
 
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
-position = Vector2(557.567, 197.468)
-scale = Vector2(1.5, 1.5)
+position = Vector2(313.61, 133.222)
 
 [node name="Bottoms" type="AnimatedSprite2D" parent="."]
-position = Vector2(570.883, 453.423)
-scale = Vector2(1.85571, 1.88987)
-sprite_frames = SubResource("SpriteFrames_jjbgs")
+position = Vector2(316.681, 303.715)
+sprite_frames = ExtResource("7_3ykci")
 animation = &"bottoms"
 
 [node name="Tops" type="AnimatedSprite2D" parent="."]
-position = Vector2(579.842, 318.193)
-scale = Vector2(1.5, 1.5)
-sprite_frames = SubResource("SpriteFrames_jjbgs")
+position = Vector2(325.091, 213.195)
+sprite_frames = ExtResource("7_3ykci")
 animation = &"tops"
+
+[node name="Fullbody" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(558.266, 434.335)
+sprite_frames = ExtResource("7_3ykci")
+animation = &"fullbody"
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(546.704, 311.642)
+scale = Vector2(0.172412, 0.162644)
+texture = ExtResource("16_y58oj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="UI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_lock_ = true
+metadata/_edit_use_anchors_ = true
 
-[node name="TopsFwdBtn" type="TextureButton" parent="CanvasLayer/Control"]
+[node name="TopsFwdBtn" type="TextureButton" parent="CanvasLayer/UI"]
 layout_mode = 0
-offset_left = 733.043
-offset_top = 272.435
-offset_right = 776.043
-offset_bottom = 335.435
-scale = Vector2(1.5, 1.5)
+anchor_left = 0.735474
+anchor_top = 0.406494
+anchor_right = 0.807141
+anchor_bottom = 0.563994
 texture_normal = ExtResource("14_yk2bu")
 stretch_mode = 4
+metadata/_edit_use_anchors_ = true
 
-[node name="TopsBckBtn" type="TextureButton" parent="CanvasLayer/Control"]
+[node name="TopsBckBtn" type="TextureButton" parent="CanvasLayer/UI"]
 layout_mode = 0
-offset_left = 322.285
-offset_top = 269.324
-offset_right = 365.285
-offset_bottom = 332.324
-scale = Vector2(1.5, 1.5)
+anchor_left = 0.236586
+anchor_top = 0.399881
+anchor_right = 0.308252
+anchor_bottom = 0.55738
+offset_bottom = 1.04904e-05
 texture_normal = ExtResource("15_g5gd1")
+metadata/_edit_use_anchors_ = true
 
-[node name="BottomsBckBtn" type="TextureButton" parent="CanvasLayer/Control"]
+[node name="BottomsBckBtn" type="TextureButton" parent="CanvasLayer/UI"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.273624
-anchor_top = 0.59627
-anchor_right = 0.330916
-anchor_bottom = 0.753677
-offset_top = -1.90735e-05
+anchor_left = 0.230677
+anchor_top = 0.61427
+anchor_right = 0.302344
+anchor_bottom = 0.77177
+offset_bottom = -2.28882e-05
+texture_normal = ExtResource("15_g5gd1")
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomsFwdBtn" type="TextureButton" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.736785
+anchor_top = 0.613892
+anchor_right = 0.808452
+anchor_bottom = 0.771392
+offset_left = -1.4782e-05
+texture_normal = ExtResource("14_yk2bu")
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="FullbodyBtn" type="TextureButton" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.265919
+anchor_top = 0.0531643
+anchor_right = 0.417585
+anchor_bottom = 0.115664
+offset_left = 1.14441e-05
 offset_right = 1.52588e-05
-offset_bottom = -1.04904e-05
-texture_normal = ExtResource("15_g5gd1")
+texture_normal = ExtResource("15_rfctk")
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="BottomsFwdBtn" type="TextureButton" parent="CanvasLayer/Control"]
+[node name="SeparateBtn" type="TextureButton" parent="CanvasLayer/UI"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.636238
-anchor_top = 0.600003
-anchor_right = 0.695266
-anchor_bottom = 0.752781
-offset_left = 1.52588e-05
-texture_normal = ExtResource("14_yk2bu")
+anchor_left = 0.666512
+anchor_top = 0.0395699
+anchor_right = 0.818178
+anchor_bottom = 0.10457
+offset_left = -1.14441e-05
+texture_normal = ExtResource("16_px53c")
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(1052.16, 511.503)
-scale = Vector2(0.225814, 0.216046)
-texture = ExtResource("16_y58oj")
-
-[connection signal="pressed" from="CanvasLayer/Control/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/BottomsFwdBtn" to="." method="_on_bottoms_fwd_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/BottomsFwdBtn" to="." method="_on_bottoms_fwd_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/FullbodyBtn" to="." method="_on_fullbody_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/SeparateBtn" to="." method="_on_separate_btn_pressed"]

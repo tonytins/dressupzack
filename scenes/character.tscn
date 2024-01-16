@@ -123,7 +123,7 @@ script = ExtResource("1_k1mtq")
 position = Vector2(-33.7592, 99.4079)
 scale = Vector2(0.927713, 1)
 sprite_frames = SubResource("1")
-frame_progress = 0.472335
+frame_progress = 0.0205252
 
 [node name="Body" type="Sprite2D" parent="."]
 position = Vector2(12, 81)
@@ -132,9 +132,9 @@ texture = ExtResource("5_i8wm6")
 [node name="Eyes" type="AnimatedSprite2D" parent="."]
 position = Vector2(28.6857, -15.7785)
 sprite_frames = SubResource("2")
-frame_progress = 0.389606
+frame_progress = 0.937796
 
 [node name="Mouth" type="AnimatedSprite2D" parent="."]
 position = Vector2(49.1195, -14.3155)
 sprite_frames = SubResource("3")
-frame_progress = 0.509661
+frame_progress = 0.0578512

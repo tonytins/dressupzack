@@ -15,26 +15,32 @@ var config_file = Config.config_file()
 var save_file = Config.save_file()
 
 func _ready():
-		
+	
+	# If config files don't exist, create them
 	if !FileAccess.file_exists(config_file):
 		Config.save_config(config_file)
 		
 	if !FileAccess.file_exists(save_file):
 		Config.save_game(save_file)
-		
+	
+	# Load last saved game	
 	if FileAccess.file_exists(save_file):
 		var clothes_section = "clothes"
 		tops.frame = Config.load_config(clothes_section, "tops", save_file)
 		bottoms.frame = Config.load_config(clothes_section, "bottoms", save_file)
 		full_body.frame = Config.load_config(clothes_section, "full_body", save_file)
 	
+	# Load window size
 	if FileAccess.file_exists(config_file):
 		var window_section = "window"
 		var window_height = Config.load_config(window_section, "height", config_file)
 		var window_width = Config.load_config(window_section, "width", config_file)
+		var viewport = get_viewport();
 		
-		if window_height && window_width != null:
-			DisplayServer.window_set_size(Vector2i(window_height, window_width))
+		# Set window size
+		DisplayServer.window_set_size(Vector2i(window_width, window_height))
+
+
 func game_save():
 	Config.save_game(tops.frame, bottoms.frame, full_body.frame, save_file, true)
 	

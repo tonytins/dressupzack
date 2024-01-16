@@ -19,10 +19,19 @@ func save_file(save_file = "user://save.cfg"):
 func save_config(config_file = "user://config.cfg"):
 	# Create new ConfigFile object.
 	var config = ConfigFile.new()
-		
-	# Store some values.
-	config.set_value("window", "height", 1024)
-	config.set_value("window", "width", 768)
+	
+	var window_size = "display/window/size/";
+	var default_width = ProjectSettings.get_setting(window_size + "viewport_width")
+	var default_height = ProjectSettings.get_setting(window_size + "viewport_height")
+	
+	# If Retina display, set a higher resolution
+	var screen_scale = DisplayServer.screen_get_scale();
+	if screen_scale == 2:
+		config.set_value("window", "width", default_width * 3)
+		config.set_value("window", "height", default_height * 3)
+	else:
+		config.set_value("window", "width", default_width)
+		config.set_value("window", "height", default_height)
 
 	# Save it to a file (overwrite if already exists)
 	if !FileAccess.file_exists(config_file):

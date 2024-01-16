@@ -1,14 +1,16 @@
-[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://bhyon1s1op8ly"]
+[gd_resource type="SpriteFrames" load_steps=17 format=3 uid="uid://bhyon1s1op8ly"]
 
 [ext_resource type="Texture2D" uid="uid://wfsffpk4h8p" path="res://sprites/clothes/sweat_pants.png" id="1_5mrf2"]
 [ext_resource type="Texture2D" uid="uid://b3xtl8c73nw30" path="res://sprites/clothes/beatup_jeans.png" id="2_0n07e"]
 [ext_resource type="Texture2D" uid="uid://bl8w5mjjo4i73" path="res://sprites/clothes/jeans.png" id="3_7udtq"]
 [ext_resource type="Texture2D" uid="uid://310b2835i5d8" path="res://sprites/clothes/dj_shirt.png" id="7_b8d0l"]
 [ext_resource type="Texture2D" uid="uid://5heuxqo78jns" path="res://sprites/clothes/fullbody/canonrhode.png" id="7_iagv2"]
+[ext_resource type="Texture2D" uid="uid://bhgvidynd582a" path="res://sprites/clothes/retro_shirt.svg" id="8_cd0je"]
 [ext_resource type="Texture2D" uid="uid://cgnumy58myojg" path="res://sprites/clothes/fullbody/coat.png" id="8_uraqp"]
 [ext_resource type="Texture2D" uid="uid://6y443cg1s6up" path="res://sprites/clothes/fullbody/edsoutfit.png" id="9_osdr5"]
 [ext_resource type="Texture2D" uid="uid://dt1tsnusorwv8" path="res://sprites/clothes/korm_shirt.png" id="10_81cd5"]
 [ext_resource type="Texture2D" uid="uid://crgedi1ppq2ow" path="res://sprites/clothes/fullbody/formal.png" id="10_uqjix"]
+[ext_resource type="Texture2D" uid="uid://qvwv0sdwl5u4" path="res://sprites/clothes/fullsnack_shirt.svg" id="11_hmki5"]
 [ext_resource type="Texture2D" uid="uid://b07kumnwr7c0w" path="res://sprites/clothes/fullbody/mario.png" id="11_ssvy5"]
 [ext_resource type="Texture2D" uid="uid://c8xa7sal3omnm" path="res://sprites/clothes/fullbody/schoolgirl.png" id="12_3wtcm"]
 [ext_resource type="Texture2D" uid="uid://b0sf2e2e5jfab" path="res://sprites/clothes/z_shirt.png" id="12_i81ab"]
@@ -69,6 +71,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_i81ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_cd0je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hmki5")
 }],
 "loop": true,
 "name": &"tops",

@@ -12,11 +12,11 @@ config_version=5
 
 config/name="Dress Up Zack"
 config/version="1"
-run/main_scene="res://scenes/game.tscn"
+run/main_scene="res://src/scenes/game.tscn"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.2")
 boot_splash/bg_color=Color(0.8, 0.8, 0.4, 1)
-boot_splash/image="res://icon.png"
+boot_splash/image="res://src/sprites/logo.png"
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
@@ -24,7 +24,7 @@ name_sv="Tonys klä upp"
 
 [autoload]
 
-Config="*res://scripts/config.gd"
+Config="*res://src/scripts/config.gd"
 
 [debug]
 
@@ -48,13 +48,12 @@ enabled=PackedStringArray("res://addons/fontawesome/plugin.cfg")
 [file_customization]
 
 folder_colors={
-"res://addons/": "blue",
-"res://fonts/": "teal",
-"res://resources/": "orange",
-"res://scenes/": "purple",
-"res://scripts/": "green",
-"res://sounds/": "pink",
-"res://sprites/": "yellow"
+"res://src/fonts/": "teal",
+"res://src/resources/": "orange",
+"res://src/scenes/": "purple",
+"res://src/scripts/": "green",
+"res://src/sounds/": "pink",
+"res://src/sprites/": "yellow"
 }
 
 [filesystem]

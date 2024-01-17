@@ -1,0 +1,220 @@
+[gd_scene load_steps=15 format=3 uid="uid://cvr2aries2lhr"]
+
+[ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
+[ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
+[ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://src/sprites/world/icrazy_frame.svg" id="2_n1kmf"]
+[ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://src/sprites/world/stand.svg" id="2_q0w7j"]
+[ext_resource type="Texture2D" uid="uid://d1u3w61r0uv7p" path="res://src/sprites/world/boxersOfAmericaFrame.png" id="4_327cy"]
+[ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://src/scenes/character.tscn" id="6_tdil0"]
+[ext_resource type="SpriteFrames" uid="uid://bhyon1s1op8ly" path="res://src/scenes/items.tres" id="7_3ykci"]
+[ext_resource type="StyleBox" uid="uid://by6foat5q5d8b" path="res://src/sprites/ui/button_style.tres" id="11_a038t"]
+[ext_resource type="FontFile" uid="uid://cnddkn05b5fj" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="11_e3r4r"]
+[ext_resource type="SystemFont" uid="uid://dfre5a3mywuhy" path="res://src/sprites/ui/comic_sans.tres" id="12_0f8fj"]
+[ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="12_o3hu5"]
+[ext_resource type="Texture2D" uid="uid://clakkue2mohs4" path="res://src/sprites/ui/greenBtn.png" id="14_yk2bu"]
+[ext_resource type="Texture2D" uid="uid://cd8mirubbhn10" path="res://src/sprites/ui/redBtn.png" id="15_g5gd1"]
+[ext_resource type="Texture2D" uid="uid://wr3ns0ywb75q" path="res://src/sprites/logo.png" id="16_y58oj"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_qt3fe")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="World"]
+position = Vector2(306.682, 204.039)
+scale = Vector2(0.618038, 0.725217)
+texture = ExtResource("1_uee2i")
+metadata/_edit_lock_ = true
+
+[node name="Stand" type="Sprite2D" parent="World"]
+position = Vector2(307.326, 368.764)
+texture = ExtResource("2_q0w7j")
+
+[node name="BoxersOfAmericaFrame" type="Sprite2D" parent="World"]
+position = Vector2(527.778, 119.515)
+texture = ExtResource("4_327cy")
+
+[node name="iCrazyFrame" type="Sprite2D" parent="World"]
+position = Vector2(74.389, 113.776)
+scale = Vector2(0.700948, 0.7129)
+texture = ExtResource("2_n1kmf")
+
+[node name="Character" parent="." instance=ExtResource("6_tdil0")]
+position = Vector2(299.61, 133.222)
+
+[node name="Seperate" type="Node2D" parent="."]
+
+[node name="Bottoms" type="AnimatedSprite2D" parent="Seperate"]
+position = Vector2(305.681, 303.715)
+sprite_frames = ExtResource("7_3ykci")
+animation = &"bottoms"
+
+[node name="Tops" type="AnimatedSprite2D" parent="Seperate"]
+position = Vector2(310.934, 206.309)
+sprite_frames = ExtResource("7_3ykci")
+animation = &"tops"
+
+[node name="FullBody" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(314.225, 262.214)
+sprite_frames = ExtResource("7_3ykci")
+animation = &"fullbody"
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(546.704, 311.642)
+scale = Vector2(0.172412, 0.162644)
+texture = ExtResource("16_y58oj")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="Canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="DressUpCtrls" type="Control" parent="Canvas/UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="TopsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.655
+anchor_top = 0.3775
+anchor_right = 0.726667
+anchor_bottom = 0.535
+offset_bottom = -1.04904e-05
+texture_normal = ExtResource("14_yk2bu")
+metadata/_edit_use_anchors_ = true
+
+[node name="TopsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.256667
+anchor_top = 0.345
+anchor_right = 0.328334
+anchor_bottom = 0.5025
+texture_normal = ExtResource("15_g5gd1")
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.245
+anchor_top = 0.535
+anchor_right = 0.316667
+anchor_bottom = 0.6925
+offset_top = -1.04904e-05
+texture_normal = ExtResource("15_g5gd1")
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.658334
+anchor_top = 0.5725
+anchor_right = 0.73
+anchor_bottom = 0.73
+texture_normal = ExtResource("14_yk2bu")
+metadata/_edit_use_anchors_ = true
+
+[node name="SettingsCtrls" type="HBoxContainer" parent="Canvas/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.015
+anchor_right = 1.0
+anchor_bottom = 0.0875
+grow_horizontal = 2
+theme_override_constants/separation = 13
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ShirtIcon" type="Label" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_colors/font_color = Color(0, 0.290196, 1, 1)
+theme_override_fonts/font = ExtResource("11_e3r4r")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_o3hu5")
+icon_name = "shirt"
+
+[node name="FullbodyBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/normal = ExtResource("11_a038t")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/focus = ExtResource("11_a038t")
+text = "Outfits"
+metadata/_edit_use_anchors_ = true
+
+[node name="SeparateBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/normal = ExtResource("11_a038t")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/focus = ExtResource("11_a038t")
+text = "Seperate"
+metadata/_edit_use_anchors_ = true
+
+[node name="FontAwesome" type="Label" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_colors/font_color = Color(0, 0.290196, 1, 1)
+theme_override_fonts/font = ExtResource("11_e3r4r")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_o3hu5")
+icon_name = "gear"
+
+[node name="SaveBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/normal = ExtResource("11_a038t")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/focus = ExtResource("11_a038t")
+text = "Save"
+
+[node name="ExitBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/normal = ExtResource("11_a038t")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/focus = ExtResource("11_a038t")
+text = "Exit"
+
+[connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpCtrls/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpCtrls/BottomsFwdBtn" to="." method="_on_bottoms_fwd_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsCtrls/FullbodyBtn" to="." method="_on_fullbody_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsCtrls/SeparateBtn" to="." method="_on_separate_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsCtrls/SaveBtn" to="." method="_on_save_btn_pressed"]

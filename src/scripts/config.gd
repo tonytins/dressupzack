@@ -38,14 +38,14 @@ func save_config(config_file = "user://config.cfg"):
 	if !FileAccess.file_exists(config_file):
 		config.save(config_file)
 		
-func save_game(tops = 0, bottoms = 0, full_body = 0, save_file = "user://save.cfg", overwrite = false):
+func save_game(tops = 0, bottoms = 0, outfits = 0, save_file = "user://save.cfg", overwrite = false):
 	# Create new ConfigFile object.
 	var config = ConfigFile.new()
 	
 	# Store some values.
 	config.set_value("clothes", "tops", tops)
 	config.set_value("clothes", "bottoms", bottoms)
-	config.set_value("clothes", "full_body", full_body)
+	config.set_value("clothes", "outfits", outfits)
 
 	# Save it to a file (overwrite if already exists)
 	if !FileAccess.file_exists(save_file) || overwrite == true:

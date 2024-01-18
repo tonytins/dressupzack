@@ -1,9 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=18 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
+[ext_resource type="AudioStream" uid="uid://b01v3d3npeyt1" path="res://src/sounds/kenny_ui_sounds/click_001.wav" id="2_0ca4n"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://src/sprites/world/icrazy_frame.svg" id="2_n1kmf"]
 [ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://src/sprites/world/stand.svg" id="2_q0w7j"]
+[ext_resource type="AudioStream" uid="uid://dd1xw5yy6ckcg" path="res://src/sounds/kenny_ui_sounds/click_002.wav" id="3_who0m"]
 [ext_resource type="Texture2D" uid="uid://d1u3w61r0uv7p" path="res://src/sprites/world/boxersOfAmericaFrame.png" id="4_327cy"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://src/scenes/character.tscn" id="6_tdil0"]
 [ext_resource type="SpriteFrames" uid="uid://bhyon1s1op8ly" path="res://src/scenes/items.tres" id="7_3ykci"]
@@ -18,6 +20,12 @@
 
 [node name="Game" type="Node"]
 script = ExtResource("1_qt3fe")
+
+[node name="ForwardClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0ca4n")
+
+[node name="BackClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_who0m")
 
 [node name="World" type="Node2D" parent="."]
 
@@ -55,7 +63,7 @@ position = Vector2(310.934, 206.309)
 sprite_frames = ExtResource("7_3ykci")
 animation = &"tops"
 
-[node name="FullBody" type="AnimatedSprite2D" parent="."]
+[node name="Outfits" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(314.225, 262.214)
 sprite_frames = ExtResource("7_3ykci")

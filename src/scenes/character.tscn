@@ -36,6 +36,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
 }],
 "loop": true,
 "name": &"default",
@@ -83,7 +98,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 1.0
+"speed": 3.0
 }]
 
 [sub_resource type="SpriteFrames" id="3"]

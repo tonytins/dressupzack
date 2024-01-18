@@ -5,13 +5,15 @@ extends Node
 @onready var seperate_items = $Seperate
 @onready var bottoms_bck = $Canvas/UI/DressUpCtrls/BottomsBckBtn
 @onready var bottoms_fwd = $Canvas/UI/DressUpCtrls/BottomsFwdBtn
-@onready var full_body = $FullBody
+@onready var outfits = $Outfits
+@onready var forward_click = $ForwardClick
+@onready var back_click = $BackClick
 
 # Only here for debugging purposes
 @onready var outfits_btn = $Canvas/UI/SettingsCtrls/FullbodyBtn
 
 var is_seperate: bool = true
-var is_full_body: bool = false
+var is_outfits: bool = false
 var current_frame: int
 var sprite_frames: SpriteFrames
 
@@ -36,7 +38,7 @@ func _ready():
 		var clothes_section = "clothes"
 		tops.frame = Config.load_config(clothes_section, "tops", save_file)
 		bottoms.frame = Config.load_config(clothes_section, "bottoms", save_file)
-		full_body.frame = Config.load_config(clothes_section, "full_body", save_file)
+		outfits.frame = Config.load_config(clothes_section, "outfits", save_file)
 	
 	# Load window size
 	if FileAccess.file_exists(config_file):
@@ -49,18 +51,19 @@ func _ready():
 		DisplayServer.window_set_size(Vector2i(window_width, window_height))
 
 func save_all():
-	Config.save_game(tops.frame, bottoms.frame, full_body.frame, save_file, true)
+	Config.save_game(tops.frame, bottoms.frame, outfits.frame, save_file, true)
 
 func next_frame(animation: AnimatedSprite2D, sprite_frames: SpriteFrames, animation_name, rewind = false):
 	var max_frames = sprite_frames.get_frame_count(animation_name) - 1
-	
 	current_frame = animation.frame
 	
 	if !rewind:
+		forward_click.play()
 		animation.frame = current_frame + 1
 		if current_frame == max_frames:
 			animation.frame = 0
 	else:
+		back_click.play()
 		animation.frame = current_frame + -1
 		if current_frame == 0:
 			animation.frame = max_frames
@@ -76,14 +79,14 @@ func _on_save_btn_pressed():
 func _on_tops_fwd_btn_pressed():
 	next_frame(tops, tops.sprite_frames, "tops")
 	
-	if is_full_body:
-		next_frame(full_body, full_body.sprite_frames, "fullbody")
+	if is_outfits:
+		next_frame(outfits, outfits.sprite_frames, "fullbody")
 
 func _on_tops_bck_btn_pressed():
 	next_frame(tops, tops.sprite_frames, "tops", true)
 	
-	if is_full_body:
-		next_frame(full_body, full_body.sprite_frames, "fullbody", true)
+	if is_outfits:
+		next_frame(outfits, outfits.sprite_frames, "fullbody", true)
 
 func _on_bottoms_bck_btn_pressed():
 	next_frame(bottoms, bottoms.sprite_frames, "bottoms", true)
@@ -94,18 +97,18 @@ func _on_bottoms_fwd_btn_pressed():
 
 func _on_fullbody_btn_pressed():
 	is_seperate = false
-	is_full_body = true
+	is_outfits = true
 	seperate_items.hide()
 	bottoms_bck.hide()
 	bottoms_fwd.hide()
-	full_body.show()
+	outfits.show()
 
 func _on_separate_btn_pressed():
 	is_seperate = true
-	is_full_body = false
+	is_outfits = false
 	seperate_items.show()
 	bottoms_bck.show()
 	bottoms_fwd.show()
-	full_body.hide()
+	outfits.hide()
 
 

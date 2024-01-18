@@ -1,6 +1,5 @@
 extends Node
 
-
 @onready var tops = $Seperate/Tops
 @onready var bottoms = $Seperate/Bottoms
 @onready var seperate_items = $Seperate

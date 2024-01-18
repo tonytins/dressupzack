@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=16 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
@@ -12,6 +12,7 @@
 [ext_resource type="SystemFont" uid="uid://dfre5a3mywuhy" path="res://src/sprites/ui/comic_sans.tres" id="12_0f8fj"]
 [ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="12_o3hu5"]
 [ext_resource type="Texture2D" uid="uid://clakkue2mohs4" path="res://src/sprites/ui/greenBtn.png" id="14_yk2bu"]
+[ext_resource type="StyleBox" uid="uid://cdlprci8cx4tb" path="res://src/sprites/ui/disable_button_style.tres" id="15_0xxs0"]
 [ext_resource type="Texture2D" uid="uid://cd8mirubbhn10" path="res://src/sprites/ui/redBtn.png" id="15_g5gd1"]
 [ext_resource type="Texture2D" uid="uid://wr3ns0ywb75q" path="res://src/sprites/logo.png" id="16_y58oj"]
 
@@ -160,8 +161,9 @@ theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/normal = ExtResource("11_a038t")
 theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
+disabled = true
 text = "Outfits"
 metadata/_edit_use_anchors_ = true
 
@@ -172,7 +174,7 @@ theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/normal = ExtResource("11_a038t")
 theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
 text = "Seperate"
 metadata/_edit_use_anchors_ = true
@@ -197,7 +199,7 @@ theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/normal = ExtResource("11_a038t")
 theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
 text = "Save"
 
@@ -207,7 +209,7 @@ theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/normal = ExtResource("11_a038t")
 theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
 text = "Exit"
 

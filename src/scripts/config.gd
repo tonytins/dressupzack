@@ -25,19 +25,20 @@ func save_config(config_file = "user://config.cfg"):
 	var default_height = ProjectSettings.get_setting(window_size + "viewport_height")
 	
 	# If Retina display, set a higher resolution
-	var screen_scale = DisplayServer.screen_get_scale();
-	if screen_scale == 2:
-		config.set_value("window", "width", default_width * 3)
-		config.set_value("window", "height", default_height * 3)
-	else:
-		config.set_value("window", "width", default_width)
-		config.set_value("window", "height", default_height)
+	var display_scale = DisplayServer.screen_get_scale();
+	match display_scale:
+		2:
+			config.set_value("window", "width", default_width * display_scale + 1)
+			config.set_value("window", "height", default_height * display_scale + 1)
+		1, _:
+			config.set_value("window", "width", default_width)
+			config.set_value("window", "height", default_height)
 
 	# Save it to a file (overwrite if already exists)
 	if !FileAccess.file_exists(config_file):
 		config.save(config_file)
 		
-func save_game(tops = 0, bottoms = 0, full_body = 0, save_file = "user://save.cfg", overwrite = false, ):
+func save_game(tops = 0, bottoms = 0, full_body = 0, save_file = "user://save.cfg", overwrite = false):
 	# Create new ConfigFile object.
 	var config = ConfigFile.new()
 	

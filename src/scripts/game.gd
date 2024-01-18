@@ -8,13 +8,22 @@ extends Node
 @onready var bottoms_fwd = $Canvas/UI/DressUpCtrls/BottomsFwdBtn
 @onready var full_body = $FullBody
 
-var is_seperate = true
-var is_full_body = false
+# Only here for debugging purposes
+@onready var outfits_btn = $Canvas/UI/SettingsCtrls/FullbodyBtn
+
+var is_seperate: bool = true
+var is_full_body: bool = false
+var current_frame: int
+var sprite_frames: SpriteFrames
 
 var config_file = Config.config_file()
 var save_file = Config.save_file()
 
 func _ready():
+	
+	# Keep outfits button enabled in debug builds
+	if OS.is_debug_build():
+		outfits_btn.disabled = false
 	
 	# If config files don't exist, create them
 	if !FileAccess.file_exists(config_file):
@@ -40,47 +49,49 @@ func _ready():
 		# Set window size
 		DisplayServer.window_set_size(Vector2i(window_width, window_height))
 
-
-func game_save():
+func save_all():
 	Config.save_game(tops.frame, bottoms.frame, full_body.frame, save_file, true)
+
+func next_frame(animation: AnimatedSprite2D, sprite_frames: SpriteFrames, animation_name, rewind = false):
+	var max_frames = sprite_frames.get_frame_count(animation_name) - 1
 	
+	current_frame = animation.frame
+	
+	if !rewind:
+		animation.frame = current_frame + 1
+		if current_frame == max_frames:
+			animation.frame = 0
+	else:
+		animation.frame = current_frame + -1
+		if current_frame == 0:
+			animation.frame = max_frames
+		
 func _process(delta):
 	if Input.is_action_just_pressed("exit"):
-		game_save()
+		save_all()
 		get_tree().quit()
 		
 func _on_save_btn_pressed():
-	game_save()
+	save_all()
 
 func _on_tops_fwd_btn_pressed():
-	var current_frame
-	
-	if is_seperate:
-		current_frame = tops.frame
-		tops.frame = current_frame + 1;
+	next_frame(tops, tops.sprite_frames, "tops")
 	
 	if is_full_body:
-		current_frame = full_body.frame
-		full_body.frame = current_frame + 1;
+		next_frame(full_body, full_body.sprite_frames, "fullbody")
 
 func _on_tops_bck_btn_pressed():
-	var current_frame
-	if is_seperate:
-		current_frame = tops.frame
-		tops.frame = current_frame + -1;
+	next_frame(tops, tops.sprite_frames, "tops", true)
 	
 	if is_full_body:
-		current_frame = full_body.frame
-		full_body.frame = current_frame + -1;
+		next_frame(full_body, full_body.sprite_frames, "fullbody", true)
 
 func _on_bottoms_bck_btn_pressed():
-	var current_frame = bottoms.frame
-	bottoms.frame = current_frame + -1;
+	next_frame(bottoms, bottoms.sprite_frames, "bottoms", true)
 
 
 func _on_bottoms_fwd_btn_pressed():
-	var current_frame = bottoms.frame
-	bottoms.frame = current_frame + 1;
+	next_frame(bottoms, bottoms.sprite_frames, "bottoms")
 
 func _on_fullbody_btn_pressed():
 	is_seperate = false

@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=28 format=3 uid="uid://bhyon1s1op8ly"]
+[gd_resource type="SpriteFrames" load_steps=26 format=3 uid="uid://bhyon1s1op8ly"]
 
 [ext_resource type="Texture2D" uid="uid://4f7dfxy24fey" path="res://src/sprites/clothes/sequences/bottoms/bottoms0001.png" id="1_i4r3c"]
 [ext_resource type="Texture2D" uid="uid://bs6nkpurxgr3p" path="res://src/sprites/clothes/sequences/bottoms/bottoms0002.png" id="2_pkmjm"]
@@ -14,9 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://ccl0jntyuqb1l" path="res://src/sprites/clothes/sequences/outfits/outfits0003.png" id="12_rl56u"]
 [ext_resource type="Texture2D" uid="uid://1vp35m015ypl" path="res://src/sprites/clothes/sequences/outfits/outfits0004.png" id="13_hhvfk"]
 [ext_resource type="Texture2D" uid="uid://d3bhccyds3af6" path="res://src/sprites/clothes/sequences/outfits/outfits0005.png" id="14_tgnpk"]
-[ext_resource type="Texture2D" uid="uid://duhwfr8wv184a" path="res://src/sprites/clothes/sequences/outfits/outfits0006.png" id="15_gcogo"]
 [ext_resource type="Texture2D" uid="uid://tqeyv6mvy6x0" path="res://src/sprites/clothes/sequences/outfits/outfits0007.png" id="16_fogca"]
-[ext_resource type="Texture2D" uid="uid://22rtpk5uwfot" path="res://src/sprites/clothes/sequences/outfits/outfits0008.png" id="17_8r7xk"]
 [ext_resource type="Texture2D" uid="uid://3gxc6wknllcq" path="res://src/sprites/clothes/sequences/tops/tops0001.png" id="18_edhqb"]
 [ext_resource type="Texture2D" uid="uid://dhjg5vo1cs62m" path="res://src/sprites/clothes/sequences/tops/tops0002.png" id="19_57y8n"]
 [ext_resource type="Texture2D" uid="uid://b3f3sxfsteowe" path="res://src/sprites/clothes/sequences/tops/tops0003.png" id="20_s7eb7"]
@@ -79,16 +77,10 @@ animations = [{
 "texture": ExtResource("14_tgnpk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_gcogo")
-}, {
-"duration": 1.0,
 "texture": ExtResource("16_fogca")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_8r7xk")
 }],
 "loop": true,
-"name": &"fullbody",
+"name": &"outfits",
 "speed": 5.0
 }, {
 "frames": [{

@@ -1,11 +1,13 @@
-[gd_scene load_steps=33 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=36 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
 [ext_resource type="AudioStream" uid="uid://b01v3d3npeyt1" path="res://src/sounds/kenny_ui_sounds/click_001.wav" id="2_0ca4n"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://src/sprites/world/icrazy_frame.svg" id="2_n1kmf"]
 [ext_resource type="AudioStream" uid="uid://dd1xw5yy6ckcg" path="res://src/sounds/kenny_ui_sounds/click_002.wav" id="3_who0m"]
+[ext_resource type="AudioStream" uid="uid://cqtk1nmij02ue" path="res://src/sounds/kenny_ui_sounds/switch_004.wav" id="4_1vpui"]
 [ext_resource type="Texture2D" uid="uid://d1u3w61r0uv7p" path="res://src/sprites/world/boxersOfAmericaFrame.png" id="4_327cy"]
+[ext_resource type="AudioStream" uid="uid://y4amvcp0iak4" path="res://src/sounds/fan.ogg" id="4_ce266"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://src/scenes/character.tscn" id="6_tdil0"]
 [ext_resource type="SpriteFrames" uid="uid://bhyon1s1op8ly" path="res://src/scenes/items.tres" id="7_3ykci"]
 [ext_resource type="Texture2D" uid="uid://d1ebnalp5ubm5" path="res://src/sprites/world/fan/fan0001.png" id="8_op8gm"]
@@ -31,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://u5nmph4ob2rt" path="res://src/sprites/world/fan/fan0013.png" id="20_6cokn"]
 [ext_resource type="Texture2D" uid="uid://63nrlmta5nbc" path="res://src/sprites/world/fan/fan0014.png" id="21_4g4xp"]
 [ext_resource type="Texture2D" uid="uid://bewpgbagatqn0" path="res://src/sprites/world/shelf.png" id="22_kss16"]
+[ext_resource type="Texture2D" uid="uid://b5vt6y7uf4fi1" path="res://src/sprites/world/fan-button.png" id="33_oenpt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wfogq"]
 animations = [{
@@ -79,7 +82,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 10.0
+"speed": 100.0
 }]
 
 [node name="Game" type="Node"]
@@ -90,6 +93,12 @@ stream = ExtResource("2_0ca4n")
 
 [node name="BackClick" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_who0m")
+
+[node name="FanClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1vpui")
+
+[node name="FanAsmr" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ce266")
 
 [node name="World" type="Node2D" parent="."]
 
@@ -111,9 +120,6 @@ texture = ExtResource("2_n1kmf")
 [node name="Fan" type="AnimatedSprite2D" parent="World"]
 position = Vector2(523.641, 120.505)
 sprite_frames = SubResource("SpriteFrames_wfogq")
-frame = 10
-frame_progress = 0.989141
-speed_scale = 2.0
 
 [node name="Shelf" type="Sprite2D" parent="World"]
 position = Vector2(522.056, 189.082)
@@ -121,6 +127,7 @@ texture = ExtResource("22_kss16")
 
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
 position = Vector2(291.682, 143.132)
+rotation = -0.00207467
 
 [node name="Seperate" type="Node2D" parent="Character"]
 position = Vector2(-299.61, -133.222)
@@ -139,7 +146,7 @@ animation = &"tops"
 visible = false
 position = Vector2(-2.43002, 124.632)
 sprite_frames = ExtResource("7_3ykci")
-animation = &"fullbody"
+animation = &"outfits"
 
 [node name="Canvas" type="CanvasLayer" parent="."]
 
@@ -238,7 +245,6 @@ theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
 theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
-disabled = true
 text = "Outfits"
 metadata/_edit_use_anchors_ = true
 
@@ -323,6 +329,17 @@ script = ExtResource("12_o3hu5")
 icon_type = "brands"
 icon_name = "creative-commons-zero"
 
+[node name="FanBtn" type="TextureButton" parent="Canvas/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.866667
+anchor_top = 0.4075
+anchor_right = 0.88
+anchor_bottom = 0.4225
+toggle_mode = true
+texture_normal = ExtResource("33_oenpt")
+metadata/_edit_use_anchors_ = true
+
 [connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
 [connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
 [connection signal="pressed" from="Canvas/UI/DressUpCtrls/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
@@ -330,3 +347,4 @@ icon_name = "creative-commons-zero"
 [connection signal="pressed" from="Canvas/UI/SettingsCtrls/FullbodyBtn" to="." method="_on_fullbody_btn_pressed"]
 [connection signal="pressed" from="Canvas/UI/SettingsCtrls/SeparateBtn" to="." method="_on_separate_btn_pressed"]
 [connection signal="pressed" from="Canvas/UI/SettingsCtrls/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="toggled" from="Canvas/UI/FanBtn" to="." method="_on_fan_btn_toggled"]

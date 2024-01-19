@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2a13o0rcyned"
-path="res://.godot/imported/exit_symbol.svg-ff081f8f5e81765d8a3e710ff997f080.ctex"
+uid="uid://b5vt6y7uf4fi1"
+path="res://.godot/imported/fan-button.png-3f6175299598b381713bc19b5a8fecd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprites/clothes/exit_symbol.svg"
-dest_files=["res://.godot/imported/exit_symbol.svg-ff081f8f5e81765d8a3e710ff997f080.ctex"]
+source_file="res://src/sprites/world/fan-button.png"
+dest_files=["res://.godot/imported/fan-button.png-3f6175299598b381713bc19b5a8fecd7.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

@@ -2,16 +2,15 @@ extends Node
 
 @onready var tops = $Character/Seperate/Tops
 @onready var bottoms = $Character/Seperate/Bottoms
-@onready var seperate_items = $Seperate
+@onready var seperate_items = $Character/Seperate
 @onready var bottoms_bck = $Canvas/UI/DressUpCtrls/BottomsBckBtn
 @onready var bottoms_fwd = $Canvas/UI/DressUpCtrls/BottomsFwdBtn
 @onready var outfits = $Character/Outfits
 @onready var fan = $World/Fan
 @onready var forward_click = $ForwardClick
 @onready var back_click = $BackClick
-
-# Only here for debugging purposes
-@onready var outfits_btn = $Canvas/UI/SettingsCtrls/FullbodyBtn
+@onready var fan_click = $FanClick
+@onready var fan_asmr = $FanAsmr
 
 var is_seperate: bool = true
 var is_outfits: bool = false
@@ -22,13 +21,7 @@ var config_file = Config.config_file()
 var save_file = Config.save_file()
 
 func _ready():
-	
-	# Keep outfits button enabled in debug builds
-	if OS.is_debug_build():
-		outfits_btn.disabled = false
-	
-	fan.play("default")
-	
+		
 	# If config files don't exist, create them
 	if !FileAccess.file_exists(config_file):
 		Config.save_config(config_file)
@@ -83,13 +76,13 @@ func _on_tops_fwd_btn_pressed():
 	next_frame(tops, tops.sprite_frames, "tops")
 	
 	if is_outfits:
-		next_frame(outfits, outfits.sprite_frames, "fullbody")
+		next_frame(outfits, outfits.sprite_frames, "outfits")
 
 func _on_tops_bck_btn_pressed():
 	next_frame(tops, tops.sprite_frames, "tops", true)
 	
 	if is_outfits:
-		next_frame(outfits, outfits.sprite_frames, "fullbody", true)
+		next_frame(outfits, outfits.sprite_frames, "outfits", true)
 
 func _on_bottoms_bck_btn_pressed():
 	next_frame(bottoms, bottoms.sprite_frames, "bottoms", true)
@@ -98,7 +91,7 @@ func _on_bottoms_bck_btn_pressed():
 func _on_bottoms_fwd_btn_pressed():
 	next_frame(bottoms, bottoms.sprite_frames, "bottoms")
 
-func _on_fullbody_btn_pressed():
+func _on_outfits_btn_pressed():
 	is_seperate = false
 	is_outfits = true
 	seperate_items.hide()
@@ -114,4 +107,12 @@ func _on_separate_btn_pressed():
 	bottoms_fwd.show()
 	outfits.hide()
 
-
+func _on_fan_btn_toggled(toggled_on):
+	if toggled_on:
+		fan_click.play()
+		fan.play("default")
+		fan_asmr.play()
+	else:
+		fan_click.play()
+		fan.stop()
+		fan_asmr.stop()

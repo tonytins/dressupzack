@@ -1,11 +1,12 @@
 extends Node
 
-@onready var tops = $Seperate/Tops
-@onready var bottoms = $Seperate/Bottoms
+@onready var tops = $Character/Seperate/Tops
+@onready var bottoms = $Character/Seperate/Bottoms
 @onready var seperate_items = $Seperate
 @onready var bottoms_bck = $Canvas/UI/DressUpCtrls/BottomsBckBtn
 @onready var bottoms_fwd = $Canvas/UI/DressUpCtrls/BottomsFwdBtn
-@onready var outfits = $Outfits
+@onready var outfits = $Character/Outfits
+@onready var fan = $World/Fan
 @onready var forward_click = $ForwardClick
 @onready var back_click = $BackClick
 
@@ -25,6 +26,8 @@ func _ready():
 	# Keep outfits button enabled in debug builds
 	if OS.is_debug_build():
 		outfits_btn.disabled = false
+	
+	fan.play("default")
 	
 	# If config files don't exist, create them
 	if !FileAccess.file_exists(config_file):

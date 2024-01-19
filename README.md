@@ -6,6 +6,6 @@ Tony's Dress Up is a port of my first (and only) Flash game series, ZC's Dress U
 
 ## License
 
-The source and assets are licensed under the GPL-3.0 License and CC-BY, respectfully - see the [LICENSE](LICENSE) and [ASSET-LICENSE](ASSET-LICENSE) for more details.
+I hereby grant permission to use, modify, and distribute the source code of this game under the [GNU General Public License, version 2.0](./LICENSE). Additionally, all assets associated with this game are provided under the [Creative Commons Zero license](./ASSET_LICENSE), allowing for unrestricted use and adaptation. Feel free to explore, enhance, and share this project as you see fit, while respecting the terms and conditions outlined in the GPL-2.0 and CC-0 licenses.
 
 The Flash games located in the `/archive` directory are proprietary, but considered abandonware. Any extracted assets are under the same license. Feel free to share them on archives.

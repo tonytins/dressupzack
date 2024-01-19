@@ -1,22 +1,86 @@
-[gd_scene load_steps=18 format=3 uid="uid://cvr2aries2lhr"]
+[gd_scene load_steps=33 format=3 uid="uid://cvr2aries2lhr"]
 
 [ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
 [ext_resource type="AudioStream" uid="uid://b01v3d3npeyt1" path="res://src/sounds/kenny_ui_sounds/click_001.wav" id="2_0ca4n"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://src/sprites/world/icrazy_frame.svg" id="2_n1kmf"]
-[ext_resource type="Texture2D" uid="uid://cmv58t1dfgsov" path="res://src/sprites/world/stand.svg" id="2_q0w7j"]
 [ext_resource type="AudioStream" uid="uid://dd1xw5yy6ckcg" path="res://src/sounds/kenny_ui_sounds/click_002.wav" id="3_who0m"]
 [ext_resource type="Texture2D" uid="uid://d1u3w61r0uv7p" path="res://src/sprites/world/boxersOfAmericaFrame.png" id="4_327cy"]
 [ext_resource type="PackedScene" uid="uid://detf8uwimqp3v" path="res://src/scenes/character.tscn" id="6_tdil0"]
 [ext_resource type="SpriteFrames" uid="uid://bhyon1s1op8ly" path="res://src/scenes/items.tres" id="7_3ykci"]
+[ext_resource type="Texture2D" uid="uid://d1ebnalp5ubm5" path="res://src/sprites/world/fan/fan0001.png" id="8_op8gm"]
+[ext_resource type="Texture2D" uid="uid://r7igkecte0ms" path="res://src/sprites/world/fan/fan0002.png" id="9_rovb5"]
+[ext_resource type="Texture2D" uid="uid://p2tvvvfmfohl" path="res://src/sprites/world/fan/fan0003.png" id="10_vm3ic"]
 [ext_resource type="StyleBox" uid="uid://by6foat5q5d8b" path="res://src/sprites/ui/button_style.tres" id="11_a038t"]
 [ext_resource type="FontFile" uid="uid://cnddkn05b5fj" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="11_e3r4r"]
+[ext_resource type="Texture2D" uid="uid://dsoqliiokqp1y" path="res://src/sprites/world/fan/fan0004.png" id="11_ratsw"]
 [ext_resource type="SystemFont" uid="uid://dfre5a3mywuhy" path="res://src/sprites/ui/comic_sans.tres" id="12_0f8fj"]
+[ext_resource type="Texture2D" uid="uid://dxisbko0rxsrf" path="res://src/sprites/world/fan/fan0005.png" id="12_kxytt"]
 [ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="12_o3hu5"]
+[ext_resource type="Texture2D" uid="uid://bt1q6qfwvc33g" path="res://src/sprites/world/fan/fan0006.png" id="13_01553"]
+[ext_resource type="Texture2D" uid="uid://bnbaa26jdgq86" path="res://src/sprites/world/fan/fan0007.png" id="14_mfsqc"]
 [ext_resource type="Texture2D" uid="uid://clakkue2mohs4" path="res://src/sprites/ui/greenBtn.png" id="14_yk2bu"]
 [ext_resource type="StyleBox" uid="uid://cdlprci8cx4tb" path="res://src/sprites/ui/disable_button_style.tres" id="15_0xxs0"]
+[ext_resource type="Texture2D" uid="uid://ddnur7byqyjgu" path="res://src/sprites/world/fan/fan0008.png" id="15_73qfp"]
 [ext_resource type="Texture2D" uid="uid://cd8mirubbhn10" path="res://src/sprites/ui/redBtn.png" id="15_g5gd1"]
-[ext_resource type="Texture2D" uid="uid://wr3ns0ywb75q" path="res://src/sprites/logo.png" id="16_y58oj"]
+[ext_resource type="Texture2D" uid="uid://bjpbgxyubtxio" path="res://src/sprites/world/fan/fan0009.png" id="16_eehph"]
+[ext_resource type="Texture2D" uid="uid://533x3gv7gijr" path="res://src/sprites/world/fan/fan0010.png" id="17_gy3y7"]
+[ext_resource type="Texture2D" uid="uid://bcwk7b1un4s4l" path="res://src/sprites/world/fan/fan0011.png" id="18_bxhqj"]
+[ext_resource type="FontFile" uid="uid://c3g4ra8y40her" path="res://addons/fontawesome/fonts/fa-brands-400.woff2" id="18_px6h4"]
+[ext_resource type="Texture2D" uid="uid://drnwvxgmnws51" path="res://src/sprites/world/fan/fan0012.png" id="19_4fn3l"]
+[ext_resource type="Texture2D" uid="uid://u5nmph4ob2rt" path="res://src/sprites/world/fan/fan0013.png" id="20_6cokn"]
+[ext_resource type="Texture2D" uid="uid://63nrlmta5nbc" path="res://src/sprites/world/fan/fan0014.png" id="21_4g4xp"]
+[ext_resource type="Texture2D" uid="uid://bewpgbagatqn0" path="res://src/sprites/world/shelf.png" id="22_kss16"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wfogq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_op8gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rovb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vm3ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ratsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kxytt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_01553")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mfsqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_73qfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_eehph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_gy3y7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bxhqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4fn3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6cokn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4g4xp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_qt3fe")
@@ -30,17 +94,13 @@ stream = ExtResource("3_who0m")
 [node name="World" type="Node2D" parent="."]
 
 [node name="Background" type="Sprite2D" parent="World"]
-position = Vector2(306.682, 204.039)
+position = Vector2(306.682, 194.039)
 scale = Vector2(0.618038, 0.725217)
 texture = ExtResource("1_uee2i")
 metadata/_edit_lock_ = true
 
-[node name="Stand" type="Sprite2D" parent="World"]
-position = Vector2(307.326, 368.764)
-texture = ExtResource("2_q0w7j")
-
 [node name="BoxersOfAmericaFrame" type="Sprite2D" parent="World"]
-position = Vector2(527.778, 119.515)
+position = Vector2(75.4884, 245.569)
 texture = ExtResource("4_327cy")
 
 [node name="iCrazyFrame" type="Sprite2D" parent="World"]
@@ -48,31 +108,38 @@ position = Vector2(74.389, 113.776)
 scale = Vector2(0.700948, 0.7129)
 texture = ExtResource("2_n1kmf")
 
+[node name="Fan" type="AnimatedSprite2D" parent="World"]
+position = Vector2(523.641, 120.505)
+sprite_frames = SubResource("SpriteFrames_wfogq")
+frame = 10
+frame_progress = 0.989141
+speed_scale = 2.0
+
+[node name="Shelf" type="Sprite2D" parent="World"]
+position = Vector2(522.056, 189.082)
+texture = ExtResource("22_kss16")
+
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
-position = Vector2(299.61, 133.222)
+position = Vector2(291.682, 143.132)
 
-[node name="Seperate" type="Node2D" parent="."]
+[node name="Seperate" type="Node2D" parent="Character"]
+position = Vector2(-299.61, -133.222)
 
-[node name="Bottoms" type="AnimatedSprite2D" parent="Seperate"]
-position = Vector2(305.681, 303.715)
+[node name="Bottoms" type="AnimatedSprite2D" parent="Character/Seperate"]
+position = Vector2(310.834, 304.111)
 sprite_frames = ExtResource("7_3ykci")
 animation = &"bottoms"
 
-[node name="Tops" type="AnimatedSprite2D" parent="Seperate"]
+[node name="Tops" type="AnimatedSprite2D" parent="Character/Seperate"]
 position = Vector2(310.934, 206.309)
 sprite_frames = ExtResource("7_3ykci")
 animation = &"tops"
 
-[node name="Outfits" type="AnimatedSprite2D" parent="."]
+[node name="Outfits" type="AnimatedSprite2D" parent="Character"]
 visible = false
-position = Vector2(314.225, 262.214)
+position = Vector2(-2.43002, 124.632)
 sprite_frames = ExtResource("7_3ykci")
 animation = &"fullbody"
-
-[node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(546.704, 311.642)
-scale = Vector2(0.172412, 0.162644)
-texture = ExtResource("16_y58oj")
 
 [node name="Canvas" type="CanvasLayer" parent="."]
 
@@ -220,6 +287,41 @@ theme_override_styles/pressed = ExtResource("11_a038t")
 theme_override_styles/disabled = ExtResource("15_0xxs0")
 theme_override_styles/focus = ExtResource("11_a038t")
 text = "Exit"
+
+[node name="Social" type="HBoxContainer" parent="Canvas/UI"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 372.0
+offset_right = 591.0
+offset_bottom = 396.0
+alignment = 2
+metadata/_edit_lock_ = true
+
+[node name="CC" type="Label" parent="Canvas/UI/Social"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("18_px6h4")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_o3hu5")
+icon_type = "brands"
+icon_name = "creative-commons"
+
+[node name="Zero" type="Label" parent="Canvas/UI/Social"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("18_px6h4")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_o3hu5")
+icon_type = "brands"
+icon_name = "creative-commons-zero"
 
 [connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
 [connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]

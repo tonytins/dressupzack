@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/fa-solid-900.woff2-a9219e5bf1517e35af66843433
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

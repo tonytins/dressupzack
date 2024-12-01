@@ -8,6 +8,8 @@ extends Node
 @onready var outfits = $Character/Outfits
 @onready var fan = $World/Fan
 @onready var forward_click = $ForwardClick
+@onready var exit_btn = $Canvas/UI/SettingsCtrls/ExitBtn
+@onready var save_btn = $Canvas/UI/SettingsCtrls/SaveBtn
 @onready var back_click = $BackClick
 @onready var fan_click = $FanClick
 @onready var fan_asmr = $FanAsmr
@@ -45,6 +47,13 @@ func _ready():
 		
 		# Set window size
 		DisplayServer.window_set_size(Vector2i(window_width, window_height))
+		
+	fan.play("default")
+	fan_asmr.play()
+	
+	if OS.get_name() == "Web":
+		exit_btn.disabled = true
+		save_btn.disabled = true
 
 func save_all():
 	Config.save_game(tops.frame, bottoms.frame, outfits.frame, save_file, true)
@@ -91,21 +100,13 @@ func _on_bottoms_bck_btn_pressed():
 func _on_bottoms_fwd_btn_pressed():
 	next_frame(bottoms, bottoms.sprite_frames, "bottoms")
 
-func _on_outfits_btn_pressed():
-	is_seperate = false
-	is_outfits = true
-	seperate_items.hide()
-	bottoms_bck.hide()
-	bottoms_fwd.hide()
-	outfits.show()
-
 func _on_separate_btn_pressed():
-	is_seperate = true
-	is_outfits = false
 	seperate_items.show()
 	bottoms_bck.show()
 	bottoms_fwd.show()
 	outfits.hide()
+	is_seperate = true
+	is_outfits = false
 
 func _on_fan_btn_toggled(toggled_on):
 	if toggled_on:
@@ -116,3 +117,16 @@ func _on_fan_btn_toggled(toggled_on):
 		fan_click.play()
 		fan.stop()
 		fan_asmr.stop()
+
+func _on_exit_btn_pressed() -> void:
+	save_all()
+	get_tree().quit()
+
+
+func _on_fullbody_btn_pressed() -> void:
+	seperate_items.hide()
+	bottoms_bck.hide()
+	bottoms_fwd.hide()
+	outfits.show()
+	is_seperate = false
+	is_outfits = true

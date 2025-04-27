@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Dress Up Zack 3"
-config/version="1"
+config/name="Z's Dress Up 3E"
+config/version="3.1.105"
 run/main_scene="res://src/scenes/game.tscn"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.3")
@@ -113,7 +113,6 @@ translations=PackedStringArray("res://lang/local.en.translation", "res://lang/lo
 [rendering]
 
 renderer/rendering_method="mobile"
-environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0

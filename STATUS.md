@@ -1,6 +1,6 @@
-# 📈 Project Status
+# 📈 Project Status (Experimental)
 
-This document tracks the current support phase of the project. This is a WIP and subject to change.
+This document tracks the current support phase of the project.
 
 ## 🛠️ Current Status
 

@@ -22,8 +22,8 @@ Dress Up Zack is a port of my first (and only) Flash game series, ZC's Dress Up 
 
 ## 🛡️ Support
 
-* [ ] Active Support
-* [x] Limited Support (Security patches only)
+* [x] Active Support
+* [ ] Limited Support (Security patches only)
 * [ ] Maintenance Mode (Dependency-only updates)
 * [ ] Archived (No active work planned)
 

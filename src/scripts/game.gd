@@ -3,13 +3,13 @@ extends Node
 @onready var tops = $Character/Seperate/Tops
 @onready var bottoms = $Character/Seperate/Bottoms
 @onready var seperate_items = $Character/Seperate
-@onready var bottoms_bck = $Canvas/UI/DressUpCtrls/BottomsBckBtn
-@onready var bottoms_fwd = $Canvas/UI/DressUpCtrls/BottomsFwdBtn
+@onready var bottoms_bck = $Canvas/UI/DressUpBtns/BottomsBckBtn
+@onready var bottoms_fwd = $Canvas/UI/DressUpBtns/BottomsFwdBtn
 @onready var outfits = $Character/Outfits
 @onready var fan = $World/Fan
 @onready var forward_click = $ForwardClick
-@onready var exit_btn = $Canvas/UI/SettingsCtrls/ExitBtn
-@onready var save_btn = $Canvas/UI/SettingsCtrls/SaveBtn
+@onready var exit_btn = $Canvas/UI/SettingsBtns/ExitBtn
+@onready var save_btn = $Canvas/UI/SettingsBtns/SaveBtn
 @onready var back_click = $BackClick
 @onready var fan_click = $FanClick
 @onready var fan_asmr = $FanAsmr
@@ -130,3 +130,9 @@ func _on_fullbody_btn_pressed() -> void:
 	outfits.show()
 	is_seperate = false
 	is_outfits = true
+
+func _on_legal_btn_pressed() -> void:
+	save_all()
+	var legal_scene = "res://src/scenes/legal.tscn";
+	ResourceLoader.load_threaded_request(legal_scene)
+	get_tree().change_scene_to_file(legal_scene)

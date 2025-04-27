@@ -11,10 +11,10 @@ config_version=5
 [application]
 
 config/name="Z's Dress Up 3E"
-config/version="3.1.105"
+config/version="3.2.101"
 run/main_scene="res://src/scenes/game.tscn"
 config/use_custom_user_dir=true
-config/features=PackedStringArray("4.3")
+config/features=PackedStringArray("4.4")
 boot_splash/bg_color=Color(0.8, 0.8, 0.4, 1)
 boot_splash/image="res://src/sprites/logo.png"
 config/icon="res://icon.png"

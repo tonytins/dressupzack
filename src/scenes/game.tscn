@@ -1,6 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://cvr2aries2lhr"]
 
-[ext_resource type="Script" path="res://src/scripts/game.gd" id="1_qt3fe"]
+[ext_resource type="Script" uid="uid://3fbqf4q3sdqv" path="res://src/scripts/game.gd" id="1_qt3fe"]
 [ext_resource type="Texture2D" uid="uid://33g80p0qnfw4" path="res://src/sprites/world/background.svg" id="1_uee2i"]
 [ext_resource type="AudioStream" uid="uid://b01v3d3npeyt1" path="res://src/sounds/kenny_ui_sounds/click_001.wav" id="2_0ca4n"]
 [ext_resource type="Texture2D" uid="uid://bi7ayrxnn7hex" path="res://src/sprites/world/icrazy_frame.svg" id="2_n1kmf"]
@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://dsoqliiokqp1y" path="res://src/sprites/world/fan/fan0004.png" id="11_ratsw"]
 [ext_resource type="SystemFont" uid="uid://dfre5a3mywuhy" path="res://src/sprites/ui/comic_sans.tres" id="12_0f8fj"]
 [ext_resource type="Texture2D" uid="uid://dxisbko0rxsrf" path="res://src/sprites/world/fan/fan0005.png" id="12_kxytt"]
-[ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="12_o3hu5"]
+[ext_resource type="Script" uid="uid://d1fm7eankbax5" path="res://addons/fontawesome/FontAwesome.gd" id="12_o3hu5"]
 [ext_resource type="Texture2D" uid="uid://bt1q6qfwvc33g" path="res://src/sprites/world/fan/fan0006.png" id="13_01553"]
 [ext_resource type="Texture2D" uid="uid://bnbaa26jdgq86" path="res://src/sprites/world/fan/fan0007.png" id="14_mfsqc"]
 [ext_resource type="Texture2D" uid="uid://clakkue2mohs4" path="res://src/sprites/ui/greenBtn.png" id="14_yk2bu"]
@@ -110,21 +110,21 @@ texture = ExtResource("1_uee2i")
 metadata/_edit_lock_ = true
 
 [node name="BoxersOfAmericaFrame" type="Sprite2D" parent="World"]
-position = Vector2(75.4884, 245.569)
+position = Vector2(75.4884, 267.569)
 texture = ExtResource("4_327cy")
 
 [node name="iCrazyFrame" type="Sprite2D" parent="World"]
-position = Vector2(74.389, 113.776)
+position = Vector2(74.389, 122.776)
 scale = Vector2(0.700948, 0.7129)
 texture = ExtResource("2_n1kmf")
 
 [node name="Fan" type="AnimatedSprite2D" parent="World"]
-position = Vector2(523.641, 120.505)
+position = Vector2(523.641, 132.505)
 sprite_frames = SubResource("SpriteFrames_wfogq")
-frame_progress = 0.631716
+frame_progress = 0.622214
 
 [node name="Shelf" type="Sprite2D" parent="World"]
-position = Vector2(522.056, 189.082)
+position = Vector2(522.056, 201.082)
 texture = ExtResource("22_kss16")
 
 [node name="Character" parent="." instance=ExtResource("6_tdil0")]
@@ -141,7 +141,7 @@ sprite_frames = ExtResource("7_3ykci")
 animation = &"bottoms"
 
 [node name="Tops" type="AnimatedSprite2D" parent="Character/Seperate"]
-position = Vector2(310.934, 206.309)
+position = Vector2(311.934, 206.311)
 sprite_frames = ExtResource("7_3ykci")
 animation = &"tops"
 
@@ -163,107 +163,17 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
-[node name="DressUpCtrls" type="Control" parent="Canvas/UI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
-
-[node name="TopsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
+[node name="SettingsBtns" type="HBoxContainer" parent="Canvas/UI"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.655
-anchor_top = 0.3775
-anchor_right = 0.726667
-anchor_bottom = 0.535
-offset_bottom = -1.04904e-05
-texture_normal = ExtResource("14_yk2bu")
+anchor_left = 0.731667
+anchor_top = 0.02
+anchor_right = 0.986667
+anchor_bottom = 0.0925
+grow_horizontal = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TopsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.256667
-anchor_top = 0.345
-anchor_right = 0.328334
-anchor_bottom = 0.5025
-texture_normal = ExtResource("15_g5gd1")
-metadata/_edit_use_anchors_ = true
-
-[node name="BottomsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.245
-anchor_top = 0.535
-anchor_right = 0.316667
-anchor_bottom = 0.6925
-offset_top = -1.04904e-05
-texture_normal = ExtResource("15_g5gd1")
-metadata/_edit_use_anchors_ = true
-
-[node name="BottomsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpCtrls"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.658334
-anchor_top = 0.5725
-anchor_right = 0.73
-anchor_bottom = 0.73
-texture_normal = ExtResource("14_yk2bu")
-metadata/_edit_use_anchors_ = true
-
-[node name="SettingsCtrls" type="HBoxContainer" parent="Canvas/UI"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.015
-anchor_right = 1.0
-anchor_bottom = 0.0875
-grow_horizontal = 2
-theme_override_constants/separation = 13
-alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="ShirtIcon" type="Label" parent="Canvas/UI/SettingsCtrls"]
-auto_translate_mode = 2
-layout_mode = 2
-localize_numeral_system = false
-theme_override_colors/font_color = Color(0, 0.290196, 1, 1)
-theme_override_fonts/font = ExtResource("11_e3r4r")
-theme_override_font_sizes/font_size = 16
-text = ""
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("12_o3hu5")
-icon_name = "shirt"
-
-[node name="FullbodyBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
-layout_mode = 2
-theme_type_variation = &"FlatButton"
-theme_override_fonts/font = ExtResource("12_0f8fj")
-theme_override_styles/focus = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("15_0xxs0")
-theme_override_styles/hover = ExtResource("11_a038t")
-theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/normal = ExtResource("11_a038t")
-text = "Outfits"
-metadata/_edit_use_anchors_ = true
-
-[node name="SeparateBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
-layout_mode = 2
-theme_type_variation = &"FlatButton"
-theme_override_fonts/font = ExtResource("12_0f8fj")
-theme_override_styles/focus = ExtResource("11_a038t")
-theme_override_styles/disabled = ExtResource("15_0xxs0")
-theme_override_styles/hover = ExtResource("11_a038t")
-theme_override_styles/pressed = ExtResource("11_a038t")
-theme_override_styles/normal = ExtResource("11_a038t")
-text = "Seperate"
-metadata/_edit_use_anchors_ = true
-
-[node name="FontAwesome" type="Label" parent="Canvas/UI/SettingsCtrls"]
+[node name="GearIcon" type="Label" parent="Canvas/UI/SettingsBtns"]
 auto_translate_mode = 2
 layout_mode = 2
 localize_numeral_system = false
@@ -276,9 +186,8 @@ vertical_alignment = 1
 script = ExtResource("12_o3hu5")
 icon_name = "gear"
 
-[node name="SaveBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+[node name="SaveBtn" type="Button" parent="Canvas/UI/SettingsBtns"]
 layout_mode = 2
-theme_type_variation = &"FlatButton"
 theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/focus = ExtResource("11_a038t")
 theme_override_styles/disabled = ExtResource("15_0xxs0")
@@ -287,7 +196,17 @@ theme_override_styles/pressed = ExtResource("11_a038t")
 theme_override_styles/normal = ExtResource("11_a038t")
 text = "Save"
 
-[node name="ExitBtn" type="Button" parent="Canvas/UI/SettingsCtrls"]
+[node name="LegalBtn" type="Button" parent="Canvas/UI/SettingsBtns"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/focus = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/normal = ExtResource("11_a038t")
+text = "Legal"
+
+[node name="ExitBtn" type="Button" parent="Canvas/UI/SettingsBtns"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("12_0f8fj")
 theme_override_styles/focus = ExtResource("11_a038t")
@@ -296,6 +215,106 @@ theme_override_styles/hover = ExtResource("11_a038t")
 theme_override_styles/pressed = ExtResource("11_a038t")
 theme_override_styles/normal = ExtResource("11_a038t")
 text = "Exit"
+
+[node name="OutfitBtns" type="HBoxContainer" parent="Canvas/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015
+anchor_top = 0.02
+anchor_right = 0.323333
+anchor_bottom = 0.0925
+theme_override_constants/separation = 13
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="FullbodyBtn" type="Button" parent="Canvas/UI/OutfitBtns"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/focus = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/normal = ExtResource("11_a038t")
+text = "Outfits"
+metadata/_edit_use_anchors_ = true
+
+[node name="SeparateBtn" type="Button" parent="Canvas/UI/OutfitBtns"]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("12_0f8fj")
+theme_override_styles/focus = ExtResource("11_a038t")
+theme_override_styles/disabled = ExtResource("15_0xxs0")
+theme_override_styles/hover = ExtResource("11_a038t")
+theme_override_styles/pressed = ExtResource("11_a038t")
+theme_override_styles/normal = ExtResource("11_a038t")
+text = "Seperate"
+metadata/_edit_use_anchors_ = true
+
+[node name="ShirtIcon" type="Label" parent="Canvas/UI/OutfitBtns"]
+auto_translate_mode = 2
+layout_mode = 2
+localize_numeral_system = false
+theme_override_colors/font_color = Color(0, 0.290196, 1, 1)
+theme_override_fonts/font = ExtResource("11_e3r4r")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_o3hu5")
+icon_name = "shirt"
+
+[node name="DressUpBtns" type="Control" parent="Canvas/UI"]
+layout_mode = 1
+anchor_top = 0.0025
+anchor_right = 1.0
+anchor_bottom = 1.0025
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="TopsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpBtns"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.655
+anchor_top = 0.4925
+anchor_right = 0.726667
+anchor_bottom = 0.65
+offset_bottom = -1.04904e-05
+texture_normal = ExtResource("14_yk2bu")
+metadata/_edit_use_anchors_ = true
+
+[node name="TopsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpBtns"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.256667
+anchor_top = 0.46
+anchor_right = 0.328334
+anchor_bottom = 0.6175
+texture_normal = ExtResource("15_g5gd1")
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomsBckBtn" type="TextureButton" parent="Canvas/UI/DressUpBtns"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.245
+anchor_top = 0.65
+anchor_right = 0.316667
+anchor_bottom = 0.8075
+offset_top = -1.04904e-05
+texture_normal = ExtResource("15_g5gd1")
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomsFwdBtn" type="TextureButton" parent="Canvas/UI/DressUpBtns"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.658334
+anchor_top = 0.6875
+anchor_right = 0.730001
+anchor_bottom = 0.845
+texture_normal = ExtResource("14_yk2bu")
+metadata/_edit_use_anchors_ = true
 
 [node name="Social" type="HBoxContainer" parent="Canvas/UI"]
 layout_mode = 0
@@ -306,49 +325,37 @@ offset_bottom = 396.0
 alignment = 2
 metadata/_edit_lock_ = true
 
-[node name="CC" type="Label" parent="Canvas/UI/Social"]
-auto_translate_mode = 2
-layout_mode = 2
-localize_numeral_system = false
-theme_override_fonts/font = ExtResource("18_px6h4")
-theme_override_font_sizes/font_size = 16
-text = ""
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("12_o3hu5")
-icon_type = "brands"
-icon_name = "creative-commons"
-
 [node name="Zero" type="Label" parent="Canvas/UI/Social"]
 auto_translate_mode = 2
 layout_mode = 2
 localize_numeral_system = false
 theme_override_fonts/font = ExtResource("18_px6h4")
 theme_override_font_sizes/font_size = 16
-text = ""
+text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("12_o3hu5")
 icon_type = "brands"
-icon_name = "creative-commons-zero"
+icon_name = "creative-commons-pd"
 
 [node name="FanBtn" type="TextureButton" parent="Canvas/UI"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.866667
-anchor_top = 0.408333
+anchor_top = 0.438333
 anchor_right = 0.88
-anchor_bottom = 0.423333
+anchor_bottom = 0.453333
 toggle_mode = true
 texture_normal = ExtResource("33_oenpt")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/DressUpCtrls/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/DressUpCtrls/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/DressUpCtrls/BottomsFwdBtn" to="." method="_on_bottoms_fwd_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/SettingsCtrls/FullbodyBtn" to="." method="_on_fullbody_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/SettingsCtrls/SeparateBtn" to="." method="_on_separate_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/SettingsCtrls/SaveBtn" to="." method="_on_save_btn_pressed"]
-[connection signal="pressed" from="Canvas/UI/SettingsCtrls/ExitBtn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsBtns/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsBtns/LegalBtn" to="." method="_on_legal_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/SettingsBtns/ExitBtn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/OutfitBtns/FullbodyBtn" to="." method="_on_fullbody_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/OutfitBtns/SeparateBtn" to="." method="_on_separate_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpBtns/TopsFwdBtn" to="." method="_on_tops_fwd_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpBtns/TopsBckBtn" to="." method="_on_tops_bck_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpBtns/BottomsBckBtn" to="." method="_on_bottoms_bck_btn_pressed"]
+[connection signal="pressed" from="Canvas/UI/DressUpBtns/BottomsFwdBtn" to="." method="_on_bottoms_fwd_btn_pressed"]
 [connection signal="toggled" from="Canvas/UI/FanBtn" to="." method="_on_fan_btn_toggled"]

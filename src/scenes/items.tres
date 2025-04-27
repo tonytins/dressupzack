@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=26 format=3 uid="uid://bhyon1s1op8ly"]
+[gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://bhyon1s1op8ly"]
 
 [ext_resource type="Texture2D" uid="uid://4f7dfxy24fey" path="res://src/sprites/clothes/sequences/bottoms/bottoms0001.png" id="1_i4r3c"]
 [ext_resource type="Texture2D" uid="uid://bs6nkpurxgr3p" path="res://src/sprites/clothes/sequences/bottoms/bottoms0002.png" id="2_pkmjm"]
@@ -17,14 +17,17 @@
 [ext_resource type="Texture2D" uid="uid://tqeyv6mvy6x0" path="res://src/sprites/clothes/sequences/outfits/outfits0007.png" id="16_fogca"]
 [ext_resource type="Texture2D" uid="uid://3gxc6wknllcq" path="res://src/sprites/clothes/sequences/tops/tops0001.png" id="18_edhqb"]
 [ext_resource type="Texture2D" uid="uid://dhjg5vo1cs62m" path="res://src/sprites/clothes/sequences/tops/tops0002.png" id="19_57y8n"]
+[ext_resource type="Texture2D" uid="uid://bhgvidynd582a" path="res://src/sprites/clothes/retro_shirt.svg" id="20_0oxdi"]
 [ext_resource type="Texture2D" uid="uid://b3f3sxfsteowe" path="res://src/sprites/clothes/sequences/tops/tops0003.png" id="20_s7eb7"]
 [ext_resource type="Texture2D" uid="uid://bnodv0bh1ip2b" path="res://src/sprites/clothes/sequences/tops/tops0004.png" id="21_0lmkq"]
 [ext_resource type="Texture2D" uid="uid://dcv7irbuiox3d" path="res://src/sprites/clothes/sequences/tops/tops0005.png" id="22_pjfly"]
+[ext_resource type="Texture2D" uid="uid://djvbjw5yl8ulb" path="res://src/sprites/clothes/whatsnew_shirt.svg" id="23_c1mis"]
 [ext_resource type="Texture2D" uid="uid://dkvhb002aro4p" path="res://src/sprites/clothes/sequences/tops/tops0006.png" id="23_jn0qm"]
 [ext_resource type="Texture2D" uid="uid://bwe0euhljg53h" path="res://src/sprites/clothes/sequences/tops/tops0007.png" id="24_oio7r"]
 [ext_resource type="Texture2D" uid="uid://otnfhqaxqmjj" path="res://src/sprites/clothes/sequences/tops/tops0008.png" id="25_4dkw3"]
 [ext_resource type="Texture2D" uid="uid://bcrrnh1ad5dju" path="res://src/sprites/clothes/sequences/tops/tops0009.png" id="26_vslpa"]
 [ext_resource type="Texture2D" uid="uid://c7y01k8sutd05" path="res://src/sprites/clothes/sequences/tops/tops0010.png" id="27_e8tji"]
+[ext_resource type="Texture2D" uid="uid://tlkdx2el5e3p" path="res://src/sprites/clothes/train_hoodie.svg" id="28_i272g"]
 
 [resource]
 animations = [{
@@ -94,10 +97,16 @@ animations = [{
 "texture": ExtResource("20_s7eb7")
 }, {
 "duration": 1.0,
+"texture": ExtResource("20_0oxdi")
+}, {
+"duration": 1.0,
 "texture": ExtResource("21_0lmkq")
 }, {
 "duration": 1.0,
 "texture": ExtResource("22_pjfly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_c1mis")
 }, {
 "duration": 1.0,
 "texture": ExtResource("23_jn0qm")
@@ -113,6 +122,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("27_e8tji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_i272g")
 }],
 "loop": true,
 "name": &"tops",

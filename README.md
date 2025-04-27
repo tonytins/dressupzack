@@ -6,17 +6,17 @@ Dress Up Zack is a port of my first (and only) Flash game series, ZC's Dress Up 
 
 ## 🏗️ Built With
 
-* [Godot Engine](https://godotengine.org/) (Baseline Version: Godot 4.4)
-* Language: GDScript
+- [Godot Engine](https://godotengine.org/) (Baseline Version: Godot 4.4)
+- Language: GDScript
 
 ## 📅 Support Model (Experimental)
 
-| Patch Type                 | Timeline                                 |
-| -------------------------- | ---------------------------------------- |
-| Critical Hotfixes          | 1-2 weeks after discovery                |
-| Minor Bugfix Patches       | Monthly or as needed                     |
-| Content Updates            | Every 6-12 months during Expansion Phase |
-| Engine Compatibility Check | Every 6 months                           |
+| Patch Type                 | Timeline                  |
+| -------------------------- | ------------------------- |
+| Critical Hotfixes          | 1-2 weeks after discovery |
+| Minor Bugfix Patches       | Monthly or as needed      |
+| Content Updates            | Every 6-12 months         |
+| Engine Compatibility Check | Every 6 months            |
 
 ## 🛠️ Installation
 

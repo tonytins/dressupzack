@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjcmfv162frgy"
-path="res://.godot/imported/ZC Dress Up 3E preview.png-f9f3bd7bd3d8cf561b0c5ee7c1f8d2ef.ctex"
+path="res://.godot/imported/dressup_preview.png-d885194c4fc9efb69a4c37e0f02a2b1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ZC Dress Up 3E preview.png"
-dest_files=["res://.godot/imported/ZC Dress Up 3E preview.png-f9f3bd7bd3d8cf561b0c5ee7c1f8d2ef.ctex"]
+source_file="res://dressup_preview.png"
+dest_files=["res://.godot/imported/dressup_preview.png-d885194c4fc9efb69a4c37e0f02a2b1a.ctex"]
 
 [params]
 
